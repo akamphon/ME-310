@@ -1,0 +1,75 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Flowchart of typical engineering design processes\relax }}{2}{figure.caption.5}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Different types of engineering composites.\relax }}{13}{figure.caption.12}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces Material strength, $S$, versus modulus, $E$, chart. \cite {ashby2010materials}\relax }}{14}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Material strength, $S$, versus density, $\rho $, chart. \cite {ashby2010materials}\relax }}{15}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Material strength at different temperatures, $S(T)$, versus temperature, $T$, chart. \cite {ashby2010materials}\relax }}{16}{figure.caption.15}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Stresses on a three-dimensional element when considering a static equilibrium\relax }}{19}{figure.caption.16}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces 3-dimensional element under shear deformation.\relax }}{21}{figure.caption.17}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Deformation of a axially loaded constant cross-sectioned member.\relax }}{23}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Nonprismatic bar with segments of constant cross sections under axial load.\relax }}{24}{figure.caption.22}
+\contentsline {figure}{\numberline {\relax 3.5}{\ignorespaces Deformation of an axially loaded continuously variable cross-sectioned member.\relax }}{25}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 3.6}{\ignorespaces A circular bar under torsion. The figure shows the torque and deformation on the cross section.\relax }}{25}{figure.caption.24}
+\contentsline {figure}{\numberline {\relax 3.7}{\ignorespaces Torsion formula derivation.\relax }}{26}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 3.8}{\ignorespaces Torque-loaded member with segments of constant cross sections.\relax }}{28}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 3.9}{\ignorespaces Deformation of a torque-loaded variable cross-sectioned member.\relax }}{29}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 3.10}{\ignorespaces Deformation of a torque-loaded variablecross-sectioned member.\relax }}{29}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 3.11}{\ignorespaces Deformation in pure beam bending.\relax }}{30}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 3.12}{\ignorespaces Bending stress in uniform bending.\relax }}{31}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 3.13}{\ignorespaces Infinitessimal bending moment $dM$ generated from force $\sigma dA$ with a distance $y$ from the neutral axis.\relax }}{32}{figure.caption.32}
+\contentsline {figure}{\numberline {\relax 3.14}{\ignorespaces Relationship in bending beam among radius of curvature, curve length, angle of rotation, deflection, and length.\relax }}{34}{figure.caption.34}
+\contentsline {figure}{\numberline {\relax 3.15}{\ignorespaces Derivation of stress transformation equation by cutting element at an angle.\relax }}{38}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 3.16}{\ignorespaces Mohr's circle and its representation of state of stress.\relax }}{39}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 3.17}{\ignorespaces Stress concentration of a grooved shaft under bending \cite {juvinall2006fundamentals}\relax }}{41}{figure.caption.39}
+\contentsline {figure}{\numberline {\relax 3.18}{\ignorespaces Stress concentration factor of a shaft with shoulder fillet under axial loading \cite {juvinall2006fundamentals}\relax }}{42}{figure.caption.40}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces 'Safe-zone' diagram for material under maximum shear stress criterion.\relax }}{46}{figure.caption.46}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces 'Safe-zone' diagram for material under maximum distortion energy criterion.\relax }}{47}{figure.caption.47}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces 'Safe-zone' diagram for material under maximum principal stress criterion.\relax }}{48}{figure.caption.49}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces A typical endurance diagram showing stress amplitude $\sigma _a$ vs number of cycles to failure $N$.\relax }}{50}{figure.caption.51}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Train track buckling. (US Department of Transportation)\relax }}{54}{figure.caption.55}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Shear and normal stress distributions in a cantilever beam.\relax }}{57}{figure.caption.60}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Structural steel sections\relax }}{58}{figure.caption.61}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces State of stress at the critical point of a shaft with multiple loadings.\relax }}{61}{figure.caption.65}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces a typical luffing crane\relax }}{63}{figure.caption.67}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Helical spring geometry and loading conditions.\relax }}{69}{figure.caption.70}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Buckling stability of helical springs.\relax }}{73}{figure.caption.75}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Helical spring design process flowchart\relax }}{74}{figure.caption.76}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Critical stress locations in extension spring end hooks.\relax }}{78}{figure.caption.77}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Shield metal arc welding (US Army)\relax }}{82}{figure.caption.82}
+\contentsline {figure}{\numberline {\relax 7.2}{\ignorespaces ``A diagram of the GMAW weld area. (1) Direction of travel (2) Contact tube/electrode wire guide (3) Electrode (4) Shielding gas (5) Molten weld metal (6) Solidified weld metal (7) Workpiece'' by Nathaniel C. Sheetz is licensed under CC BY-SA 3.0 Unported\relax }}{83}{figure.caption.83}
+\contentsline {figure}{\numberline {\relax 7.3}{\ignorespaces ``Gas tungsten arc welding'' by Duk is licensed under CC BY-SA 3.0 Unported\relax }}{83}{figure.caption.84}
+\contentsline {figure}{\numberline {\relax 7.4}{\ignorespaces Geometry of a butt weld.\relax }}{85}{figure.caption.86}
+\contentsline {figure}{\numberline {\relax 7.5}{\ignorespaces Geometry of a fillet weld.\relax }}{85}{figure.caption.87}
+\contentsline {figure}{\numberline {\relax 7.6}{\ignorespaces Normal and shear stresses on a butt weld cross section under static axial and shear loading.\relax }}{86}{figure.caption.88}
+\contentsline {figure}{\numberline {\relax 7.7}{\ignorespaces Shear stresses in a fillet weld.\relax }}{86}{figure.caption.89}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 8.1}{\ignorespaces Terminology of screw threads.\relax }}{97}{figure.caption.98}
+\contentsline {figure}{\numberline {\relax 8.2}{\ignorespaces Bolted joint applications.\relax }}{100}{figure.caption.101}
+\contentsline {figure}{\numberline {\relax 8.3}{\ignorespaces Various screw and bolt head types. (Alma Bolt Company)\relax }}{100}{figure.caption.102}
+\contentsline {figure}{\numberline {\relax 8.4}{\ignorespaces Various screw and bolt drive types. (Unknown)\relax }}{101}{figure.caption.103}
+\contentsline {figure}{\numberline {\relax 8.5}{\ignorespaces Process of thread rolling. (Profiroll Technologies)\relax }}{102}{figure.caption.105}
+\contentsline {figure}{\numberline {\relax 8.6}{\ignorespaces Process of thread cutting. (CustomPartNet)\relax }}{102}{figure.caption.106}
+\contentsline {figure}{\numberline {\relax 8.7}{\ignorespaces Compressive residual stress at the root of rolled thread.\relax }}{103}{figure.caption.107}
+\contentsline {figure}{\numberline {\relax 8.8}{\ignorespaces Forces in bolt and clamped parts with and without external applied force $P$.\relax }}{104}{figure.caption.108}
+\contentsline {figure}{\numberline {\relax 8.9}{\ignorespaces Effective area for calculating clamped part stiffness.\relax }}{105}{figure.caption.109}
+\contentsline {figure}{\numberline {\relax 8.10}{\ignorespaces Forces in a typical friction joint.\relax }}{108}{figure.caption.110}
+\contentsline {figure}{\numberline {\relax 8.11}{\ignorespaces Cross-sectional view of a flange joint on a pressure vessel.\relax }}{109}{figure.caption.111}
+\contentsline {figure}{\numberline {\relax 8.13}{\ignorespaces Exercise \ref {exercise: bolt on plate}\relax }}{113}{figure.caption.116}
+\contentsline {figure}{\numberline {\relax 8.12}{\ignorespaces Exercise \ref {exercise: bolt for bicycle fork}\relax }}{114}{figure.caption.115}
+\contentsline {figure}{\numberline {\relax 8.14}{\ignorespaces Exercise \ref {exercise: pressure vessel}\relax }}{114}{figure.caption.117}
+\contentsline {figure}{\numberline {\relax 8.15}{\ignorespaces Exercise \ref {exercise: bolted fixture exercise}\relax }}{114}{figure.caption.118}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 9.1}{\ignorespaces A bicycle tire pump.\relax }}{118}{figure.caption.122}
+\contentsline {figure}{\numberline {\relax 9.2}{\ignorespaces components of the pogo stick\relax }}{122}{figure.caption.127}
+\contentsline {figure}{\numberline {\relax 9.3}{\ignorespaces close-up of bolted joint at top of piston\relax }}{122}{figure.caption.127}
+\contentsline {figure}{\numberline {\relax 9.4}{\ignorespaces spring contraction on pogo stick during operation\relax }}{122}{figure.caption.127}
+\contentsline {figure}{\numberline {\relax 9.5}{\ignorespaces maximum loading conditions on the pogo stick\relax }}{123}{figure.caption.128}
+\addvspace {10\p@ }
+\addvspace {10\p@ }

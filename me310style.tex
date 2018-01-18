@@ -1,0 +1,293 @@
+\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{1}
+
+
+%%% Examples of Article customizations
+% These packages are optional, depending whether you want the features they provide.
+% See the LaTeX Companion or other references for full information.
+
+%%% PAGE DIMENSIONS
+\usepackage{geometry} % to change the page dimensions
+\geometry{a4paper} % or letterpaper (US) or a5paper or....
+\geometry{margin=1in} % for example, change the margins to 2 inches all round
+% \geometry{landscape} % set up the page for landscape
+%   read geometry.pdf for detailed page layout information
+
+\usepackage{graphicx} % support the \includegraphics command and options
+
+\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
+
+%%% PACKAGES
+\usepackage{booktabs} % for much better looking tables
+\usepackage{array} % for better arrays (eg matrices) in maths
+%\usepackage{paralist} % very flexible & customisable lists (eg. enumerate/itemize, etc.)
+\usepackage{enumitem}
+\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
+\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+% These packages are all incorporated in the memoir class to one degree or another...
+\usepackage{colortbl}
+
+%%% HEADERS & FOOTERS
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy} % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{1pt} % customise the layout...
+\renewcommand{\footrulewidth}{1pt}
+\lhead{\rightmark}\chead{}\rhead{}
+\lfoot{ME 310: Mechanical Design I}\cfoot{\thepage}\rfoot{S. Akamphon}
+
+%%% SECTION TITLE APPEARANCE
+%\usepackage{sectsty}
+%\allsectionsfont{\sffamily\mdseries\upshape} % (See the fntguide.pdf for font help)
+% (This matches ConTeXt defaults)
+
+%%% ToC (table of contents) APPEARANCE
+\usepackage[numbib]{tocbibind} % Put the bibliography in the ToC
+\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+% \renewcommand{\cftpartfont}{\rmfamily\bfseries\upshape}
+% \renewcommand{\cftpartpagefont}{\rmfamily\bfseries\upshape}
+% \renewcommand{\cftchapfont}{\rmfamily\bfseries\upshape}
+% \renewcommand{\cftchappagefont}{\rmfamily\bfseries\upshape} 
+% \renewcommand{\cftsecfont}{\rmfamily\mdseries\upshape}
+% \renewcommand{\cftsecpagefont}{\rmfamily\mdseries\upshape} % No bold!
+
+\newcommand*\chem[1]{\textup{#1}}
+
+%\usepackage{tabularx}
+%\usepackage{newtxtext}
+%\usepackage{newtxmath}
+%\usepackage{mathpazo}
+\usepackage{newtxtext}
+\usepackage{newtxmath}
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks,
+  citecolor=black,
+  filecolor=black,
+  linkcolor=black,
+  urlcolor=black
+}
+
+\let\openbox\relax
+%\usepackage{amsmath}
+\usepackage{amsthm}
+%\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{multirow}
+\usepackage{gensymb}
+\usepackage{wasysym}
+\usepackage{array}
+\usepackage{cleveref}
+\usepackage{siunitx}
+
+%% Chapter Heading %%%%%
+\usepackage[explicit]{titlesec}
+
+%% Drawing pics with tikz %%%
+\usepackage{tikz}
+\usetikzlibrary{arrows,calc,decorations,shapes,decorations.pathmorphing,patterns}
+\tikzset{>=latex}
+\usepackage{pgfplots}
+\newcommand{\AxisRotator}[1][rotate=0]{%
+    \tikz[x=0.25cm,y=0.60cm,line width=.2ex,-stealth,#1] \draw(0,0) arc (150:-150:1 and 1);%
+}
+
+\definecolor{lightblue}{RGB}{180,220,255}
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
+\definecolor{namecolor}{cmyk}{1,.50,0,.10}
+
+\titleformat{\chapter}
+{\huge\bfseries}
+{}{0pt}
+{\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-3cm] at (current page.north west)
+    {\begin{tikzpicture}[remember picture,overlay]
+        \path[fill=lightblue] (0,0) rectangle (\paperwidth,3cm) ;
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,rounded corners=5pt,inner sep=11pt,fill=RoyalBlue]{\color{white}#1};
+        \node[right, xshift=1cm]{\scalebox{4}{\Huge\thechapter}};
+      \end{tikzpicture}};
+  \end{tikzpicture}
+}
+
+\titleformat{name=\chapter,numberless}
+{\huge\bfseries}
+{}{0pt}
+{\begin{tikzpicture}[remember picture,overlay]
+    \node[yshift=-3cm] at (current page.north west)
+    {\begin{tikzpicture}[remember picture,overlay]
+        \path[fill=lightblue] (0,0) rectangle (\paperwidth,3cm) ;
+        \node[anchor=east,xshift=.9\paperwidth,rectangle,rounded corners=5pt,inner sep=11pt,fill=RoyalBlue]{\color{white}#1};
+      \end{tikzpicture}};
+  \end{tikzpicture}
+}
+
+\titlespacing*{\chapter}{0pt}{50pt}{-10pt}
+
+%% Section Heading %%%%%
+
+\titleformat{\section}
+{\Large\bfseries}
+{}{0pt}
+{\begin{tikzpicture}
+    \node[fill=lightblue, rectangle, minimum height=1.5cm, minimum width=\textwidth](A){};
+    \node at (A.west) [fill=RoyalBlue, anchor=west]{\color{white}\thesection\quad#1};
+  \end{tikzpicture}
+}
+   
+\titleformat{name=\section, numberless}
+{\Large\bfseries}
+{}{0pt}
+{\begin{tikzpicture}
+    \node[fill=lightblue, rectangle, minimum height=1.5cm, minimum width=\textwidth](A){};
+    \node at (A.west) [fill=RoyalBlue, anchor=west]{\color{white}#1};
+  \end{tikzpicture}
+}
+
+\titlespacing*{\section}{0pt}{20pt}{-10pt}
+
+%% Subsection Heading %%%%
+
+\titleformat{\subsection}
+{\large\color{RoyalBlue}\bfseries}
+{\thesubsection}{10pt}{#1}
+
+%%% New column type
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%%% Example environment
+\usepackage{thmtools}
+\usepackage{mdframed}
+\usepackage{float}
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+headfont=\normalfont\bfseries,
+notefont=\mdseries, notebraces={(}{)},
+bodyfont=\normalfont,
+postheadspace=1em,
+numberwithin=chapter,
+preheadhook={\begin{mdframed}[backgroundcolor=lightblue,
+    innertopmargin=6pt , splittopskip=\topskip, % 
+    skipbelow= 0pt, skipabove=6pt, %
+    topline=false,bottomline=false,leftline=false,rightline=false] \sloppy},
+  postfoothook=\end{mdframed},
+headpunct={}
+]{exstyle}
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+headfont=\normalfont\bfseries,
+notefont=\mdseries, notebraces={(}{)},
+bodyfont=\normalfont,
+postheadspace=1em,
+preheadhook={\begin{mdframed}[backgroundcolor=lightblue,
+    innertopmargin =6pt , splittopskip = \topskip, % 
+    skipbelow=6pt, skipabove=0pt, %
+    topline=false,bottomline=false,leftline=false,rightline=false] \sloppy},
+  postfoothook=\end{mdframed},
+headpunct={},
+numbered=no
+]{solstyle}
+\declaretheorem[style=exstyle]{example}
+\declaretheorem[style=solstyle]{solution}
+
+% New list for exercises
+\newlist{exercises}{enumerate}{2}
+\setlist[exercises]{%
+  label=\textbf{\thechapter-\arabic*}~,  % Label: Exercise C.E
+  ref=\thechapter-\arabic*, % References: C.E (important!)
+  align=left,               % Left align labels
+  labelindent=0pt,          % No space betw. margin of list and label
+  leftmargin=0pt,           % No space betw. margin of list and following lines
+  itemindent=!,             % Indention of item computet automatically
+}
+
+%\setlist[enumerate, 1]{label=(\alph*)}            % Label for subexercises
+
+\newcommand{\exercise}{%
+\item \label{lab:\arabic{chapter}.\arabic{exercisesi}}  % Append label to item
+}
+
+\SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+
+\setlist[description]{style=multiline,leftmargin=5cm,font=\bfseries,%
+    align=parright}
+
+% New decoration for screws
+\tikzset{/pgf/decoration/.cd,
+    head width/.initial=6pt,
+    head length/.initial=1.5pt,
+    thread separation/.initial=1.0pt,
+    thread amplitude/.initial=0.5pt,
+    screw radius/.initial=1.2pt,
+}
+% definition of the decoration
+\pgfdeclaredecoration{screw}{initial}
+{
+  \state{initial}[width=\pgfkeysvalueof{/pgf/decoration/head length},%
+  next state=midd]
+  {
+    \def\headlength{%
+      \pgfkeysvalueof{/pgf/decoration/head length}%
+    }
+    \def\headwidth{%
+      \pgfkeysvalueof{/pgf/decoration/head width}%
+    }
+    \def\screwradius{%
+      \pgfkeysvalueof{/pgf/decoration/screw radius}%
+    }
+    % First line
+    \pgfpathlineto{\pgfpoint{0.0pt}{\headwidth/2}}
+    \pgfpathlineto{\pgfpoint{\headlength}{\headwidth/2}}
+    \pgfpathlineto{\pgfpoint{\headlength}{\screwradius}}
+    % Second line
+    \pgfpathmoveto{\pgfpoint{0.0pt}{0.0pt}}
+    \pgfpathlineto{\pgfpoint{0.0pt}{-\headwidth/2}}
+    \pgfpathlineto{\pgfpoint{\headlength}{-\headwidth/2}}
+    \pgfpathlineto{\pgfpoint{\headlength}{-\screwradius}}
+  }
+  \state{midd}[width=\pgfkeysvalueof{/pgf/decoration/thread separation}*2]
+  {
+    \def\threadseparation{%
+      \pgfkeysvalueof{/pgf/decoration/thread separation}%
+    }
+    \def\threadamplitude{%
+      \pgfkeysvalueof{/pgf/decoration/thread amplitude}%
+    }
+    \def\screwradius{%
+      \pgfkeysvalueof{/pgf/decoration/screw radius}%
+    }
+    % First line
+    \pgfpathmoveto{\pgfpoint{0pt}{\screwradius}}
+    \pgfpathlineto{\pgfpoint{0.5*\threadseparation}{\screwradius+\threadamplitude}}
+    \pgfpathlineto{\pgfpoint{1.0*\threadseparation}{\screwradius}}
+    \pgfpathlineto{\pgfpoint{1.5*\threadseparation}{\screwradius-\threadamplitude}}
+    \pgfpathlineto{\pgfpoint{2.0*\threadseparation}{\screwradius}}
+    % Second line
+    \pgfpathmoveto{\pgfpoint{0pt}{-\screwradius}}
+    \pgfpathlineto{\pgfpoint{0.5*\threadseparation}{-\screwradius-\threadamplitude}}
+    \pgfpathlineto{\pgfpoint{1.0*\threadseparation}{-\screwradius}}
+    \pgfpathlineto{\pgfpoint{1.5*\threadseparation}{-\screwradius+\threadamplitude}}
+    \pgfpathlineto{\pgfpoint{2.0*\threadseparation}{-\screwradius}}
+    % Thread
+    \pgfpathmoveto{\pgfpoint{0.5*\threadseparation}{\screwradius+\threadamplitude}}
+    \pgfpathlineto{\pgfpoint{1.5*\threadseparation}{-\screwradius+\threadamplitude}}
+  }
+  \state{final}
+  {
+    \def\screwradius{%
+      \pgfkeysvalueof{/pgf/decoration/screw radius}%
+    }
+    %\pgfpathlineto{\pgfpointdecoratedpathlast}
+    \pgfpathmoveto{\pgfpoint{0pt}{\screwradius}}
+    \pgfpathlineto{\pgfpoint{\screwradius/2}{0pt}}
+    \pgfpathlineto{\pgfpoint{0pt}{-\screwradius}}
+  }
+}
+
+%% bibliography %%%%
+
+\usepackage[style=numeric,backend=biber]{biblatex}
+\addbibresource{me310.bib}
+
+%%% END Article customizations

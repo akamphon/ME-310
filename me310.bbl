@@ -1,0 +1,292 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{secondaryscience4all}{online}{}
+      \name{author}{1}{}{%
+        {{hash=28b60908dc19ac27b5a96d1087b2f15f}{%
+           family={All},
+           familyi={A\bibinitperiod},
+           given={Secondary\bibnamedelimb Science\bibnamedelima 4},
+           giveni={S\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim 4\bibinitperiod}}}%
+      }
+      \strng{namehash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \strng{fullhash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \strng{bibnamehash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \strng{authorbibnamehash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \strng{authornamehash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \strng{authorfullhash}{28b60908dc19ac27b5a96d1087b2f15f}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Polymers from Oil}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://secondaryscience4all.files.wordpress.com/2014/08/polymer.png
+      \endverb
+      \verb{url}
+      \verb https://secondaryscience4all.files.wordpress.com/2014/08/polymer.png
+      \endverb
+    \endentry
+    \entry{ashby2010materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=a4b47dc6bd32929dee88cbb5a6ef3c2b}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \strng{fullhash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \strng{bibnamehash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \strng{authorbibnamehash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \strng{authornamehash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \strng{authorfullhash}{a4b47dc6bd32929dee88cbb5a6ef3c2b}
+      \field{sortinit}{A}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials selection in mechanical design}
+      \field{year}{2010}
+      \field{pages}{640}
+      \range{pages}{1}
+    \endentry
+    \entry{boresi1993advanced}{book}{}
+      \name{author}{3}{}{%
+        {{hash=2d995d11514f5bc764f76f0735f47526}{%
+           family={Boresi},
+           familyi={B\bibinitperiod},
+           given={Arthur\bibnamedelima Peter},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=a5f154ee0d1e6ac3e3e3423ed857ebce}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima Joseph},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2207684276c7eebbe56a1417c19788b4}{%
+           family={Sidebottom},
+           familyi={S\bibinitperiod},
+           given={Omar\bibnamedelima M},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley New York}%
+      }
+      \strng{namehash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \strng{fullhash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \strng{bibnamehash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \strng{authorbibnamehash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \strng{authornamehash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \strng{authorfullhash}{258d1e6a3688c9abdae7a29c66bfa34a}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced mechanics of materials}
+      \field{volume}{6}
+      \field{year}{1993}
+    \endentry
+    \entry{datsko1977materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=25415021c7a2da5e2edfd65723a9a7cb}{%
+           family={Datsko},
+           familyi={D\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Ann Arbor, MI}%
+      }
+      \list{publisher}{1}{%
+        {Malloy}%
+      }
+      \strng{namehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{fullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{bibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorbibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authornamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorfullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \field{sortinit}{D}
+      \field{sortinithash}{2ef1bd9a78cc71eb74d7231c635177b8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials in design and manufacturing}
+      \field{year}{1977}
+    \endentry
+    \entry{hibbeler2013}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d4d01389497b8d1d6ca5779088f2c44c}{%
+           family={Hibbeler},
+           familyi={H\bibinitperiod},
+           given={R.\bibnamedelimi C.},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \strng{fullhash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \strng{bibnamehash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \strng{authorbibnamehash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \strng{authornamehash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \strng{authorfullhash}{d4d01389497b8d1d6ca5779088f2c44c}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{title}{Mechanics of Materials}
+      \field{year}{2013}
+    \endentry
+    \entry{juvinall2006fundamentals}{book}{}
+      \name{author}{2}{}{%
+        {{hash=afaa8209262f6abefe984119b2373c55}{%
+           family={Juvinall},
+           familyi={J\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=a470e42d85bfeadb84002475215d7e52}{%
+           family={Marshek},
+           familyi={M\bibinitperiod},
+           given={Kurt\bibnamedelima M},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {John Wiley \& Sons New York}%
+      }
+      \strng{namehash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \strng{fullhash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \strng{bibnamehash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \strng{authorbibnamehash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \strng{authornamehash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \strng{authorfullhash}{db90b7903f3c3600906c7dfd8aa0953f}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamentals of machine component design}
+      \field{volume}{83}
+      \field{year}{2006}
+    \endentry
+    \entry{shigley2004mechanical}{book}{}
+      \name{author}{3}{}{%
+        {{hash=154537605bea4c78cbed7695349193d9}{%
+           family={Shigley},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=ee05cec720edf713ef493bac4ce22fab}{%
+           family={Mischke},
+           familyi={M\bibinitperiod},
+           given={Charles\bibnamedelima R},
+           giveni={C\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+        {{hash=84d9617f0cb0f969c2936674e98eff6b}{%
+           family={Budynas},
+           familyi={B\bibinitperiod},
+           given={Richard\bibnamedelima G},
+           giveni={R\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{7d6dde8d34ad59093732bc3739f7234c}
+      \strng{fullhash}{7d6dde8d34ad59093732bc3739f7234c}
+      \strng{bibnamehash}{7d6dde8d34ad59093732bc3739f7234c}
+      \strng{authorbibnamehash}{7d6dde8d34ad59093732bc3739f7234c}
+      \strng{authornamehash}{7d6dde8d34ad59093732bc3739f7234c}
+      \strng{authorfullhash}{7d6dde8d34ad59093732bc3739f7234c}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanical engineering design}
+      \field{year}{2004}
+    \endentry
+    \entry{timoshenko1970theory}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f176b3819ffa4addacf4c5935859c839}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={SP},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3e0c10a74c45b2746ce9af0ba1739d26}{%
+           family={Goodier},
+           familyi={G\bibinitperiod},
+           given={JN},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{da8fde998960f47497869648cee85508}
+      \strng{fullhash}{da8fde998960f47497869648cee85508}
+      \strng{bibnamehash}{da8fde998960f47497869648cee85508}
+      \strng{authorbibnamehash}{da8fde998960f47497869648cee85508}
+      \strng{authornamehash}{da8fde998960f47497869648cee85508}
+      \strng{authorfullhash}{da8fde998960f47497869648cee85508}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Theory of Elasticity}
+      \field{year}{1970}
+    \endentry
+    \entry{timoshenko1959theory}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f2d21554dd543dac41bf0f42d193f8ba}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={Stephen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1e7af66671efdc6b8fb3b3408ad5d099}{%
+           family={Woinowsky-Krieger},
+           familyi={W\bibinithyphendelim K\bibinitperiod},
+           given={Sergius},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, NY}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{8a5290154d333b0e63e87fd15393af9b}
+      \strng{fullhash}{8a5290154d333b0e63e87fd15393af9b}
+      \strng{bibnamehash}{8a5290154d333b0e63e87fd15393af9b}
+      \strng{authorbibnamehash}{8a5290154d333b0e63e87fd15393af9b}
+      \strng{authornamehash}{8a5290154d333b0e63e87fd15393af9b}
+      \strng{authorfullhash}{8a5290154d333b0e63e87fd15393af9b}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{2}
+      \field{title}{Theory of plates and shells}
+      \field{year}{1959}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

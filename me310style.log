@@ -1,0 +1,5110 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.11.17)  30 NOV 2017 15:53
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**me310style.tex
+(./me310style.tex
+LaTeX2e <2017-04-15>
+Babel <3.15> and hyphenation patterns for 84 language(s) loaded.
+
+./me310style.tex:1: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage[utf8]{
+                      inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:11: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 geometry} % to change the page dimensions
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:12: Undefined control sequence.
+l.12 \geometry
+              {a4paper} % or letterpaper (US) or a5paper or....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:12: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \geometry{a
+                4paper} % or letterpaper (US) or a5paper or....
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+./me310style.tex:13: Undefined control sequence.
+l.13 \geometry
+              {margin=1in} % for example, change the margins to 2 inches all...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 12--16
+[]
+ []
+
+
+./me310style.tex:17: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \usepackage{
+                 graphicx} % support the \includegraphics command and options
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:19: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \usepackage[parfill]{
+                          parskip} % Activate to begin paragraphs with an em...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:22: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \usepackage{
+                 booktabs} % for much better looking tables
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:23: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 \usepackage{
+                 array} % for better arrays (eg matrices) in maths
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:25: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 \usepackage{
+                 enumitem}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:26: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \usepackage{
+                 verbatim} % adds environment for commenting out blocks of t...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:27: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \usepackage{
+                 subfig} % make it possible to include more than one caption...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:29: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \usepackage{
+                 colortbl}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:32: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \usepackage{
+                 fancyhdr} % This should be set AFTER setting up the page ge...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:33: Undefined control sequence.
+<argument> \undefinedpagestyle 
+                               
+l.33 \pagestyle{fancy}
+                       % options: empty , plain , fancy
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:34: LaTeX Error: \headrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.34 \renewcommand{\headrulewidth}
+                                  {1pt} % customise the layout...
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:35: LaTeX Error: \footrulewidth undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.35 \renewcommand{\footrulewidth}
+                                  {1pt}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./me310style.tex:36: Undefined control sequence.
+l.36 \lhead
+           {\rightmark}\chead{}\rhead{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:36: Undefined control sequence.
+l.36 \lhead{\rightmark}\chead
+                             {}\rhead{}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:36: Undefined control sequence.
+l.36 \lhead{\rightmark}\chead{}\rhead
+                                     {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:37: Undefined control sequence.
+l.37 \lfoot
+           {ME 310: Mechanical Design I}\cfoot{\thepage}\rfoot{S. Akamphon}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:37: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \lfoot{M
+             E 310: Mechanical Design I}\cfoot{\thepage}\rfoot{S. Akamphon}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no M in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no : in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no I in font nullfont!
+./me310style.tex:37: Undefined control sequence.
+l.37 \lfoot{ME 310: Mechanical Design I}\cfoot
+                                              {\thepage}\rfoot{S. Akamphon}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:37: Undefined control sequence.
+l.37 ...E 310: Mechanical Design I}\cfoot{\thepage
+                                                  }\rfoot{S. Akamphon}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:37: Undefined control sequence.
+l.37 ...Mechanical Design I}\cfoot{\thepage}\rfoot
+                                                  {S. Akamphon}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no S in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 37--38
+[]
+ []
+
+
+./me310style.tex:45: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 \usepackage[numbib]{
+                         tocbibind} % Put the bibliography in the ToC
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:46: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \usepackage[titles,subfigure]{
+                                   tocloft} % Alter the style of the Table o...
+
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:47: LaTeX Error: \cftpartfont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.47 \renewcommand{\cftpartfont}
+                                {\rmfamily\bfseries\upshape}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:48: LaTeX Error: \cftpartpagefont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.48 \renewcommand{\cftpartpagefont}
+                                    {\rmfamily\bfseries\upshape}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:49: LaTeX Error: \cftchapfont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 \renewcommand{\cftchapfont}
+                                {\rmfamily\bfseries\upshape}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:50: LaTeX Error: \cftchappagefont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.50 \renewcommand{\cftchappagefont}
+                                    {\rmfamily\bfseries\upshape}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:51: LaTeX Error: \cftsecfont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.51 \renewcommand{\cftsecfont}
+                               {\rmfamily\mdseries\upshape}
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:52: LaTeX Error: \cftsecpagefont undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.52 \renewcommand{\cftsecpagefont}
+                                   {\rmfamily\mdseries\upshape} % No bold!
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+./me310style.tex:60: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.60 \usepackage{
+                 newtxtext}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:61: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \usepackage{
+                 newtxmath}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:62: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.62 \usepackage{
+                 hyperref}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:63: Undefined control sequence.
+l.63 \hypersetup
+                {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:64: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.64   c
+        olorlinks,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 64--70
+[]
+ []
+
+
+./me310style.tex:73: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \usepackage{
+                 amsthm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:75: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \usepackage{
+                 bm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:76: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.76 \usepackage{
+                 multirow}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:77: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77 \usepackage{
+                 gensymb}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:78: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 \usepackage{
+                 wasysym}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:79: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \usepackage{
+                 array}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:80: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.80 \usepackage{
+                 cleveref}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:81: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.81 \usepackage{
+                 siunitx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:84: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.84 \usepackage[explicit]{
+                           titlesec}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:87: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.87 \usepackage{
+                 tikz}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:88: Undefined control sequence.
+l.88 \usetikzlibrary
+                    {arrows,calc,decorations,shapes,decorations.pathmorphing...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:88: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \usetikzlibrary{a
+                      rrows,calc,decorations,shapes,decorations.pathmorphing...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+./me310style.tex:89: Undefined control sequence.
+l.89 \tikzset
+             {>=latex}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no > in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no x in font nullfont!
+
+./me310style.tex:90: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.90 \usepackage{
+                 pgfplots}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 88--94
+[]
+ []
+
+./me310style.tex:95: Undefined control sequence.
+l.95 \definecolor
+                 {lightblue}{RGB}{180,220,255}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:95: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.95 \definecolor{l
+                   ightblue}{RGB}{180,220,255}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no G in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 8 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 5 in font nullfont!
+./me310style.tex:96: Undefined control sequence.
+l.96 \definecolor
+                 {titlepagecolor}{cmyk}{1,.60,0,.40}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 4 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+./me310style.tex:97: Undefined control sequence.
+l.97 \definecolor
+                 {namecolor}{cmyk}{1,.50,0,.10}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 95--98
+[]
+ []
+
+./me310style.tex:99: Undefined control sequence.
+l.99 \titleformat
+                 {\chapter}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:99: Undefined control sequence.
+l.99 \titleformat{\chapter
+                          }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:100: Undefined control sequence.
+l.100 {\huge
+            \bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:101: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.101 {}{0
+          pt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+./me310style.tex:102: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 {\begin{tikzpicture}
+                          [remember picture,overlay]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:103: Undefined control sequence.
+l.103     \node
+               [yshift=-3cm] at (current page.north west)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+./me310style.tex:104: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.104     {\begin{tikzpicture}
+                              [remember picture,overlay]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:105: Undefined control sequence.
+l.105         \path
+                   [fill=lightblue] (0,0) rectangle (\paperwidth,3cm) ;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+./me310style.tex:106: Undefined control sequence.
+l.106         \node
+                   [anchor=east,xshift=.9\paperwidth,rectangle,rounded corne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+./me310style.tex:106: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   r
+l.106 ... \node[anchor=east,xshift=.9\paperwidth,r
+                                                  ectangle,rounded corners=5...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:106: Undefined control sequence.
+l.106 ...5pt,inner sep=11pt,fill=RoyalBlue]{\color
+                                                  {white}#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+./me310style.tex:106: You can't use `macro parameter character #' in horizontal
+ mode.
+l.106 ...r sep=11pt,fill=RoyalBlue]{\color{white}#
+                                                  1};
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ; in font nullfont!
+./me310style.tex:107: Undefined control sequence.
+l.107         \node
+                   [right, xshift=1cm]{\scalebox{4}{\Huge\thechapter}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:107: Undefined control sequence.
+l.107         \node[right, xshift=1cm]{\scalebox
+                                                {4}{\Huge\thechapter}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 4 in font nullfont!
+./me310style.tex:107: Undefined control sequence.
+l.107 ...ode[right, xshift=1cm]{\scalebox{4}{\Huge
+                                                  \thechapter}};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:107: Undefined control sequence.
+l.107 ...xshift=1cm]{\scalebox{4}{\Huge\thechapter
+                                                  }};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:108: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108       \end{tikzpicture}
+                             };
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:109: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.109   \end{tikzpicture}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 101--111
+[]
+ []
+
+./me310style.tex:112: Undefined control sequence.
+l.112 \titleformat
+                  {name=\chapter,numberless}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:112: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 \titleformat{n
+                    ame=\chapter,numberless}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+./me310style.tex:112: Undefined control sequence.
+l.112 \titleformat{name=\chapter
+                                ,numberless}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+./me310style.tex:113: Undefined control sequence.
+l.113 {\huge
+            \bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+./me310style.tex:115: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 {\begin{tikzpicture}
+                          [remember picture,overlay]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:116: Undefined control sequence.
+l.116     \node
+               [yshift=-3cm] at (current page.north west)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+
+./me310style.tex:117: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.117     {\begin{tikzpicture}
+                              [remember picture,overlay]
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:118: Undefined control sequence.
+l.118         \path
+                   [fill=lightblue] (0,0) rectangle (\paperwidth,3cm) ;
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+./me310style.tex:119: Undefined control sequence.
+l.119         \node
+                   [anchor=east,xshift=.9\paperwidth,rectangle,rounded corne...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no x in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 9 in font nullfont!
+./me310style.tex:119: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   r
+l.119 ... \node[anchor=east,xshift=.9\paperwidth,r
+                                                  ectangle,rounded corners=5...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:119: Undefined control sequence.
+l.119 ...5pt,inner sep=11pt,fill=RoyalBlue]{\color
+                                                  {white}#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+./me310style.tex:119: You can't use `macro parameter character #' in horizontal
+ mode.
+l.119 ...r sep=11pt,fill=RoyalBlue]{\color{white}#
+                                                  1};
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:120: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120       \end{tikzpicture}
+                             };
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:121: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121   \end{tikzpicture}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 112--123
+[]
+ []
+
+./me310style.tex:124: Undefined control sequence.
+l.124 \titlespacing
+                   *{\chapter}{0pt}{50pt}{-10pt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:124: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 \titlespacing*
+                    {\chapter}{0pt}{50pt}{-10pt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+./me310style.tex:124: Undefined control sequence.
+l.124 \titlespacing*{\chapter
+                             }{0pt}{50pt}{-10pt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 124--125
+[] 
+ []
+
+./me310style.tex:128: Undefined control sequence.
+l.128 \titleformat
+                  {\section}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:128: Undefined control sequence.
+l.128 \titleformat{\section
+                           }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:129: Undefined control sequence.
+l.129 {\Large
+             \bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:130: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.130 {}{0
+          pt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+./me310style.tex:131: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.131 {\begin{tikzpicture}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:132: Undefined control sequence.
+l.132     \node
+               [fill=lightblue, rectangle, minimum height=1.5cm, minimum wid...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+./me310style.tex:132: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.132 ...m height=1.5cm, minimum width=\textwidth]
+                                                  (A){};
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./me310style.tex:132: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.132 ...m height=1.5cm, minimum width=\textwidth]
+                                                  (A){};
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+./me310style.tex:133: Undefined control sequence.
+l.133     \node
+                at (A.west) [fill=RoyalBlue, anchor=west]{\color{white}\thes...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:133: Undefined control sequence.
+l.133 ...est) [fill=RoyalBlue, anchor=west]{\color
+                                                  {white}\thesection\quad#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+./me310style.tex:133: Undefined control sequence.
+l.133 ...ue, anchor=west]{\color{white}\thesection
+                                                  \quad#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:133: You can't use `macro parameter character #' in horizontal
+ mode.
+l.133 ...chor=west]{\color{white}\thesection\quad#
+                                                  1};
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:134: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.134   \end{tikzpicture}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 130--136
+[]
+ []
+
+./me310style.tex:137: Undefined control sequence.
+l.137 \titleformat
+                  {name=\section, numberless}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:137: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.137 \titleformat{n
+                    ame=\section, numberless}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+./me310style.tex:137: Undefined control sequence.
+l.137 \titleformat{name=\section
+                                , numberless}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no , in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no s in font nullfont!
+./me310style.tex:138: Undefined control sequence.
+l.138 {\Large
+             \bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+./me310style.tex:140: LaTeX Error: Environment tikzpicture undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 {\begin{tikzpicture}
+                          
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:141: Undefined control sequence.
+l.141     \node
+               [fill=lightblue, rectangle, minimum height=1.5cm, minimum wid...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 5 in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+./me310style.tex:141: Missing number, treated as zero.
+<to be read again> 
+                   ]
+l.141 ...m height=1.5cm, minimum width=\textwidth]
+                                                  (A){};
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./me310style.tex:141: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   ]
+l.141 ...m height=1.5cm, minimum width=\textwidth]
+                                                  (A){};
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+Missing character: There is no ] in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ; in font nullfont!
+./me310style.tex:142: Undefined control sequence.
+l.142     \node
+                at (A.west) [fill=RoyalBlue, anchor=west]{\color{white}#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ( in font nullfont!
+Missing character: There is no A in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+./me310style.tex:142: Undefined control sequence.
+l.142 ...est) [fill=RoyalBlue, anchor=west]{\color
+                                                  {white}#1};
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no w in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+./me310style.tex:142: You can't use `macro parameter character #' in horizontal
+ mode.
+l.142 ...ll=RoyalBlue, anchor=west]{\color{white}#
+                                                  1};
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ; in font nullfont!
+
+./me310style.tex:143: LaTeX Error: \begin{document} ended by \end{tikzpicture}.
+
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.143   \end{tikzpicture}
+                         
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 137--145
+[]
+ []
+
+./me310style.tex:146: Undefined control sequence.
+l.146 \titlespacing
+                   *{\section}{0pt}{20pt}{-10pt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:146: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.146 \titlespacing*
+                    {\section}{0pt}{20pt}{-10pt}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no * in font nullfont!
+./me310style.tex:146: Undefined control sequence.
+l.146 \titlespacing*{\section
+                             }{0pt}{20pt}{-10pt}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 146--147
+[] 
+ []
+
+./me310style.tex:150: Undefined control sequence.
+l.150 \titleformat
+                  {\subsection}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:150: Undefined control sequence.
+l.150 \titleformat{\subsection
+                              }
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:151: Undefined control sequence.
+l.151 {\large
+             \color{RoyalBlue}\bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:151: Undefined control sequence.
+l.151 {\large\color
+                   {RoyalBlue}\bfseries}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:151: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 {\large\color{R
+                     oyalBlue}\bfseries}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no B in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no e in font nullfont!
+./me310style.tex:152: Undefined control sequence.
+l.152 {\thesubsection
+                     }{10pt}{#1}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+./me310style.tex:152: You can't use `macro parameter character #' in horizontal
+ mode.
+l.152 {\thesubsection}{10pt}{#
+                              1}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 151--153
+[]
+ []
+
+./me310style.tex:155: Undefined control sequence.
+l.155 \newcolumntype
+                    {L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspac...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:155: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \newcolumntype{L
+                      }[1]{>{\raggedright\let\newline\\\arraybackslash\hspac...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no L in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no > in font nullfont!
+./me310style.tex:155: Undefined control sequence.
+l.155 ...\raggedright\let\newline\\\arraybackslash
+                                                  \hspace{0pt}}m{#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+./me310style.tex:155: You can't use `macro parameter character #' in horizontal
+ mode.
+l.155 ...\newline\\\arraybackslash\hspace{0pt}}m{#
+                                                  1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+./me310style.tex:156: Undefined control sequence.
+l.156 \newcolumntype
+                    {C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no C in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no > in font nullfont!
+./me310style.tex:156: Undefined control sequence.
+l.156 ...>{\centering\let\newline\\\arraybackslash
+                                                  \hspace{0pt}}m{#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+./me310style.tex:156: You can't use `macro parameter character #' in horizontal
+ mode.
+l.156 ...\newline\\\arraybackslash\hspace{0pt}}m{#
+                                                  1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+./me310style.tex:157: Undefined control sequence.
+l.157 \newcolumntype
+                    {R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no R in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no > in font nullfont!
+./me310style.tex:157: Undefined control sequence.
+l.157 ...{\raggedleft\let\newline\\\arraybackslash
+                                                  \hspace{0pt}}m{#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no m in font nullfont!
+./me310style.tex:157: You can't use `macro parameter character #' in horizontal
+ mode.
+l.157 ...\newline\\\arraybackslash\hspace{0pt}}m{#
+                                                  1}}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+Missing character: There is no 1 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 155--158
+[]
+ []
+
+
+./me310style.tex:160: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.160 \usepackage{
+                  thmtools}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:161: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161 \usepackage{
+                  mdframed}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+./me310style.tex:162: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162 \usepackage{
+                  float}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:163: Undefined control sequence.
+l.163 \declaretheoremstyle
+                          [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:163: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.163 \declaretheoremstyle[
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+
+./me310style.tex:170: LaTeX Error: Environment mdframed undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170 preheadhook={\begin{mdframed}
+                                   [backgroundcolor=lightblue,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:172: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   s
+l.172     sk
+            ipbelow= 0pt, skipabove=6pt, %
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./me310style.tex:173: Extra }, or forgotten \endgroup.
+l.173 ...,leftline=false,rightline=false] \sloppy}
+                                                  ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./me310style.tex:174: LaTeX Error: \begin{document} ended by \end{mdframed}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174   postfoothook=\end{mdframed}
+                                   ,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:177: Undefined control sequence.
+l.177 \declaretheoremstyle
+                          [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:183: LaTeX Error: Environment mdframed undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 preheadhook={\begin{mdframed}
+                                   [backgroundcolor=lightblue,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:185: Illegal unit of measure (pt inserted).
+<to be read again> 
+                   s
+l.185     sk
+            ipbelow=6pt, skipabove=0pt, %
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+./me310style.tex:186: Extra }, or forgotten \endgroup.
+l.186 ...,leftline=false,rightline=false] \sloppy}
+                                                  ,
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+./me310style.tex:187: LaTeX Error: \begin{document} ended by \end{mdframed}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.187   postfoothook=\end{mdframed}
+                                   ,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+./me310style.tex:191: Undefined control sequence.
+l.191 \declaretheorem
+                     [style=exstyle]{example}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:192: Undefined control sequence.
+l.192 \declaretheorem
+                     [style=solstyle]{solution}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 163--193
+[]
+ []
+
+
+Overfull \hbox (3.19443pt too wide) in paragraph at lines 163--193
+\OT1/cmr/bx/n/10 ,
+ []
+
+
+Overfull \hbox (25.71515pt too wide) in paragraph at lines 163--193
+\OT1/cmr/bx/n/10 note-
+ []
+
+
+Overfull \hbox (31.52763pt too wide) in paragraph at lines 163--193
+\OT1/cmr/bx/n/10 font=\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.22226pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 note-
+ []
+
+
+Overfull \hbox (45.63898pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 braces=(),
+ []
+
+
+Overfull \hbox (25.27786pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 body-
+ []
+
+
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 font=,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 headspace=1em,
+ []
+
+
+Overfull \hbox (22.50005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (17.5278pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ber-
+ []
+
+
+Overfull \hbox (70.86127pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 within=chapter,
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 pre-
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (152.00041pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 hook=[backgroundcolor=lightblue,
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ner-
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 top-
+ []
+
+
+Overfull \hbox (20.58337pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 mar-
+ []
+
+
+Overfull \hbox (35.55566pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 gin=6pt
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.27782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 split-
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 top-
+ []
+
+
+Overfull \hbox (75.66685pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 skip=skipbelow=
+ []
+
+
+Overfull \hbox (17.22227pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 0pt,
+ []
+
+
+Overfull \hbox (67.55574pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 skipabove=6pt,
+ []
+
+
+Overfull \hbox (262.75064pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 topline=false,bottomline=false,leftline=false,rightline=false]
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (48.88907pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 foothook=,
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (32.77786pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 punct=
+ []
+
+
+Overfull \hbox (32.55562pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ]exstyle
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 [
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (50.00014pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 above=6pt,
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (39.72232pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 low=6pt,
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (28.1945pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 font=\OT1/cmr/bx/n/10 ,
+ []
+
+
+Overfull \hbox (25.71515pt too wide) in paragraph at lines 163--193
+\OT1/cmr/bx/n/10 note-
+ []
+
+
+Overfull \hbox (31.52763pt too wide) in paragraph at lines 163--193
+\OT1/cmr/bx/n/10 font=\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.22226pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 note-
+ []
+
+
+Overfull \hbox (45.63898pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 braces=(),
+ []
+
+
+Overfull \hbox (25.27786pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 body-
+ []
+
+
+Overfull \hbox (27.77786pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 font=,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 headspace=1em,
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 pre-
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (152.00041pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 hook=[backgroundcolor=lightblue,
+ []
+
+
+Overfull \hbox (11.66669pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 in-
+ []
+
+
+Overfull \hbox (17.25002pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ner-
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 top-
+ []
+
+
+Overfull \hbox (20.58337pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 mar-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 gin
+ []
+
+
+Overfull \hbox (22.22229pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 =6pt
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.27782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 split-
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 top-
+ []
+
+
+Overfull \hbox (17.5556pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 skip
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (20.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 skip-
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (39.72232pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 low=6pt,
+ []
+
+
+Overfull \hbox (67.55574pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 skipabove=0pt,
+ []
+
+
+Overfull \hbox (262.75064pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 topline=false,bottomline=false,leftline=false,rightline=false]
+ []
+
+
+Overfull \hbox (2.77779pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (48.88907pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 foothook=,
+ []
+
+
+Overfull \hbox (23.88893pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (35.55565pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 punct=,
+ []
+
+
+Overfull \hbox (22.50005pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (42.52788pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 bered=no
+ []
+
+
+Overfull \hbox (17.83336pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 ]sol-
+ []
+
+
+Overfull \hbox (20.05559pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 style
+ []
+
+
+Overfull \hbox (99.00021pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 [style=exstyle]example
+ []
+
+
+Overfull \hbox (99.66689pt too wide) in paragraph at lines 163--193
+\OT1/cmr/m/n/10 [style=solstyle]solution 
+ []
+
+./me310style.tex:195: Undefined control sequence.
+l.195 \newlist
+              {exercises}{enumerate}{2}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:195: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.195 \newlist{e
+                xercises}{enumerate}{2}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./me310style.tex:196: Undefined control sequence.
+l.196 \setlist
+              [exercises]{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:197: Undefined control sequence.
+<recently read> \thechapter 
+                            
+l.197   label=\textbf{\thechapter-\arabic*}
+                                           ~,  % Label: Exercise C.E
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:197: Missing number, treated as zero.
+<to be read again> 
+                   \c@* 
+l.197   label=\textbf{\thechapter-\arabic*}
+                                           ~,  % Label: Exercise C.E
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+./me310style.tex:198: Undefined control sequence.
+l.198   ref=\thechapter
+                       -\arabic*, % References: C.E (important!)
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:198: Missing number, treated as zero.
+<to be read again> 
+                   \c@* 
+l.198   ref=\thechapter-\arabic*
+                                , % References: C.E (important!)
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+
+Overfull \hbox (107.94456pt too wide) in paragraph at lines 195--204
+[]\OT1/cmr/m/n/10 exercisesenumerate2
+ []
+
+
+Overfull \hbox (15.83336pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 [ex-
+ []
+
+
+Overfull \hbox (11.69444pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 er-
+ []
+
+
+Overfull \hbox (54.77785pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 cises]label=\OT1/cmr/bx/n/10 -
+ []
+
+
+Overfull \hbox (10.74997pt too wide) in paragraph at lines 195--204
+\OT1/cmr/bx/n/10 0 \OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.52782pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 ref=-
+ []
+
+
+Overfull \hbox (7.7778pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 0,
+ []
+
+
+Overfull \hbox (45.83347pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 align=left,
+ []
+
+
+Overfull \hbox (11.11113pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 la-
+ []
+
+
+Overfull \hbox (24.72227pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 belin-
+ []
+
+
+Overfull \hbox (44.16678pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 dent=0pt,
+ []
+
+
+Overfull \hbox (17.50003pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 left-
+ []
+
+
+Overfull \hbox (20.58337pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 mar-
+ []
+
+
+Overfull \hbox (38.33345pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 gin=0pt,
+ []
+
+
+Overfull \hbox (14.44446pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 ite-
+ []
+
+
+Overfull \hbox (49.1668pt too wide) in paragraph at lines 195--204
+\OT1/cmr/m/n/10 mindent=!,
+ []
+
+./me310style.tex:211: Undefined control sequence.
+l.211 \SetLabelAlign
+                    {parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:211: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.211 \SetLabelAlign{p
+                      arright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./me310style.tex:211: You can't use `macro parameter character #' in internal v
+ertical mode.
+<argument> ...pdima \@parboxrestore \raggedleft ##
+                                                  1\@@par 
+l.211 ...t}{\parbox[t]{\labelwidth}{\raggedleft#1}
+                                                  }
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (5.00002pt too wide) in paragraph at lines 211--211
+ []\OT1/cmr/m/n/10 1
+ []
+
+
+Overfull \hbox (55.33342pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/m/n/10 parright[] 
+ []
+
+./me310style.tex:213: Undefined control sequence.
+l.213 \setlist
+              [description]{style=multiline,leftmargin=5cm,font=\bfseries,%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:213: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.213 \setlist[
+               description]{style=multiline,leftmargin=5cm,font=\bfseries,%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (317.91678pt too wide) in paragraph at lines 213--215
+[]\OT1/cmr/m/n/10 [description]style=multiline,leftmargin=5cm,font=\OT1/cmr/bx/
+n/10 ,align=parright 
+ []
+
+./me310style.tex:217: Undefined control sequence.
+l.217 \tikzset
+              {/pgf/decoration/.cd,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:217: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.217 \tikzset{/
+                pgf/decoration/.cd,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+./me310style.tex:225: Undefined control sequence.
+l.225 \pgfdeclaredecoration
+                           {screw}{initial}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:227: Undefined control sequence.
+l.227   \state
+              {initial}[width=\pgfkeysvalueof{/pgf/decoration/head length},%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:227: Undefined control sequence.
+l.227   \state{initial}[width=\pgfkeysvalueof
+                                             {/pgf/decoration/head length},%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:240: Undefined control sequence.
+l.240     \pgfpathlineto
+                        {\pgfpoint{0.0pt}{\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:240: Undefined control sequence.
+l.240     \pgfpathlineto{\pgfpoint
+                                  {0.0pt}{\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:240: Undefined control sequence.
+\headwidth ->\pgfkeysvalueof 
+                             {/pgf/decoration/head width}
+l.240 ...pgfpathlineto{\pgfpoint{0.0pt}{\headwidth
+                                                  /2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:241: Undefined control sequence.
+l.241     \pgfpathlineto
+                        {\pgfpoint{\headlength}{\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:241: Undefined control sequence.
+l.241     \pgfpathlineto{\pgfpoint
+                                  {\headlength}{\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:241: Undefined control sequence.
+\headlength ->\pgfkeysvalueof 
+                              {/pgf/decoration/head length}
+l.241     \pgfpathlineto{\pgfpoint{\headlength
+                                              }{\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:241: Undefined control sequence.
+\headwidth ->\pgfkeysvalueof 
+                             {/pgf/decoration/head width}
+l.241 ...hlineto{\pgfpoint{\headlength}{\headwidth
+                                                  /2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:242: Undefined control sequence.
+l.242     \pgfpathlineto
+                        {\pgfpoint{\headlength}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:242: Undefined control sequence.
+l.242     \pgfpathlineto{\pgfpoint
+                                  {\headlength}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:242: Undefined control sequence.
+\headlength ->\pgfkeysvalueof 
+                              {/pgf/decoration/head length}
+l.242     \pgfpathlineto{\pgfpoint{\headlength
+                                              }{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:242: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.242 ...ineto{\pgfpoint{\headlength}{\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:244: Undefined control sequence.
+l.244     \pgfpathmoveto
+                        {\pgfpoint{0.0pt}{0.0pt}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:244: Undefined control sequence.
+l.244     \pgfpathmoveto{\pgfpoint
+                                  {0.0pt}{0.0pt}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:245: Undefined control sequence.
+l.245     \pgfpathlineto
+                        {\pgfpoint{0.0pt}{-\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:245: Undefined control sequence.
+l.245     \pgfpathlineto{\pgfpoint
+                                  {0.0pt}{-\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:245: Undefined control sequence.
+\headwidth ->\pgfkeysvalueof 
+                             {/pgf/decoration/head width}
+l.245 ...gfpathlineto{\pgfpoint{0.0pt}{-\headwidth
+                                                  /2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:246: Undefined control sequence.
+l.246     \pgfpathlineto
+                        {\pgfpoint{\headlength}{-\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:246: Undefined control sequence.
+l.246     \pgfpathlineto{\pgfpoint
+                                  {\headlength}{-\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:246: Undefined control sequence.
+\headlength ->\pgfkeysvalueof 
+                              {/pgf/decoration/head length}
+l.246     \pgfpathlineto{\pgfpoint{\headlength
+                                              }{-\headwidth/2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:246: Undefined control sequence.
+\headwidth ->\pgfkeysvalueof 
+                             {/pgf/decoration/head width}
+l.246 ...lineto{\pgfpoint{\headlength}{-\headwidth
+                                                  /2}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:247: Undefined control sequence.
+l.247     \pgfpathlineto
+                        {\pgfpoint{\headlength}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:247: Undefined control sequence.
+l.247     \pgfpathlineto{\pgfpoint
+                                  {\headlength}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:247: Undefined control sequence.
+\headlength ->\pgfkeysvalueof 
+                              {/pgf/decoration/head length}
+l.247     \pgfpathlineto{\pgfpoint{\headlength
+                                              }{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:247: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.247 ...neto{\pgfpoint{\headlength}{-\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:249: Undefined control sequence.
+l.249   \state
+              {midd}[width=\pgfkeysvalueof{/pgf/decoration/thread separation...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:249: Undefined control sequence.
+l.249   \state{midd}[width=\pgfkeysvalueof
+                                          {/pgf/decoration/thread separation...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:261: Undefined control sequence.
+l.261     \pgfpathmoveto
+                        {\pgfpoint{0pt}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:261: Undefined control sequence.
+l.261     \pgfpathmoveto{\pgfpoint
+                                  {0pt}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:261: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.261 ...pgfpathmoveto{\pgfpoint{0pt}{\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:262: Undefined control sequence.
+l.262     \pgfpathlineto
+                        {\pgfpoint{0.5*\threadseparation}{\screwradius+\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:262: Undefined control sequence.
+l.262     \pgfpathlineto{\pgfpoint
+                                  {0.5*\threadseparation}{\screwradius+\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:262: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.262 ...athlineto{\pgfpoint{0.5*\threadseparation
+                                                  }{\screwradius+\threadampl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:262: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.262 ...point{0.5*\threadseparation}{\screwradius
+                                                  +\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:262: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.262 ...separation}{\screwradius+\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:263: Undefined control sequence.
+l.263     \pgfpathlineto
+                        {\pgfpoint{1.0*\threadseparation}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:263: Undefined control sequence.
+l.263     \pgfpathlineto{\pgfpoint
+                                  {1.0*\threadseparation}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:263: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.263 ...athlineto{\pgfpoint{1.0*\threadseparation
+                                                  }{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:263: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.263 ...point{1.0*\threadseparation}{\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:264: Undefined control sequence.
+l.264     \pgfpathlineto
+                        {\pgfpoint{1.5*\threadseparation}{\screwradius-\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:264: Undefined control sequence.
+l.264     \pgfpathlineto{\pgfpoint
+                                  {1.5*\threadseparation}{\screwradius-\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:264: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.264 ...athlineto{\pgfpoint{1.5*\threadseparation
+                                                  }{\screwradius-\threadampl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:264: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.264 ...point{1.5*\threadseparation}{\screwradius
+                                                  -\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:264: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.264 ...separation}{\screwradius-\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:265: Undefined control sequence.
+l.265     \pgfpathlineto
+                        {\pgfpoint{2.0*\threadseparation}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:265: Undefined control sequence.
+l.265     \pgfpathlineto{\pgfpoint
+                                  {2.0*\threadseparation}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:265: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.265 ...athlineto{\pgfpoint{2.0*\threadseparation
+                                                  }{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:265: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.265 ...point{2.0*\threadseparation}{\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:267: Undefined control sequence.
+l.267     \pgfpathmoveto
+                        {\pgfpoint{0pt}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:267: Undefined control sequence.
+l.267     \pgfpathmoveto{\pgfpoint
+                                  {0pt}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:267: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.267 ...gfpathmoveto{\pgfpoint{0pt}{-\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:268: Undefined control sequence.
+l.268     \pgfpathlineto
+                        {\pgfpoint{0.5*\threadseparation}{-\screwradius-\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:268: Undefined control sequence.
+l.268     \pgfpathlineto{\pgfpoint
+                                  {0.5*\threadseparation}{-\screwradius-\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:268: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.268 ...athlineto{\pgfpoint{0.5*\threadseparation
+                                                  }{-\screwradius-\threadamp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:268: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.268 ...oint{0.5*\threadseparation}{-\screwradius
+                                                  -\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:268: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.268 ...eparation}{-\screwradius-\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:269: Undefined control sequence.
+l.269     \pgfpathlineto
+                        {\pgfpoint{1.0*\threadseparation}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:269: Undefined control sequence.
+l.269     \pgfpathlineto{\pgfpoint
+                                  {1.0*\threadseparation}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:269: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.269 ...athlineto{\pgfpoint{1.0*\threadseparation
+                                                  }{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:269: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.269 ...oint{1.0*\threadseparation}{-\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:270: Undefined control sequence.
+l.270     \pgfpathlineto
+                        {\pgfpoint{1.5*\threadseparation}{-\screwradius+\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:270: Undefined control sequence.
+l.270     \pgfpathlineto{\pgfpoint
+                                  {1.5*\threadseparation}{-\screwradius+\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:270: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.270 ...athlineto{\pgfpoint{1.5*\threadseparation
+                                                  }{-\screwradius+\threadamp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:270: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.270 ...oint{1.5*\threadseparation}{-\screwradius
+                                                  +\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:270: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.270 ...eparation}{-\screwradius+\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:271: Undefined control sequence.
+l.271     \pgfpathlineto
+                        {\pgfpoint{2.0*\threadseparation}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:271: Undefined control sequence.
+l.271     \pgfpathlineto{\pgfpoint
+                                  {2.0*\threadseparation}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:271: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.271 ...athlineto{\pgfpoint{2.0*\threadseparation
+                                                  }{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:271: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.271 ...oint{2.0*\threadseparation}{-\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:273: Undefined control sequence.
+l.273     \pgfpathmoveto
+                        {\pgfpoint{0.5*\threadseparation}{\screwradius+\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:273: Undefined control sequence.
+l.273     \pgfpathmoveto{\pgfpoint
+                                  {0.5*\threadseparation}{\screwradius+\thre...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:273: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.273 ...athmoveto{\pgfpoint{0.5*\threadseparation
+                                                  }{\screwradius+\threadampl...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:273: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.273 ...point{0.5*\threadseparation}{\screwradius
+                                                  +\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:273: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.273 ...separation}{\screwradius+\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:274: Undefined control sequence.
+l.274     \pgfpathlineto
+                        {\pgfpoint{1.5*\threadseparation}{-\screwradius+\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:274: Undefined control sequence.
+l.274     \pgfpathlineto{\pgfpoint
+                                  {1.5*\threadseparation}{-\screwradius+\thr...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:274: Undefined control sequence.
+\threadseparation ->\pgfkeysvalueof 
+                                    {/pgf/decoration/thread separation}
+l.274 ...athlineto{\pgfpoint{1.5*\threadseparation
+                                                  }{-\screwradius+\threadamp...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:274: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.274 ...oint{1.5*\threadseparation}{-\screwradius
+                                                  +\threadamplitude}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:274: Undefined control sequence.
+\threadamplitude ->\pgfkeysvalueof 
+                                   {/pgf/decoration/thread amplitude}
+l.274 ...eparation}{-\screwradius+\threadamplitude
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:276: Undefined control sequence.
+l.276   \state
+              {final}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:282: Undefined control sequence.
+l.282     \pgfpathmoveto
+                        {\pgfpoint{0pt}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:282: Undefined control sequence.
+l.282     \pgfpathmoveto{\pgfpoint
+                                  {0pt}{\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:282: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.282 ...pgfpathmoveto{\pgfpoint{0pt}{\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:283: Undefined control sequence.
+l.283     \pgfpathlineto
+                        {\pgfpoint{\screwradius/2}{0pt}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:283: Undefined control sequence.
+l.283     \pgfpathlineto{\pgfpoint
+                                  {\screwradius/2}{0pt}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:283: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.283     \pgfpathlineto{\pgfpoint{\screwradius
+                                               /2}{0pt}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:284: Undefined control sequence.
+l.284     \pgfpathlineto
+                        {\pgfpoint{0pt}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:284: Undefined control sequence.
+l.284     \pgfpathlineto{\pgfpoint
+                                  {0pt}{-\screwradius}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+./me310style.tex:284: Undefined control sequence.
+\screwradius ->\pgfkeysvalueof 
+                               {/pgf/decoration/screw radius}
+l.284 ...gfpathlineto{\pgfpoint{0pt}{-\screwradius
+                                                  }}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (109.75023pt too wide) in paragraph at lines 217--287
+[]\OT1/cmr/m/n/10 /pgf/decoration/.cd,
+ []
+
+
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 head
+ []
+
+
+Overfull \hbox (83.33357pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 width/.initial=6pt,
+ []
+
+
+Overfull \hbox (20.5556pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 head
+ []
+
+
+Overfull \hbox (93.3336pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length/.initial=1.5pt,
+ []
+
+
+Overfull \hbox (28.36118pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (83.33359pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/.initial=1.0pt,
+ []
+
+
+Overfull \hbox (28.36118pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (85.5558pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude/.initial=0.5pt,
+ []
+
+
+Overfull \hbox (23.97223pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (83.94469pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius/.initial=1.2pt,
+ []
+
+
+Overfull \hbox (38.4167pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 screwini-
+ []
+
+
+Overfull \hbox (14.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tial
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ini-
+ []
+
+
+Overfull \hbox (144.75038pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tial[width=/pgf/decoration/head
+ []
+
+
+Overfull \hbox (49.1668pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length,next
+ []
+
+
+Overfull \hbox (53.94458pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 state=midd]
+ []
+
+
+Overfull \hbox (116.97253pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.0pt/pgf/decoration/head
+ []
+
+
+Overfull \hbox (35.00009pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 width/2
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (121.97253pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length/pgf/decoration/head
+ []
+
+
+Overfull \hbox (35.00009pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 width/2
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (125.38916pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (44.44458pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.0pt0.0pt
+ []
+
+
+Overfull \hbox (25.55562pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.0pt-
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (35.00009pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 width/2
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (30.55562pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length-
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (35.00009pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 width/2
+ []
+
+
+Overfull \hbox (94.75024pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/head
+ []
+
+
+Overfull \hbox (30.55562pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 length-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (160.33376pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 midd[width=/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (30.00009pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion*2]
+ []
+
+
+Overfull \hbox (112.61136pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0pt/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (115.38914pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (128.16699pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius+/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 1.0*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (115.38914pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 1.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (115.38914pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (30.08339pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 radius-
+ []
+
+
+Overfull \hbox (102.55582pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 2.0*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (115.38914pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0pt-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (48.41676pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 separation-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (30.08339pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 radius-
+ []
+
+
+Overfull \hbox (102.55582pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 1.0*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (48.41676pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 separation-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 1.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (48.41676pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 separation-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (128.16699pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius+/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 2.0*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (48.41676pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 separation-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (17.27779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 sep-
+ []
+
+
+Overfull \hbox (8.33334pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 a-
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (115.38914pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tion/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (128.16699pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius+/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (120.33365pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 1.5*/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (48.41676pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 separation-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (128.16699pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius+/pgf/decoration/thread
+ []
+
+
+Overfull \hbox (16.6667pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 am-
+ []
+
+
+Overfull \hbox (14.44447pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 pli-
+ []
+
+
+Overfull \hbox (19.44449pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 tude
+ []
+
+
+Overfull \hbox (8.8889pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 fi-
+ []
+
+
+Overfull \hbox (13.33337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 nal
+ []
+
+
+Overfull \hbox (112.61136pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0pt/pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (42.2779pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius/20pt
+ []
+
+
+Overfull \hbox (17.77782pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 0pt-
+ []
+
+
+Overfull \hbox (98.16687pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 /pgf/decoration/screw
+ []
+
+
+Overfull \hbox (12.25002pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 ra-
+ []
+
+
+Overfull \hbox (17.83337pt too wide) in paragraph at lines 217--287
+\OT1/cmr/m/n/10 dius
+ []
+
+
+./me310style.tex:287: LaTeX Error: The font size command \normalsize is not def
+ined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.287 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1{/home/sup/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+./me310style.tex:290: LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 \usepackage[style=numeric,backend=biber]{
+                                               biblatex}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+./me310style.tex:291: Undefined control sequence.
+l.291 \addbibresource
+                     {me310.bib}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+./me310style.tex:291: LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.291 \addbibresource{m
+                       e310.bib}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (64.44456pt too wide) in paragraph at lines 291--292
+[]\OT1/cmr/m/n/10 me310.bib 
+ []
+
+)
+! Emergency stop.
+<*> me310style.tex
+                  
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 38 strings out of 492985
+ 480 string characters out of 6133050
+ 61187 words of memory out of 5000000
+ 3698 multiletter control sequences out of 15000+600000
+ 3948 words of font info for 15 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 15i,4n,14p,142b,110s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
