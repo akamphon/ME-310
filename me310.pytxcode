@@ -1,0 +1,47 @@
+=>PYTHONTEX#py#default#default#0#code#####4106#
+    F = 100000
+    L = 4
+    M = F*L/8
+    Ns = 3
+
+    print(r'The bending moment caused by the midpoint load is %d N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.\\' %M)
+
+    sigmaallow = 300 * 10**6 / Ns
+    designation = ['S610 x 149', 'S510 x 143', 'S460 x 104', 'S380 x 74', 'S310 x 74', 'S250 x 52']
+    Area = [18900*10**-6, 18200*10**-6, 13200*10**-6, 9480*10**-6, 9420*10**-6, 6650*10**-6]
+    S = [3260 * 10**-6, 2700 * 10**-6, 1690*10**-6, 1060*10**-6, 829*10**-6, 482*10**-6]
+    print(r'\begin{center}')
+    print(r'\begin{tabular}{lccc}')
+    print(r'\toprule')
+    print(r'Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a}{(\sigma_a)_{allow}} + \dfrac{\sigma_b}{(\sigma_b)_{allow}}$ \\')
+    print('\midrule')
+    for i in range(6):
+        print(r'%s & %.2f & %.2f & %.2f \\' %(designation[i],F/Area[i]/10**6,M/S[i]/10**6,(F/Area[i] + M/S[i])/sigmaallow))
+    print(r'\bottomrule')
+    print(r'\end{tabular}')
+    print(r'\end{center}')
+=>PYTHONTEX:SETTINGS#
+version=0.16
+outputdir=pythontex-files-me310
+workingdir=.
+workingdirset=false
+gobble=auto
+rerun=default
+hashdependencies=default
+makestderr=false
+stderrfilename=full
+keeptemps=none
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python|
+pygfamily=pylabcon|pycon|

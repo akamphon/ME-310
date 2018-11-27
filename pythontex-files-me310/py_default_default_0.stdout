@@ -1,0 +1,15 @@
+The bending moment caused by the midpoint load is 50000 N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.\\
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a}{(\sigma_a)_{allow}} + \dfrac{\sigma_b}{(\sigma_b)_{allow}}$ \\
+\midrule
+S610 x 149 & 5.29 & 15.34 & 0.21 \\
+S510 x 143 & 5.49 & 18.52 & 0.24 \\
+S460 x 104 & 7.58 & 29.59 & 0.37 \\
+S380 x 74 & 10.55 & 47.17 & 0.58 \\
+S310 x 74 & 10.62 & 60.31 & 0.71 \\
+S250 x 52 & 15.04 & 103.73 & 1.19 \\
+\bottomrule
+\end{tabular}
+\end{center}

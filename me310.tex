@@ -3,22 +3,21 @@
 a4paper,
 openany,
 svgnames,
-]{book} % use larger type; default would be 10pt
+]{book}
 
-\usepackage[utf8]{inputenc} % set input encoding (not needed with XeLaTeX)
+\usepackage[utf8]{inputenc}
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{1}
 
-\usepackage{geometry} % to change the page dimensions
-\geometry{a4paper} % or letterpaper (US) or a5paper or....
-\geometry{margin=1in} % for example, change the margins to 2 inches all round
-\usepackage{graphicx} % support the \includegraphics command and options
-\usepackage[parfill]{parskip} % Activate to begin paragraphs with an empty line rather than an indent
-\usepackage{booktabs} % for much better looking tables
-\usepackage{array} % for better arrays (eg matrices) in maths
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{graphicx}
+\usepackage[parfill]{parskip}
+\usepackage{booktabs}
+\usepackage{array}
 \usepackage{enumitem}
-\usepackage{verbatim} % adds environment for commenting out blocks of text & for better verbatim
-\usepackage{subfig} % make it possible to include more than one captioned figure/table in a single float
+\usepackage{verbatim} 
+\usepackage{subfig}
 \usepackage{colortbl}
 
 %%% HEADERS & FOOTERS
@@ -36,25 +35,26 @@ svgnames,
 \newcommand*\chem[1]{\textup{#1}}
 
 \usepackage{newtxtext}
+\usepackage[nointegrals]{wasysym}
 \usepackage{newtxmath}
 \usepackage{hyperref}
 \hypersetup{
   colorlinks,
-  citecolor=black,
-  filecolor=black,
-  linkcolor=black,
-  urlcolor=black
+  % citecolor=black,
+  % filecolor=black,
+  linkcolor=blue,
+  urlcolor=blue,
 }
 
 \let\openbox\relax
 \usepackage{amsthm}
 \usepackage{bm}
 \usepackage{multirow}
-\usepackage{gensymb}
-\usepackage{wasysym}
 \usepackage{array}
 \usepackage{cleveref}
 \usepackage{siunitx}
+
+\usepackage[gobble=auto]{pythontex}
 
 %% Chapter Heading %%%%%
 \usepackage[explicit]{titlesec}
@@ -332,6 +332,9 @@ Added Chapters 10 and 11. Added exercises in Chapters 6 - 11.
 
 \paragraph{February 2017}
 Migrated to \LaTeX\ from Microsoft Word. Added original graphics for Chapters 3 - 10.
+
+\paragraph{March 2018}
+Converted examples to Python\TeX\ to prevent any miscalculations. Add appendices on sectional properties of structural steels and moments of inertia.
 
 \tableofcontents
 
@@ -647,7 +650,7 @@ Carburizing is a process that introduces additional carbon into the surface of a
 
 Cyaniding is a similar process that adds nitrogen as well as carbon to the surfaces of low- and medium-carbon steels.
 
-Nitriding adds nitrogen to an already machined and heat-treated part. The temperature of the process is 1000$\degree$F (538$\degree$C) or less, and no quenching is involved. This feature eliminates possible distortion problems. For maximum case hardness, special “nitralloy” steels (containing aluminum as an alloy) are often used. Medium-carbon alloy steels (notably 4340) are also nitrided. Induction hardening and flame hardening heat only the surfaces of parts made of medium-carbon and alloy steels, then quenching and tempering.
+Nitriding adds nitrogen to an already machined and heat-treated part. The temperature of the process is 1000$^{\circ}$F (538$^{\circ}$C) or less, and no quenching is involved. This feature eliminates possible distortion problems. For maximum case hardness, special “nitralloy” steels (containing aluminum as an alloy) are often used. Medium-carbon alloy steels (notably 4340) are also nitrided. Induction hardening and flame hardening heat only the surfaces of parts made of medium-carbon and alloy steels, then quenching and tempering.
 
 Induction hardening and flame hardening heat only the surfaces of parts made of medium-carbon and alloy steels, then quenching and tempering.
 
@@ -657,7 +660,7 @@ Stainless steels contain, by definition, a minimum of 10.5 percent chromium. Wro
 
 \subsection{Iron-Based Superalloys}
 
-Iron-based superalloys are used primarily for elevated temperature applications, as in turbines. Some authorities consider only the austenitic materials to be true superalloys. In general, they are used at temperatures above 1000$\degree$F (538$\degree$C), and the martensitic materials are used at lower temperatures. Significant properties of superalloys include at high temperatures strength and resistance to creep, oxidation, corrosion, and wear. Typical uses are for parts (including bolts) of gas turbines, jet engines, heat exchangers, and furnaces.
+Iron-based superalloys are used primarily for elevated temperature applications, as in turbines. Some authorities consider only the austenitic materials to be true superalloys. In general, they are used at temperatures above 1000$^{\circ}$F (538$^{\circ}$C), and the martensitic materials are used at lower temperatures. Significant properties of superalloys include at high temperatures strength and resistance to creep, oxidation, corrosion, and wear. Typical uses are for parts (including bolts) of gas turbines, jet engines, heat exchangers, and furnaces.
 
 \section{Nonferrous Alloys}
 
@@ -688,7 +691,7 @@ Next are two digits that represent the respective percentages of these two eleme
 
 \subsection{Nickel Alloys and Nickel-Based Superalloys}
 
-Nickel alloys are used in a variety of structural applications that usually require specific corrosion resistance, and strength and toughness at temperature extremes as great as 2000$\degree$F (1093$\degree$C) and as low as -400$\degree$F (-240$\degree$C). Typical physical properties are given in Appendix C-15. The nickel and Duranickel alloys contain over 94 percent nickel. Monel represents a series of nickel–copper alloys, based on the mutual solubility of these two elements in all proportions. They are strong and tough at subzero temperatures, and especially resistant to stress corrosion cracking. Hastelloy designates a series of Ni–Mo and Ni–Mo–Cr superalloys. Several Hastelloys resist oxidation and maintain useful strength and creep properties in the range of 2000$\degree$F (1093$\degree$C). The Inconel, Incoloy, Rene, and Udimet alloys are Ni–Cr and Ni–Cr–Fe alloys. 
+Nickel alloys are used in a variety of structural applications that usually require specific corrosion resistance, and strength and toughness at temperature extremes as great as 2000$^{\circ}$F (1093$^{\circ}$C) and as low as -400$^{\circ}$F (-240$^{\circ}$C). Typical physical properties are given in Appendix C-15. The nickel and Duranickel alloys contain over 94 percent nickel. Monel represents a series of nickel–copper alloys, based on the mutual solubility of these two elements in all proportions. They are strong and tough at subzero temperatures, and especially resistant to stress corrosion cracking. Hastelloy designates a series of Ni–Mo and Ni–Mo–Cr superalloys. Several Hastelloys resist oxidation and maintain useful strength and creep properties in the range of 2000$^{\circ}$F (1093$^{\circ}$C). The Inconel, Incoloy, Rene, and Udimet alloys are Ni–Cr and Ni–Cr–Fe alloys. 
 
 \subsection{Titanium Alloys}
 
@@ -856,7 +859,7 @@ $S^{2/3}/\rho = C$, and $S^{1/2}/\rho = C$, a material that provide minimum weig
 
 \subsubsection{Strength-Temperature Chart}
 
-Strength-temperature relationship is used to determine suitable materials for designs that require strength at higher temperature. Notice that only ceramics have strength beyond 1000$\degree$C, while alloys and polymers have strength up to only 800$\degree$C and 300$\degree$C, respectively.
+Strength-temperature relationship is used to determine suitable materials for designs that require strength at higher temperature. Notice that only ceramics have strength beyond 1000$^{\circ}$C, while alloys and polymers have strength up to only 800$^{\circ}$C and 300$^{\circ}$C, respectively.
 
 \begin{figure}[h]
   \centering
@@ -1054,7 +1057,7 @@ Therefore, strain is positive when the line elongates and is negative when the l
 
 \subsubsection{Shear Strain}
 
-The change in angle that occurs between two line segments that were originally perpendicular is referred to as shear strain. This angle is denoted by and is measured in radians. Consider the same cubic element with shear stress couple applied in the $xy$-plane. The angle made by the original $x$ and $y$ axes is $90\degree$. After the deformation, the angle is changed by $\theta$. The shear strain in the plane, $\gamma_{xy}$, can be defined as 
+The change in angle that occurs between two line segments that were originally perpendicular is referred to as shear strain. This angle is denoted by and is measured in radians. Consider the same cubic element with shear stress couple applied in the $xy$-plane. The angle made by the original $x$ and $y$ axes is $90^{\circ}$. After the deformation, the angle is changed by $\theta$. The shear strain in the plane, $\gamma_{xy}$, can be defined as 
 
 \begin{figure}
   \centering
@@ -1159,8 +1162,8 @@ Without any constraint, the change in length of the part can be computed using t
     \begin{tikzpicture}
       \path[fill=white] (-5,-2) rectangle (5,2);
       \node [draw, fill=SkyBlue, minimum height=4mm, minimum width=8cm](beam){};
-      \node at (beam.west) [anchor=east, draw, pattern=north west lines, fill=LightGrey, minimum height=2cm, minimum width=5mm](left){};
-      \node at (beam.east) [anchor=west, draw, pattern=north west lines, fill=LightGrey, minimum height=2cm, minimum width=5mm](right){};
+      \node at (beam.west) [anchor=east, draw, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](left){};
+      \node at (beam.east) [anchor=west, draw, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](right){};
       \draw[|<->|] (left.south east) ++ (-90:0.5) --++ (0:8) node[midway, fill=white]{$L$};
       \draw (0,0.5) node{$T_0 \rightarrow T$};
     \end{tikzpicture}
@@ -1179,7 +1182,7 @@ Without any constraint, the change in length of the part can be computed using t
 
 \begin{example} Heated Steel Bar
 
-  A 50-cm long steel cylindrical bar is heated on one end by a bunsen burner until it reaches a steady state. Initially, the bar has a constant temperature of 20 $\degree$C. Due to the effects of convection and conduction, the temperature profile of the steel along its length is dependent on the distance from the burner $x$
+  A 50-cm long steel cylindrical bar is heated on one end by a bunsen burner until it reaches a steady state. Initially, the bar has a constant temperature of 20 $^{\circ}$C. Due to the effects of convection and conduction, the temperature profile of the steel along its length is dependent on the distance from the burner $x$
 
   \begin{figure}[H]
     \centering
@@ -1194,7 +1197,7 @@ Without any constraint, the change in length of the part can be computed using t
     \end{tikzpicture}
   \end{figure}
   
-  Determine the change in length of the beam at steady state, given that the steel bar has $\alpha = 13 \times 10^{-6}$ /$\degree$C
+  Determine the change in length of the beam at steady state, given that the steel bar has $\alpha = 13 \times 10^{-6}$ /$^{\circ}$C
 \end{example}
 \begin{solution}
 
@@ -1216,6 +1219,7 @@ This section deals with the elongation or contraction of slender homogeneous mem
 \subsection{Prismatic bars}
 
 When determining the changes in length of axially loaded members, it is convenient to begin with a coil spring. When a load is applied along the axis of a spring, the spring gets shorter or longer depending on the direction of the load.
+
 Similarly, in the case of axially loaded members, they elongate or shorten depend on the direction of the load. If the load acts toward the member, it is in compression. If the load acts away from the member, it is in tension. It is also important to note its natural length L, also called its free length or relaxed length. Once the member is loaded, supposedly in tension, it will lengthen by an amount $\delta$ and its final length becomes $L + \delta$. If the material of the spring is linearly elastic, the load and elongation will be proportional, following Hooke’s law that
 
 \begin{figure}[h]
@@ -1951,7 +1955,7 @@ Each time we integrate produces one constant of integration. These constants can
   
 \end{example}
 \begin{solution}
-First we must determine the bending moment inside the cross section along the length. Using the method of sections, we can determine that
+First we must determine the bending moments inside the cross section along the length. Using the method of sections, we can determine that
 
 \[M(x) =  - P(L - x)\]	
 
@@ -2110,7 +2114,7 @@ Consider a beam subjected to $n$ number of loads $P_1, P_2, \ldots, P_n$. The de
 
 Now we will determine the strain energy of this beam. When the loads are applied to the beam, they gradually increase in magnitude from zero to their maximum values. Simultaneously, as the load is applied, it moves through the corresponding displacement and does work. The total work done by the loads is equal to the strain energy $U$ stored in the beam, $W = U$. Note that $W$ is a function of the loads acting on the beam.
 
-Next, assume one of the loads, ith load, is increased slightly by the amount dPi while the other loads are held constant. This increase in the load will cause a small increase in strain energy of the beam $dU$. This increase may be expressed as the rate of change of $U$ with respect to $P_i$ times the small increase in $P_i$. Thus, the increase in strain energy is
+Next, assume one of the loads, $i$th load, is increased slightly by the amount dPi while the other loads are held constant. This increase in the load will cause a small increase in strain energy of the beam $dU$. This increase may be expressed as the rate of change of $U$ with respect to $P_i$ times the small increase in $P_i$. Thus, the increase in strain energy is
 
 \[dU = \frac{{\partial U}}{{\partial {P_i}}}d{P_i}\]
 
@@ -2139,7 +2143,9 @@ We discard the first term because it contains the product of two differentials a
 This equation is known as \emph{Castigliano’s second theorem}.
 Castigliano’s first theorem, which states that
 
-\[P_i = \frac{\partial U}{\partial \delta_i}\]
+\begin{equation}
+P_i = \frac{\partial U}{\partial \delta_i}
+\end{equation}
 
 can also be proven using a similar method.
 
@@ -2359,7 +2365,7 @@ Since the angle between the principal stresses and maximum shear stress on Mohr�
       2\theta & = \tan^{-1}\frac{2\tau_{xy}}{\sigma_x - \sigma_y} \\ 
       &= 0.785 \\ 
       \theta  &= 0.393\text{ rad} \\ 
-      &= 22.5\degree
+      &= 22.5^{\circ}
     \end{aligned} \]
 
 \end{solution}
@@ -3396,7 +3402,7 @@ where $L_e = KL$ in which $K$ is the \emph{effective-length factor} and $KL/r_g$
     \begin{aligned}
       \Delta T &= \frac{ \pi^2 I }{ \alpha A L^2} = \frac{1}{\alpha} \left( \frac{ \pi r_g }{L} \right)^2 \\
       &= \frac{ \pi^2 (400 \times 10^{-8}) }{ (12 \times 10^{-6})(73 \times 10^{-4})(10^2)}\\
-      &= 4.51\degree \text{ C}
+      &= 4.51^{\circ} \text{ C}
      \end{aligned}
   \end{gather*}
 
@@ -3525,7 +3531,7 @@ In general, shear stress distribution in a beam takes a parabolic shape, while n
   \label{fig: stress in beam}
 \end{figure}
 
-At each point, the state of stress can be transformed into principal stresses. The results are shown in \cref{fig: stress traject in beam}. Notice that on the right column, the element undergoes a counterclockwise rotation, from $0\degree$ at the top, to $45\degree$ in the middle, to $90\degree$ at the bottom.
+At each point, the state of stress can be transformed into principal stresses. The results are shown in \cref{fig: stress traject in beam}. Notice that on the right column, the element undergoes a counterclockwise rotation, from $0^{\circ}$ at the top, to $45^{\circ}$ in the middle, to $90^{\circ}$ at the bottom.
 
 \begin{figure}[h]
   \centering
@@ -3534,7 +3540,7 @@ At each point, the state of stress can be transformed into principal stresses. T
   \label{fig: stress traject in beam}
 \end{figure}
 
-If this analysis is expanded to other vertical cross sections throughout the length of the beam, the results can be represented by sets of curves called stress trajectories. Each of these lines represents the direction of a principal stress having a constant magnitude. Some of these trajectories are shown in Figure 5.3. In this figure, the solid lines represent the direction of the tensile principal stresses and the dashed lines represent the direction of the compressive principal stresses. The lines intersect the neutral axis at $45\degree$ and the solid and dashed lines intersect at $90\degree$ because principal stresses are always $90\degree$ apart. Knowing these trajectories can help engineers determine where to reinforce a beam especially if the beam is made of brittle material so that it will not crack or become unstable.
+If this analysis is expanded to other vertical cross sections throughout the length of the beam, the results can be represented by sets of curves called stress trajectories. Each of these lines represents the direction of a principal stress having a constant magnitude. Some of these trajectories are shown in Figure 5.3. In this figure, the solid lines represent the direction of the tensile principal stresses and the dashed lines represent the direction of the compressive principal stresses. The lines intersect the neutral axis at $45^{\circ}$ and the solid and dashed lines intersect at $90^{\circ}$ because principal stresses are always $90^{\circ}$ apart. Knowing these trajectories can help engineers determine where to reinforce a beam especially if the beam is made of brittle material so that it will not crack or become unstable.
 
 \section{Prismatic Beam Design}
 
@@ -3950,9 +3956,9 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
     \toprule
     W section & $r_g$ (mm) & $A$ (mm$^2$) & Slenderness Ratio & $\sigma_{allow}$ (MPa) & $P_{allow}$ (kN) \\
     \midrule
-    W360 $\times$ 39 & 27.5 & 4960 & 218 & -63 & -314 \\
-    W360 $\times$ 45 & 37.8 & 5710 & 159 & 32 & 183 \\
-    W200 $\times$ 36 & 40.9 & 4570 & 147 & 46 & 211 \\
+    W360 $\times$ 39 & 27.5 & 4960 & 218 & -63  & -314 \\
+    W360 $\times$ 45 & 37.8 & 5710 & 159 & 32   & 183 \\
+    W200 $\times$ 36 & 40.9 & 4570 & 147 & 46   & 211 \\
     W150 $\times$ 22 & 36.8 & 2860 & 163 & 26.6 & 76 \\
     \bottomrule
   \end{tabular}
@@ -4093,6 +4099,36 @@ Note that $(\sigma_a)_{allow}$ is the allowable stress for compression for a spe
 
 This interaction method is often specified in design codes for steel, aluminum, and timber. Particularly, for allowable stress design, the AISC specifies the use of this equation only when the axial stress ratio $\sigma_a / (\sigma_a)_{allow} \leq 0.15$.
 
+\begin{example} Design of a gantry crane column
+
+  A gantry crane with a 4-m long horizontal beam is fixed on each end at the top of two 3-m long columns. The crane is supposed to support a maximum weight of 10 ton. Determine the proper section to use. Refer to S-shaped steel from \cref{appendix: structural steel properties}.
+
+  \begin{pycode}
+    F = 100000
+    L = 4
+    M = F*L/8
+    Ns = 3 
+
+    print(r'The bending moment caused by the midpoint load is %d N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.\\' %M)
+
+    sigmaallow = 300 * 10**6 / Ns
+    designation = ['S610 x 149', 'S510 x 143', 'S460 x 104', 'S380 x 74', 'S310 x 74', 'S250 x 52']
+    Area = [18900*10**-6, 18200*10**-6, 13200*10**-6, 9480*10**-6, 9420*10**-6, 6650*10**-6]
+    S = [3260 * 10**-6, 2700 * 10**-6, 1690*10**-6, 1060*10**-6, 829*10**-6, 482*10**-6]
+    print(r'\begin{center}')
+    print(r'\begin{tabular}{lccc}')
+    print(r'\toprule')
+    print(r'Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a}{(\sigma_a)_{allow}} + \dfrac{\sigma_b}{(\sigma_b)_{allow}}$ \\')
+    print('\midrule')
+    for i in range(6):
+        print(r'%s & %.2f & %.2f & %.2f \\' %(designation[i],F/Area[i]/10**6,M/S[i]/10**6,(F/Area[i] + M/S[i])/sigmaallow))
+    print(r'\bottomrule')
+    print(r'\end{tabular}')
+    print(r'\end{center}')
+  \end{pycode}
+
+  In this example, the proper section will give the sum of stress ratios closest to but less than 1, which is S310 x 74.
+\end{example}
 \begin{example} Design of a luffing crane
   
   A crane is a type of machine mainly used to lift, lower, and horizontally move heavy objects. It is immensely useful in construction works. In this problem, we will be analyzing a type of crane called a \emph{luffing crane}.
@@ -4120,14 +4156,14 @@ This interaction method is often specified in design codes for steel, aluminum, 
   On the gantry, since it is pinned to the mast, the only load from the top of the mast is along the length of the gantry. Consider balance of moments about the pinned joint, we have
   
   \begin{align*}
-    20000(6 \sin 30\degree) &= T \left( 6 \frac{20}{\sqrt{ 20^2 +6^2 }} \right) \\
+    20000(6 \sin 30^{\circ}) &= T \left( 6 \frac{20}{\sqrt{ 20^2 +6^2 }} \right) \\
     T &= 20880 \text{ N}
   \end{align*}
 
   The cable tension is 20880 N. We can find the moment applied at the fixed joint of the jib and the mast.
   
   \begin{align*}
-    M_{jib} &= 20880 \left( \frac{6}{\sqrt{20^2 + 6^2}} \right) (20) - 10000(20 \cos 30\degree) \\
+    M_{jib} &= 20880 \left( \frac{6}{\sqrt{20^2 + 6^2}} \right) (20) - 10000(20 \cos 30^{\circ}) \\
             &= -53208 \text{ N-m}
   \end{align*}
   
@@ -4136,7 +4172,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
   We can also determine the axial load in the jib, which is
 
   \begin{align*}
-    F_{jib} &= 20880 \left( \frac{20}{\sqrt{20^2 + 6^2}} \right) + 10000 \sin 30\degree \\
+    F_{jib} &= 20880 \left( \frac{20}{\sqrt{20^2 + 6^2}} \right) + 10000 \sin 30^{\circ} \\
             &= 25000 \text{ N}
   \end{align*}
   
@@ -4315,7 +4351,7 @@ For a solid round rod of diameter $d$, these become
 
 As expected, torsion bar springs--especially in automotive suspension applications--tend to incur repeated loadings during operation. As such, steels remain the staple material of choice due to their endurance limits.
 
-One of the most prevalent steels for torsion bar springs is AISI 8650H. It has been annealed at 800$\degree$C and tempered at 500$\degree$C to obtain its high strength and reasonable flexibility. Its properties are as follows.
+One of the most prevalent steels for torsion bar springs is AISI 8650H. It has been annealed at 800$^{\circ}$C and tempered at 500$^{\circ}$C to obtain its high strength and reasonable flexibility. Its properties are as follows.
 
 \begin{description}
 \item[Young's modulus] 205 GPa
@@ -4632,7 +4668,12 @@ Applying equations for spring torsional shear stress—\cref{eqn: spring torsion
   \frac{\tau _{allow}}{N_s} = K\frac{8F_sD}{\pi d^3}
 \end{equation}
 
-The second design safety measure is to prevent the spring from reaching solid length. This is important in 1) keeping the spring from failure and 2) allowing smooth operation of the spring. Once the spring reaches its solid length, it no longer behaves like a spring but rather a tube whose stiffness is much higher. The designer can prevent this by ensuring that the maximum compressive load applied to the spring is less than its solid force.
+The second design safety measure is to prevent the spring from reaching solid length. This is important in
+\begin{enumerate}
+\item keeping the spring from failure and
+\item allowing smooth operation of the spring
+\end{enumerate}
+Once the spring reaches its solid length, it no longer behaves like a spring but rather a tube whose stiffness is much higher. The designer can prevent this by ensuring that the maximum compressive load applied to the spring is less than its solid force.
 
 \begin{equation}
   \begin{gathered}
@@ -4934,7 +4975,7 @@ Most of the equations for helical compression springs applies equally well to ex
 Extension springs are usually wound while maintaining a torsional stress in the wire. This results in the coils pressing against each other. The initial tension is the external force applied to the spring when the coils are just at the verge of separating. A typical initial tension recommended by spring manufacturers is the force so that
 
 \begin{equation}
-  \tau_{initial} = (0.4 \text{ to } 0.8)\frac{S_{ut}}{C}
+  T_{initial} = (0.4 \text{ to } 0.8)\frac{S_{ut}}{C}
 \end{equation}
 
 An extension spring wound in this manner will not deflect until loaded with a force exceeding the initial tension, after which the equations for stress and spring constant developed for compression springs will apply.
@@ -5025,20 +5066,20 @@ The problem did not mention the maximum stretched length of the spring. However,
     \centering
     \begin{tikzpicture}[scale=0.7,>=latex]
     %left coil
-    \draw [SkyBlue, line width=10pt] (0,0) node(A){} arc (-85:190:2) node(B){};
-    \draw [SkyBlue, line width=10pt, line cap=round] (A.center) -- (-175:2.2);
+    \draw [Peru, line width=10pt] (0,0) node(A){} arc (-85:190:2) node(B){};
+    \draw [Peru, line width=10pt, line cap=round] (A.center) -- (-175:2.2);
     \foreach \x in {0,...,2}
-    \draw [SkyBlue, line width=10pt, line cap=round, yshift=-\x*15.5] (1.9,-0.38) -- ++(-175:4.2);
+    \draw [Peru, line width=10pt, line cap=round, yshift=-\x*15.5] (1.9,-0.38) -- ++(-175:4.2);
     \draw [dashed] (A.center) arc (-85:190:2);
     \draw [<->] (1.4,2.3) -- ++ (-90:0.3) -- ++(0:0.8) -- ++(90:.3) node[above]{A};
     % dimensioning r1 and r3
     \draw [->] (-0.15,2.00) node(D){} -- ++(45:1.73) node[midway, right]{$r_3$};
     \draw [->] (D.center) -- ++(-45:2) node[midway, left]{$r_1$};
     % right coil
-    \draw [SkyBlue, line width=10pt, line cap=round] (5,0) node(D){} -- ++(5:1) arc (-85:0:1) -- ++ (90:2.8);
-    \draw [SkyBlue, line width=10pt, line cap=round] (D.center) --++ (-175:.5);
+    \draw [Peru, line width=10pt, line cap=round] (5,0) node(D){} -- ++(5:1) arc (-85:0:1) -- ++ (90:2.8);
+    \draw [Peru, line width=10pt, line cap=round] (D.center) --++ (-175:.5);
     \foreach \x in {0,...,2}
-    \draw [SkyBlue, line width=10pt, line cap=round, yshift=-\x*15.5, xshift=6.7cm] (1.9,-0.23) -- ++(-175:4.2);
+    \draw [Peru, line width=10pt, line cap=round, yshift=-\x*15.5, xshift=6.7cm] (1.9,-0.23) -- ++(-175:4.2);
     \draw [dashed](5,0) -- ++(5:1) arc (-85:0:1) -- ++ (90:2.8);
     \draw [<->] (6.55,0.90) -- ++(-135:0.3) --++ (-45:0.8) --++ (45:0.3) node[above right]{B};
     % dimensioning r2 and r4
@@ -5322,7 +5363,7 @@ The process is usually performed manually with an oxyacetylene torch and is typi
 Other kinds of welding processes such as Laser beam, plasma arc, electron beam, and electroslag are also fusion welding and are used on a small scale for very special applications.
 Nonfusion, or solid-state welding, processes use a combination of heat and pressure to join parts, though the temperature is usually less than the melting point of the materials.
 
-\section{Welding Material}
+\section{Welded Joint Strength}
 
 The basic concept of fusion welding is to fuse the materials together into a single and homogenous member. Properties of the welding rod (filler) must be properly matched with those of the parent materials.
 
@@ -5336,14 +5377,32 @@ Welding electrode material strength and ductility specifications have been stand
       \toprule
       AWS Electrode Number & Tensile Strength (MPa) & Yield Strength (MPa) & Percent Elongation \\
       \midrule
-      E60XX & 427 & 345 & 17-25 \\
-      E70XX & 482 & 393 & 22 \\
-      E80XX & 551 & 426 & 19 \\
-      E90XX & 620 & 531 & 14-17 \\
+      E60XX  & 427 & 345 & 17-25 \\
+      E70XX  & 482 & 393 & 22 \\
+      E80XX  & 551 & 426 & 19 \\
+      E90XX  & 620 & 531 & 14-17 \\
       E100XX & 689 & 600 & 13-16 \\
       E120XX & 827 & 737 & 14 \\
       \bottomrule
     \end{tabular}
+\end{table}
+
+The American Institute of Steel Construction code provides the suggested permissible stress (and corresponding safety factors) for welded joints.
+
+\begin{table}[h]
+  \centering
+  \caption{Permissible stresses for weld metal according to AISC code}
+  \begin{tabular}{llll}
+    \toprule
+    Type of Loading & Type of Weld   & Permissible Stress & $N_s$ \\
+    \midrule
+    Tension         & Butt           & 0.60$S_y$          & 1.67 \\
+    Bearing         & Butt           & 0.90$S_y$          & 1.11 \\
+    Bending         & Butt           & 0.60 - 0.66$S_y$   & 1.52 - 1.67 \\
+    Compression     & Butt           & 0.60$S_y$          & 1.67 \\
+    Shear           & Butt or fillet & 0.30$S_{ut}$       & \\
+    \bottomrule
+  \end{tabular}
 \end{table}
 
 \section{Welded Joint Geometry}
@@ -5584,7 +5643,8 @@ Given that the centroid of the weld group is at (0,0), and that  the weld cross 
       % dimensions
       \node at (D.south west)[yshift=-0.5cm](F){};
       \node at (D.south east)[yshift=-0.5cm](G){};
-       \draw [|<->|] (F.center) -- (G.center) node[midway, above]{40 cm};
+      \draw [|<->|] (F.center) -- (G.center) node[midway, above]{40 cm};
+      \draw [|<->|] (A.south east) ++ (0:0.3) --++ (90:0.3) node[midway, right]{12 cm};
     \end{tikzpicture}
   \end{figure}
 
@@ -5736,13 +5796,13 @@ Given that the centroid of the weld group is at (0,0), and that  the weld cross 
   \begin{align*}
     \tan \alpha &= \frac{d_o}{L/2} = \frac{2 d_o}{L} \\
                 &= \frac{2(0.02)}{0.05} = 0.8 \\
-    \alpha &= \tan^{-1} 0.8 = 38.7\degree
+    \alpha &= \tan^{-1} 0.8 = 38.7^{\circ}
   \end{align*}
 
   Substitute $\alpha$ into the vector addition formula to obtain the combined shear stress
 
   \begin{align*}
-    \left| \vec{\tau}_{torsion} + \vec{\tau}_{shear} \right|^2 &= 25^2 + 3.58^2 + 2(25)(3.58) \cos 38.7\degree \\
+    \left| \vec{\tau}_{torsion} + \vec{\tau}_{shear} \right|^2 &= 25^2 + 3.58^2 + 2(25)(3.58) \cos 38.7^{\circ} \\
                                                                &= 778 \\
     \left| \vec{\tau}_{torsion} + \vec{\tau}_{shear} \right| &= \left| \vec{\tau}_{total} \right| = 27.9 \text{ MPa}                                                        
   \end{align*}
@@ -5816,7 +5876,7 @@ There may arise situations where weld joints need not, or cannot, be symmetrical
   \begin{align*}
     J_{group} &= \frac{(0.005)(0.1^3 + 0.15^3)}{12} +\frac{(0.1 + 0.15)(0.005)^3}{12} \\
               &+ (0.005)(0.1(1.3 \times 10^{-3}) + 0.15(2.93 \times 10^{-3})) \\
-              &= 2.45 \times 10^{-5} \text{ m}^4
+              &= 4.27 \times 10^{-6} \text{ m}^4
   \end{align*}
 
   Now, to address the critical point. We know that the direction of $\tau_{torsion}$ at each spot will be perpendicular to the vector $r_G$ connecting the center of weld to that point.
@@ -5834,23 +5894,43 @@ There may arise situations where weld joints need not, or cannot, be symmetrical
     \end{tikzpicture}
   \end{center}
   
-  From the figure, it should be obvious that the resultant stress at A should be the highest. We now proceed to calculate $\tau_{torsionA}$.
+  From the figure, it should be obvious that the resultant stress at B is definitely not the highest since its $\tau_{torsionB}$ is the smallest out of all the points. Furthermore, the $y$-component of $\tau_{torsionB}$ is opposite to $\tau_{shear}$. Only A and C are possible candidates for critical points now. We will first proceed to calculate $\tau_{torsionA}$.
 
   \begin{align*}
     \tau_{torsionA} &= \frac{P L_o r_{GA}}{J_{group}} \\
-                    &=\frac{20000(0.28) r_{GA}}{2.45 \times 10^{-5}} \\[1em]
+                    &=\frac{20000(0.28) r_{GA}}{4.27 \times 10^{-6}} \\[1em]
     r_{GA} &= \sqrt{(0.1 - 0.02)^2 + 0.045^2} \\
                     &= 0.092 \text{ m} \\[1em]
-    \tau_{torsionA} &= 21 \text{ MPa}
+    \tau_{torsionA} &= 121 \text{ MPa}
   \end{align*}
 
-  Combine $\tau_{shear}$ and $\tau_{torsion}$, we have
+  Combine $\tau_{shear}$ and $\tau_{torsionA}$, we have
   \begin{align*}
-    \alpha &= \tan^{-1} \frac{0.045}{0.08} \\
-           &= 29.4^{\circ} \\[1em]
-    \tau_{total} &= \sqrt{ 16^2 + 21^2 + 2(16)(21) \cos 29.4^{\circ} } \\
-           &= 35.8 \text{ MPa} \\[1em]
-    N_s &= \frac{427}{35.8} = 11.9
+    \cos \alpha &=  \frac{0.08}{0.092} = 0.87 \\
+    \tau_{total} &= \sqrt{ 16^2 + 121^2 + 2(16)(121) \cos 29.4^{\circ} } \\
+           &= 135 \text{ MPa} \\[1em]
+  \end{align*}
+  
+  Let us now consider $\tau_{torsionC}$
+  \begin{align*}
+    \tau_{torsionA} &= \frac{P L_o r_{GC}}{J_{group}} \\
+                    &=\frac{20000(0.28) r_{GC}}{4.27 \times 10^{-6}} \\[1em]
+    r_{GC} &= \sqrt{(0.15 - 0.045)^2 + 0.02^2} \\
+                    &= 0.107 \text{ m} \\[1em]
+    \tau_{torsionA} &= 140 \text{ MPa}
+  \end{align*}
+
+  Combine $\tau_{shear}$ and $\tau_{torsionC}$, we have
+  \begin{align*}
+    \beta &= 90^{\circ} + \cos^{-1} \frac{0.105}{0.107} \\
+          &= 101.1^{\circ} \\[1em]
+    \tau_{total} &= \sqrt{ 16^2 + 140^2 + 2(16)(140) \cos 101.1^{\circ} } \\
+          &= 137 \text{ MPa} \\[1em]
+  \end{align*}
+
+  The resultant shear stress at $C$ is larger, hence $C$ is the critical point. So the safety factor of this weld is
+  \begin{align*}  
+    N_s &= \frac{427}{135} = 3.12
   \end{align*}
 \end{solution}
 
@@ -6465,13 +6545,13 @@ where
 \begin{align*}
   d_1 &= d \\
   d_2 &= 1.5d \text{ for standard hexagonal-headed bolts} \\
-  d_3 &= d_2 + L \tan 30\degree 
+  d_3 &= d_2 + L \tan 30^{\circ} 
 \end{align*}
 
 Substitute these value in \cref{eqn: clamped parts area} gives
 
 \begin{align}
-  A_c &= \frac{\pi}{16}(5d^2 + 6dL \tan 30\degree + L^2 \tan^2 30\degree) \nonumber \\
+  A_c &= \frac{\pi}{16}(5d^2 + 6dL \tan 30^{\circ} + L^2 \tan^2 30^{\circ}) \nonumber \\
       &\approx d^2 + 0.68dL + 0.065L^2 \label{eqn: clamped parts area approx}
 \end{align}
 
@@ -6620,7 +6700,7 @@ Upon closer inspection of the equation, the required tensile area is simply the 
     \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
     \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
     \draw [->, ultra thick] (B.south east) --++ (-60:1.5) node[right]{2000 N};
-    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30\degree$};
+    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30^{\circ}$};
   \end{tikzpicture}
 \end{example}
 \begin{solution}
@@ -6630,7 +6710,7 @@ Upon closer inspection of the equation, the required tensile area is simply the 
 
   \begin{align*}
     A_t &= \frac{N_s P}{S_p} \\
-        &= \frac{(2)(2000 \sin 30\degree)}{225 \times 10^6} \\
+        &= \frac{(2)(2000 \sin 30^{\circ})}{225 \times 10^6} \\
         &= 8.89 \times 10^{-6} \text{ m}^2 = 8.89 \text{ mm}^2
   \end{align*}
 
@@ -6640,7 +6720,7 @@ Upon closer inspection of the equation, the required tensile area is simply the 
 
   \begin{align*}
     A_t &= \frac{\dfrac{N_s P_{shear}}{0.75\mu } + P}{S_p} \\
-        &= \frac{\dfrac{2(2000 \cos 30\degree)}{0.75(0.5)} + 2000 \sin 30\degree}{225 \times 10^6} \\
+        &= \frac{\dfrac{2(2000 \cos 30^{\circ})}{0.75(0.5)} + 2000 \sin 30^{\circ}}{225 \times 10^6} \\
         &= 4.55 \times 10^{-5} = 45.5 \text{ mm}^2
   \end{align*}
 
@@ -6763,6 +6843,23 @@ Since there is no standard bolts with that size, we pick the next larger bolt, M
 
 Therefore, we need 26 M27 $\times$ 2 for this flange joint.
 \end{solution}
+
+\subsection{Bolted Joints under Bending}
+
+In applications where there is a bending moment applied on a bolted joint, we may consider the required strength of the bolted joint by breaking the external load down into corresponding shear or tensile loads on the bolt. We will also assume that bolt exert only compressive load on the clamp parts. Generally, a bolted joint under bending will have at least two bolts spaced apart to provide leverage to resist the exerted moment, as illustrated in \cref{fig: bolted joint under bending}.
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}
+    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
+    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
+    \draw (wall.north east) -- (wall.south east);
+    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0]{};
+    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0]{};
+  \end{tikzpicture}
+  \caption{A typical bolted joint under a bending load.}
+  \label{fig: bolted joint under bending}
+\end{figure}
 
 \section{Bolt Selection for Fatigue Loading}
 
@@ -6892,7 +6989,7 @@ Bolted joints are, in most cases, non-permanent joints that utilize clamping for
     \label{fig: bicycle dimension for exercise}
   \end{figure}
   
-  \exercise \label{exercise: bolt on plate} A single bolt is used to hold down a plate on the ground that is subjected to a 3000-N force at 30$\degree$ to the horizon. The coefficient of friction between the plate and the ground is 0.6. Determine a proper bolt size so that the safety factor of the joint is 2.
+  \exercise \label{exercise: bolt on plate} A single bolt is used to hold down a plate on the ground that is subjected to a 3000-N force at 30$^{\circ}$ to the horizon. The coefficient of friction between the plate and the ground is 0.6. Determine a proper bolt size so that the safety factor of the joint is 2.
   
   \begin{figure}[H]
     \centering
@@ -7861,7 +7958,7 @@ It is shown that the corresponding minimum safety factor is 3.3.
 
 Solidworks buckling analysis is used mainly to determine the critical load and corresponding mode shape (see section 4.3) of the part. Its required inputs are identical to those of static analysis: materials, loads, and fixtures. After the simulation is finished, Solidworks will report mode shape by showing the model’s deflection. On the same screen, Solidworks will also report a load factor, which is the multiple of the input load required to cause buckling. In other words, if the input compressive load is 100 N, and Solidworks report a load factor of 4, the critical load is 4 $\times$ 100 = 400 N.
 
-\begin{example} Buckling analysis of a crank using Solidworks
+\begin{example} Buckling analysis of a crank using Solidworks 
 
 \end{example}
 \begin{solution}
@@ -7928,8 +8025,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \appendix
 
-\chapter{Properties Structural Steel Sections} \label{appendix: structural steel
-properties}
+\chapter{Properties of Structural Steel Sections} \label{appendix: structural steel properties}
 
 \begin{tikzpicture}
   \draw [fill=lightblue] (0,0) ++ (0:0.2) --++ (90:1) --++ (10:1) --++ (90:0.2) --++ (180:2.2) --++ (-90:0.2) --++ (-10:1) --++ (-90:2) --++ (-170:1) --++ (-90:0.2) --++ (0:2.2) --++ (90:0.2) --++ (170:1) --cycle;
@@ -7948,32 +8044,32 @@ properties}
     \cmidrule{2-8}
                                    & mm$^2$ & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm \\
     \midrule
-    S610 $\times$ 149 & 18900 & 991 & 3260 & 229 & 19.7 & 215 & 32.3 \\
-    S610 $\times$ 119 & 15200 & 874 & 2870 & 241 & 17.5 & 197 & 34.0 \\
+    S610 $\times$ 149  & 18900 & 991  & 3260 & 229  & 19.7  & 215  & 32.3 \\
+    S610 $\times$ 119  & 15200 & 874  & 2870 & 241  & 17.5  & 197  & 34.0 \\
     \rowcolor{LightSkyBlue!50}
-    S510 $\times$ 143 & 18200 & 695 & 2700 & 196 & 20.8 & 228 & 33.8 \\
+    S510 $\times$ 143  & 18200 & 695  & 2700 & 196  & 20.8  & 228  & 33.8 \\
     \rowcolor{LightSkyBlue!50}
-    S510 $\times$ 112 & 14200 & 533 & 2100 & 194 & 12.3 & 152 & 29.5 \\
-    S460 $\times$ 104 & 13200 & 384 & 1690 & 170 & 10.0 & 126 & 27.4 \\
-    S460 $\times$ 81.4 & 10300 & 333 & 1460 & 180 & 8.63 & 113 & 29.0 \\
+    S510 $\times$ 112  & 14200 & 533  & 2100 & 194  & 12.3  & 152  & 29.5 \\
+    S460 $\times$ 104  & 13200 & 384  & 1690 & 170  & 10.0  & 126  & 27.4 \\
+    S460 $\times$ 81.4 & 10300 & 333  & 1460 & 180  & 8.63  & 113  & 29.0 \\
     \rowcolor{LightSkyBlue!50}
-    S380 $\times$ 74 & 9480 & 202 & 1060 & 146 & 6.49 & 90.6 & 26.2 \\
+    S380 $\times$ 74   & 9480  & 202  & 1060 & 146  & 6.49  & 90.6 & 26.2 \\
     \rowcolor{LightSkyBlue!50}
-    S380 $\times$ 64 & 8130 & 186 & 973 & 151 & 5.95 & 85.0 & 26.9 \\
-    S310 $\times$ 74 & 9420 & 126 & 829 & 116 & 6.49 & 93.2 & 26.2 \\
-    S310 $\times$ 52 & 6580 & 94.9 & 624 & 120 & 4.10 & 63.6 & 24.9 \\
+    S380 $\times$ 64   & 8130  & 186  & 973  & 151  & 5.95  & 85.0 & 26.9 \\
+    S310 $\times$ 74   & 9420  & 126  & 829  & 116  & 6.49  & 93.2 & 26.2 \\
+    S310 $\times$ 52   & 6580  & 94.9 & 624  & 120  & 4.10  & 63.6 & 24.9 \\
     \rowcolor{LightSkyBlue!50}
-    S250 $\times$ 52 & 6650 & 61.2 & 482 & 96.0 & 3.45 & 55.1 & 22.8 \\
+    S250 $\times$ 52   & 6650  & 61.2 & 482  & 96.0 & 3.45  & 55.1 & 22.8 \\
     \rowcolor{LightSkyBlue!50}
-    S250 $\times$ 37.8 & 4810 & 51.2 & 403 & 103 & 2.80 & 47.4 & 24.1 \\
-    S200 $\times$ 34 & 4360 & 26.9 & 265 & 78.5 & 1.78 & 33.6 & 20.2 \\
-    S200 $\times$ 27.4 & 3480 & 23.9 & 236 & 82.8 & 1.54 & 30.2 & 21.0 \\
+    S250 $\times$ 37.8 & 4810  & 51.2 & 403  & 103  & 2.80  & 47.4 & 24.1 \\
+    S200 $\times$ 34   & 4360  & 26.9 & 265  & 78.5 & 1.78  & 33.6 & 20.2 \\
+    S200 $\times$ 27.4 & 3480  & 23.9 & 236  & 82.8 & 1.54  & 30.2 & 21.0 \\
     \rowcolor{LightSkyBlue!50}
-    S150 $\times$ 25.7 & 3260 & 10.9 & 143 & 57.9 & 0.953 & 21.0 & 17.1 \\
+    S150 $\times$ 25.7 & 3260  & 10.9 & 143  & 57.9 & 0.953 & 21.0 & 17.1 \\
     \rowcolor{LightSkyBlue!50}
-    S150 $\times$ 18.6 & 2360 & 9.16 & 120 & 62.2 & 0.749 & 17.7 & 17.8 \\
-    S100 $\times$ 14.1 & 1800 & 2.81 & 55.4 & 39.6 & 0.369 & 10.4 & 14.3 \\
-    S100 $\times$ 11.5 & 1460 & 2.52 & 49.7 & 41.7 & 0.311 & 9.21 & 14.6 \\
+    S150 $\times$ 18.6 & 2360  & 9.16 & 120  & 62.2 & 0.749 & 17.7 & 17.8 \\
+    S100 $\times$ 14.1 & 1800  & 2.81 & 55.4 & 39.6 & 0.369 & 10.4 & 14.3 \\
+    S100 $\times$ 11.5 & 1460  & 2.52 & 49.7 & 41.7 & 0.311 & 9.21 & 14.6 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -7994,47 +8090,47 @@ properties}
     \cmidrule{2-8}
                                    & mm$^2$ & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm \\
     \midrule
-    W610 $\times$ 155 & 19800 & 1290 & 4220 & 255 & 108 & 667 & 73.9 \\
-    W610 $\times$ 140 & 17900 & 1120 & 3630 & 250 & 45.1 & 392 & 50.2 \\
-    W610 $\times$ 125 & 15900 & 985 & 3220 & 249 & 39.3 & 343 & 49.7 \\
-    W610 $\times$ 113 & 14400 & 875 & 2880 & 247 & 34.3 & 301 & 48.8 \\
-    W610 $\times$ 101 & 12900 & 764 & 2530 & 243 & 29.5 & 259 & 47.8 \\
-    W610 $\times$ 92 & 11800 & 646 & 2140 & 234 & 14.4 & 161 & 34.9 \\
-    W610 $\times$ 82 & 10500 & 560 & 1870 & 231 & 12.1 & 136 & 33.9 \\
+    W610 $\times$ 155 & 19800 & 1290 & 4220 & 255 & 108  & 667  & 73.9 \\
+    W610 $\times$ 140 & 17900 & 1120 & 3630 & 250 & 45.1 & 392  & 50.2 \\
+    W610 $\times$ 125 & 15900 & 985  & 3220 & 249 & 39.3 & 343  & 49.7 \\
+    W610 $\times$ 113 & 14400 & 875  & 2880 & 247 & 34.3 & 301  & 48.8 \\
+    W610 $\times$ 101 & 12900 & 764  & 2530 & 243 & 29.5 & 259  & 47.8 \\
+    W610 $\times$ 92  & 11800 & 646  & 2140 & 234 & 14.4 & 161  & 34.9 \\
+    W610 $\times$ 82  & 10500 & 560  & 1870 & 231 & 12.1 & 136  & 33.9 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 97 & 12300 & 445 & 1910 & 190 & 22.8 & 236 & 43.1 \\
+    W460 $\times$ 97  & 12300 & 445  & 1910 & 190 & 22.8 & 236  & 43.1 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 89 & 11400 & 410 & 1770 & 190 & 20.9 & 218 & 42.8 \\
+    W460 $\times$ 89  & 11400 & 410  & 1770 & 190 & 20.9 & 218  & 42.8 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 82 & 10400 & 370 & 1610 & 189 & 18.6 & 195 & 42.3 \\
+    W460 $\times$ 82  & 10400 & 370  & 1610 & 189 & 18.6 & 195  & 42.3 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 74 & 9460 & 333 & 1460 & 188 & 16.6 & 175 & 41.9 \\
+    W460 $\times$ 74  & 9460  & 333  & 1460 & 188 & 16.6 & 175  & 41.9 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 68 & 8730 & 297 & 1290 & 184 & 9.41 & 122 & 32.8 \\
+    W460 $\times$ 68  & 8730  & 297  & 1290 & 184 & 9.41 & 122  & 32.8 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 60 & 7590 & 255 & 1120 & 183 & 7.96 & 104 & 32.4 \\
+    W460 $\times$ 60  & 7590  & 255  & 1120 & 183 & 7.96 & 104  & 32.4 \\
     \rowcolor{LightSkyBlue!50}
-    W460 $\times$ 52 & 6640 & 212 & 942 & 179 & 6.34 & 83.4 & 30.9 \\
-    W410 $\times$ 85 & 10800 & 315 & 1510 & 171 & 18.0 & 199 & 40.8 \\
-    W410 $\times$ 74 & 9510 & 275 & 1330 & 170 & 15.6 & 173 & 40.5 \\
-    W410 $\times$ 67 & 8560 & 245 & 1200 & 169 & 13.8 & 154 & 40.2 \\
-    W410 $\times$ 53 & 6820 & 186 & 923 & 165 & 10.1 & 114 & 38.5 \\
-    W410 $\times$ 46 & 5890 & 156 & 774 & 163 & 5.14 & 73.4 & 29.5 \\
-    W410 $\times$ 39 & 4960 & 126 & 632 & 159 & 4.02 & 57.4 & 28.5 \\
+    W460 $\times$ 52  & 6640  & 212  & 942  & 179 & 6.34 & 83.4 & 30.9 \\
+    W410 $\times$ 85  & 10800 & 315  & 1510 & 171 & 18.0 & 199  & 40.8 \\
+    W410 $\times$ 74  & 9510  & 275  & 1330 & 170 & 15.6 & 173  & 40.5 \\
+    W410 $\times$ 67  & 8560  & 245  & 1200 & 169 & 13.8 & 154  & 40.2 \\
+    W410 $\times$ 53  & 6820  & 186  & 923  & 165 & 10.1 & 114  & 38.5 \\
+    W410 $\times$ 46  & 5890  & 156  & 774  & 163 & 5.14 & 73.4 & 29.5 \\
+    W410 $\times$ 39  & 4960  & 126  & 632  & 159 & 4.02 & 57.4 & 28.5 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 79 & 10100 & 227 & 1280 & 150 & 24.2 & 236 & 48.9 \\
+    W360 $\times$ 79  & 10100 & 227  & 1280 & 150 & 24.2 & 236  & 48.9 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 64 & 8150 & 179 & 1030 & 148 & 18.8 & 185 & 48.0 \\
+    W360 $\times$ 64  & 8150  & 179  & 1030 & 148 & 18.8 & 185  & 48.0 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 57 & 7200 & 160 & 894 & 149 & 11.1 & 129 & 39.3 \\
+    W360 $\times$ 57  & 7200  & 160  & 894  & 149 & 11.1 & 129  & 39.3 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 51 & 6450 & 141 & 794 & 148 & 9.68 & 113 & 38.7 \\
+    W360 $\times$ 51  & 6450  & 141  & 794  & 148 & 9.68 & 113  & 38.7 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 45 & 5710 & 121 & 688 & 146 & 8.16 & 95.4 & 37.8 \\
+    W360 $\times$ 45  & 5710  & 121  & 688  & 146 & 8.16 & 95.4 & 37.8 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 39 & 4960 & 102 & 578 & 143 & 3.75 & 58.6 & 27.5 \\
+    W360 $\times$ 39  & 4960  & 102  & 578  & 143 & 3.75 & 58.6 & 27.5 \\
     \rowcolor{LightSkyBlue!50}
-    W360 $\times$ 33 & 4190 & 82.9 & 475 & 141 & 2.91 & 45.8 & 26.4 \\
+    W360 $\times$ 33  & 4190  & 82.9 & 475  & 141 & 2.91 & 45.8 & 26.4 \\
     \bottomrule
   \end{tabular}
 \end{table}
@@ -8049,50 +8145,97 @@ properties}
     \cmidrule{2-8}
                                    & mm$^2$ & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm \\
     \midrule
-    W310 $\times$ 129 & 16500 & 308 & 1940 & 137 & 100 & 649 & 77.8 \\
-    W310 $\times$ 74 & 9480 & 165 & 1060 & 132 & 23.4 & 228 & 49.7 \\
-    W310 $\times$ 67 & 8530 & 145 & 948 & 130 & 20.7 & 203 & 49.3 \\
-    W310 $\times$ 39 & 4930 & 84.8 & 547 & 131 & 7.23 & 87.6 & 38.3 \\
-    W310 $\times$ 33 & 4180 & 65.0 & 415 & 125 & 1.92 & 37.6 & 21.4 \\
-    W310 $\times$ 24 & 3040 & 42.8 & 281 & 119 & 1.16 & 23.0 & 19.5 \\
-    W310 $\times$ 21 & 2680 & 37.0 & 244 & 117 & 0.986 & 19.5 & 19.2 \\
+    W310 $\times$ 129 & 16500 & 308  & 1940 & 137  & 100   & 649  & 77.8 \\
+    W310 $\times$ 74  & 9480  & 165  & 1060 & 132  & 23.4  & 228  & 49.7 \\
+    W310 $\times$ 67  & 8530  & 145  & 948  & 130  & 20.7  & 203  & 49.3 \\
+    W310 $\times$ 39  & 4930  & 84.8 & 547  & 131  & 7.23  & 87.6 & 38.3 \\
+    W310 $\times$ 33  & 4180  & 65.0 & 415  & 125  & 1.92  & 37.6 & 21.4 \\
+    W310 $\times$ 24  & 3040  & 42.8 & 281  & 119  & 1.16  & 23.0 & 19.5 \\
+    W310 $\times$ 21  & 2680  & 37.0 & 244  & 117  & 0.986 & 19.5 & 19.2 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 149 & 19000 & 259 & 1840 & 117 & 86.2 & 656 & 67.4 \\
+    W250 $\times$ 149 & 19000 & 259  & 1840 & 117  & 86.2  & 656  & 67.4 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 80 & 10200 & 126 & 984 & 111 & 43.1 & 338 & 65.0 \\
+    W250 $\times$ 80  & 10200 & 126  & 984  & 111  & 43.1  & 338  & 65.0 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 67 & 8560 & 104 & 809 & 110 & 22.2 & 218 & 50.9 \\
+    W250 $\times$ 67  & 8560  & 104  & 809  & 110  & 22.2  & 218  & 50.9 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 58 & 7400 & 87.3 & 693 & 109 & 18.8 & 185 & 50.4 \\
+    W250 $\times$ 58  & 7400  & 87.3 & 693  & 109  & 18.8  & 185  & 50.4 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 45 & 5700 & 71.1 & 535 & 112 & 7.03 & 95 & 35.1 \\
+    W250 $\times$ 45  & 5700  & 71.1 & 535  & 112  & 7.03  & 95   & 35.1 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 28 & 3620 & 39.9 & 307 & 105 & 1.78 & 34.9 & 22.2 \\
+    W250 $\times$ 28  & 3620  & 39.9 & 307  & 105  & 1.78  & 34.9 & 22.2 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 22 & 2850 & 28.8 & 227 & 101 & 1.22 & 23.9 & 20.7 \\
+    W250 $\times$ 22  & 2850  & 28.8 & 227  & 101  & 1.22  & 23.9 & 20.7 \\
     \rowcolor{LightSkyBlue!50}
-    W250 $\times$ 18 & 2280 & 22.5 & 179 & 99.3 & 0.919 & 18.2 & 20.1 \\
-    W200 $\times$ 100 & 12700 & 113 & 987 & 94.3 & 36.6 & 349 & 53.7 \\
-    W200 $\times$ 86 & 11000 & 94.7 & 853 & 92.8 & 31.4 & 300 & 53.4 \\
-    W200 $\times$ 71 & 9100 & 76.6 & 709 & 91.7 & 25.4 & 247 & 52.8 \\
-    W200 $\times$ 59 & 7580 & 61.2 & 583 & 89.9 & 20.4 & 199 & 51.9 \\
-    W200 $\times$ 46 & 5890 & 45.5 & 448 & 87.9 & 15.3 & 151 & 51.0 \\
-    W200 $\times$ 36 & 4570 & 34.4 & 342 & 86.8 & 7.64 & 92.6 & 40.9 \\
-    W200 $\times$ 22 & 2860 & 20.0 & 194 & 83.6 & 1.42 & 27.8 & 22.3 \\
+    W250 $\times$ 18  & 2280  & 22.5 & 179  & 99.3 & 0.919 & 18.2 & 20.1 \\
+    W200 $\times$ 100 & 12700 & 113  & 987  & 94.3 & 36.6  & 349  & 53.7 \\
+    W200 $\times$ 86  & 11000 & 94.7 & 853  & 92.8 & 31.4  & 300  & 53.4 \\
+    W200 $\times$ 71  & 9100  & 76.6 & 709  & 91.7 & 25.4  & 247  & 52.8 \\
+    W200 $\times$ 59  & 7580  & 61.2 & 583  & 89.9 & 20.4  & 199  & 51.9 \\
+    W200 $\times$ 46  & 5890  & 45.5 & 448  & 87.9 & 15.3  & 151  & 51.0 \\
+    W200 $\times$ 36  & 4570  & 34.4 & 342  & 86.8 & 7.64  & 92.6 & 40.9 \\
+    W200 $\times$ 22  & 2860  & 20.0 & 194  & 83.6 & 1.42  & 27.8 & 22.3 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 37 & 4730 & 22.2 & 274 & 68.5 & 7.07 & 91.8 & 38.7 \\
+    W150 $\times$ 37  & 4730  & 22.2 & 274  & 68.5 & 7.07  & 91.8 & 38.7 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 30 & 3790 & 17.1 & 218 & 67.2 & 5.54 & 72.4 & 38.2 \\
+    W150 $\times$ 30  & 3790  & 17.1 & 218  & 67.2 & 5.54  & 72.4 & 38.2 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 22 & 2860 & 12.1 & 159 & 65.0 & 3.87 & 50.9 & 36.8 \\
+    W150 $\times$ 22  & 2860  & 12.1 & 159  & 65.0 & 3.87  & 50.9 & 36.8 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 24 & 3060 & 13.4 & 168 & 66.2 & 1.83 & 35.9 & 24.5 \\
+    W150 $\times$ 24  & 3060  & 13.4 & 168  & 66.2 & 1.83  & 35.9 & 24.5 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 18 & 2290 & 9.19 & 120 & 63.3 & 1.26 & 24.7 & 23.5 \\
+    W150 $\times$ 18  & 2290  & 9.19 & 120  & 63.3 & 1.26  & 24.7 & 23.5 \\
     \rowcolor{LightSkyBlue!50}
-    W150 $\times$ 14 & 1730 & 6.84 & 91.2 & 62.9 & 0.912 & 18.2 & 23.0 \\
+    W150 $\times$ 14  & 1730  & 6.84 & 91.2 & 62.9 & 0.912 & 18.2 & 23.0 \\
     \bottomrule
   \end{tabular}
+\end{table}
+
+\chapter{Sectional Properties of Geometric Shapes}
+
+\section{Moment of Inertia}
+
+The \emph{moment of inertia}, also known as the second moment of area or area moment of inertia, is a geometrical property of an area. Usually, it is evaluated about an axis of rotation. The moment of inertia of an area $A$ about a neutral axis $k$, denoted by $I_k$, is
+
+\begin{equation}
+  I_k = \iint_A y^2 dA
+\end{equation} 
+where $y$ is the distance perpendicular to the neutral axis $k$ and $dA$ is an arbitrary infinitessimally small area divided for the area integration.
+
+\begin{example} Moment of inertia of a rectangular cross section.
+
+  For a rectangular cross section whose width (dimension along the neutral axis) is $b$ and height (dimension perpendicular to the neutral axis) is $h$, we have that
+
+  \begin{align*}
+    I = \iint_A y^2 dA
+  \end{align*}
+
+  To simplify the double integrals, we can see that the distance from neutral axis $y$ is going to be constant when evaluating the area parallel to the neutral axis. We can slice the area into small horizontal strips with length $b$ and height $dy$, simplifying the double integrals to 
+
+  \begin{align*}
+    I &= \int_{-\frac{h}{2}}^{\frac{h}{2}} by^2dy \\
+      &= b \left[ \frac{y^3}{3} \right]_{-\frac{h}{2}}^{\frac{h}{2}} \\
+      &= \frac{bh^3}{12}
+  \end{align*}
+  
+\end{example}
+
+\begin{example} Moment of inertia of a circular cross section.
+
+  For a circle with radius $R$, it is simpler to integrate using polar coordinates $r$ and $\theta$. The $dA$ element becomes $rdrd\theta$, $dy$ becomes $r \sin \theta$ so that we have
+
+  \begin{align*}
+    I &= \int_0^R \int_0^{2\pi} \left( r \sin \theta \right)^2 r dr d\theta \\
+      &= \int_0^R r^3 dr \int_0^{2\pi} \sin^2 \theta d\theta \\
+      &= \frac{R^4}{4} \left[ \frac{\theta - \sin 2\theta}{2} \right]_0^{2\pi} \\
+      &= \frac{\pi R^4}{4}
+  \end{align*}
+
+\end{example}
+
+The moments of inertia of other geometric shapes are listed in ...
+
+\begin{table}
 \end{table}
 
 \nocite{*}

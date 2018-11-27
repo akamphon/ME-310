@@ -40,7 +40,7 @@
 \BOOKMARK [-1][-]{part.3}{III The Assembly}{}% 40
 \BOOKMARK [0][-]{chapter.7}{Welded Joint Design}{part.3}% 41
 \BOOKMARK [1][-]{section.7.1}{Types of Welding}{chapter.7}% 42
-\BOOKMARK [1][-]{section.7.2}{Welding Material}{chapter.7}% 43
+\BOOKMARK [1][-]{section.7.2}{Welded Joint Strength}{chapter.7}% 43
 \BOOKMARK [1][-]{section.7.3}{Welded Joint Geometry}{chapter.7}% 44
 \BOOKMARK [1][-]{section.7.4}{Welded Joints under Static Axial and Shear Loading}{chapter.7}% 45
 \BOOKMARK [1][-]{section.7.5}{Welded Joints under Static Torsional and Bending Loading}{chapter.7}% 46
@@ -69,4 +69,6 @@
 \BOOKMARK [1][-]{section.10.3}{Beam Elements}{chapter.10}% 69
 \BOOKMARK [1][-]{section.10.4}{Finite Element Analysis using Solidworks}{chapter.10}% 70
 \BOOKMARK [0][-]{appendix.A}{Properties Structural Steel Sections}{part.4}% 71
-\BOOKMARK [0][-]{appendix*.179}{Bibliography}{part.4}% 72
+\BOOKMARK [0][-]{appendix.B}{Sectional Properties of Geometric Shapes}{part.4}% 72
+\BOOKMARK [1][-]{section.B.1}{Moment of Inertia}{appendix.B}% 73
+\BOOKMARK [0][-]{appendix*.181}{Bibliography}{part.4}% 74
