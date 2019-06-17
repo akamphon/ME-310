@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.7)  22 MAY 2019 08:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.6.5)  17 JUN 2019 16:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -773,7 +773,7 @@ LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
 (/home/sup/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
-Package: multirow 2019/01/01 v2.4 Span multiple rows of a table
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip108
 \multirow@cntb=\count140
 \multirow@dima=\skip109
@@ -797,10 +797,10 @@ Package cleveref Info: `subfig' support loaded on input line 3164.
 )
 (/home/sup/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
 (/home/sup/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2019-05-09 L3 programming layer (loader) 
+Package: expl3 2019-05-28 L3 programming layer (loader) 
 
 (/home/sup/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
-Package: expl3 2019-05-09 L3 programming layer (code)
+Package: expl3 2019-05-28 L3 programming layer (code)
 \c_max_int=\count141
 \l_tmpa_int=\count142
 \l_tmpb_int=\count143
@@ -957,7 +957,7 @@ File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count293
 ))
 (/home/sup/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2019-05-03 L3 Experimental document command parser
+Package: xparse 2019-05-28 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count294
 \g__xparse_grabber_int=\count295
 \l__xparse_m_args_int=\count296
@@ -966,7 +966,7 @@ Package: xparse 2019-05-03 L3 Experimental document command parser
 Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
 
 (/home/sup/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
-Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
+Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box51
 \l__siunitx_tmp_dim=\dimen184
@@ -1010,7 +1010,7 @@ Package: l3keys2e 2019-05-03 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_text_align_skip=\skip119
 
 (/home/sup/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
-Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ))
 (/home/sup/texlive/2019/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2017/07/20 v0.16 execute and typeset Python code and other l
@@ -3166,18 +3166,15 @@ Package mdframed Info: Box was splittet wrong
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [96]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [97]
-<pictures/Simple-load-bearing/footbridge.pdf, id=1756, 383.4325pt x 238.8925pt>
+[97]
+<pictures/Simple-load-bearing/footbridge.pdf, id=1757, 383.4325pt x 238.8925pt>
 
 File: pictures/Simple-load-bearing/footbridge.pdf Graphic file (type pdf)
 <use pictures/Simple-load-bearing/footbridge.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/footbridge.pdf  used on i
 nput line 4510.
 (pdftex.def)             Requested size: 306.74641pt x 191.11424pt.
-
-[98 <./pictures/Simple-load-bearing/footbridge.pdf>]
+ [98 <./pictures/Simple-load-bearing/footbridge.pdf>]
 Chapter 6.
 <pictures/Spring-design/torsion-bar-spring.pdf, id=1779, 564.1075pt x 433.62pt>
 
@@ -4088,32 +4085,32 @@ Underfull \vbox (badness 1629) has occurred while \output is active []
 [188] [189] [190]
 Appendix B.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8497--8497
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8494--8494
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8497--8497
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8494--8494
  []|
  []
 
 
-Overfull \hbox (12.91785pt too wide) in paragraph at lines 8495--8531
+Overfull \hbox (12.91785pt too wide) in paragraph at lines 8492--8528
 [][] 
  []
 
 
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8543--8543
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8540--8540
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8543--8543
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8540--8540
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8541--8592
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8538--8589
 [][] 
  []
 
@@ -4123,17 +4120,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [191
 
 ]
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8598--8598
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8595--8595
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8598--8598
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8595--8595
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8596--8648
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8593--8645
 [][] 
  []
 
@@ -4143,14 +4140,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [192]
 [193]
 Appendix C.
-Package mdframed Info: mdframed works in twoside mode on input line 8661.
+Package mdframed Info: mdframed works in twoside mode on input line 8658.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8661.
-Package mdframed Info: mdframed works in twoside mode on input line 8679.
+(mdframed)              on input line 8658.
+Package mdframed Info: mdframed works in twoside mode on input line 8676.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8679.
+(mdframed)              on input line 8676.
 [194
 
 ] [195]
@@ -4162,16 +4159,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [197]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 8770.
+(Font)              scaled to size 10.0pt on input line 8767.
  [198
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8772.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8772.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8769.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8769.
  (./me310.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8772.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8772.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8769.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8769.
 
 Package rerunfilecheck Info: File `me310.out' has not changed.
 (rerunfilecheck)             Checksum: FA288393556948DE38FC407E6CCF2E8A;5601.
@@ -4185,10 +4182,10 @@ Package logreq Info: Writing requests to 'me310.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62571 strings out of 492616
- 1384255 string characters out of 6129937
- 1893689 words of memory out of 5000000
- 64427 multiletter control sequences out of 15000+600000
+ 62617 strings out of 492609
+ 1385231 string characters out of 6129508
+ 1894186 words of memory out of 5000000
+ 64474 multiletter control sequences out of 15000+600000
  677128 words of font info for 221 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,17n,100p,1290b,2180s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -4215,10 +4212,10 @@ b></home/sup/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></hom
 e/sup/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/sup/tex
 live/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></home/sup/texlive/2019/
 texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on me310.pdf (206 pages, 11312968 bytes).
+Output written on me310.pdf (206 pages, 11312790 bytes).
 PDF statistics:
- 3168 PDF objects out of 3580 (max. 8388607)
- 2669 compressed objects within 27 object streams
+ 3169 PDF objects out of 3580 (max. 8388607)
+ 2670 compressed objects within 27 object streams
  1084 named destinations out of 1200 (max. 500000)
  1113 words of extra memory for PDF output out of 10000 (max. 10000000)
 
