@@ -1995,21 +1995,39 @@
     <bcf:datasource type="file" datatype="bibtex">me310.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="8">datsko1977materials</bcf:citekey>
-    <bcf:citekey order="9">secondaryscience4all</bcf:citekey>
-    <bcf:citekey order="10">secondaryscience4all</bcf:citekey>
-    <bcf:citekey order="11">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="12">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="13">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="14">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="15">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="16">ashby2010materials</bcf:citekey>
-    <bcf:citekey order="17">juvinall2006fundamentals</bcf:citekey>
-    <bcf:citekey order="18">juvinall2006fundamentals</bcf:citekey>
-    <bcf:citekey order="19">juvinall2006fundamentals</bcf:citekey>
-    <bcf:citekey order="20">juvinall2006fundamentals</bcf:citekey>
-    <bcf:citekey order="21">juvinall2006fundamentals</bcf:citekey>
-    <bcf:citekey order="22">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="15">plisga2017standard</bcf:citekey>
+    <bcf:citekey order="16">plisga2017standard</bcf:citekey>
+    <bcf:citekey order="17">plisga2017standard</bcf:citekey>
+    <bcf:citekey order="18">plisga2017standard</bcf:citekey>
+    <bcf:citekey order="19">jeffus2011welding</bcf:citekey>
+    <bcf:citekey order="20">jeffus2011welding</bcf:citekey>
+    <bcf:citekey order="21">datsko1977materials</bcf:citekey>
+    <bcf:citekey order="22">datsko1977materials</bcf:citekey>
+    <bcf:citekey order="23">datsko1977materials</bcf:citekey>
+    <bcf:citekey order="24">secondaryscience4all</bcf:citekey>
+    <bcf:citekey order="25">secondaryscience4all</bcf:citekey>
+    <bcf:citekey order="26">gay2014composite</bcf:citekey>
+    <bcf:citekey order="27">gay2014composite</bcf:citekey>
+    <bcf:citekey order="28">gay2014composite</bcf:citekey>
+    <bcf:citekey order="29">gay2014composite</bcf:citekey>
+    <bcf:citekey order="30">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="31">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="32">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="33">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="34">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="35">ashby2010materials</bcf:citekey>
+    <bcf:citekey order="36">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="37">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="38">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="39">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="40">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="41">juvinall2006fundamentals</bcf:citekey>
+    <bcf:citekey order="42">bringas2004handbook</bcf:citekey>
+    <bcf:citekey order="43">bringas2004handbook</bcf:citekey>
+    <bcf:citekey order="44">bringas2004handbook</bcf:citekey>
+    <bcf:citekey order="45">bringas2004handbook</bcf:citekey>
+    <bcf:citekey order="46">oberg2016machinery</bcf:citekey>
+    <bcf:citekey order="47">oberg2016machinery</bcf:citekey>
     <bcf:citekey order="0" nocite="1">*</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->

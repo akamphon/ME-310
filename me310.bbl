@@ -109,6 +109,31 @@
       \field{year}{1985}
       \true{nocite}
     \endentry
+    \entry{bringas2004handbook}{book}{}
+      \name{author}{1}{}{%
+        {{hash=66988a6a8f7f79f1414cd9189c3f9efd}{%
+           family={Bringas},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASTM International,}%
+      }
+      \strng{namehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{fullhash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{bibnamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authorbibnamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authornamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authorfullhash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of comparative world steel standards}
+      \field{year}{2004}
+      \true{nocite}
+    \endentry
     \entry{datsko1977materials}{book}{}
       \name{author}{1}{}{%
         {{hash=25415021c7a2da5e2edfd65723a9a7cb}{%
@@ -134,6 +159,31 @@
       \field{year}{1977}
       \true{nocite}
     \endentry
+    \entry{gay2014composite}{book}{}
+      \name{author}{1}{}{%
+        {{hash=42dbec8679559b4266aafda06b1df0a1}{%
+           family={Gay},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{fullhash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{bibnamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authorbibnamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authornamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authorfullhash}{42dbec8679559b4266aafda06b1df0a1}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composite Materials: Design and Applications}
+      \field{year}{2014}
+      \true{nocite}
+    \endentry
     \entry{hibbelermechanics}{book}{}
       \name{author}{1}{}{%
         {{hash=8436125e94d9877a58200cf47abf76f0}{%
@@ -155,7 +205,32 @@
       \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{Mechanics of Materials, 1997}
+      \field{title}{Mechanics of Materials, 2011}
+      \true{nocite}
+    \endentry
+    \entry{jeffus2011welding}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aa7a0864af5c8099776c5888915fd051}{%
+           family={Jeffus},
+           familyi={J\bibinitperiod},
+           given={Larry},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nelson Education}%
+      }
+      \strng{namehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{fullhash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{bibnamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authorbibnamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authornamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authorfullhash}{aa7a0864af5c8099776c5888915fd051}
+      \field{sortinit}{J}
+      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Welding: principles and applications}
+      \field{year}{2011}
       \true{nocite}
     \endentry
     \entry{juvinall2006fundamentals}{book}{}
@@ -187,6 +262,81 @@
       \field{title}{Fundamentals of machine component design}
       \field{volume}{1}
       \field{year}{2006}
+      \true{nocite}
+    \endentry
+    \entry{oberg2016machinery}{book}{}
+      \name{author}{4}{}{%
+        {{hash=55b20b68d2db2fbd4873bd490046c069}{%
+           family={Oberg},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c33e0964b3724dd929c2c1467a242efb}{%
+           family={Horton},
+           familyi={H\bibinitperiod},
+           given={Holbrook\bibnamedelima L},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=05ba235a5a5d5e12aab020a2873a5283}{%
+           family={Ryffel},
+           familyi={R\bibinitperiod},
+           given={Henry\bibnamedelima H},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=25dc62494ee7a2732c24e68f6efd168b}{%
+           family={McCauley},
+           familyi={M\bibinitperiod},
+           given={Christopher\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Industrial Press, Incorporated}%
+      }
+      \strng{namehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{fullhash}{e5eaf6f18bf0ba884bbfe12256ad07b0}
+      \strng{bibnamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authorbibnamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authornamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authorfullhash}{e5eaf6f18bf0ba884bbfe12256ad07b0}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machinery's Handbook Guide}
+      \field{year}{2016}
+      \true{nocite}
+    \endentry
+    \entry{plisga2017standard}{book}{}
+      \name{author}{3}{}{%
+        {{hash=dc98c081f65808aab1c19944a8d5761b}{%
+           family={Plisga},
+           familyi={P\bibinitperiod},
+           given={Gary\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0a1070e161991ddeae55fd028e7194d8}{%
+           family={Lyons},
+           familyi={L\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5ff57a10231fe037479ab6022a573fc0}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{fullhash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{bibnamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authorbibnamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authornamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authorfullhash}{1c859062e0cf5c1be7eb78cd44276540}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Standard Handbook of Petroleum and Natural Gas Engineering}
+      \field{year}{2017}
       \true{nocite}
     \endentry
     \entry{shigley2011shigley}{book}{}

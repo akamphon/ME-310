@@ -5,13 +5,73 @@
                      '(("book" "10pt" "a4paper" "openany" "svgnames" "")))
    (TeX-add-to-alist 'LaTeX-provided-package-options
                      '(("inputenc" "utf8") ("parskip" "parfill") ("tocbibind" "numbib") ("tocloft" "titles" "subfigure") ("wasysym" "nointegrals") ("pythontex" "gobble=auto") ("titlesec" "explicit") ("biblatex" "style=numeric" "backend=biber")))
+   (add-to-list 'LaTeX-verbatim-environments-local "Verbatim")
+   (add-to-list 'LaTeX-verbatim-environments-local "Verbatim*")
+   (add-to-list 'LaTeX-verbatim-environments-local "BVerbatim")
+   (add-to-list 'LaTeX-verbatim-environments-local "BVerbatim*")
+   (add-to-list 'LaTeX-verbatim-environments-local "LVerbatim")
+   (add-to-list 'LaTeX-verbatim-environments-local "LVerbatim*")
+   (add-to-list 'LaTeX-verbatim-environments-local "SaveVerbatim")
+   (add-to-list 'LaTeX-verbatim-environments-local "VerbatimOut")
+   (add-to-list 'LaTeX-verbatim-environments-local "pythontexcustomcode")
+   (add-to-list 'LaTeX-verbatim-environments-local "pygments")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "path")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "url")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "nolinkurl")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperbaseurl")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperimage")
    (add-to-list 'LaTeX-verbatim-macros-with-braces-local "hyperref")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "py")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pyc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pys")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pyv")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pyb")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pycon")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pyconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pyconv")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylab")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabs")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabv")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabb")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabcon")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "pylabconv")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympy")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympyc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympys")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympyv")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympyb")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympycon")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympyconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-braces-local "sympyconv")
    (add-to-list 'LaTeX-verbatim-macros-with-delims-local "path")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "Verb")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "Verb*")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "py")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pyc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pys")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pyv")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pyb")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pycon")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pyconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pyconv")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylab")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabs")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabv")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabb")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabcon")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "pylabconv")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympy")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympyc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympys")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympyv")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympyb")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympycon")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympyconc")
+   (add-to-list 'LaTeX-verbatim-macros-with-delims-local "sympyconv")
    (TeX-run-style-hooks
     "latex2e"
     "book"
@@ -61,8 +121,16 @@
    (LaTeX-add-labels
     "fig: engineering design processes"
     "table: safety factor guideline"
+    "tab: safety factor safety econ"
+    "eq: total safety factor"
+    "tab: cast iron quals"
+    "tab: cast iron props"
+    "tab: major class of steel"
+    "tab: carbon steel classification"
     "table: effective alloys"
     "fig: polymers and repeating units"
+    "tab: resin props"
+    "tab: reinforcement props"
     "fig: strength stiffness diagram"
     "fig: strength density diagram"
     "fig: strength temperature diagram"
@@ -158,6 +226,7 @@
     "eqn: clamped parts area approx"
     "eqn: tension joint bolt sizing"
     "example: static flange joint bolt sizing"
+    "fig: bolted joint under bending"
     "table: fatigue limit bolt"
     "table: fatigue stress concentration bolt"
     "exercise: bolt for bicycle fork"
@@ -192,6 +261,12 @@
    (LaTeX-add-color-definecolors
     "lightblue"
     "titlepagecolor"
-    "namecolor"))
+    "namecolor")
+   (LaTeX-add-thmtools-declaretheoremstyles
+    "exstyle"
+    "solstyle")
+   (LaTeX-add-thmtools-declaretheorems
+    "example"
+    "solution"))
  :latex)
 

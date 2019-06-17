@@ -7,10 +7,10 @@
 \BOOKMARK [1][-]{section.1.2}{Safety Factor}{chapter.1}% 7
 \BOOKMARK [0][-]{chapter.2}{Material Selection}{part.1}% 8
 \BOOKMARK [1][-]{section.2.1}{Cast Iron}{chapter.2}% 9
-\BOOKMARK [1][-]{section.2.2}{Grey Iron}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Steel}{chapter.2}% 11
-\BOOKMARK [1][-]{section.2.4}{Nonferrous Alloys}{chapter.2}% 12
-\BOOKMARK [1][-]{section.2.5}{Plastics and Composites}{chapter.2}% 13
+\BOOKMARK [1][-]{section.2.2}{Steel}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Nonferrous Alloys}{chapter.2}% 11
+\BOOKMARK [1][-]{section.2.4}{Plastics}{chapter.2}% 12
+\BOOKMARK [1][-]{section.2.5}{Composites}{chapter.2}% 13
 \BOOKMARK [1][-]{section.2.6}{Engineering Material Selection Process}{chapter.2}% 14
 \BOOKMARK [0][-]{chapter.3}{Static Body Load Analysis}{part.1}% 15
 \BOOKMARK [1][-]{section.3.1}{Stress, strain, and stress-strain relationship}{chapter.3}% 16
@@ -68,7 +68,15 @@
 \BOOKMARK [1][-]{section.10.2}{Bar Elements}{chapter.10}% 68
 \BOOKMARK [1][-]{section.10.3}{Beam Elements}{chapter.10}% 69
 \BOOKMARK [1][-]{section.10.4}{Finite Element Analysis using Solidworks}{chapter.10}% 70
-\BOOKMARK [0][-]{appendix.A}{Properties Structural Steel Sections}{part.4}% 71
-\BOOKMARK [0][-]{appendix.B}{Sectional Properties of Geometric Shapes}{part.4}% 72
-\BOOKMARK [1][-]{section.B.1}{Moment of Inertia}{appendix.B}% 73
-\BOOKMARK [0][-]{appendix*.181}{Bibliography}{part.4}% 74
+\BOOKMARK [0][-]{appendix.A}{Solutions to Selected Exercises}{part.4}% 71
+\BOOKMARK [1][-]{section.A.1}{Chapter 1}{appendix.A}% 72
+\BOOKMARK [1][-]{section.A.2}{Chapter 2}{appendix.A}% 73
+\BOOKMARK [1][-]{section.A.3}{Chapter 3}{appendix.A}% 74
+\BOOKMARK [1][-]{section.A.4}{Chapter 4}{appendix.A}% 75
+\BOOKMARK [1][-]{section.A.5}{Chapter 5}{appendix.A}% 76
+\BOOKMARK [0][-]{appendix.B}{Properties of Structural Steel Sections}{part.4}% 77
+\BOOKMARK [0][-]{appendix.C}{Sectional Properties of Geometric Shapes}{part.4}% 78
+\BOOKMARK [1][-]{section.C.1}{Moment of Inertia}{appendix.C}% 79
+\BOOKMARK [0][-]{appendix.D}{Tabulated Material Designations and Properties}{part.4}% 80
+\BOOKMARK [1][-]{section.D.1}{SAE Steel Designation}{appendix.D}% 81
+\BOOKMARK [0][-]{appendix*.190}{Bibliography}{part.4}% 82

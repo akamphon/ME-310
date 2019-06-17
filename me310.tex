@@ -40,8 +40,8 @@ svgnames,
 \usepackage{hyperref}
 \hypersetup{
   colorlinks,
-  % citecolor=black,
-  % filecolor=black,
+  citecolor=black,
+  filecolor=black,
   linkcolor=blue,
   urlcolor=blue,
 }
@@ -484,10 +484,7 @@ Here, the material strength is either a static or a dynamic property. When loadi
 
 \subsection{Selection of Safety Factors}
 
-Choosing an appropriate safety factor to be used for a variety of
-applications is one of the most important engineering tasks. The
-selection of an appropriate value of safety factor is based primarily
-on the following five factors.
+Choosing an appropriate safety factor to be used for a variety of applications is one of the most important engineering tasks. The selection of an appropriate value of safety factor is based primarily on the following five factors.
 
 \begin{enumerate}
 \item Degree of uncertainty about loading. In some situations, load can be determined with virtual certainty. The loads acting on an engine valve spring are definitely established by the valve open and valve close positions. But what loads should be used for the design of automotive suspension components, whose loads can vary tremendously depending on the severity of use?
@@ -500,7 +497,7 @@ on the following five factors.
 
 \subsection{Recommended Values for Safety Factors}
 
-Keep in mind that this is by no means an absolute rule to follow—more of a general guideline for safety factor selection. These factors are based on yield strength.
+Keep in mind that this is by no means an absolute rule to follow--more of a general guideline for safety factor selection. After all, different applications and different impact failures will require that the designer reconsider the proper safety factor for a component. These factors are based on yield strength.
 
 \begin{table}[h]
   \centering
@@ -509,7 +506,7 @@ Keep in mind that this is by no means an absolute rule to follow—more of a gen
   {\renewcommand{\arraystretch}{1.5}
   \begin{tabular}{ L{7cm} C{5cm} }
     \toprule
-    \rowcolor{LightSkyBlue!70} Conditions & $N_s$ (safety factor) \\
+    \rowcolor{LightSkyBlue!70} Conditions & $N_{s\text{, cond}}$ \\
     \midrule
     Exceptionally reliable materials, controllable conditions, controlled loading (low weight a priority) & 1.25 – 1.5 \\
     \rowcolor{LightSkyBlue!50} Well-known materials, reasonably constant conditions, reliable loading & 1.5 – 2 \\
@@ -523,6 +520,32 @@ Keep in mind that this is by no means an absolute rule to follow—more of a gen
   \end{tabular}}
 \end{table}
 
+Note that this table mainly focuses on only the `cause' side of a mechanical failure--protecting against uncertainty from loading conditions, quality of design, and craftsmanship. However, as mentioned in 4) in selection criteria for safety factors, the cost of failure both to human safety and economics (the `result' side of a failure) should receive as much attention. ... presents the following guideline to consider additional safety factors based on the cost of mechanical falure.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{llccc}
+    \toprule
+    \multicolumn{2}{l}{\multirow{2}{2cm}{Characteristics}} & \multicolumn{3}{c}{Danger to Personnel} \\
+    \cmidrule{3-5}
+                                       &          & mild & moderate & severe \\
+    \midrule
+    \multirow{3}{3cm}{Economic Impact} & mild     & 1.0  & 1.2      & 1.4    \\
+                                       & moderate & 1.0  & 1.3      & 1.5    \\
+                                       & severe   & 1.2  & 1.4      & 1.6    \\
+    \bottomrule
+  \end{tabular}
+  \caption{Safety factor consideration for human safety and economic impact}
+  \label{tab: safety factor safety econ}
+\end{table}
+
+The total safety factor when considering both the design and operating conditions ($N_{s\text{, cond}}$) and the cost to human safety and economy ($N_{s\text{, cost}}$) is simply the product of the two individual factors.
+
+\begin{equation}
+  \label{eq: total safety factor}
+  N_s = N_{s\text{, cond}} N_{s\text{, cost}}
+\end{equation}
+
 \begin{example}{Safety factor for a training bicycle for toddlers}
 
   We want to approximate a proper safety factor for a bicycle for toddlers (small children). Let us take a balance bike as shown in the figure below as an example.
@@ -534,7 +557,9 @@ Keep in mind that this is by no means an absolute rule to follow—more of a gen
 \end{example}
 \begin{solution}
 
-  While individual safety factors may require knowledge of materials and requirements for each component, we can discuss the safety factor of the \emph{system}. Referring to \cref{table: safety factor guideline}, this bicycle probably will be using common materials whose properties are well known and understood. However, being a children's toy, it can be subjected to some unexpected `operating conditions'. (You know, kids being kids, they will invent some ridiculous ways to play with their toys.) If we already expect this unexpected operating conditions, we can simply increase the loading requirement and file this under `reasonably constant conditions.' Combining the two, the safety factor should fall between 1.5 - 2.
+  While individual safety factors may require knowledge of materials and requirements for each component, we can discuss the safety factor of the \emph{system}. Referring to \cref{table: safety factor guideline}, this bicycle probably will be using common materials whose properties are well known and understood. However, being a children's toy, it can be subjected to some unexpected `operating conditions'. (You know, kids being kids, they will invent some ridiculous ways to play with their toys.) If we already expect this unexpected operating conditions, we can simply increase the loading requirement and file this under `reasonably constant conditions.' Combining the two, the safety factor from the design and operating conditions should fall between 1.5 - 2.
+
+  Now, considerting safety and economic impact. This is a bike for toddler so accidents are likely to happen. Also toddlers are still small and weak so failure could have disastrous repercussions (severe). The cost of fixing the failure should be relatively low (mild), however, so the combined safety factor for human safety and economic impact is 1.4.
 \end{solution}
 
 \section*{Summary}
@@ -550,7 +575,8 @@ Designing is multidisciplinary, requiring various branches of engineering. A goo
 \begin{exercises}
   
   \exercise Consider the problem of portable personal transportation (transportation options for one passenger). Determine some of the basic required functions. Draw a FRDPARRC sheet of the problem and fill them out for with at least 2 conceptual designs.
-  \exercise  What would be proper safety factors of the following components?
+
+  \exercise What would be proper safety factors of the following components?
   \begin{enumerate}
   \item An elevator cable
   \item Mobile phone case
@@ -559,7 +585,7 @@ Designing is multidisciplinary, requiring various branches of engineering. A goo
   \item Airplane fuselage
   \end{enumerate}
   Elaborate on your reasoning. Think about the materials will you choose for the components and their operating conditions. Factor those into your ‘proper’ safety factor.
-  
+
 \end{exercises}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -576,7 +602,7 @@ Cast iron is a four-element alloy containing iron, carbon, silicon, and manganes
 
 The distinctive properties of cast iron result from its carbon content. High carbon content makes molten iron very fluid and easy to be poured into complex shapes. The precipitation of carbon during solidification reduces shrinkage normally found in other materials. The presence of graphite in the metal provides excellent machinability even at extreme hardness level, reduces vibration, and lubricates wearing surfaces. When the heat is removed rapidly, most of the carbon at the surface remains combined as iron carbides, which are extremely hard and wear-resistant.
 
-\section{Grey Iron}
+\subsection{Grey Iron}
 
 The appearance of gray iron comes from precipitated carbon in the form of graphite. Gray iron has good wear resistance. Even stronger resistance can be obtained through various foundry techniques, heat treatment, or additional alloying elements. While graphite can significantly weaken cast iron in tension, it can improve the compressive strength markedly. This advantage is very useful in construction of members under bending.
 
@@ -598,6 +624,48 @@ Typical applications are found in ball mills, extrusion dies, cement mixer liner
 
 Typical uses are for heavy-duty parts having bearing surfaces, which are needed in trucks, railroad equipment, construction machinery, and farm equipment.
 
+Mechanical properties and qualities of selected cast irons are tabulated in \cref{tab: cast iron quals} and \cref{tab: cast iron props}, respectively.
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lll}
+    \toprule
+    \multirow{2}{2cm}{Name} & Nominal composition & \multirow{2}{3.5cm}{Form and condition} \\
+                            & {[}\% by weight{]} & \\
+    \midrule
+    Grey cast iron (ASTM A48) & C 3.4, Si 1.8, Mn 0.5                  & Cast \\
+    White cast iron           & C 3.4, Si 0.7, Mn 0.6                  & Cast (as cast) \\
+    Malleable iron (ASTM A47) & C 2.5, Si 1.0, Mn 0.55                 & Cast (annealed) \\
+    Nodular iron              & C 3.4, P 0.1, Mn 0.4, Ni 1.0, Mg 0.06  & Cast \\
+    Nodular iron (ASTM A339)  & —                                      & cast (quench tempered) \\
+    Ni-hard type 2            & C 2.7, Si 0.6, Mn 0.5, Ni 4.5, Cr 2.0  & Sand-cast \\
+    Ni-resist type 2          & C 3.0, Si 2.0, Mn 1.0, Ni 20.0, Cr 2.5 & Cast \\
+    \bottomrule
+  \end{tabular}
+  \caption{Comparative qualities of cast irons \cite*{plisga2017standard}}
+  \label{tab: cast iron quals}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \begin{tabular}{lcccc}
+    \toprule
+    \multirow{2}{2cm}{Name} & Yield strength & Tensile strength & Elongation & Hardness \\
+                            & {[}ksi{]} & {[}ksi{]} & {[}\% (in 2 inches){]} & {[}Brinell scale{]} \\
+    \midrule
+    Grey cast iron (ASTM A48) & — & 50 & 0.5 & 260 \\
+    White cast iron & — & 25 & 0 & 450 \\
+    Malleable iron (ASTM A47) & 33 & 52 & 12 & 130 \\
+    Nodular iron & 53 & 70 & 18 & 170 \\
+    Nodular iron (ASTM A339) & 108 & 135 & 5 & 310 \\
+    Ni-hard type 2 & — & 55 & — & 550 \\
+    Ni-resist type 2 & — & 27 & 2 & 140 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Comparative mechanical properties of cast irons \cite{plisga2017standard}}
+  \label{tab: cast iron props}
+\end{table}
+
 \section{Steel}
 
 Steel is the most extensively used material for machine components. By varying the composition, thermal treatment, and mechanical treatment, manufacturers can obtain a wide range of mechanical properties. Three basic relationships are fundamental to the appropriate selection of steel composition.
@@ -608,27 +676,77 @@ Steel is the most extensively used material for machine components. By varying t
 \item Alloying elements (manganese, molybdenum, chromium, nickel, and others) improve the ease with which steel can be hardened. With these alloys, the potential hardness and strength can be realized with less extreme heat treatments. This means that parts with large sections can achieve higher hardnesses in the core of the section and that irregularly shaped parts can achieve desired hardness from a more moderate heat treatment with lower risk from warpage from extreme temperatures.
 \end{enumerate}
 
+Through efforts to standardize a numbering system by the American Iron and Steel Institute (AISI) and the Society of Automotive Engineers (SAE), the AISI/SAE steel grades were established and since 1995 the future maintenance of the system was turned over to SAE. According to the grades, Carbon steels and alloy steels are designated a four digit number, whereby the first digit indicates the main alloying elements, the second digit indicates top grade elements, and the last two digits indicate the amount of carbon in hundredths of a percent by weight. An ``H'' suffix can be added to any designation to denote hardenability is a major requirement.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{rl}
+    \toprule
+    SAE designation & \multicolumn{1}{c}{Type} \\
+    \midrule
+    1xxx & Carbon steels \\
+    2xxx & Nickel steels \\
+    3xxx & Nickel-chromium steels \\
+    4xxx & Molybdenum steels \\
+    5xxx & Chromium steels \\
+    6xxx & Chromium-vanadium steels \\
+    7xxx & Tungsten steels \\
+    8xxx & Nickel-chromium-molybdenum steels \\
+    9xxx & Silicon-manganese steels \\ 
+    \bottomrule
+  \end{tabular}
+  \caption{Major classifications of steel \cite{jeffus2011welding}}
+  \label{tab: major class of steel}
+\end{table}
+
 \subsection{Plain Carbon Steels}
 
 Plain carbon steels contain only carbon as a significant alloying element. Low-carbon steels have less than 0.3 percent carbon, medium-carbon steels have 0.3 – 0.5 percent, and high-carbon steels have above 0.5 percent.
 
+\begin{table}[h]
+  \centering
+  \begin{tabular}{clp{8cm}}
+    \toprule
+    \% carbon & Classification & Typical Uses \\
+    \midrule
+    0.05 & Dead mild steel & Sheet and strip for presswork, car bodies, tin plate; wire, rod, and tubes \\
+    0.08 - 0.15 & Mild steel & Sheet and strip for presswork; wire and rod for nails, screws, concrete reinforcement bar \\
+    0.15 & Mild steel & Case carburising quality \\
+    0.1 - 0.3 & Mild steel & Steel plate and sections, for structural work \\
+    0.25 - 0.4 & Medium carbon steel & Bright drawn bar \\
+    0.3 - 0.45 & Medium carbon steel & Shafts and high-tensile tubing \\
+    0.4 - 0.5 & Medium carbon steel & Shafts, gears, railway tyres \\
+    0.55 - 0.65 & High carbon steel & Forging dies, railway rails, springs \\
+    0.65 - 0.75 & High carbon steel & Hammers, saws, cylinder linings \\
+    0.75 - 0.85 & High carbon steel & Cold chisels, forging die blocks \\
+    0.85 - 0.95 & High carbon steel & Punches, shear blades, high-tensile wire \\
+    0.95 - 1.1 & High carbon steel & Knives, axes, picks, screwing dies and taps, milling cutters \\
+    1.1 - 1.4 & High carbon steel & Ball bearings, drills, wood-cutting and metal-cutting tools, razors \\
+    \bottomrule
+  \end{tabular}
+  \caption{Carbon steel classification and uses by carbon content}
+  \label{tab: carbon steel classification}
+\end{table}
+
 \subsection{Alloy Steels}
 
-As mentioned previously, the basic purpose of adding alloying elements to steel is to increase hardenability. \Cref{table: effective alloys} represents the results of a study by Datsko \cite{datsko1977materials} of the relative effectiveness of various alloying elements in increasing hardenability to steel. The equations give a relative hardenability factor f as a function of the concentration of the element used. 
+Addition of alloying elements to steel is done to increase strength or hardenability, or achieving a special properties such as corrosion resisntance or extreme temperature stability.
+
+In the case of increasing hardenability, \Cref{table: effective alloys} represents the results of a study by \citeauthor{datsko1977materials} of the relative effectiveness of various alloying elements in increasing hardenability to steel. The equations give a relative hardenability factor $f$ as a function of the concentration of the element used. 
 
 \begin{table}[h]
   \centering
-  \caption{Relative effectiveness of various alloying elements}
+  \caption{Relative effectiveness of various alloying elements \cite{datsko1977materials}}
   \label{table: effective alloys}
   {\renewcommand{\arraystretch}{1.4}
-    \begin{tabular}{ L{3cm} C{3cm} C{4cm} }
+    \begin{tabular}{lll}
       \toprule
       Alloying Element & Concentration & Relative Effectiveness \\
       \midrule
       Boron & $B < 0.002$ & $f_B = 17.23B^{0.0268}$\\
       Manganese & $Mn < 1.2$ & $f_{Mn} = 3.46Mn + 1$ \\
-      Manganese & $1.2 < Mn < 2.0$ & $f_{Mn} = 5.125Mn - 1$ \\
-      Molybdenum & $Mo < 1.0$ & $f_{Mo} = 3.0Mo + 1$ \\
+      Manganese & $1.2 < M\!n < 2.0$ & $f_{Mn} = 5.125M\!n - 1$ \\
+      Molybdenum & $M\!o < 1.0$ & $f_{Mo} = 3.0M\!o + 1$ \\
       Chromium & $Cr < 2.0$ & $f_{Cr} = 2.18Cr + 1$ \\
       Silicon & $Si < 2.0$ & $f_{Si} = 0.7Si + 1$ \\
       Nickel & $Ni < 2.0$ & $f_{Ni} = 0.4Ni + 1$ \\
@@ -636,11 +754,11 @@ As mentioned previously, the basic purpose of adding alloying elements to steel 
   \end{tabular}}
 \end{table}
 
-Most alloy steels can be classed as either through-hardening (relatively penetrative hardening) or carburizing (shallow hardening). The latter is useful in the case where a hard surface and tough core is desired. 
-
 \subsection{HSLA Steels}
 
-High-strength low-alloy (HSLA) steels were first developed as a class of relatively low-cost steels providing much of the advantage of more costly regular alloy steels. In many applications, their greater strength compared to plain carbon steel allows a considerable weight reduction with relatively small increase in total cost of the part. Their main use nowadays still remains in the automotive industry.
+High-strength low-alloy (HSLA) steels were developed to provide better mechanical properties and/or greater corrosion resistance than carbon steels. They also differ from other steels in that they are not made to meet a specific chemical composition, but rather to a specific mechanical properties. They have carbon content between 0.05 - 0.25\% to retain formability and weldability. There can be other alloying elements including up to 2\% manganese and small quantities of copper, nickel, chromium, molybdenum, etc.
+
+In many applications, their greater strength compared to plain carbon steel allows a considerable weight reduction with relatively small increase in total cost of the part. Their main use nowadays still remains in the automotive industry.
 
 \subsection{Case-Hardening Steels}
 
@@ -701,11 +819,7 @@ Titanium alloys are nonmagnetic and extremely corrosion-resistant, have low ther
 
 Zinc is a relatively inexpensive metal with moderate strength. It has a low melting temperature and so is readily and economically die-cast. Typical zinc die castings include automotive parts, building hardware, office machine components, and toys. Limited use is made of the metal in other forms.
 
-\section{Plastics and Composites}
-
-The information contained in this section is a brief overview of an extensive and complex field. Additional technical information related to engineering polymers is available at \url{http://plastics.dupont.com/} and at \url{http://www.sabic-ip.com/}. Volumes of information concerning composite materials are given in MIL-HDBK 17, Composite Materials Handbook [15], [16], [17], [18], and [19].
-
-\subsection{Plastics}
+\section{Plastics}
 
 Plastics constitute a large and varied group of synthetic organic materials. The basic chemical units of plastic materials are monomers. Under appropriate conditions, usually involving heat, pressure, or both, polymerization takes place, combining monomers into polymers. Typical monomers and their corresponding repeating polymer units are shown in \cref{fig: polymers and repeating units}.
 
@@ -724,13 +838,9 @@ Plastics have traditionally been designated as thermoplastic, softening with hea
 
 Cross-linking can be initiated by heat, chemical agents, irradiation, or a combination of these. Some plastics can be either cross-linked or linear. The cross-linked form is more resistant to heat, chemical attack, and creep (better dimensional stability). On the other hand, the linear form is less brittle (more impact-resistant), more easily processed, and better adapted to complex shapes.
 
-Glass fiber reinforcement improves the strength of plastics by a factor of two or more. At substantially increased cost, a further improvement is obtainable by carbon fiber reinforcement. These relatively new materials (with 10 to 40 percent carbon) have tensile strengths as high as 275 MPa. Compared to glass-reinforced resins, they have less mold shrinkage, lower coefficients of expansion, and improved creep resistance, wear resistance, and toughness. The new fiber-reinforced plastics are being increasingly used for machine and structural components requiring light weight and high strength-to-weight ratios.
-
-Thermosetting plastics benefit similarly from glass reinforcement, the most commercially important being polyester and epoxy resins. In using tables giving properties of plastics, it is important as well to recall pitfalls in the use of such handbook data on the properties of materials. These pitfalls are particularly true for the data on plastics. Published values reflect values obtained from standardized molding conditions that are simple, economical, and readily reproduced. Strength values corresponding to actual molding conditions may differ significantly. Furthermore, temperature and rate of loading influence the strength of plastics to a greater extent than they do the strength of metals, thus requiring additional effort for the proper selection of a plastic.
-
 Recall that thermoplastics are generally impact resistant; thermosets are generally heat resistant.
 
-\subsubsection{Common Thermoplastics}
+\subsection{Thermoplastics}
 
 \begin{itemize}[label=\scriptsize$\square$]
 
@@ -770,7 +880,7 @@ Recall that thermoplastics are generally impact resistant; thermosets are genera
 
 \end{itemize}
 
-\subsubsection{Common Thermosets}
+\subsection{Thermosets}
 
 \begin{itemize}[label=\scriptsize$\square$]
 \item Alkyd: Excellent electrical properties and heat resistance; easier and faster to mold than most thermosets; no volatile by-products.
@@ -790,7 +900,7 @@ Recall that thermoplastics are generally impact resistant; thermosets are genera
 \item Silicone: Outstanding heat resistance (from -100 to +500 F), electrical properties, and compatibility with body tissue; cures by a variety of mechanisms; high cost; available in many forms; laminating resins, molding resins, coatings, casting or potting resins, and sealants.
 \end{itemize}
 
-\subsection{Composites}
+\section{Composites}
 
 A composite is composed or formed from two or more materials each having different properties. Within the composite, the materials remain distinct and separate on a macroscopic level. Composite materials are not uniform throughout the matrix and are not macroscopically homogeneous. Composite materials are therefore not isotropic (in other words, their material properties are not consistent along different material orientations) nor do they possess uniform directional properties like metals.
 
@@ -799,6 +909,8 @@ Since a composite is made from combinations of materials they can be designed to
 \begin{figure}[h]
   \centering
   \includegraphics[scale=0.8]{pictures/Material-selection/composite-types}
+  \begin{tikzpicture}
+  \end{tikzpicture}
   \caption{Different types of engineering composites.}
 \end{figure}
 
@@ -806,7 +918,119 @@ As common examples, engineering composites are combinations of strong fibers suc
 
 Because reinforcing material is often made from fibers of larger pieces of the material, the composite benefits from the size effect. The fibers of smaller diameter have higher tensile strengths than the parent material. Glass, for example, has a relatively low tensile strength, yet the glass fiber has a much higher strength than glass in sheet form. The directionality and orientation of the composite material determines its properties and behavior. The orientation of reinforcement fibers within the composite such as (a) parallel, (b) woven, (c) random, (d) wound, and (e) angled can be used to take best advantage of the directional properties of the material. Where a ply (single layer) has strong directionality properties, structures of multiple plies or laminates are employed where each ply is arranged to provide improved strength and stiffness.
 
+Glass fiber reinforcement improves the strength of plastics by a factor of two or more. At substantially increased cost, a further improvement is obtainable by carbon fiber reinforcement. These relatively new materials (with 10 to 40 percent carbon) have tensile strengths as high as 275 MPa. Compared to glass-reinforced resins, they have less mold shrinkage, lower coefficients of expansion, and improved creep resistance, wear resistance, and toughness. The new fiber-reinforced plastics are being increasingly used for machine and structural components requiring light weight and high strength-to-weight ratios.
+
+Thermosetting plastics benefit similarly from glass reinforcement, the most commercially important being polyester and epoxy resins. In using tables giving properties of plastics, it is important as well to recall pitfalls in the use of such handbook data on the properties of materials. These pitfalls are particularly true for the data on plastics. Published values reflect values obtained from standardized molding conditions that are simple, economical, and readily reproduced. Strength values corresponding to actual molding conditions may differ significantly. Furthermore, temperature and rate of loading influence the strength of plastics to a greater extent than they do the strength of metals, thus requiring additional effort for the proper selection of a plastic.
+
 In general, because of the influence of directionality of the composite material, a minimum of at least two Young’s moduli, a shear modulus, and a Poisson ratio are needed for the analysis of stiffness. Figure 2.3, 2.4, and 2.5 provide additional information for composite materials with respect to strength vs. modulus, strength vs. density, and strength vs. temperature, respectively. Types of composite materials identified include carbon-fiber-reinforced polymers (CFRP), glass-fiber-reinforced polymers (GFRP), SiC-reinforced aluminum (Al-SiC), and Kevlar-fiber-reinforced polymers (KFRP). Additional technical information including applications of polymer matrix composites (PMC), metal matrix composites (MMC) and ceramic matrix composites (CMC) is provided in references [17], [18], and [19]
+
+\subsection{Fibers}
+
+Fibers consist of thousands of filaments, each sufficiently small so that they can be manufactured using textile machines. The fibers are typically sold as as either
+
+\begin{itemize}
+\item Short fibers, with lengths of a few centimeters or millimeters are felts, mats, and short fibers used in injection molding.
+\item Long fibers which can be cut during fabrication time are used as is or woven.
+\end{itemize}
+
+Main principal fiber materials are
+
+\begin{enumerate}
+\item Glass fiber: obtained by pulling glass (silicon + sodium carbonate and calcium carbonate) at $T > 1000^{\circ}$C through small orifices.
+\item Kevlar fiber: This is an aramid fiber, yellowish in color. These are aromatic polyamides obained by synthesis at $-10^{\circ}$C, then fibrillated and drawn to obtain high modulus of elasticity.
+\item Carbon fiber: filaments of polyacrilonitrile or pitch are oxidized at $T > 300^{\circ}$C, then heated further to $1500^{\circ}$C in a notrogen atmosphere. Then only the hexagonal carbon chains remain. High modulus of elasticity is obtained by drawing at high temperature.
+\item Boron fiber: tungsten filament serves to catalize the reation between boron chloride and hidrogen at 1200$^{\circ}$C. The boron fiber obtained have a diameter of about 100 $\mu$m.
+\item Silicon carbide: the principle of fabrication is analogous to that of boron fiber: chemical vapor deposition of methyl trichlorosilane mixed with hydrogen.
+\end{enumerate}
+
+\subsection{Matrix Materials}
+
+The materials used as matrix in composite materials are
+
+\begin{itemize}
+\item Polymeric matrix: thermoplastic resins (polypropylene, polyphenylene sulfone, polyamide, etc.) and thermoset resins (polyesters, phenolics, melamines, silicones, and epoxies).
+\item Mineral matrix: silicon carbide, carbon. They can be used at high temperatures.
+\item Metallic matrix: aluminum alloys, titanium alloys.
+\end{itemize}
+
+\subsection{Properties of Composite Materials}
+
+The characteristics of composite materials resulting from the combination of reinforcement and matrix depend on
+
+\begin{itemize}
+\item the proportions of reinforcements and matrix
+\item the form of the reinforcement
+\item the fabrication process
+\end{itemize}
+
+These characteristics maybe observed in ... {\color{Red}Figure...} which shows the tensile strength for different fiber fractions and different forms of reinforcement for the case of glass/resin composite, and {\color{Red}Figure 1.6} which gives an interesting view on the specific resistance of the principal composites as a function of temperature.
+
+Other remarkable properties of these materials include the following:
+
+\begin{itemize}
+\item Composite materials \emph{do not yield} (their elastic limits correspond to the rupture limit).
+\item Composite materials are very fatigue resistant.
+\item Composite materials \emph{age} subject to humidity and heat.
+\item Composite materials do not corrode.
+\item Composite materials are not sensitive to common chemicals used in engines like crease, oils, paints, solvents. Paint thinners attact epoxy resins, however.
+\item Composite materials have medium to low level impact resistance, inferior to that of metallic materails.
+\item Composite materials have excellent fire resistance as compared with the light alloys with identical thicknesses. However, smokes from the combustion of certain metrices can be toxic.
+\end{itemize}
+
+Properties of some of the commonly used resins and reinforcements are listed in
+\cref{tab: resin props} and \cref{tab: reinforcement props}.
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lcccccc}
+    \toprule
+          & $\rho$         & $E$ & $G$ & $\nu$ & $S_{ut}$ & Elongation \\
+    Resins & {[}kg/m$^3${]} & {[}GPa{]} & {[}GPa{]} &       & {[}MPa{]}      & $E\%$ \\
+    \midrule
+    \multicolumn{7}{c}{\emph{Thermosets}} \\
+    Epoxy         & 1200 & 4.5          & 1.6 & 0.4  & 130 & 2 (100$^{\circ}$C) \\
+    Phenolic      & 1300 & 3.0          & 1.1 & 0.4  & 80  & 2.5 \\
+    Polyester     & 1200 & 4.0          & 1.4 & 0.4  & 80  & 2.5 \\
+    Polycarbonate & 1200 & 2.4          &     & 0.35 & 60  & \\
+    Vinylester    & 1150 & 3.3          &     &      & 75  & 4 \\
+    Silicone      & 1100 & 2.2          &     & 0.5  & 35  & \\
+    Urethane      & 1100 & 0.7 - 7.0    &     &      & 30  & 100 \\
+    Polyimide     & 1400 & 4.0 - 19     & 1.1 & 0.35 & 70  & 1 \\
+    \multicolumn{7}{c}{\emph{Thermoplastics}} \\
+    Polypropylene          & 900  & 1.2 & & 0.4  & 30  & 20 - 400 \\
+    Polyphenylene sulfone  & 1300 & 4.0 & &      & 65  & 100 \\
+    Polyamide              & 1100 & 2.0 & & 0.35 & 70  & 200 \\
+    Polyether sulfone      & 1350 & 3.0 & &      & 85  & 60 \\
+    Polyetherimide         & 1250 & 3.5 & &      & 105 & 60 \\
+    Polyether-ether-ketone & 1300 & 4.0 & &      & 90  & 50 \\
+    \bottomrule
+  \end{tabular}
+  \caption{Properties of commonly used resins \cite{gay2014composite}}
+  \label{tab: resin props}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{lcccccc}
+    \toprule
+                   & $\rho$         & $E$ & $G$       & $\nu$ & $S_{ut}$  & Elongation \\
+    Reinforcements & {[}kg/m$^3${]} & {[}GPa{]} & {[}GPa{]} &       & {[}GPa{]} & $E\%$ \\
+    \midrule
+    ``R'' glass                 & 2500 & 86  &     & 0.2  & 3.2 & 4 \\
+    ``E'' glass                 & 2600 & 74  & 30  & 0.25 & 2.5 & 3.5 \\
+    Kevlar 49                   & 1450 & 130 & 12  & 0.4  & 2.9 & 2.3 \\
+    HT (high-strength) graphite & 1750 & 230 & 50  & 0.3  & 3.2 & 1.3 \\
+    HM (high-modulus) graphite  & 1800 & 390 & 120 & 0.35 & 2.5 & 0.6 \\
+    Boron                       & 2600 & 400 &     &      & 3.4 & 0.8 \\
+    Aluminum                    & 3700 & 380 &     &      & 1.4 & 0.4 \\
+    Aluminum silicate           & 2600 & 200 &     &      & 3.0 & 1.5 \\
+    Silicon carbide             & 2550 & 200 &     &      & 2.8 & 1.3 \\
+    Polyethylene                & 960  & 100 &     &      & 3.0 & \\
+    \bottomrule
+  \end{tabular}
+  \caption{Properties of commonly used reinforcements \cite{gay2014composite}}
+  \label{tab: reinforcement props}
+\end{table}
 
 \section{Engineering Material Selection Process}
 
@@ -1050,7 +1274,7 @@ The change in the length of a line segment per unit length, whether elongation o
 If the normal strain is known, we can use this equation to find the final length of the line segment after it is deformed. We have
 
 \begin{equation}
-  s' = (1 + \varepsilon _{avg})s
+  s' = (1 + \varepsilon_{avg})s
 \end{equation}
 
 Therefore, strain is positive when the line elongates and is negative when the line contracts.
@@ -2627,7 +2851,7 @@ Proficiency in these topics is crucial in the next chapter, which involves deter
   \item the ‘equivalent’ or ‘combined’ modulus for the compound bar and its total extension if it is initially 0.75 m long.
   \end{enumerate}
   For brass $E_{br}$ = 100 GPa and for steel $E_{st}$ = 200 GPa.
-  \exercise A compound bar is constructed from three bars 50 mm wide by 12 mm thick fastened together to form a bar 50 mm wide by 36 mm thick. The middle bar is of aluminum alloy for which $E$ = 70 GPa and the outside bars are of brass with $E$ = 100 GPa.
+  \exercise A compound bar is constructed from three bars 50 mm wide by 12 mm thick fastened together to form a bar 50 mm wide by 36 mm thick. The middle bar is of aluminum alloy for which $E_a$ = 70 GPa $\alpha_a$ = 23 $\times$ 10$^{-6}$ C$^{-1}$ and and the outside bars are of brass with $E_b$ = 100 GPa $\alpha_b$ = 20 $\times$ 10$^{-6}$ C$^{-1}$.
 
     \begin{figure}[H]
     \centering
@@ -3345,7 +3569,7 @@ where $L_e = KL$ in which $K$ is the \emph{effective-length factor} and $KL/r_g$
   \centering
   \caption{Effective length factor ($K$) value for beam under various support conditions}
   {\renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{ L{4.5cm} C{3cm} }
+  \begin{tabular}{ lc }
     \toprule
     End Support & $K$ value \\
     \midrule
@@ -3450,7 +3674,7 @@ Buckling occurs because the internal bending moment in the beam is not enough to
     \end{tikzpicture}
   \end{figure}
   
-  \exercise A 2-m long, pinned-support prismatic steel ($E$ = 210 GPa) column is restrained in the middle. Its cross-sectional area is a circle with radius of 5 cm. Determine the safety factor of the column if it is compressed by the load of 700 N.
+  \exercise A 2-m long, pinned-support prismatic steel ($E$ = 210 GPa) column is restrained in the middle. Its cross-sectional area is a circle with radius of 5 mm. Determine the safety factor of the column if it is compressed by the load of 7 MN.
 
   \begin{figure}[H]
     \centering
@@ -3461,7 +3685,7 @@ Buckling occurs because the internal bending moment in the beam is not enough to
       \node at (A.east) [anchor=west, draw, regular polygon, regular polygon sides=3, minimum height=4mm, inner sep=0, fill=LightGrey, shape border rotate=-30](B){};
       \node at (A.east) [draw, circle, inner sep=1.5, fill=LightGrey]{};
       \node at (B.east) [anchor=west,rectangle, pattern=north east lines, minimum height=2cm, minimum width=0.5cm]{};
-      \draw [<-, line width=2pt] (C.west) -- ++ (180:1) node[left]{$P$ = 700 N};
+      \draw [<-, line width=2pt] (C.west) -- ++ (180:1) node[left]{$P$ = 7 MN};
       \node at (A.north) [anchor=south, draw, regular polygon, regular polygon sides=3, minimum height=4mm, inner sep=0, fill=LightGrey, shape border rotate=60]{};
       \node at (A.north) [draw, circle, inner sep=1.5, fill=LightGrey]{};
       \node at (A.south) [anchor=north, draw, regular polygon, regular polygon sides=3, minimum height=4mm, inner sep=0, fill=LightGrey, shape border rotate=0]{};
@@ -3483,7 +3707,7 @@ Buckling occurs because the internal bending moment in the beam is not enough to
     \end{tikzpicture}
   \end{figure}
 
-  \exercise You want to design a cylindrical beer can with 3 cm radius that contains a nice cold beer under 20 kPa pressure using the smallest possible thickness $t_1$. After you submitted the design to your manager, however, he told you to revise the design because when beer is shaken, it releases $\text{CO}_2$ that pressurizes the can to 60 kPa, using the smallest possible thickness $t_2$ but keeping the same 3 cm radius. If the aluminum used to manufacture the cans has a yield stress of 100 MPa, what is the difference in thickness between your second design and your first design $t_2 – t_1$? Note: use maximum distortion energy theory to determine failure.
+  \exercise You want to design a cylindrical beer can with 3 cm radius that contains a nice cold beer under 20 kPa pressure using the smallest possible thickness $t_1$. After you submitted the design to your manager, however, he told you to revise the design because when beer is shaken, it releases $\text{CO}_2$ that pressurizes the can to 60 kPa, using the smallest possible thickness $t_2$ but keeping the same 3 cm radius. If the aluminum used to manufacture the cans has a yield stress of 100 MPa, what is the difference in thickness between your second design and your first design $t_2 - t_1$? Note: use maximum distortion energy theory to determine failure.
 
     \begin{figure}[H]
     \centering
@@ -6247,7 +6471,7 @@ Materials for screws, nuts, and bolts are normally selected based on strength, w
   \centering
   \caption{Specifications for steel used in millimeter series screws and bolts.}
   \label{table: SAE grade properties}
-  \begin{tabular}{ L{1.5cm} C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} }
+  \begin{tabular}{ l C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} C{1.8cm} }
     \toprule
     SAE Class & Diameter $d$ (mm) & Proof Strength $S_p$ (MPa) & Yield Strength $S_y$ (MPa) & Tensile Strength $S_{ut}$ (MPa) & Elongation (\%) & Reduction of Area (\%) \\
     \midrule
@@ -6869,7 +7093,7 @@ Fatigue in bolts is caused by fluctuating tension. In this section, principles o
   \centering
   \caption{Endurance or fatigue limits of bolt according to material grade.}
   \label{table: fatigue limit bolt}
-    \begin{tabular}{ L{3cm} C{4cm} }
+    \begin{tabular}{ lc }
       \toprule
       Material Grade & Endurance Limit ($S_e$) \\
       \midrule
@@ -7061,7 +7285,7 @@ A traditional weight scale is composed of a horizontal lever, a column, and two 
 Assume that the column and lever are made of 6061-T4 Aluminum and the pin is made of AISI 4027 steel. The lever is 20 cm long and has a cross section of 1 cm $\times$ 1 cm. The column is 30 cm long and has a cross section of 1 cm $\times$ 1 cm. The cylindrical pin has a radius of 0.3 cm and is 2 cm long. It is inserted into the same size holes drilled into the lever and the column. The material properties are as follows.
 \begin{table}[h]
   \centering
-    \begin{tabular}{ L{3cm} C{3cm} C{3cm} }
+    \begin{tabular}{ lcc }
       \toprule
       Properties & 6061-T4 Al & AISI 4027 Steel \\
       \midrule
@@ -7182,7 +7406,7 @@ To analyze the pump, we will make the following simplifications.
 The handle is made of high-density polyethylene (HDPE), the shaft is made of steel, and the chamber is made of aluminum. The materials have the following properties.
 \begin{table}[h]
   \centering
-    \begin{tabular}{ L{6cm} C{2cm} C{2cm} C{2cm} }
+    \begin{tabular}{ lccc }
       \toprule
       Material & HDPE & Steel & Aluminum \\
       \midrule
@@ -7540,7 +7764,7 @@ This chapter discusses the application of concepts from Statics and Mechanics of
   \begin{table}
     \centering
     \caption{Material properties for problem \ref{exercise: fruit juicer}}
-    \begin{tabular}{ L{6cm} C{3cm} C{3cm} C{3cm} }
+    \begin{tabular}{ lccc }
       \toprule
       Properties & AISI1020 & Aluminum & HDPE \\
       \midrule
@@ -7795,10 +8019,10 @@ Arranging the equations into matrix form, we have
   v_2 \hfill \\
   \theta _2 \hfill \\ 
 \end{gathered}  \right\} = \left[ {\begin{array}{*{20}{c}}
-  1&0&0&0 \\ 
-  0&1&0&0 \\ 
-  1&L&L^2&L^3 \\ 
-  1&1&2L&3L^2 
+  1 &0 &0   &0 \\ 
+  0 &1 &0   &0 \\ 
+  1 &L &L^2 &L^3 \\ 
+  1 &1 &2L  &3L^2 
 \end{array}} \right]\left\{ \begin{gathered}
   a_1 \hfill \\
   a_2 \hfill \\
@@ -7817,10 +8041,10 @@ Deriving the inverse of the preceding matrix multiplication yields
       a_4 \hfill \\ 
     \end{gathered}  \right\} = \frac{1}{L^3}\left[{
       \begin{array}{*{20}{c}}
-        L^3&0&0&0 \\ 
-        0&L^3&0&0 \\ 
-        -3L&-2L^2&3L&-L^2 \\ 
-        2&L&-2&L 
+        L^3 &0     &0  &0 \\ 
+        0   &L^3   &0  &0 \\ 
+        -3L &-2L^2 &3L &-L^2 \\ 
+        2   &L     &-2 &L 
       \end{array}} \right]\left\{
     \begin{gathered}
       v_1 \hfill \\
@@ -8024,6 +8248,238 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 \end{exercises}
 
 \appendix
+
+\chapter{Solutions to Selected Exercises}
+
+\section{Chapter 1}
+
+\begin{exercises}
+  
+\item An elevator cable: There is nothing new about this component. The cable must have been tested and its behavior well understood already. Additionally, there are usually overweight sensors in elevator cars nowaday so there is very little chance of cable abuse. So, with well-tested material, controlled environment and operation, the proper safety factor should be 1.5 - 2. For human safety and economic impact safety factor, broken cables definitely leads to serious injuries and disastrous failure of the elevator system. Thus, the corresponding safety factor is 1.6. The combined safety factor is 2.4 - 3.2.
+\item Mobile phone case: If we allow that the phone case is `disposable', it opens up a possibility that the case may be made by a relatively untested and inexpensive material. The design will mainly aim aesthetics rather than actual impact absorption. Loading conditions can also hardly be controlled because impact load from dropping a phone can be still be determined, but often widely different depending on height and the angle of impact. This suggests that the safety factor should be around 2.5 - 3.
+
+  On the other hand, there is unlikely any injuries caused by a broken phone case, and the worst that can happen is a broken phone. So on that note, the safety factor for these factors should be 1.0, giving us a combined safety factor of 2.5 - 3.
+\item Umbrella shaft: is one of those cases where the material used is probably well-known and well understood, yet has not probably been tested well in actual usage. And actual conditions can vary greatly especially in Thailand where you could have light rain all the way up to heavy thunderstorm with strong wind gust in the span of 15 minutes. Thus, the safety factor for the design and operating conditions should be in the middle--2 - 2.5.
+
+  The cost of failure to human safety and economy is minimal at most, resulting in the minimum safety factor of 1.0 and the final combined safety factor of 2 - 2.5.
+
+\item Passenger car front bumper: is usually tested well and designed with a well-tested material. However, the operating and loading conditions are not controllable at all--sun, wind, storm, humidity, impact, shock--after all it is built to be on the front and back of a car. The safety factor based on this should be relatively high: 2.5 - 3.
+
+  The cost of failure is quite high in this case, both to the car and to the drivers and passengers. The safety factor for this should be 1.6. Hence the total safety factor is 4 - 4.8.
+
+\item Airplane fuselage: a component that is definitely going to have to be thoroughly tested both in terms of its operating conditions and materials used. While one could claim that the operating conditions (the weather) remain relatively unpredictable, a component as important as a fuselage definite will have to undergo all possible test scenarios to make sure that it survives the toughest imaginable conditions. Additionally it has to be lightweight enough since, after all, it is an airplane component. The safety factor based on conditions should remain relatively low at 1.25 - 1.5.
+
+  The cost both to human safety and economy of a fuselage failure needs no explanation. It's high. Very, very high. $N_{s\text{, cost}}$ = 1.6, giving us the total safety factor of 2 - 2.4.
+  
+\end{exercises}
+
+\section{Chapter 2}
+
+\begin{exercises}
+\item Steel-reinforced concrete is very strong because steel and concrete are strong in opposite directions. Steel wire is strong under tension, and relatively weak under compression (due to buckling). Concrete is brittle and is strong under compression, but weak under tension. When combined, steel-reinforced concrete is strong both under tension and compression.
+
+\item The main purpose of an engine shaft is to transfer torque. To minimize the weight of a torque-loaded shaft, we use the minimum weight index formula
+
+  \begin{equation*}
+    M = \frac{S^{1/2}}{\rho}
+  \end{equation*}
+
+  By checking the strength-density diagram, we see that the materials that should give us the lightest torque-loaded shaft are engineering ceramics, titanium alloys, nickel alloys, and some steel alloys.
+
+  Let us choose the following materials to represent each qualified categories:
+\end{exercises}
+
+\section{Chapter 3}
+
+\begin{exercises}
+
+\item This is a problem of restricted deformation $\rightarrow$ statically indeterminate, hence we follow the three steps to solve them.
+
+  First, establish a set of equilibrium equations. By applying symmetry, we know that the internal forces in the two brass segments must be the same. Thus,
+
+  \begin{equation*}
+    2F_b + F_a = 0
+  \end{equation*}
+
+  Next, we write a compatibility equation. Since this is a compound bar, all segments must undergo identical elongation/contraction.
+
+  \begin{align*}
+    \delta_b = \delta_a
+  \end{align*}
+
+  Finally, convert the compatibility equation using Hooke's law to an equation with thermal load(s) and force(s).
+
+  \begin{align*}
+    \frac{F_bL}{A_bE_b} + \alpha_b \delta T L = \frac{F_aL}{A_aE_a} + \alpha_a \delta T L \\
+  \end{align*}
+
+  Substitute the known values and the forces for steel derived from the equilibrium equation into this equation.
+
+  \begin{align*}
+    \frac{F_b(1)}{(2 \times 0.05 \times 0.012) (100 \times 10^9)} + 20 \times 10^{-6} (50 - 18)(1) &= \frac{-2F_b(1)}{(0.05 \times 0.012) (70 \times 10^9)} + 23 \times 10^{-6} (50 - 18)(1) \\
+    5.60 \times 10^{-8} F_b &= 9.6 \times 10^{-5} \\
+    F_b &= 1714 \text{ N} 
+  \end{align*}
+
+  The force in the aluminum segment is
+  
+  \begin{align*}
+    F_a &= -2F_b \\
+        &= -2(1714) = -3428 \text{ N}
+  \end{align*}
+
+  The stresses in the segments are
+
+  \begin{align*}
+    \sigma_a &= \frac{F_a}{A_a} \\
+             &= \frac{-3428}{(0.05 \times 0.012)} \\
+             &= -5.71 \text{ MPa} \\
+    \sigma_b &= \frac{F_b}{A_b} \\
+             &= \frac{1714}{(2 \times 0.05 \times 0.012)} \\
+             &= 1.43 \text{ MPa}
+  \end{align*}
+
+  By applying an additional external load of 15 kN, the load will be distributed according to the compound formula
+
+  \begin{align*}
+    \frac{F_i}{F} &= \frac{E_iA_i}{\sum EA} \\
+    F_b &= 15000 \frac{100 \times 10^9 \times (2 \times 0.05 \times 0.012)}{(100 \times 10^9)(2 \times 0.05 \times 0.012) + (70 \times 10^9)(0.05 \times 0.012)} \\
+    F_b &= 15000(0.74) = 11111 \text{ N} \\
+    F_a &= 15000(1 - 0.74) = 3900 \text{ N}
+  \end{align*}
+
+\item For the first problem $\sigma_x$ = -50 MPa, $\sigma_y$ = 10 MPa, $\tau_{xy}$ = 40 MPa.
+  
+  \begin{align*}
+    \sigma_{1,2} &= \frac{-50 + 10}{2} \pm \sqrt{ \left[ \frac{(-50 - 10)}{2}\right]^2 + 40^2} \\
+                 &= -20 \pm 50 = 30, -70 \text{ MPa} \\
+    \tau_{max} &= 50 \text{ MPa} \\
+    \theta_p &= \tan^{-1} \frac{2(40)}{-50-10} = \tan^{-1} -1.33 \\
+                 &= -53^{\circ}
+  \end{align*}
+
+  For the second problem $\sigma_x$ = -30 MPa, $\sigma_y$ = 20 MPa, $\tau_{xy}$ = -25 MPa.
+
+  \begin{align*}
+    \sigma_{1,2} &= \frac{-30 + 20}{2} \pm \sqrt{ \left[ \frac{(-30 - 20)}{2}\right]^2 + -25^2} \\
+                 &= -5 \pm 35 = 30, -40 \text{ MPa} \\
+    \tau_{max} &= 35 \text{ MPa} \\
+    \theta_p &= \tan^{-1} \frac{2(-25)}{-30-20} = \tan^{-1} 1 \\
+                 &= 45^{\circ}
+  \end{align*}
+
+  For the final problem  $\sigma_x$ = 40 MPa, $\sigma_y$ = 100 MPa, $\tau_{xy}$ = -75 MPa.
+  
+  \begin{align*}
+    \sigma_{1,2} &= \frac{40 + 100}{2} \pm \sqrt{ \left[ \frac{(40 - 100)}{2}\right]^2 + -75^2} \\
+                 &= 70 \pm 81 = 151, -11 \text{ MPa} \\
+    \tau_{max} &= 81 \text{ MPa} \\
+    \theta_p &= \tan^{-1} \frac{2(-75)}{40-100} = \tan^{-1} 2.5 \\
+                 &= 68^{\circ}
+  \end{align*}
+\end{exercises}
+
+\section{Chapter 4}
+
+\begin{exercises}
+\item In this condition, since the column is pin-supported at the ends and
+  also in the middle. Therefore, the smallest compressive load that could
+  cause buckling would be corresponding to the 2nd ($n$ = 2) mode shape. In
+  another words,
+
+  \begin{align*}
+    P_{buckling} &= \frac{n^2 \pi^2 EI}{L^2} = \frac{4 \pi^2 (210 \times 10^9) \pi (0.005)^4}{4 (2)^2} \\
+                 &= 4.07 \times 10^7 \text{ N}
+  \end{align*}
+
+  The safety factor for this beam is simply the ratio of the maximum allowable
+  load to the intended load.
+
+  \begin{align*}
+    N_s = \frac{4.07 \times 10^7}{7 \times 10^6} = 5.81
+  \end{align*}
+
+\item First, determine $t_1$. To do so, we need to determine the
+  longitudinal and circumferential stresses due to the 20 kPa pressure.
+
+  \begin{align*}
+    \sigma_l = \frac{pr}{2t_1} = \frac{20,000(0.03)}{2t_1} = \frac{300}{t_1} \\
+    \sigma_c = \frac{pr}{t_1} = \frac{20,000(0.03)}{t_1} = \frac{600}{t_1}
+  \end{align*}
+
+  Using MDET, we have that
+
+  \begin{align*}
+    S_y = \sigma_e &= \sqrt{ \sigma_l^2 - \sigma_l\sigma_c + \sigma_c^2 } \\
+    100 \times 10^6 &= \sqrt{ \left( \frac{300}{t_1} \right)^2 - \left( \frac{300}{t_1} \right) \left( \frac{600}{t_1} \right) + \left( \frac{600}{t_1} \right)^2 } \\
+    t_1 &= 5.20 \times 10^{-6} \text{ m}
+  \end{align*}
+
+  We can then repeat the same steps to determine $t_2$
+
+  \begin{align*}
+    \sigma_l &= \frac{pr}{2t_2} = \frac{60,000(0.03)}{2t_2} = \frac{900}{t_2} \\
+    \sigma_c &= \frac{pr}{t_2} = \frac{60,000(0.03)}{t_2} = \frac{1800}{t_2} \\
+    S_y = \sigma_e &= \sqrt{ \sigma_l^2 - \sigma_l\sigma_c + \sigma_c^2 } \\
+    100 \times 10^6 &= \sqrt{ \left( \frac{900}{t_2} \right)^2 - \left( \frac{900}{t_2} \right) \left( \frac{1800}{t_2} \right) + \left( \frac{1800}{t_2} \right)^2 } \\
+    t_2 &= 1.56 \times 10^{-5} \text{ m}
+  \end{align*}
+\end{exercises} 
+
+\section{Chapter 5}
+
+\begin{exercises}
+\item We first need to determine the maximum bending moment and resulting bending stress. In this case, the maximum bending moment happens at the right leg, which is 1 m from the end of the board. Hence,
+
+  \begin{align*}
+    M_{\max} &= 150 \times 10 \times 1 = 1500 \text{ N-m} \\
+    \sigma_{b} &= \frac{My}{I} = \frac{1500(h/2)}{(1/12)(0.5)h^3 } \\
+             &= \frac{18000}{h^2}
+  \end{align*}
+
+  Now we can tackle the problems. The critical point is on the top part of the beam where there is only bending stress along its length. Under static loading, the design equation for the thickness of the beam is
+
+  \begin{align*}
+    \sigma_e = \sigma_b &= S_y \\
+    \frac{18000}{h^2} &= 400 \times 10^6 \\
+    h &= 6.7 \times 10^{-3}
+  \end{align*}
+
+  For impact loading, we need to use conservation of energy to determine the response of the beam. The energy of the system before the impact and right at the moment of impact must be the same. Before the impact, the energy consists purely of gravitational potential energy.
+
+  \begin{align*}
+    E_{before} &= mg(H+\delta) = 150(10)(0.5+\delta) \\
+               &= 750 + 1500 \delta
+  \end{align*}
+
+  At the maximum deflection where the mass's velocity is zero and all its kinetic energy transferred to the strain energy in the beam. To do that, we must first derive the bending moment function along the length of the board. Assume that the maximum force exerted by the beam is $F_{\max}$ right when the beam is at maximum deflection, we will have that
+
+  \begin{align*}
+    M(x) &= \left\{
+           \begin{array}{ll}
+             F_{\max} x & 0 \leqslant x \leqslant \dfrac{L}{2} \\
+             F_{\max} (1 - x) & \dfrac{L}{2} \leqslant x \leqslant L
+           \end{array}
+           \right.
+  \end{align*}
+
+  Strain energy in the beam can be evaluated by
+
+  \begin{align*}
+    E_{after} &= \int_0^{\frac{L}{2}} \frac{F_{\max}^2 x^2}{2EI} dx + \int_{\frac{L}{2}}^L \frac{F_{\max}^2(1-x)^2}{2EI} dx
+  \end{align*}
+
+  We can express the maximum deflection $\delta$ using the force exerted at the end of the beam $F_{\max}$
+
+  \begin{align*}
+    EI v'' = 
+  \end{align*}
+
+  Setting $E_{before} = E_{after}$ we can solve for the maximum force. 
+
+\end{exercises}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \chapter{Properties of Structural Steel Sections} \label{appendix: structural steel properties}
 
@@ -8238,10 +8694,79 @@ The moments of inertia of other geometric shapes are listed in ...
 \begin{table}
 \end{table}
 
+\chapter{Tabulated Material Designations and Properties}
+
+\section{SAE Steel Designation}
+
+\begin{table}[h] 
+  \centering
+  \begin{tabular}{ll}
+    \toprule
+    SAE designation & Type \\
+    \midrule
+    \multicolumn{2}{c}{\textbf{Carbon steels}}  \\
+    10xx & Plain carbon (Mn 1.00\% max.) \\
+    11xx & Resulfurized \\
+    12xx & Resulfurized and rephosphorized \\
+    15xx & Plain Carbon (Mn 1.00–1.65\% max.) \\
+    \multicolumn{2}{c}{Manganese steels}  \\
+    13xx & Mn 1.75\% \\
+    \multicolumn{2}{c}{Nickel steels} \\
+    23xx & Ni 3.50\% \\
+    25xx & Ni 5.00\% \\
+    \multicolumn{2}{c}{Nickel-chromium steels} \\
+    31xx & Ni 1.25\%; Cr 0.65\%, or 0.80\% \\
+    32xx & Ni 1.75\%; Cr 1.07\% \\
+    33xx & Ni 3.50\%; Cr 1.50\%, or 1.57\% \\
+    34xx & Ni 3.00\%; Cr 0.77\% \\
+    \multicolumn{2}{c}{Molybdenum steels} \\
+    40xx & Mo 0.20\%, 0.25\%, or Mo 0.25\% and S 0.042\% \cite{bringas2004handbook} \\
+    44xx & Mo 0.40\%, or 0.52\% \\
+    \multicolumn{2}{c}{Chromium-molybdenum (chromoly) steels} \\
+    41xx & Cr 0.50\%, 0.80\%, or 0.95\%; Mo 0.12\%, 0.20\%, 0.25\%, or 0.30\% \\
+    \multicolumn{2}{c}{Nickel-chromium-molybdenum steels} \\
+    43xx & Ni 1.82\%; Cr 0.50–0.80\%; Mo 0.25\% \\
+    43BVxx & Ni 1.82\%; Cr 0.50\%; Mo 0.12\%, or 0.35\%; V 0.03\% min \\
+    47xx & Ni 1.05\%; Cr 0.45\%; Mo 0.20\%, or 0.35\% \\
+    81xx & Ni 0.30\%; Cr 0.40\%; Mo 0.12\% \\
+    81Bxx & Ni 0.30\%; Cr 0.45\%; Mo 0.12\%; and added boron \cite{bringas2004handbook} \\
+    86xx & Ni 0.55\%; Cr 0.50\%; Mo 0.20\% \\
+    87xx & Ni 0.55\%; Cr 0.50\%; Mo 0.25\% \\
+    88xx & Ni 0.55\%; Cr 0.50\%; Mo 0.35\% \\
+    93xx & Ni 3.25\%; Cr 1.20\%; Mo 0.12\% \\
+    94xx & Ni 0.45\%; Cr 0.40\%; Mo 0.12\% \\
+    97xx & Ni 0.55\%; Cr 0.20\%; Mo 0.20\% \\
+    98xx & Ni 1.00\%; Cr 0.80\%; Mo 0.25\% \\
+    \multicolumn{2}{c}{Nickel-molybdenum steels} \\
+    46xx & Ni 0.85\%, or 1.82\%; Mo 0.20\%, or 0.25\% \\
+    48xx & Ni 3.50\%; Mo 0.25\% \\
+    \multicolumn{2}{c}{Chromium steels} \\
+    50xx & Cr 0.27\%, 0.40\%, 0.50\%, or 0.65\% \\
+    50xxx & Cr 0.50\%; C 1.00\% min \\
+    50Bxx & Cr 0.28\%, or 0.50\%; and added boron \cite{bringas2004handbook} \\
+    51xx & Cr 0.80\%, 0.87\%, 0.92\%, 1.00\%, or 1.05\% \\
+    51xxx & Cr 1.02\%; C 1.00\% min. \\
+    51Bxx & Cr 0.80\%; and added boron \cite{bringas2004handbook} \\
+    52xxx & Cr 1.45\%; C 1.00\% min. \\
+    \multicolumn{2}{c}{Chromium-vanadium steels} \\
+    61xx & Cr 0.60\%, 0.80\%, 0.95\%; V 0.10\%, or 0.15\% min. \\
+    \multicolumn{2}{c}{Tungsten-chromium steels} \\
+    72xx & W 1.75\%; Cr 0.75\% \\
+    \multicolumn{2}{c}{Silicon-manganese steels} \\
+    92xx & Si 1.40\%, or 2.00\%; Mn 0.65\%, 0.82\%, or 0.85\%; Cr 0.00\%, or 0.65\% \\
+    \multicolumn{2}{c}{High-strength low-alloy steels} \\
+    9xx & Various SAE grades \\
+    xxBxx & Boron steels \\
+    xxLxx & Leaded steels \\
+    \bottomrule
+  \end{tabular}
+  \caption{SAE designations for carbon steel grades \cite{oberg2016machinery}}
+\end{table}
+
 \nocite{*}
 
 \backmatter
 
 \printbibliography[heading=bibintoc]
 
-\end{document}
+\end{document} 
