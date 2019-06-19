@@ -71,6 +71,7 @@ svgnames,
 \definecolor{lightblue}{RGB}{180,220,255}
 \definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
 \definecolor{namecolor}{cmyk}{1,.50,0,.10}
+\usepackage{smartdiagram}
 
 \titleformat{\chapter}
 {\huge\bfseries}
@@ -369,7 +370,8 @@ Solutions to design problems start at the very first with the recognition of pro
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.75]{pictures/intro-eng-design/eng-design-process}
+  \smartdiagram[circular diagram:clockwise]{Ask, Research, Imagine, Plan, Create, Test, Improve}
+  % \includegraphics[scale=0.75]{pictures/intro-eng-design/eng-design-process}
   \caption{Flowchart of typical engineering design processes}
   \label{fig: engineering design processes}
 \end{figure}

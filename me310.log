@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.6.5)  17 JUN 2019 16:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.13)  19 JUN 2019 09:51
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,9 +6,9 @@ entering extended mode
 **me310.tex
 (./me310.tex
 LaTeX2e <2018-12-01>
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/book.cls
+(c:/texlive/2019/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2018/09/03 v1.4i Standard LaTeX document class
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
+(c:/texlive/2019/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -24,26 +24,26 @@ File: bk10.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
+(c:/texlive/2019/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+(c:/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2018/04/16 v5.8 Page Geometry
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+(c:/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count89
@@ -59,53 +59,53 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks17
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 99.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
+(c:/texlive/2019/texmf-dist/tex/latex/parskip/parskip.sty
 Package: parskip 2019-01-16 v2.0c non-zero parskip adjustments
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
 ))))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+(c:/texlive/2019/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count92
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+(c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen113
 \lightrulewidth=\dimen114
@@ -125,7 +125,7 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@lastruleclass=\count96
 \@thisrulewidth=\dimen125
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+(c:/texlive/2019/texmf-dist/tex/latex/tools/array.sty
 Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \col@sep=\dimen126
 \ar@mcellbox=\box27
@@ -135,7 +135,7 @@ Package: array 2018/12/30 v2.4k Tabular extension package (FMi)
 \backup@length=\skip44
 \ar@cellbox=\box28
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
+(c:/texlive/2019/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/02/04 v3.8 Customized lists
 \labelindent=\skip45
 \enit@outerparindent=\dimen128
@@ -144,19 +144,19 @@ Package: enumitem 2019/02/04 v3.8 Customized lists
 \enit@count@id=\count97
 \enitdp@description=\count98
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
+(c:/texlive/2019/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks20
 \verbatim@line=\toks21
 \verbatim@in@stream=\read1
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
+(c:/texlive/2019/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
 \captionmargin=\dimen129
@@ -184,13 +184,13 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \sf@top=\skip49
 \sf@bottom=\skip50
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
+(c:/texlive/2019/texmf-dist/tex/latex/colortbl/colortbl.sty
 Package: colortbl 2018/12/12 v1.0d Color table columns (DPC)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
@@ -198,7 +198,7 @@ Package color Info: Driver file: pdftex.def on input line 147.
 \everycr=\toks22
 \minrowclearance=\skip51
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+(c:/texlive/2019/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
 \f@nch@headwidth=\skip52
@@ -211,14 +211,14 @@ s
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/tocbibind/tocbibind.sty
+(c:/texlive/2019/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
 Package tocbibind Info: The document has chapter divisions on input line 50.
 
 
 Package tocbibind Note: Using chapter style headings, unless overridden.
 
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/tocloft/tocloft.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/tocloft/tocloft.sty
 Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
 Package tocloft Info: The document has chapter divisions on input line 51.
 \cftparskip=\skip61
@@ -266,12 +266,11 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
  out. on input line 1147.
 
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/newtxtext.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/newtx/newtxtext.sty
 Package: newtxtext 2018/03/27 v1.531
 
 `newtxtext' v1.531, 2018/03/27 Text macros taking advantage of TeX-Gyre Termes 
-fonts (msharpe)
-(/home/sup/texlive/2019/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+fonts (msharpe) (c:/texlive/2019/texmf-dist/tex/latex/fontaxes/fontaxes.sty
 Package: fontaxes 2014/03/23 v1.0d Font selection axes
 LaTeX Info: Redefining \upshape on input line 29.
 LaTeX Info: Redefining \itshape on input line 31.
@@ -280,25 +279,25 @@ LaTeX Info: Redefining \scshape on input line 37.
 )
 \ntx@fs=\dimen137
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(c:/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(c:/texlive/2019/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks23
 \XKV@tempa@toks=\toks24
 )
 \XKV@depth=\count108
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
+(c:/texlive/2019/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2018/08/11 v2.0j Standard LaTeX package
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
+(c:/texlive/2019/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2018/08/11 v2.0j Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
+(c:/texlive/2019/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2018/08/11 v2.0j Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -314,12 +313,12 @@ Package textcomp Info: Sub-encoding information:
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
 Package textcomp Info: Changing ? sub-encoding to TS1/0 on input line 80.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1enc.dfu
 File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -456,34 +455,34 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/wasysym/wasysym.sty
+(c:/texlive/2019/texmf-dist/tex/latex/wasysym/wasysym.sty
 Package: wasysym 2003/10/30 v2.0 Wasy-2 symbol support package
 \symwasy=\mathgroup4
 LaTeX Font Info:    Overwriting symbol font `wasy' in version `bold'
 (Font)                  U/wasy/m/n --> U/wasy/b/n on input line 90.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/newtxmath.sty
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/newtxmath.sty
 Package: newtxmath 2018/05/15 v1.553
 
 `newtxmath' v1.553, 2018/05/15 Math macros based originally on txfonts (msharpe
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2018/12/01 v2.17b AMS math features
 \@mathmargin=\skip101
 
 For additional information on amsmath, use the `?' option.
-(/home/sup/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks25
 \ex@=\dimen138
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen139
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count109
@@ -524,12 +523,12 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/centernot.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/centernot.sty
 Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
 )
 \tx@cntz=\count121
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/kastrup/binhex.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/kastrup/binhex.tex)
 \tx@Isdigit=\count122
 \tx@IsAlNum=\count123
 LaTeX Font Info:    Redeclaring symbol font `operators' on input line 171.
@@ -646,14 +645,14 @@ LaTeX Font Info:    Redeclaring math symbol \m@thbbch@rA on input line 1929.
 \ntx@jmath=\count129
 LaTeX Info: Redefining \not on input line 2322.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
+(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -686,21 +685,21 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen147
 \Hy@linkcounter=\count130
 \Hy@pagecounter=\count131
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
+(c:/texlive/2019/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count132
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Hyper figures OFF on input line 4519.
@@ -712,7 +711,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4772.
 \c@Hy@tempcnt=\count133
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/url/url.sty
+(c:/texlive/2019/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -736,12 +735,12 @@ LaTeX Info: Redefining \pageref on input line 6454.
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
+(c:/texlive/2019/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
 \Fld@listcount=\count138
 \c@bookmark@seq@number=\count139
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
@@ -750,7 +749,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 47.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
+(c:/texlive/2019/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2017/10/31 v2.20.4
 \thm@style=\toks30
 \thm@bodyfont=\toks31
@@ -763,7 +762,7 @@ Package: amsthm 2017/10/31 v2.20.4
 \dth@everypar=\toks35
 LaTeX Info: Redefining \textsquare on input line 428.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
+(c:/texlive/2019/texmf-dist/tex/latex/tools/bm.sty
 Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 \symboldoperators=\mathgroup9
 \symboldletters=\mathgroup10
@@ -772,14 +771,14 @@ Package: bm 2017/01/16 v1.2c Bold Symbol Support (DPC/FMi)
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 141.
 LaTeX Info: Redefining \bm on input line 207.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+(c:/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
 \multirow@colwidth=\skip108
 \multirow@cntb=\count140
 \multirow@dima=\skip109
 \bigstrutjot=\dimen151
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/cleveref/cleveref.sty
+(c:/texlive/2019/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
 LaTeX Info: Redefining \cref on input line 2370.
@@ -795,11 +794,11 @@ LaTeX Info: Redefining \labelcpageref on input line 2370.
 Package cleveref Info: `amsthm' support loaded on input line 3026.
 Package cleveref Info: `subfig' support loaded on input line 3164.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
-(/home/sup/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
+(c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx.sty
+(c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2019-05-28 L3 programming layer (loader) 
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+(c:/texlive/2019/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2019-05-28 L3 programming layer (code)
 \c_max_int=\count141
 \l_tmpa_int=\count142
@@ -951,12 +950,12 @@ Package: expl3 2019-05-28 L3 programming layer (code)
 \l__seq_internal_b_int=\count291
 \c__deprecation_minus_one=\count292
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+(c:/texlive/2019/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2019-04-06 v L3 Experimental driver: PDF mode
 \l__driver_internal_box=\box50
 \l__driver_color_stack_int=\count293
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(c:/texlive/2019/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2019-05-28 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count294
 \g__xparse_grabber_int=\count295
@@ -965,7 +964,7 @@ Package: xparse 2019-05-28 L3 Experimental document command parser
 )
 Package: siunitx 2018/05/17 v2.7s A comprehensive (SI) units package
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(c:/texlive/2019/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
 )
 \l__siunitx_tmp_box=\box51
@@ -1009,20 +1008,20 @@ Package: l3keys2e 2019-05-28 LaTeX2e option processing using LaTeX3 keys
 \l__siunitx_table_number_align_skip=\skip118
 \l__siunitx_table_text_align_skip=\skip119
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
+(c:/texlive/2019/texmf-dist/tex/latex/translator/translator.sty
 Package: translator 2019-05-31 v1.12a Easy translation of strings in LaTeX
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pythontex/pythontex.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pythontex/pythontex.sty
 Package: pythontex 2017/07/20 v0.16 execute and typeset Python code and other l
 anguages
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/fvextra/fvextra.sty
+(c:/texlive/2019/texmf-dist/tex/latex/fvextra/fvextra.sty
 Package: fvextra 2019/02/04 v1.4 fvextra - extensions and patches for fancyvrb
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
+(c:/texlive/2019/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+(c:/texlive/2019/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2019/01/15
 
 Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
@@ -1033,11 +1032,11 @@ Style option: `fancyvrb' v3.2a <2019/01/15> (tvz)
 \FV@StepNumber=\count317
 \FV@OutFile=\write3
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
+(c:/texlive/2019/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
 tim
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
+(c:/texlive/2019/texmf-dist/tex/latex/lineno/lineno.sty
 Package: lineno 2005/11/02 line numbers on paragraphs v4.41
 \linenopenalty=\count318
 \output=\toks36
@@ -1078,35 +1077,34 @@ LaTeX Info: Redefining \\ on input line 3056.
 \FV@LineIndentBox=\box63
 \FV@LineWidth=\dimen262
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
+(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.sty
+(c:/texlive/2019/texmf-dist/tex/generic/xstring/xstring.tex
 \integerpart=\count336
 \decimalpart=\count337
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgfopts/pgfopts.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
 \pgfkeys@pathtoks=\toks37
 \pgfkeys@temptoks=\toks38
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.co
-de.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks39
 )))
 \pgfopts@list@add@a@toks=\toks40
 \pgfopts@list@add@b@toks=\toks41
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/caption/newfloat.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/caption/newfloat.sty
 Package: newfloat 2018/03/04 v1.1a Defining new floating environments (AR)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/currfile/currfile.sty
+(c:/texlive/2019/texmf-dist/tex/latex/currfile/currfile.sty
 Package: currfile 2015/04/23 v0.7c Provides the file path elements of the curre
 nt input file
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/filehook/filehook.sty
+(c:/texlive/2019/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
 )
 \c@currfiledepth=\count338
@@ -1122,7 +1120,7 @@ Package: filehook 2011/10/12 v0.5d Hooks for input files
 \c@pytx@pylab@default@default=\count344
 \c@pytx@pylabcon@default@default=\count345
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
+(c:/texlive/2019/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \ttl@box=\box64
 \beforetitleunit=\skip121
@@ -1134,34 +1132,33 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidthlast=\dimen266
 \titlewidthfirst=\dimen267
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks43
 \pgfutil@tempdima=\dimen268
 \pgfutil@tempdimb=\dimen269
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lis
-ts.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box65
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+(c:/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
 Package: pgfrcs 2019/05/09 v3.1.3 (3.1.3)
 ))
 Package: pgf 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
 \pgf@x=\dimen270
 \pgf@y=\dimen271
 \pgf@xa=\dimen272
@@ -1183,32 +1180,28 @@ Package: pgfsys 2019/05/09 v3.1.3 (3.1.3)
 \t@pgf@tokc=\toks46
 \pgf@sys@id@count=\count350
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2019/05/09 v3.1.3 (3.1.3)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.de
-f
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
 File: pgfsys-pdftex.def 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pd
-f.def
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
 File: pgfsys-common-pdf.def 2019/05/09 v3.1.3 (3.1.3)
 )))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.c
-ode.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfsyssoftpath@smallbuffer@items=\count351
 \pgfsyssoftpath@bigbuffer@items=\count352
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.c
-ode.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)) (/home/sup/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+)) (c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -1223,16 +1216,16 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/xcolor/svgnam.def
+(c:/texlive/2019/texmf-dist/tex/latex/xcolor/svgnam.def
 File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
 \pgfmath@dimen=\dimen280
 \pgfmath@count=\count353
 \pgfmath@box=\box66
@@ -1240,29 +1233,28 @@ Package: pgfcore 2019/05/09 v3.1.3 (3.1.3)
 \pgfmath@stack@operand=\toks48
 \pgfmath@stack@operation=\toks49
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.t
-ex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.
-code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigon
-ometric.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.te
+x)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric
 .code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compar
-ison.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.c
-ode.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.
-code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.c
-ode.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.intege
-rarithmetics.code.tex)))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.t
+ex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.co
+de.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.te
+x)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithm
+etics.code.tex)))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count354
-)) (/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.cod
-e.tex
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@picminx=\dimen281
 \pgf@picmaxx=\dimen282
@@ -1279,124 +1271,109 @@ File: pgfcorepoints.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@zx=\dimen293
 \pgf@zy=\dimen294
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstr
-uct.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.cod
+e.tex
 File: pgfcorepathconstruct.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@path@lastx=\dimen295
 \pgf@path@lasty=\dimen296
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.
-code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.te
+x
 File: pgfcorepathusage.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@shorten@end@additional=\dimen297
 \pgf@shorten@start@additional=\dimen298
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.cod
-e.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfpic=\box67
 \pgf@hbox=\box68
 \pgf@layerbox@main=\box69
 \pgf@picture@serial@count=\count355
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicsta
-te.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code
+.tex
 File: pgfcoregraphicstate.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgflinewidth=\dimen299
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransforma
-tions.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.c
+ode.tex
 File: pgfcoretransformations.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@pt@x=\dimen300
 \pgf@pt@y=\dimen301
 \pgf@pt@temp=\dimen302
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code
-.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.co
-de.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
 File: pgfcoreobjects.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproces
-sing.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.co
+de.tex
 File: pgfcorepathprocessing.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.cod
-e.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfarrowsep=\dimen303
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code
-.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@max=\dimen304
 \pgf@sys@shading@range@num=\count356
 \pgf@shadingcount=\count357
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code
-.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.c
-ode.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
 File: pgfcoreexternal.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfexternal@startupbox=\box70
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.cod
-e.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
 File: pgfcorelayers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparen
-cy.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code
+.tex
 File: pgfcoretransparency.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.c
-ode.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
 File: pgfcorepatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.t
-ex
+) (c:/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
 File: pgfcorerdf.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code
-.tex
+))) (c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.te
+x
 File: pgfmoduleshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfnodeparttextbox=\box71
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.t
-ex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
 File: pgfmoduleplot.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
-0-65.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.st
+y
 Package: pgfcomp-version-0-65 2019/05/09 v3.1.3 (3.1.3)
 \pgf@nodesepstart=\dimen305
 \pgf@nodesepend=\dimen306
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-
-1-18.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.st
+y
 Package: pgfcomp-version-1-18 2019/05/09 v3.1.3 (3.1.3)
-))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
-(/home/sup/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+)) (c:/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(c:/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
 Package: pgffor 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
 \pgffor@iter=\dimen307
 \pgffor@skip=\dimen308
 \pgffor@stack=\toks50
 \pgffor@toks=\toks51
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code
-.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
 Package: tikz 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothand
-lers.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.co
+de.tex
 File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgf@plot@mark@count=\count358
 \pgfplotmarksize=\dimen309
@@ -1416,8 +1393,7 @@ File: pgflibraryplothandlers.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \tikznumberofcurrentchild=\count361
 \tikz@fig@count=\count362
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code
-.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfmatrixcurrentrow=\count363
 \pgfmatrixcurrentcolumn=\count364
@@ -1425,27 +1401,26 @@ File: pgfmodulematrix.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 \tikz@expandcount=\count366
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarytopaths.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryarrows.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.c
-ode.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
 File: pgflibraryarrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \arrowsize=\dimen316
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarycalc.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarydecorations.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations
-.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.t
+ex
 \pgfdecoratedcompleteddistance=\dimen317
 \pgfdecoratedremainingdistance=\dimen318
 \pgfdecoratedinputsegmentcompleteddistance=\dimen319
@@ -1457,52 +1432,52 @@ File: tikzlibrarycalc.code.tex 2019/05/09 v3.1.3 (3.1.3)
 )
 \tikz@lib@dec@box=\box76
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.code.tex
 File: tikzlibraryshapes.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.geometric.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.geometric.code.tex
 File: tikzlibraryshapes.geometric.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.geometric.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.g
+eometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.misc.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.misc.code.tex
 File: tikzlibraryshapes.misc.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.misc.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+isc.code.tex
 File: pgflibraryshapes.misc.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.symbols.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.symbols.code.tex
 File: tikzlibraryshapes.symbols.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.symbols.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.s
+ymbols.code.tex
 File: pgflibraryshapes.symbols.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.arrows.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.arrows.code.tex
 File: tikzlibraryshapes.arrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.arrows.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.a
+rrows.code.tex
 File: pgflibraryshapes.arrows.code.tex 2019/05/09 v3.1.3 (3.1.3)
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.callouts.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.callouts.code.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryshapes.multipart.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.callouts.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.c
+allouts.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshapes.multipart.code.tex
 File: tikzlibraryshapes.multipart.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrarys
-hapes.multipart.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshapes.m
+ultipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfnodepartlowerbox=\box77
 \pgfnodeparttwobox=\box78
@@ -1525,23 +1500,23 @@ File: pgflibraryshapes.multipart.code.tex 2019/05/09 v3.1.3 (3.1.3)
 \pgfnodepartsixbox=\box95
 \pgfnodepartfivebox=\box96
 )))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarydecorations.pathmorphing.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgflib
-rarydecorations.pathmorphing.code.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarypatterns.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.pathmorphing.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.pathmorphing.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarypatterns.code.tex
 File: tikzlibrarypatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns
-.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.code.t
+ex
 File: pgflibrarypatterns.code.tex 2019/05/09 v3.1.3 (3.1.3)
-)) (/home/sup/texlive/2019/texmf-dist/tex/latex/pgfplots/pgfplots.sty
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
+)) (c:/texlive/2019/texmf-dist/tex/latex/pgfplots/pgfplots.sty
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotscore.code.tex
 \t@pgfplots@toka=\toks52
 \t@pgfplots@tokb=\toks53
 \t@pgfplots@tokc=\toks54
@@ -1549,81 +1524,69 @@ Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
 \c@pgfplots@coordindex=\count368
 \c@pgfplots@scanlineindex=\count369
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.
-code.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.co
-de.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplots
-oldpgfsupp_loader.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code
-.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.te
+x))
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_loader.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
 Package pgfplots: loading complementary arithmetics for your pgf version...
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplots
-oldpgfsupp_pgflibraryfpu.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplots
-oldpgfsupp_pgfmathfloat.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_pgflibraryfpu.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfs
+upp_pgfmathfloat.code.tex
 \c@pgfmathroundto@lastzeros=\count370
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.
-tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsl
-iststructure.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsl
-iststructureext.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsa
-rray.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+cture.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsliststru
+ctureext.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsarray.co
+de.tex
 \c@pgfplotsarray@tmp=\count371
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsm
-atrix.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstables
-hared.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsmatrix.c
+ode.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/numtable/pgfplotstableshared.c
+ode.tex
 \c@pgfplotstable@counta=\count372
 \t@pgfplotstable@a=\toks55
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsd
-eque.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.cod
-e.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.dat
-a.code.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.
-code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots
-.surfshading.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/liststructure/pgfplotsdeque.co
+de.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsbinary.data.code.
+tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotsutil.verb.code.te
+x)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfsh
+ading.code.tex
 \c@pgfplotslibrarysurf@no=\count373
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.
-surfshading.pgfsys-pdftex.def)))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.c
-ode.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code
-.tex))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.co
-de.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.co
-de.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler
-.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.c
-ode.tex)))
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.t
-ex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing
-.code.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code
-.tex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.t
-ex)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfsha
+ding.pgfsys-pdftex.def)))
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolormap.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/util/pgfplotscolor.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsstackedplots.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsplothandlers.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplothandler.code.t
+ex
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex
+))) (c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.scaling.code.tex)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex
-)
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibrarydecorations.pathreplacing.code.tex
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgflib
-rarydecorations.pathreplacing.code.tex))
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotscoordprocessing.code.t
+ex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.errorbars.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.markers.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarydecorations.pathreplacing.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydec
+orations.pathreplacing.code.tex))
 \pgfplots@numplots=\count374
 \pgfplots@xmin@reg=\dimen325
 \pgfplots@xmax@reg=\dimen326
@@ -1632,62 +1595,93 @@ rarydecorations.pathreplacing.code.tex))
 \pgfplots@zmin@reg=\dimen329
 \pgfplots@zmax@reg=\dimen330
 )
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries
-/tikzlibraryplotmarks.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryplotmarks.code.tex
 File: tikzlibraryplotmarks.code.tex 2019/05/09 v3.1.3 (3.1.3)
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmark
-s.code.tex
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.code.
+tex
 File: pgflibraryplotmarks.code.tex 2019/05/09 v3.1.3 (3.1.3)
-))) (/home/sup/texlive/2019/texmf-dist/tex/latex/titlesec/ttlkeys.def
+))) (c:/texlive/2019/texmf-dist/tex/latex/smartdiagram/smartdiagram.sty
+Package: smartdiagram 2016/12/23 v0.3b Automatic creation of smart diagrams fro
+m lists of items.
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+brarybackgrounds.code.tex
+File: tikzlibrarybackgrounds.code.tex 2019/05/09 v3.1.3 (3.1.3)
+\pgf@layerbox@background=\box97
+\pgf@layerboxsaved@background=\box98
+)
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryfadings.code.tex
+File: tikzlibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryfadings.code.te
+x
+File: pgflibraryfadings.code.tex 2019/05/09 v3.1.3 (3.1.3)
+))
+(c:/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzli
+braryshadows.code.tex
+File: tikzlibraryshadows.code.tex 2019/05/09 v3.1.3 (3.1.3)
+)
+\pgf@layerbox@smart diagram arrow back=\box99
+\pgf@layerboxsaved@smart diagram arrow back=\box100
+
+(c:/texlive/2019/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.defi
+nitions.code.tex)
+(c:/texlive/2019/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.styl
+es.code.tex)
+(c:/texlive/2019/texmf-dist/tex/latex/smartdiagram/smartdiagramlibrarycore.comm
+ands.code.tex)) (c:/texlive/2019/texmf-dist/tex/latex/titlesec/ttlkeys.def
 File: ttlkeys.def 2016/03/15
 \c@ttlp@side=\count375
 \ttlp@side=\count376
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thmtools.sty
+)
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thmtools.sty
 Package: thmtools 2014/04/21 v66
 \thmt@toks=\toks56
 \c@thmt@dummyctr=\count377
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-patch.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-patch.sty
 Package: thm-patch 2014/04/21 v66
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/parseargs.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/parseargs.sty
 Package: parseargs 2014/04/21 v66
 \@parsespec=\toks57
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-kv.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-kv.sty
 Package: thm-kv 2014/04/21 v66
 Package thm-kv Info: Theorem names will be uppercased on input line 40.
 Package thm-kv Info: kvsetkeys patch (v1.16 or later) on input line 156.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-autoref.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-autoref.sty
 Package: thm-autoref 2014/04/21 v66
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/aliasctr.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/aliasctr.sty
 Package: aliasctr 2014/04/21 v66
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/carlisle/remreset.sty
+(c:/texlive/2019/texmf-dist/tex/latex/carlisle/remreset.sty
 
 Package remreset Warning: The remreset package is obsolete:
 (remreset)                \@removefomresset is defined.
 
-))) (/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-listof.sty
+))) (c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-listof.sty
 Package: thm-listof 2014/04/21 v66
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-restate.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-restate.sty
 Package: thm-restate 2014/04/21 v66
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
+(c:/texlive/2019/texmf-dist/tex/latex/thmtools/thm-amsthm.sty
 Package: thm-amsthm 2014/04/21 v66
 \thmt@style@headstyle=\toks58
 ))
-(/home/sup/texlive/2019/texmf-dist/tex/latex/mdframed/mdframed.sty
+(c:/texlive/2019/texmf-dist/tex/latex/mdframed/mdframed.sty
 Package: mdframed 2013/07/01 1.9b: mdframed
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/zref-abspage.sty
 Package: zref-abspage 2018/11/21 v2.27 Module abspage for zref (HO)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/zref-base.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/zref-base.sty
 Package: zref-base 2018/11/21 v2.27 Module base for zref (HO)
 Package zref Info: New property list: main on input line 759.
 Package zref Info: New property: default on input line 760.
@@ -1696,7 +1690,7 @@ Package zref Info: New property: page on input line 761.
 \c@abspage=\count378
 Package zref Info: New property: abspage on input line 62.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/needspace/needspace.sty
+(c:/texlive/2019/texmf-dist/tex/latex/needspace/needspace.sty
 Package: needspace 2010/09/12 v1.3d reserve vertical space
 )
 \mdf@templength=\skip123
@@ -1741,14 +1735,14 @@ Package: needspace 2010/09/12 v1.3d reserve vertical space
 \mdf@subsubtitleinneraboveskip@length=\skip161
 \mdf@subsubtitleinnerbelowskip@length=\skip162
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
+(c:/texlive/2019/texmf-dist/tex/latex/mdframed/md-frame-0.mdf
 File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 )
-\mdf@frametitlebox=\box97
-\mdf@footnotebox=\box98
-\mdf@splitbox@one=\box99
-\mdf@splitbox@two=\box100
-\mdf@splitbox@save=\box101
+\mdf@frametitlebox=\box101
+\mdf@footnotebox=\box102
+\mdf@splitbox@one=\box103
+\mdf@splitbox@two=\box104
+\mdf@splitbox@save=\box105
 \mdfsplitboxwidth=\skip163
 \mdfsplitboxtotalwidth=\skip164
 \mdfsplitboxheight=\skip165
@@ -1788,57 +1782,57 @@ File: md-frame-0.mdf 2013/07/01\ 1.9b: md-frame-0
 \c@mdf@zref@counter=\count384
 Package zref Info: New property: mdf@pagevalue on input line 895.
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/float/float.sty
+(c:/texlive/2019/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count385
 \float@exts=\toks59
-\float@box=\box102
+\float@box=\box106
 \@float@everytoks=\toks60
-\@floatcapt=\box103
+\@floatcapt=\box107
 )
 Package thmtools Info: Key `numberwithin' (with value `chapter')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=exstyle' on input line 152.
+(thmtools)             that uses `style=exstyle' on input line 153.
 Package thmtools Info: Key `preheadhook' (with value `\begin {mdframed}[backgro
 undcolor=lightblue, innertopmargin=6pt , splittopskip=\topskip , skipbelow= 0pt
 , skipabove=6pt, topline=false,bottomline=false,leftline=false,rightline=false]
  \sloppy ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=exstyle' on input line 152.
+(thmtools)             that uses `style=exstyle' on input line 153.
 Package thmtools Info: Key `postfoothook' (with value `\end {mdframed}')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=exstyle' on input line 152.
+(thmtools)             that uses `style=exstyle' on input line 153.
 Package thmtools Info: Key `preheadhook' (with value `\begin {mdframed}[backgro
 undcolor=lightblue, innertopmargin =6pt , splittopskip = \topskip , skipbelow=6
 pt, skipabove=0pt, topline=false,bottomline=false,leftline=false,rightline=fals
 e] \sloppy ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=solstyle' on input line 166.
+(thmtools)             that uses `style=solstyle' on input line 167.
 Package thmtools Info: Key `postfoothook' (with value `\end {mdframed}')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=solstyle' on input line 166.
+(thmtools)             that uses `style=solstyle' on input line 167.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=solstyle' on input line 166.
+(thmtools)             that uses `style=solstyle' on input line 167.
 \c@example=\count386
 \c@exercisesi=\count387
 \c@exercisesii=\count388
 \enitdp@exercises=\count389
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2018/11/02 v3.12 programmable bibliographies (PK/MW)
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
+(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count390
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
+(c:/texlive/2019/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 ))
 \c@tabx@nest=\count391
@@ -1898,7 +1892,7 @@ File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-dm.def
 File: blx-dm.def 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
@@ -1990,13 +1984,13 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 \c@textcitecount=\count503
 \c@textcitetotal=\count504
@@ -2009,12 +2003,12 @@ File: biblatex.def 2018/11/02 v3.12 biblatex compatibility (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count510
 \c@bbx:relatedtotal=\count511
@@ -2022,7 +2016,7 @@ File: standard.bbx 2018/11/02 v3.12 biblatex bibliography style (PK/MW)
 Package biblatex Info: Trying to load citation style 'numeric'...
 Package biblatex Info: ... file 'numeric.cbx' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/cbx/numeric.cbx
 File: numeric.cbx 2018/11/02 v3.12 biblatex citation style (PK/MW)
 Package biblatex Info: Redefining '\cite'.
 Package biblatex Info: Redefining '\parencite'.
@@ -2039,78 +2033,78 @@ Package biblatex Info: Redefining '\smartcites'.
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/biblatex.cfg
 File: biblatex.cfg 
 ))
 LaTeX Font Info:    Try loading font information for T1+ntxtlf on input line 27
-3.
+4.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
 File: t1ntxtlf.fd 2015/01/17 v1.0 font definition file for T1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 273.
+(Font)              scaled to size 10.0pt on input line 274.
 Package biblatex Info: Trying to load language 'english'...
 Package biblatex Info: ... file 'english.lbx' found.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
+(c:/texlive/2019/texmf-dist/tex/latex/biblatex/lbx/english.lbx
 File: english.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 )
 \@quotelevel=\count512
 \@quotereset=\count513
-
-(./me310.aux)
+ (./me310.aux)
 \openout1 = `me310.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 273.
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 274.
 LaTeX Font Info:    Try loading font information for OML+ntxmi on input line 27
-3.
- (/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
+4.
+
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/omlntxmi.fd
 File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
 )
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 273.
-LaTeX Font Info:    Try loading font information for U+ntxexa on input line 273
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 274.
+LaTeX Font Info:    Try loading font information for U+ntxexa on input line 274
 .
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/untxexa.fd
 File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
 )
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 273.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 273.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 274.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 274.
 
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+(c:/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 273.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 274.
 LaTeX Font Info:    Try loading font information for LMS+ntxsy on input line 27
-3.
+4.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/lmsntxsy.fd
 File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
 )
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 273.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 274.
 LaTeX Font Info:    Try loading font information for LMX+ntxexx on input line 2
-73.
+74.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/lmxntxexx.fd
 File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
 )
-LaTeX Font Info:    ... okay on input line 273.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 273.
-LaTeX Font Info:    ... okay on input line 273.
+LaTeX Font Info:    ... okay on input line 274.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 274.
+LaTeX Font Info:    ... okay on input line 274.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -2146,11 +2140,11 @@ LaTeX Font Info:    ... okay on input line 273.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-(/home/sup/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+(c:/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count514
 \scratchdimen=\dimen331
-\scratchbox=\box104
+\scratchbox=\box108
 \nofMPsegments=\count515
 \nofMParguments=\count516
 \everyMPshowfont=\toks61
@@ -2159,10 +2153,10 @@ LaTeX Font Info:    ... okay on input line 273.
 \MPnumerator=\count518
 \makeMPintoPDFobject=\count519
 \everyMPtoPDFconversion=\toks62
-) (/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+) (c:/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+(c:/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -2172,7 +2166,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
@@ -2183,44 +2177,45 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@mv@tabular=\count520
 \c@mv@boldtabular=\count521
-\AtBeginShipoutBox=\box105
-Package hyperref Info: Link coloring ON on input line 273.
+\AtBeginShipoutBox=\box109
+Package hyperref Info: Link coloring ON on input line 274.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
+(c:/texlive/2019/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-(/home/sup/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(c:/texlive/2019/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count522
 )
-LaTeX Info: Redefining \ref on input line 273.
-LaTeX Info: Redefining \pageref on input line 273.
-LaTeX Info: Redefining \nameref on input line 273.
+LaTeX Info: Redefining \ref on input line 274.
+LaTeX Info: Redefining \pageref on input line 274.
+LaTeX Info: Redefining \nameref on input line 274.
 
 (./me310.out) (./me310.out)
 \@outlinefile=\write7
 \openout7 = `me310.out'.
 
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictio
-nary-English.dict
+(c:/texlive/2019/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
+glish.dict
 Dictionary: translator-basic-dictionary, Language: English 
 )
-(/home/sup/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+(c:/texlive/2019/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
-) (./pythontex-files-me310/me310.pytxmcr)
+)
+(./pythontex-files-me310/me310.pytxmcr)
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
-ut line 273.
+ut line 274.
 \c@listing=\count523
-Package newfloat Info: float type `listing'=4 on input line 273.
+Package newfloat Info: float type `listing'=4 on input line 274.
 \c@lopytxdepth=\count524
  ABD: EveryShipout initializing macros
 
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 273.
+ on input line 274.
 
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
@@ -2230,76 +2225,76 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'me310.bbl' found.
 (./me310.bbl)
-Package biblatex Info: Reference section=0 on input line 273.
-Package biblatex Info: Reference segment=0 on input line 273.
+Package biblatex Info: Reference section=0 on input line 274.
+Package biblatex Info: Reference segment=0 on input line 274.
  (./pythontex-files-me310/me310.pytxpyg)
 LaTeX Font Info:    Try loading font information for OT1+ntxtlf on input line 2
-73.
+74.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/ot1ntxtlf.fd
 File: ot1ntxtlf.fd 2015/01/17 v1.0 font definition file for OT1/ntx/tlf
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 273.
+(Font)              scaled to size 10.0pt on input line 274.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 273.
+(Font)              scaled to size 7.3pt on input line 274.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 273.
-LaTeX Font Info:    Try loading font information for U+wasy on input line 273.
+(Font)              scaled to size 5.5pt on input line 274.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 274.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
+(c:/texlive/2019/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <5.5> not available
-(Font)              size <5> substituted on input line 273.
+(Font)              size <5> substituted on input line 274.
 
-LaTeX Font Info:    Try loading font information for U+ntxmia on input line 273
+LaTeX Font Info:    Try loading font information for U+ntxmia on input line 274
 .
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/untxmia.fd
 File: untxmia.fd 2018/04/14 Fontinst v1.933 font definitions for U/ntxmia.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsym on input line 273
+LaTeX Font Info:    Try loading font information for U+ntxsym on input line 274
 .
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/untxsym.fd
 File: untxsym.fd 2015/03/20 Fontinst v1.933 font definitions for U/ntxsym.
 )
-LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 273
+LaTeX Font Info:    Try loading font information for U+ntxsyc on input line 274
 .
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/untxsyc.fd
 File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
 )
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 273.
+(Font)              scaled to size 10.0pt on input line 274.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.3pt on input line 273.
+(Font)              scaled to size 7.3pt on input line 274.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 5.5pt on input line 273.
-LaTeX Font Info:    Try loading font information for T1+qhv on input line 273.
+(Font)              scaled to size 5.5pt on input line 274.
+LaTeX Font Info:    Try loading font information for T1+qhv on input line 274.
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
+(c:/texlive/2019/texmf-dist/tex/latex/tex-gyre/t1qhv.fd
 File: t1qhv.fd 2009/09/25 v1.2 font definition file for T1/qhv
 )
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 273.
+(Font)              scaled to size 8.99994pt on input line 274.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 6.56995pt on input line 273.
+(Font)              scaled to size 6.56995pt on input line 274.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 4.94997pt on input line 273.
-LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 273
+(Font)              scaled to size 4.94997pt on input line 274.
+LaTeX Font Info:    Try loading font information for T1+ntxtt on input line 274
 .
 
-(/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+(c:/texlive/2019/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 273.
+(Font)              scaled to size 10.0pt on input line 274.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 7.3pt on input line 273.
+(Font)              scaled to size 7.3pt on input line 274.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 5.5pt on input line 273.
+(Font)              scaled to size 5.5pt on input line 274.
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: a4paper
@@ -2332,50 +2327,50 @@ LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\GPT@outputbox=\box106
-<pictures/logo-tu.pdf, id=336, 597.50731pt x 421.10023pt>
+\GPT@outputbox=\box110
+<pictures/logo-tu.pdf, id=363, 597.50731pt x 421.10023pt>
 File: pictures/logo-tu.pdf Graphic file (type pdf)
 <use pictures/logo-tu.pdf>
-Package pdftex.def Info: pictures/logo-tu.pdf  used on input line 281.
+Package pdftex.def Info: pictures/logo-tu.pdf  used on input line 282.
 (pdftex.def)             Requested size: 119.49934pt x 84.21855pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <10> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 287.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 288.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.0pt on input line 287.
+(Font)              scaled to size 10.0pt on input line 288.
 LaTeX Font Info:    Font shape `T1/qhv/bx/n' in size <10> not available
-(Font)              Font shape `T1/qhv/b/n' tried instead on input line 287.
+(Font)              Font shape `T1/qhv/b/n' tried instead on input line 288.
 LaTeX Font Info:    Font shape `T1/qhv/b/n' will be
-(Font)              scaled to size 8.99994pt on input line 287.
-<pictures/tube-connection.png, id=337, 2007.5pt x 1543.7675pt>
+(Font)              scaled to size 8.99994pt on input line 288.
+<pictures/tube-connection.png, id=364, 2007.5pt x 1543.7675pt>
 File: pictures/tube-connection.png Graphic file (type png)
 <use pictures/tube-connection.png>
-Package pdftex.def Info: pictures/tube-connection.png  used on input line 290.
+Package pdftex.def Info: pictures/tube-connection.png  used on input line 291.
 (pdftex.def)             Requested size: 461.71529pt x 355.05905pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 24.88pt on input line 293.
+(Font)              scaled to size 24.88pt on input line 294.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 296.
+(Font)              scaled to size 14.4pt on input line 297.
  [1
 
 
 
 
-{/home/sup/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictur
-es/logo-tu.pdf> <./pictures/tube-connection.png>]
+{c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./pictures/logo
+-tu.pdf> <./pictures/tube-connection.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 20.74pt on input line 301.
+(Font)              scaled to size 20.74pt on input line 302.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 301.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 302.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 20.74pt on input line 301.
+(Font)              scaled to size 20.74pt on input line 302.
  [2
 
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 334.
+(Font)              scaled to size 7.3pt on input line 335.
  [3
 
 ] (./me310.toc
@@ -2415,14 +2410,14 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 \tf@toc=\write8
 \openout8 = `me310.toc'.
 
- [5] (./me310.lof
-[6
+ [5] (./me310.lof [6
 
 ])
 \tf@lof=\write9
 \openout9 = `me310.lof'.
 
- [7] (./me310.lot)
+ [7]
+(./me310.lot)
 \tf@lot=\write10
 \openout10 = `me310.lot'.
 
@@ -2430,103 +2425,93 @@ LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
 
 ]
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 347.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 348.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 24.88pt on input line 347.
+(Font)              scaled to size 24.88pt on input line 348.
  [1
 
 
 ]
 Chapter 1.
 LaTeX Font Info:    Font shape `T1/ntxtlf/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 366.
+(Font)              Font shape `T1/ntxtlf/b/n' tried instead on input line 367.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 366.
-<pictures/intro-eng-design/eng-design-process.pdf, id=759, 178.11742pt x 562.74
-174pt>
-File: pictures/intro-eng-design/eng-design-process.pdf Graphic file (type pdf)
-<use pictures/intro-eng-design/eng-design-process.pdf>
-Package pdftex.def Info: pictures/intro-eng-design/eng-design-process.pdf  used
- on input line 372.
-(pdftex.def)             Requested size: 133.58772pt x 422.05527pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+(Font)              scaled to size 14.4pt on input line 367.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 373.
 [2
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 397.
+Package mdframed Info: mdframed works in twoside mode on input line 399.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 397.
+(mdframed)              on input line 399.
 Package hyperref Info: bookmark level for unknown example defaults to 0 on inpu
-t line 397.
-Package mdframed Info: mdframed works in twoside mode on input line 404.
+t line 399.
+Package mdframed Info: mdframed works in twoside mode on input line 406.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 404.
+(mdframed)              on input line 406.
 Package hyperref Info: bookmark level for unknown solution defaults to 0 on inp
-ut line 404.
- [3 <./pictures/intro-eng-design/eng-design-process.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 424.
+ut line 406.
+Package mdframed Info: mdframed works in twoside mode on input line 426.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 424.
-<pictures/intro-eng-design/grass-shears.jpg, id=786, 1304.875pt x 890.32625pt>
+(mdframed)              on input line 426.
+<pictures/intro-eng-design/grass-shears.jpg, id=808, 1304.875pt x 890.32625pt>
 File: pictures/intro-eng-design/grass-shears.jpg Graphic file (type jpg)
 <use pictures/intro-eng-design/grass-shears.jpg>
 Package pdftex.def Info: pictures/intro-eng-design/grass-shears.jpg  used on in
-put line 430.
+put line 432.
 (pdftex.def)             Requested size: 173.18451pt x 118.16464pt.
-<pictures/intro-eng-design/lawn-mower.jpg, id=787, 264.5082pt x 192.72pt>
+<pictures/intro-eng-design/lawn-mower.jpg, id=809, 264.5082pt x 192.72pt>
 File: pictures/intro-eng-design/lawn-mower.jpg Graphic file (type jpg)
 <use pictures/intro-eng-design/lawn-mower.jpg>
 Package pdftex.def Info: pictures/intro-eng-design/lawn-mower.jpg  used on inpu
-t line 432.
+t line 434.
 (pdftex.def)             Requested size: 173.18451pt x 126.18399pt.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 435.
-<pictures/intro-eng-design/cutter-wire.jpg, id=788, 803.0pt x 602.25pt>
+(Font)              scaled to size 10.0pt on input line 437.
+<pictures/intro-eng-design/cutter-wire.jpg, id=810, 803.0pt x 602.25pt>
 File: pictures/intro-eng-design/cutter-wire.jpg Graphic file (type jpg)
 <use pictures/intro-eng-design/cutter-wire.jpg>
 Package pdftex.def Info: pictures/intro-eng-design/cutter-wire.jpg  used on inp
-ut line 458.
+ut line 460.
 (pdftex.def)             Requested size: 216.48395pt x 162.36154pt.
+ [3]
+Package mdframed Info: Box was splittet wrong
+ starting loop to iterate the splitting point
+(mdframed)              on input line 464.
  [4 <./pictures/intro-eng-design/grass-shears.jpg> <./pictures/intro-eng-design
-/lawn-mower.jpg>]
+/lawn-mower.jpg> <./pictures/intro-eng-design/cutter-wire.jpg>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 473.
-
-[5 <./pictures/intro-eng-design/cutter-wire.jpg>]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-Overfull \hbox (2.5745pt too wide) in paragraph at lines 529--529
+(Font)              scaled to size 5.5pt on input line 475.
+ [5]
+Overfull \hbox (2.5745pt too wide) in paragraph at lines 531--531
 []|\T1/ntxtlf/m/n/10 Characteristics|  
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package mdframed Info: mdframed works in twoside mode on input line 549.
+[6]
+Package mdframed Info: mdframed works in twoside mode on input line 551.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 549.
-<pictures/intro-eng-design/balance-bike.jpg, id=808, 376.40625pt x 237.88875pt>
+(mdframed)              on input line 551.
+<pictures/intro-eng-design/balance-bike.jpg, id=855, 376.40625pt x 237.88875pt>
 
 File: pictures/intro-eng-design/balance-bike.jpg Graphic file (type jpg)
 <use pictures/intro-eng-design/balance-bike.jpg>
 Package pdftex.def Info: pictures/intro-eng-design/balance-bike.jpg  used on in
-put line 555.
+put line 557.
 (pdftex.def)             Requested size: 216.48395pt x 136.82126pt.
-[6]
-Package mdframed Info: mdframed works in twoside mode on input line 559.
+Package mdframed Info: mdframed works in twoside mode on input line 561.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 559.
+(mdframed)              on input line 561.
  [7 <./pictures/intro-eng-design/balance-bike.jpg>] [8]
 Chapter 2.
 [9
@@ -2536,22 +2521,22 @@ Chapter 2.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [11] [12] [13]
-<pictures/Material-selection/polymer.png, id=902, 863.225pt x 485.815pt>
+<pictures/Material-selection/polymer.png, id=937, 863.225pt x 485.815pt>
 File: pictures/Material-selection/polymer.png Graphic file (type png)
 <use pictures/Material-selection/polymer.png>
 Package pdftex.def Info: pictures/Material-selection/polymer.png  used on input
- line 828.
+ line 830.
 (pdftex.def)             Requested size: 431.61145pt x 242.9069pt.
  [14 <./pictures/Material-selection/polymer.png>]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.0pt on input line 847.
+(Font)              scaled to size 7.0pt on input line 849.
  [15]
-<pictures/Material-selection/composite-types.jpg, id=915, 501.875pt x 135.50626
+<pictures/Material-selection/composite-types.jpg, id=950, 501.875pt x 135.50626
 pt>
 File: pictures/Material-selection/composite-types.jpg Graphic file (type jpg)
 <use pictures/Material-selection/composite-types.jpg>
 Package pdftex.def Info: pictures/Material-selection/composite-types.jpg  used 
-on input line 911.
+on input line 913.
 (pdftex.def)             Requested size: 401.50053pt x 108.40514pt.
 
 
@@ -2559,12 +2544,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 [16]
 LaTeX Font Info:    Try loading font information for TS1+ntxtlf on input line 9
-32.
- (/home/sup/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+34.
+ (c:/texlive/2019/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
 File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
 )
 LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.0pt on input line 932.
+(Font)              scaled to size 10.0pt on input line 934.
  [17 <./pictures/Material-selection/composite-types.jpg>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2573,62 +2558,62 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [18] [19]
-<pictures/Material-selection/strength-stiffness-diagram.png, id=952, 557.08125p
+<pictures/Material-selection/strength-stiffness-diagram.png, id=988, 557.08125p
 t x 539.01375pt>
 File: pictures/Material-selection/strength-stiffness-diagram.png Graphic file (
 type png)
 <use pictures/Material-selection/strength-stiffness-diagram.png>
 Package pdftex.def Info: pictures/Material-selection/strength-stiffness-diagram
-.png  used on input line 1067.
+.png  used on input line 1069.
 (pdftex.def)             Requested size: 456.80959pt x 441.99413pt.
 
-Overfull \hbox (3.84169pt too wide) in paragraph at lines 1067--1068
+Overfull \hbox (3.84169pt too wide) in paragraph at lines 1069--1070
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Material-selection/strength-density-diagram.pdf, id=956, 557.08125pt 
+<pictures/Material-selection/strength-density-diagram.pdf, id=992, 557.08125pt 
 x 546.04pt>
 File: pictures/Material-selection/strength-density-diagram.pdf Graphic file (ty
 pe pdf)
 <use pictures/Material-selection/strength-density-diagram.pdf>
 Package pdftex.def Info: pictures/Material-selection/strength-density-diagram.p
-df  used on input line 1079.
+df  used on input line 1081.
 (pdftex.def)             Requested size: 456.80959pt x 447.75569pt.
 
-Overfull \hbox (3.84169pt too wide) in paragraph at lines 1079--1080
+Overfull \hbox (3.84169pt too wide) in paragraph at lines 1081--1082
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Material-selection/strength-temperature-diagram.pdf, id=959, 557.0812
+<pictures/Material-selection/strength-temperature-diagram.pdf, id=995, 557.0812
 5pt x 546.04pt>
 File: pictures/Material-selection/strength-temperature-diagram.pdf Graphic file
  (type pdf)
 <use pictures/Material-selection/strength-temperature-diagram.pdf>
 Package pdftex.def Info: pictures/Material-selection/strength-temperature-diagr
-am.pdf  used on input line 1090.
+am.pdf  used on input line 1092.
 (pdftex.def)             Requested size: 456.80959pt x 447.75569pt.
 
-Overfull \hbox (3.84169pt too wide) in paragraph at lines 1090--1091
+Overfull \hbox (3.84169pt too wide) in paragraph at lines 1092--1093
  [][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package mdframed Info: mdframed works in twoside mode on input line 1095.
+Package mdframed Info: mdframed works in twoside mode on input line 1097.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1095.
-Package mdframed Info: mdframed works in twoside mode on input line 1101.
+(mdframed)              on input line 1097.
+Package mdframed Info: mdframed works in twoside mode on input line 1103.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1101.
+(mdframed)              on input line 1103.
 [20] [21 <./pictures/Material-selection/strength-stiffness-diagram.png>]
 Underfull \vbox (badness 4279) has occurred while \output is active []
 
@@ -2640,55 +2625,55 @@ Chapter 3.
 [25
 
 ]
-<pictures/Static-body-load-analysis/3d-element-stress.pdf, id=1023, 458.71375pt
+<pictures/Static-body-load-analysis/3d-element-stress.pdf, id=1058, 458.71375pt
  x 381.425pt>
 File: pictures/Static-body-load-analysis/3d-element-stress.pdf Graphic file (ty
 pe pdf)
 <use pictures/Static-body-load-analysis/3d-element-stress.pdf>
 Package pdftex.def Info: pictures/Static-body-load-analysis/3d-element-stress.p
-df  used on input line 1220.
+df  used on input line 1222.
 (pdftex.def)             Requested size: 275.23038pt x 228.85675pt.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 1237.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1239.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 1237.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1239.
 
 
 [26 <./pictures/Static-body-load-analysis/3d-element-stress.pdf>]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 1268.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 1270.
 
 
-<pictures/Static-body-load-analysis/3d-shear-deformation.pdf, id=1046, 458.7137
+<pictures/Static-body-load-analysis/3d-shear-deformation.pdf, id=1081, 458.7137
 5pt x 382.42876pt>
 File: pictures/Static-body-load-analysis/3d-shear-deformation.pdf Graphic file 
 (type pdf)
 <use pictures/Static-body-load-analysis/3d-shear-deformation.pdf>
 Package pdftex.def Info: pictures/Static-body-load-analysis/3d-shear-deformatio
-n.pdf  used on input line 1288.
+n.pdf  used on input line 1290.
 (pdftex.def)             Requested size: 275.23038pt x 229.45901pt.
 [27] [28 <./pictures/Static-body-load-analysis/3d-shear-deformation.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 1381.
+Package mdframed Info: mdframed works in twoside mode on input line 1383.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1381.
-Package mdframed Info: mdframed works in twoside mode on input line 1398.
+(mdframed)              on input line 1383.
+Package mdframed Info: mdframed works in twoside mode on input line 1400.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1398.
+(mdframed)              on input line 1400.
 
 [29]
-Package mdframed Info: mdframed works in twoside mode on input line 1407.
+Package mdframed Info: mdframed works in twoside mode on input line 1409.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1407.
-Package mdframed Info: mdframed works in twoside mode on input line 1427.
+(mdframed)              on input line 1409.
+Package mdframed Info: mdframed works in twoside mode on input line 1429.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1427.
+(mdframed)              on input line 1429.
  [30] [31]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -2698,255 +2683,255 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [33]
-Package mdframed Info: mdframed works in twoside mode on input line 1656.
+Package mdframed Info: mdframed works in twoside mode on input line 1658.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1656.
+(mdframed)              on input line 1658.
  [34]
-Package mdframed Info: mdframed works in twoside mode on input line 1676.
+Package mdframed Info: mdframed works in twoside mode on input line 1678.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 1676.
+(mdframed)              on input line 1678.
  [35]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [36] [37] [38] [39]
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 14.4pt on input line 1998.
+(Font)              scaled to size 14.4pt on input line 2000.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 10.5pt on input line 1998.
+(Font)              scaled to size 10.5pt on input line 2000.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.9pt on input line 1998.
+(Font)              scaled to size 7.9pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 1998.
+(Font)              scaled to size 12.9599pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 9.44994pt on input line 1998.
+(Font)              scaled to size 9.44994pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/qhv/m/n' will be
-(Font)              scaled to size 7.10994pt on input line 1998.
+(Font)              scaled to size 7.10994pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 14.4pt on input line 1998.
+(Font)              scaled to size 14.4pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.5pt on input line 1998.
+(Font)              scaled to size 10.5pt on input line 2000.
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 7.9pt on input line 1998.
+(Font)              scaled to size 7.9pt on input line 2000.
 
 
 LaTeX Font Warning: Font shape `U/wasy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 1998.
+(Font)              size <10.95> substituted on input line 2000.
 
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 14.4pt on input line 1998.
+(Font)              scaled to size 14.4pt on input line 2000.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 10.5pt on input line 1998.
+(Font)              scaled to size 10.5pt on input line 2000.
 LaTeX Font Info:    Font shape `OT1/ntxtlf/b/n' will be
-(Font)              scaled to size 7.9pt on input line 1998.
+(Font)              scaled to size 7.9pt on input line 2000.
 [40] [41] [42] [43]
-Package mdframed Info: mdframed works in twoside mode on input line 2166.
+Package mdframed Info: mdframed works in twoside mode on input line 2168.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2166.
-Package mdframed Info: mdframed works in twoside mode on input line 2182.
+(mdframed)              on input line 2168.
+Package mdframed Info: mdframed works in twoside mode on input line 2184.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2182.
+(mdframed)              on input line 2184.
  [44]
-Package mdframed Info: mdframed works in twoside mode on input line 2207.
+Package mdframed Info: mdframed works in twoside mode on input line 2209.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2207.
-Package mdframed Info: mdframed works in twoside mode on input line 2226.
+(mdframed)              on input line 2209.
+Package mdframed Info: mdframed works in twoside mode on input line 2228.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2226.
+(mdframed)              on input line 2228.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2331.
+(mdframed)              on input line 2333.
  [45] [46]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2331.
+(mdframed)              on input line 2333.
  [47] [48]
-Package mdframed Info: mdframed works in twoside mode on input line 2377.
+Package mdframed Info: mdframed works in twoside mode on input line 2379.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2377.
-Package mdframed Info: mdframed works in twoside mode on input line 2380.
+(mdframed)              on input line 2379.
+Package mdframed Info: mdframed works in twoside mode on input line 2382.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2380.
+(mdframed)              on input line 2382.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2404.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2406.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2404.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2406.
 
 
 [49]
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2408.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2410.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2408.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2410.
 
 
 
 Package amsmath Warning: Cannot use `split' here;
-(amsmath)                trying to recover with `aligned' on input line 2449.
+(amsmath)                trying to recover with `aligned' on input line 2451.
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2455.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2457.
 
 
 
-LaTeX Warning: Command \textquoteright invalid in math mode on input line 2455.
+LaTeX Warning: Command \textquoteright invalid in math mode on input line 2457.
 
 
 [50] [51]
-Package mdframed Info: mdframed works in twoside mode on input line 2544.
+Package mdframed Info: mdframed works in twoside mode on input line 2546.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2544.
-Package mdframed Info: mdframed works in twoside mode on input line 2570.
+(mdframed)              on input line 2546.
+Package mdframed Info: mdframed works in twoside mode on input line 2572.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2570.
+(mdframed)              on input line 2572.
  [52]
-Package mdframed Info: mdframed works in twoside mode on input line 2597.
+Package mdframed Info: mdframed works in twoside mode on input line 2599.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2597.
-Package mdframed Info: mdframed works in twoside mode on input line 2619.
+(mdframed)              on input line 2599.
+Package mdframed Info: mdframed works in twoside mode on input line 2621.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2619.
+(mdframed)              on input line 2621.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 2688.
+(mdframed)              on input line 2690.
  [53]
-<pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png, id=1312, 587
+<pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png, id=1347, 587
 .19376pt x 452.4403pt>
 File: pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png Graphic 
 file (type png)
 <use pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png>
 Package pdftex.def Info: pictures/Static-body-load-analysis/stress-conc-grooved
--shaft.png  used on input line 2706.
+-shaft.png  used on input line 2708.
 (pdftex.def)             Requested size: 293.59616pt x 226.2196pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [54]
 <pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet.png, id=1
-320, 557.08125pt x 379.4175pt>
+355, 557.08125pt x 379.4175pt>
 File: pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet.png 
 Graphic file (type png)
 <use pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet.png>
 Package pdftex.def Info: pictures/Static-body-load-analysis/stress-conc-shaft-s
-houlder-fillet.png  used on input line 2713.
+houlder-fillet.png  used on input line 2715.
 (pdftex.def)             Requested size: 278.53995pt x 189.70828pt.
-Package mdframed Info: mdframed works in twoside mode on input line 2718.
+Package mdframed Info: mdframed works in twoside mode on input line 2720.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2718.
+(mdframed)              on input line 2720.
 <pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-bending.p
-ng, id=1325, 539.01375pt x 429.85594pt>
+ng, id=1360, 539.01375pt x 429.85594pt>
 File: pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-bend
 ing.png Graphic file (type png)
 <use pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-bendi
 ng.png>
 Package pdftex.def Info: pictures/Static-body-load-analysis/stress-conc-shaft-s
-houlder-fillet-bending.png  used on input line 2741.
+houlder-fillet-bending.png  used on input line 2743.
 (pdftex.def)             Requested size: 269.50621pt x 214.92744pt.
 
 [55 <./pictures/Static-body-load-analysis/stress-conc-grooved-shaft.png> <./pic
 tures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 2745.
+Package mdframed Info: mdframed works in twoside mode on input line 2747.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2745.
-Package mdframed Info: mdframed works in twoside mode on input line 2773.
+(mdframed)              on input line 2747.
+Package mdframed Info: mdframed works in twoside mode on input line 2775.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2773.
-<pictures/Static-body-load-analysis/de-havilland-analysis.jpg, id=1336, 445.183
+(mdframed)              on input line 2775.
+<pictures/Static-body-load-analysis/de-havilland-analysis.jpg, id=1371, 445.183
 2pt x 353.6412pt>
 File: pictures/Static-body-load-analysis/de-havilland-analysis.jpg Graphic file
  (type jpg)
 <use pictures/Static-body-load-analysis/de-havilland-analysis.jpg>
 Package pdftex.def Info: pictures/Static-body-load-analysis/de-havilland-analys
-is.jpg  used on input line 2781.
+is.jpg  used on input line 2783.
 (pdftex.def)             Requested size: 303.0762pt x 240.7642pt.
-<pictures/Static-body-load-analysis/stress-conc-bending-plate.png, id=1337, 254
+<pictures/Static-body-load-analysis/stress-conc-bending-plate.png, id=1372, 254
 .8722pt x 175.857pt>
 File: pictures/Static-body-load-analysis/stress-conc-bending-plate.png Graphic 
 file (type png)
 <use pictures/Static-body-load-analysis/stress-conc-bending-plate.png>
 Package pdftex.def Info: pictures/Static-body-load-analysis/stress-conc-bending
--plate.png  used on input line 2800.
+-plate.png  used on input line 2802.
 (pdftex.def)             Requested size: 259.78337pt x 179.26442pt.
-<pictures/Static-body-load-analysis/stress-conc-axial-plate.png, id=1338, 252.4
+<pictures/Static-body-load-analysis/stress-conc-axial-plate.png, id=1373, 252.4
 632pt x 258.7266pt>
 File: pictures/Static-body-load-analysis/stress-conc-axial-plate.png Graphic fi
 le (type png)
 <use pictures/Static-body-load-analysis/stress-conc-axial-plate.png>
 Package pdftex.def Info: pictures/Static-body-load-analysis/stress-conc-axial-p
-late.png  used on input line 2804.
+late.png  used on input line 2806.
 (pdftex.def)             Requested size: 259.78337pt x 266.25447pt.
 
 [56 <./pictures/Static-body-load-analysis/stress-conc-shaft-shoulder-fillet-ben
 ding.png>] [57 <./pictures/Static-body-load-analysis/de-havilland-analysis.jpg>
  <./pictures/Static-body-load-analysis/stress-conc-bending-plate.png>]
-Package mdframed Info: mdframed works in twoside mode on input line 2810.
+Package mdframed Info: mdframed works in twoside mode on input line 2812.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 2810.
+(mdframed)              on input line 2812.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [58 <./pictures/Static-body-load-analysis/stress-conc-axial-plate.png>]
-<pictures/Static-body-load-analysis/plane-stress-exercise1.pdf, id=1361, 361.35
+<pictures/Static-body-load-analysis/plane-stress-exercise1.pdf, id=1396, 361.35
 pt x 289.08pt>
 File: pictures/Static-body-load-analysis/plane-stress-exercise1.pdf Graphic fil
 e (type pdf)
 <use pictures/Static-body-load-analysis/plane-stress-exercise1.pdf>
 Package pdftex.def Info: pictures/Static-body-load-analysis/plane-stress-exerci
-se1.pdf  used on input line 2892.
+se1.pdf  used on input line 2894.
 (pdftex.def)             Requested size: 252.94327pt x 202.35461pt.
-<pictures/Static-body-load-analysis/plane-stress-exercise2.pdf, id=1362, 361.35
+<pictures/Static-body-load-analysis/plane-stress-exercise2.pdf, id=1397, 361.35
 pt x 289.08pt>
 File: pictures/Static-body-load-analysis/plane-stress-exercise2.pdf Graphic fil
 e (type pdf)
 <use pictures/Static-body-load-analysis/plane-stress-exercise2.pdf>
 Package pdftex.def Info: pictures/Static-body-load-analysis/plane-stress-exerci
-se2.pdf  used on input line 2893.
+se2.pdf  used on input line 2895.
 (pdftex.def)             Requested size: 252.94327pt x 202.35461pt.
-<pictures/Static-body-load-analysis/plane-stress-exercise3.pdf, id=1363, 361.35
+<pictures/Static-body-load-analysis/plane-stress-exercise3.pdf, id=1398, 361.35
 pt x 289.08pt>
 File: pictures/Static-body-load-analysis/plane-stress-exercise3.pdf Graphic fil
 e (type pdf)
 <use pictures/Static-body-load-analysis/plane-stress-exercise3.pdf>
 Package pdftex.def Info: pictures/Static-body-load-analysis/plane-stress-exerci
-se3.pdf  used on input line 2894.
+se3.pdf  used on input line 2896.
 (pdftex.def)             Requested size: 252.94327pt x 202.35461pt.
 
-Overfull \hbox (54.41858pt too wide) in paragraph at lines 2892--2895
+Overfull \hbox (54.41858pt too wide) in paragraph at lines 2894--2897
 [][] [] 
  []
 
 [59] [60 <./pictures/Static-body-load-analysis/plane-stress-exercise1.pdf> <./p
 ictures/Static-body-load-analysis/plane-stress-exercise2.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Static-body-load-analysis/plane-stres
-s-exercise2.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
+pdfTeX warning: pdflatex.exe (file ./pictures/Static-body-load-analysis/plane-s
+tress-exercise2.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
 > <./pictures/Static-body-load-analysis/plane-stress-exercise3.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Static-body-load-analysis/plane-stres
-s-exercise3.pdf): PDF inclusion: multiple pdfs with page group included in a si
-ngle page
+pdfTeX warning: pdflatex.exe (file ./pictures/Static-body-load-analysis/plane-s
+tress-exercise3.pdf): PDF inclusion: multiple pdfs with page group included in 
+a single page
 >]
 Chapter 4.
 
@@ -2958,80 +2943,80 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package mdframed Info: mdframed works in twoside mode on input line 3027.
+Package mdframed Info: mdframed works in twoside mode on input line 3029.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3027.
+(mdframed)              on input line 3029.
 [63]
-Package mdframed Info: mdframed works in twoside mode on input line 3057.
+Package mdframed Info: mdframed works in twoside mode on input line 3059.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3057.
+(mdframed)              on input line 3059.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [64]
 [65] [66] [67] [68]
-Package mdframed Info: mdframed works in twoside mode on input line 3321.
+Package mdframed Info: mdframed works in twoside mode on input line 3323.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3321.
-<pictures/Failure-theories/fatigue-example.pdf, id=1473, 296.10625pt x 158.5925
+(mdframed)              on input line 3323.
+<pictures/Failure-theories/fatigue-example.pdf, id=1508, 296.10625pt x 158.5925
 pt>
 File: pictures/Failure-theories/fatigue-example.pdf Graphic file (type pdf)
 <use pictures/Failure-theories/fatigue-example.pdf>
 Package pdftex.def Info: pictures/Failure-theories/fatigue-example.pdf  used on
- input line 3331.
+ input line 3333.
 (pdftex.def)             Requested size: 266.49315pt x 142.7319pt.
  [69]
-Package mdframed Info: mdframed works in twoside mode on input line 3337.
+Package mdframed Info: mdframed works in twoside mode on input line 3339.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3337.
+(mdframed)              on input line 3339.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [70 <./pictures/Failure-theories/fatigue-example.pdf>]
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 3370.
+LaTeX Warning: Command \textendash invalid in math mode on input line 3372.
 
 [71] [72]
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 3511.
+LaTeX Warning: Command \textendash invalid in math mode on input line 3513.
 
 [73]
-Package mdframed Info: mdframed works in twoside mode on input line 3585.
+Package mdframed Info: mdframed works in twoside mode on input line 3587.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3585.
-<pictures/Failure-theories/Rail_buckle.jpg, id=1535, 351.3125pt x 214.8025pt>
+(mdframed)              on input line 3587.
+<pictures/Failure-theories/Rail_buckle.jpg, id=1571, 351.3125pt x 214.8025pt>
 File: pictures/Failure-theories/Rail_buckle.jpg Graphic file (type jpg)
 <use pictures/Failure-theories/Rail_buckle.jpg>
 Package pdftex.def Info: pictures/Failure-theories/Rail_buckle.jpg  used on inp
-ut line 3589.
+ut line 3591.
 (pdftex.def)             Requested size: 245.91707pt x 150.36072pt.
-Package mdframed Info: mdframed works in twoside mode on input line 3594.
+Package mdframed Info: mdframed works in twoside mode on input line 3596.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3594.
+(mdframed)              on input line 3596.
  [74 <./pictures/Failure-theories/Rail_buckle.jpg>] [75] [76] [77] [78
 
 ]
 Chapter 5.
-<pictures/Simple-load-bearing/stress-in-beam.pdf, id=1579, 428.60126pt x 86.322
+<pictures/Simple-load-bearing/stress-in-beam.pdf, id=1614, 428.60126pt x 86.322
 5pt>
 File: pictures/Simple-load-bearing/stress-in-beam.pdf Graphic file (type pdf)
 <use pictures/Simple-load-bearing/stress-in-beam.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/stress-in-beam.pdf  used 
-on input line 3753.
+on input line 3755.
 (pdftex.def)             Requested size: 428.6002pt x 86.32227pt.
-<pictures/Simple-load-bearing/stress-traject-beam.pdf, id=1581, 438.63875pt x 4
+<pictures/Simple-load-bearing/stress-traject-beam.pdf, id=1616, 438.63875pt x 4
 45.665pt>
 File: pictures/Simple-load-bearing/stress-traject-beam.pdf Graphic file (type p
 df)
 <use pictures/Simple-load-bearing/stress-traject-beam.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/stress-traject-beam.pdf  
-used on input line 3762.
+used on input line 3764.
 (pdftex.def)             Requested size: 263.18527pt x 267.40106pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3042,84 +3027,84 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Underfull \vbox (badness 1810) has occurred while \output is active []
 
  [80 <./pictures/Simple-load-bearing/stress-traject-beam.pdf>]
-Package mdframed Info: mdframed works in twoside mode on input line 3834.
+Package mdframed Info: mdframed works in twoside mode on input line 3836.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3834.
-<pictures/Simple-load-bearing/gantry-crane.png, id=1599, 424.58624pt x 418.5637
+(mdframed)              on input line 3836.
+<pictures/Simple-load-bearing/gantry-crane.png, id=1634, 424.58624pt x 418.5637
 5pt>
 File: pictures/Simple-load-bearing/gantry-crane.png Graphic file (type png)
 <use pictures/Simple-load-bearing/gantry-crane.png>
 Package pdftex.def Info: pictures/Simple-load-bearing/gantry-crane.png  used on
- input line 3838.
+ input line 3840.
 (pdftex.def)             Requested size: 233.52315pt x 230.21077pt.
  [81]
-Package mdframed Info: mdframed works in twoside mode on input line 3842.
+Package mdframed Info: mdframed works in twoside mode on input line 3844.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3842.
+(mdframed)              on input line 3844.
  [82 <./pictures/Simple-load-bearing/gantry-crane.png>]
-<pictures/Simple-load-bearing/steel-fab-beams.pdf, id=1619, 245.91875pt x 144.5
+<pictures/Simple-load-bearing/steel-fab-beams.pdf, id=1654, 245.91875pt x 144.5
 4pt>
 File: pictures/Simple-load-bearing/steel-fab-beams.pdf Graphic file (type pdf)
 <use pictures/Simple-load-bearing/steel-fab-beams.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/steel-fab-beams.pdf  used
- on input line 3877.
+ on input line 3879.
 (pdftex.def)             Requested size: 196.73524pt x 115.63214pt.
-Package mdframed Info: mdframed works in twoside mode on input line 3895.
+Package mdframed Info: mdframed works in twoside mode on input line 3897.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3895.
-Package mdframed Info: mdframed works in twoside mode on input line 3900.
+(mdframed)              on input line 3897.
+Package mdframed Info: mdframed works in twoside mode on input line 3902.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 3900.
-<pictures/Simple-load-bearing/fully-stressed-wedge.pdf, id=1622, 202.7575pt x 1
+(mdframed)              on input line 3902.
+<pictures/Simple-load-bearing/fully-stressed-wedge.pdf, id=1657, 202.7575pt x 1
 30.4875pt>
 File: pictures/Simple-load-bearing/fully-stressed-wedge.pdf Graphic file (type 
 pdf)
 <use pictures/Simple-load-bearing/fully-stressed-wedge.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/fully-stressed-wedge.pdf 
- used on input line 3923.
+ used on input line 3925.
 (pdftex.def)             Requested size: 141.92928pt x 91.3406pt.
-<pictures/Simple-load-bearing/fully-stressed-parabola.pdf, id=1623, 202.7575pt 
+<pictures/Simple-load-bearing/fully-stressed-parabola.pdf, id=1658, 202.7575pt 
 x 130.4875pt>
 File: pictures/Simple-load-bearing/fully-stressed-parabola.pdf Graphic file (ty
 pe pdf)
 <use pictures/Simple-load-bearing/fully-stressed-parabola.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/fully-stressed-parabola.p
-df  used on input line 3934.
+df  used on input line 3936.
 (pdftex.def)             Requested size: 141.92928pt x 91.3406pt.
-Package mdframed Info: Not enough space on this page on input line 3936.
+Package mdframed Info: Not enough space on this page on input line 3938.
  [83 <./pictures/Simple-load-bearing/steel-fab-beams.pdf>]
-Package mdframed Info: Not enough space on this page on input line 3936.
+Package mdframed Info: Not enough space on this page on input line 3938.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [84 <./pictures/Simple-load-bearing/fully-stressed-wedge.pdf> <./pictures/Simp
 le-load-bearing/fully-stressed-parabola.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Simple-load-bearing/fully-stressed-pa
-rabola.pdf): PDF inclusion: multiple pdfs with page group included in a single 
-page
+pdfTeX warning: pdflatex.exe (file ./pictures/Simple-load-bearing/fully-stresse
+d-parabola.pdf): PDF inclusion: multiple pdfs with page group included in a sin
+gle page
 >] [85]
-Package mdframed Info: mdframed works in twoside mode on input line 4007.
+Package mdframed Info: mdframed works in twoside mode on input line 4009.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4007.
-Package mdframed Info: mdframed works in twoside mode on input line 4036.
+(mdframed)              on input line 4009.
+Package mdframed Info: mdframed works in twoside mode on input line 4038.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4036.
+(mdframed)              on input line 4038.
  [86] [87] [88]
-Package mdframed Info: mdframed works in twoside mode on input line 4150.
+Package mdframed Info: mdframed works in twoside mode on input line 4152.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4150.
-Package mdframed Info: mdframed works in twoside mode on input line 4158.
+(mdframed)              on input line 4152.
+Package mdframed Info: mdframed works in twoside mode on input line 4160.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4158.
+(mdframed)              on input line 4160.
  [89]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3132,56 +3117,56 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [91]
-Package mdframed Info: mdframed works in twoside mode on input line 4326.
+Package mdframed Info: mdframed works in twoside mode on input line 4328.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4326.
+(mdframed)              on input line 4328.
  (./pythontex-files-me310/py_default_default_0.stdout
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
 ) [92]
-Package mdframed Info: mdframed works in twoside mode on input line 4356.
+Package mdframed Info: mdframed works in twoside mode on input line 4358.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4356.
-<pictures/Simple-load-bearing/tower-crane2.pdf, id=1713, 578.16pt x 411.5375pt>
+(mdframed)              on input line 4358.
+<pictures/Simple-load-bearing/tower-crane2.pdf, id=1748, 578.16pt x 411.5375pt>
 
 File: pictures/Simple-load-bearing/tower-crane2.pdf Graphic file (type pdf)
 <use pictures/Simple-load-bearing/tower-crane2.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/tower-crane2.pdf  used on
- input line 4362.
+ input line 4364.
 (pdftex.def)             Requested size: 346.89867pt x 246.92441pt.
  [93]
-Package mdframed Info: mdframed works in twoside mode on input line 4377.
+Package mdframed Info: mdframed works in twoside mode on input line 4379.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4377.
+(mdframed)              on input line 4379.
  [94 <./pictures/Simple-load-bearing/tower-crane2.pdf>]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 4442.
+(mdframed)              on input line 4444.
  [95]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [96]
 [97]
-<pictures/Simple-load-bearing/footbridge.pdf, id=1757, 383.4325pt x 238.8925pt>
+<pictures/Simple-load-bearing/footbridge.pdf, id=1793, 383.4325pt x 238.8925pt>
 
 File: pictures/Simple-load-bearing/footbridge.pdf Graphic file (type pdf)
 <use pictures/Simple-load-bearing/footbridge.pdf>
 Package pdftex.def Info: pictures/Simple-load-bearing/footbridge.pdf  used on i
-nput line 4510.
+nput line 4512.
 (pdftex.def)             Requested size: 306.74641pt x 191.11424pt.
  [98 <./pictures/Simple-load-bearing/footbridge.pdf>]
 Chapter 6.
-<pictures/Spring-design/torsion-bar-spring.pdf, id=1779, 564.1075pt x 433.62pt>
+<pictures/Spring-design/torsion-bar-spring.pdf, id=1814, 564.1075pt x 433.62pt>
 
 File: pictures/Spring-design/torsion-bar-spring.pdf Graphic file (type pdf)
 <use pictures/Spring-design/torsion-bar-spring.pdf>
 Package pdftex.def Info: pictures/Spring-design/torsion-bar-spring.pdf  used on
- input line 4547.
+ input line 4549.
 (pdftex.def)             Requested size: 423.07957pt x 325.2142pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3189,25 +3174,25 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [99
 
 ]
-Package mdframed Info: mdframed works in twoside mode on input line 4587.
+Package mdframed Info: mdframed works in twoside mode on input line 4589.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4587.
-Package mdframed Info: mdframed works in twoside mode on input line 4593.
+(mdframed)              on input line 4589.
+Package mdframed Info: mdframed works in twoside mode on input line 4595.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4593.
+(mdframed)              on input line 4595.
  [100 <./pictures/Spring-design/torsion-bar-spring.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [101]
-<pictures/Spring-design/helical-spring-geometry.pdf, id=1811, 426.59375pt x 542
+<pictures/Spring-design/helical-spring-geometry.pdf, id=1846, 426.59375pt x 542
 .025pt>
 File: pictures/Spring-design/helical-spring-geometry.pdf Graphic file (type pdf
 )
 <use pictures/Spring-design/helical-spring-geometry.pdf>
 Package pdftex.def Info: pictures/Spring-design/helical-spring-geometry.pdf  us
-ed on input line 4648.
+ed on input line 4650.
 (pdftex.def)             Requested size: 234.62727pt x 298.11467pt.
 
 [102 <./pictures/Spring-design/helical-spring-geometry.pdf>] [103]
@@ -3483,65 +3468,65 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-Package mdframed Info: mdframed works in twoside mode on input line 4973.
+Package mdframed Info: mdframed works in twoside mode on input line 4975.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4973.
-Package mdframed Info: Not enough space on this page on input line 4977.
+(mdframed)              on input line 4975.
+Package mdframed Info: Not enough space on this page on input line 4979.
 [107]
-Package mdframed Info: Not enough space on this page on input line 4977.
-Package mdframed Info: mdframed works in twoside mode on input line 4980.
+Package mdframed Info: Not enough space on this page on input line 4979.
+Package mdframed Info: mdframed works in twoside mode on input line 4982.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 4980.
+(mdframed)              on input line 4982.
  [108] [109]
-Package mdframed Info: mdframed works in twoside mode on input line 5063.
+Package mdframed Info: mdframed works in twoside mode on input line 5065.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5063.
-Package mdframed Info: mdframed works in twoside mode on input line 5066.
+(mdframed)              on input line 5065.
+Package mdframed Info: mdframed works in twoside mode on input line 5068.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5066.
+(mdframed)              on input line 5068.
  [110]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 5157.
+(mdframed)              on input line 5159.
  [111] [112] [113]
-Package mdframed Info: mdframed works in twoside mode on input line 5247.
+Package mdframed Info: mdframed works in twoside mode on input line 5249.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5247.
-Package mdframed Info: mdframed works in twoside mode on input line 5271.
+(mdframed)              on input line 5249.
+Package mdframed Info: mdframed works in twoside mode on input line 5273.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5271.
+(mdframed)              on input line 5273.
  [114]
-Package mdframed Info: Not enough space on this page on input line 5340.
+Package mdframed Info: Not enough space on this page on input line 5342.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 5340.
+(mdframed)              on input line 5342.
  [115] [116]
-Package mdframed Info: mdframed works in twoside mode on input line 5384.
+Package mdframed Info: mdframed works in twoside mode on input line 5386.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5384.
-Package mdframed Info: mdframed works in twoside mode on input line 5407.
+(mdframed)              on input line 5386.
+Package mdframed Info: mdframed works in twoside mode on input line 5409.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5407.
+(mdframed)              on input line 5409.
  [117] [118]
-<pictures/Spring-design/toy-dart-gun.pdf, id=1962, 444.66125pt x 187.70125pt>
+<pictures/Spring-design/toy-dart-gun.pdf, id=1997, 444.66125pt x 187.70125pt>
 File: pictures/Spring-design/toy-dart-gun.pdf Graphic file (type pdf)
 <use pictures/Spring-design/toy-dart-gun.pdf>
 Package pdftex.def Info: pictures/Spring-design/toy-dart-gun.pdf  used on input
- line 5514.
+ line 5516.
 (pdftex.def)             Requested size: 355.72948pt x 150.1612pt.
-<pictures/Spring-design/valve-spring.jpg, id=1963, 1027.84pt x 685.56125pt>
+<pictures/Spring-design/valve-spring.jpg, id=1998, 1027.84pt x 685.56125pt>
 File: pictures/Spring-design/valve-spring.jpg Graphic file (type jpg)
 <use pictures/Spring-design/valve-spring.jpg>
 Package pdftex.def Info: pictures/Spring-design/valve-spring.jpg  used on input
- line 5520.
+ line 5522.
 (pdftex.def)             Requested size: 205.56436pt x 137.10982pt.
 
 [119 <./pictures/Spring-design/toy-dart-gun.pdf>] [120 <./pictures/Spring-desig
@@ -3549,18 +3534,18 @@ n/valve-spring.jpg>] [121
 
 ]
 Chapter 7.
-<pictures/Welding/shield-metal-arc-welding.png, id=1994, 2007.5pt x 1424.32124p
+<pictures/Welding/shield-metal-arc-welding.png, id=2030, 2007.5pt x 1424.32124p
 t>
 File: pictures/Welding/shield-metal-arc-welding.png Graphic file (type png)
 <use pictures/Welding/shield-metal-arc-welding.png>
 Package pdftex.def Info: pictures/Welding/shield-metal-arc-welding.png  used on
- input line 5548.
+ input line 5550.
 (pdftex.def)             Requested size: 240.8896pt x 170.91118pt.
-<pictures/Welding/gas-metal-arc-welding.png, id=1995, 2007.5pt x 1730.465pt>
+<pictures/Welding/gas-metal-arc-welding.png, id=2031, 2007.5pt x 1730.465pt>
 File: pictures/Welding/gas-metal-arc-welding.png Graphic file (type png)
 <use pictures/Welding/gas-metal-arc-welding.png>
 Package pdftex.def Info: pictures/Welding/gas-metal-arc-welding.png  used on in
-put line 5558.
+put line 5560.
 (pdftex.def)             Requested size: 200.76175pt x 173.05664pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3568,11 +3553,11 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [122
 
  <./pictures/Welding/shield-metal-arc-welding.png>]
-<pictures/Welding/gas-tungsten-arc-welding.png, id=2003, 1003.75pt x 562.1pt>
+<pictures/Welding/gas-tungsten-arc-welding.png, id=2038, 1003.75pt x 562.1pt>
 File: pictures/Welding/gas-tungsten-arc-welding.png Graphic file (type png)
 <use pictures/Welding/gas-tungsten-arc-welding.png>
 Package pdftex.def Info: pictures/Welding/gas-tungsten-arc-welding.png  used on
- input line 5567.
+ input line 5569.
 (pdftex.def)             Requested size: 351.31776pt x 196.73795pt.
  [123 <./pictures/Welding/gas-metal-arc-welding.png> <./pictures/Welding/gas-tu
 ngsten-arc-welding.png>]
@@ -3587,110 +3572,110 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [127]
-Package mdframed Info: mdframed works in twoside mode on input line 5847.
+Package mdframed Info: mdframed works in twoside mode on input line 5849.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5847.
-Package mdframed Info: mdframed works in twoside mode on input line 5877.
+(mdframed)              on input line 5849.
+Package mdframed Info: mdframed works in twoside mode on input line 5879.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5877.
+(mdframed)              on input line 5879.
  [128]
-Package mdframed Info: mdframed works in twoside mode on input line 5917.
+Package mdframed Info: mdframed works in twoside mode on input line 5919.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5917.
-Package mdframed Info: mdframed works in twoside mode on input line 5938.
+(mdframed)              on input line 5919.
+Package mdframed Info: mdframed works in twoside mode on input line 5940.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 5938.
+(mdframed)              on input line 5940.
  [129] [130]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [131]
-Package mdframed Info: mdframed works in twoside mode on input line 6041.
+Package mdframed Info: mdframed works in twoside mode on input line 6043.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6041.
-<pictures/Welding/weld-under-torsion-and-bending.png, id=2074, 486.618pt x 318.
+(mdframed)              on input line 6043.
+<pictures/Welding/weld-under-torsion-and-bending.png, id=2109, 486.618pt x 318.
 791pt>
 File: pictures/Welding/weld-under-torsion-and-bending.png Graphic file (type pn
 g)
 <use pictures/Welding/weld-under-torsion-and-bending.png>
 Package pdftex.def Info: pictures/Welding/weld-under-torsion-and-bending.png  u
-sed on input line 6043.
+sed on input line 6045.
 (pdftex.def)             Requested size: 267.64072pt x 175.33559pt.
-Package mdframed Info: mdframed works in twoside mode on input line 6049.
+Package mdframed Info: mdframed works in twoside mode on input line 6051.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6049.
+(mdframed)              on input line 6051.
 File: pictures/Welding/weld-under-torsion-and-bending.png Graphic file (type pn
 g)
 <use pictures/Welding/weld-under-torsion-and-bending.png>
 Package pdftex.def Info: pictures/Welding/weld-under-torsion-and-bending.png  u
-sed on input line 6110.
+sed on input line 6112.
 (pdftex.def)             Requested size: 291.97305pt x 191.27608pt.
 
 [132 <./pictures/Welding/weld-under-torsion-and-bending.png>]
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 6159.
+(mdframed)              on input line 6161.
  [133] [134]
-Package mdframed Info: mdframed works in twoside mode on input line 6181.
+Package mdframed Info: mdframed works in twoside mode on input line 6183.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6181.
-<pictures/Welding/fatigue-weld-analysis-example.pdf, id=2094, 280.04625pt x 100
+(mdframed)              on input line 6183.
+<pictures/Welding/fatigue-weld-analysis-example.pdf, id=2130, 280.04625pt x 100
 .375pt>
 File: pictures/Welding/fatigue-weld-analysis-example.pdf Graphic file (type pdf
 )
 <use pictures/Welding/fatigue-weld-analysis-example.pdf>
 Package pdftex.def Info: pictures/Welding/fatigue-weld-analysis-example.pdf  us
-ed on input line 6187.
+ed on input line 6189.
 (pdftex.def)             Requested size: 196.03102pt x 70.26201pt.
-Package mdframed Info: mdframed works in twoside mode on input line 6191.
+Package mdframed Info: mdframed works in twoside mode on input line 6193.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6191.
+(mdframed)              on input line 6193.
 
 
 Package amsmath Warning: Foreign command \over;
 (amsmath)                \frac or \genfrac should be used instead
-(amsmath)                 on input line 6213.
+(amsmath)                 on input line 6215.
 
 [135 <./pictures/Welding/fatigue-weld-analysis-example.pdf>]
-<pictures/Welding/springboard-exercise.pdf, id=2116, 433.62pt x 483.8075pt>
+<pictures/Welding/springboard-exercise.pdf, id=2151, 433.62pt x 483.8075pt>
 File: pictures/Welding/springboard-exercise.pdf Graphic file (type pdf)
 <use pictures/Welding/springboard-exercise.pdf>
 Package pdftex.def Info: pictures/Welding/springboard-exercise.pdf  used on inp
-ut line 6234.
+ut line 6236.
 (pdftex.def)             Requested size: 303.53192pt x 338.66293pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [136]
-<pictures/Welding/parallel-weld-exercise.pdf, id=2126, 337.26pt x 247.92625pt>
+<pictures/Welding/parallel-weld-exercise.pdf, id=2161, 337.26pt x 247.92625pt>
 File: pictures/Welding/parallel-weld-exercise.pdf Graphic file (type pdf)
 <use pictures/Welding/parallel-weld-exercise.pdf>
 Package pdftex.def Info: pictures/Welding/parallel-weld-exercise.pdf  used on i
-nput line 6239.
+nput line 6241.
 (pdftex.def)             Requested size: 242.82701pt x 178.50676pt.
 
 [137 <./pictures/Welding/springboard-exercise.pdf> <./pictures/Welding/parallel
 -weld-exercise.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Welding/parallel-weld-exercise.pdf): 
-PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Welding/parallel-weld-exercise.pd
+f): PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Chapter 8.
-<pictures/Bolt/bolt-terminology.pdf, id=2154, 266.9975pt x 184.69pt>
+<pictures/Bolt/bolt-terminology.pdf, id=2189, 266.9975pt x 184.69pt>
 File: pictures/Bolt/bolt-terminology.pdf Graphic file (type pdf)
 <use pictures/Bolt/bolt-terminology.pdf>
 Package pdftex.def Info: pictures/Bolt/bolt-terminology.pdf  used on input line
- 6259.
+ 6261.
 (pdftex.def)             Requested size: 293.69814pt x 203.1596pt.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 6271--6271
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 6273--6273
 []|  
  []
 
@@ -3700,29 +3685,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [138
 
  <./pictures/Bolt/bolt-terminology.pdf>] [139]
-<pictures/Bolt/force-flow-bolt.png, id=2182, 579.8463pt x 691.383pt>
+<pictures/Bolt/force-flow-bolt.png, id=2217, 579.8463pt x 691.383pt>
 File: pictures/Bolt/force-flow-bolt.png Graphic file (type png)
 <use pictures/Bolt/force-flow-bolt.png>
 Package pdftex.def Info: pictures/Bolt/force-flow-bolt.png  used on input line 
-6331.
+6333.
 (pdftex.def)             Requested size: 289.92244pt x 345.69066pt.
  [140 <./pictures/Bolt/force-flow-bolt.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Bolt/head-types.png, id=2195, 522.5121pt x 281.1303pt>
+<pictures/Bolt/head-types.png, id=2230, 522.5121pt x 281.1303pt>
 File: pictures/Bolt/head-types.png Graphic file (type png)
 <use pictures/Bolt/head-types.png>
-Package pdftex.def Info: pictures/Bolt/head-types.png  used on input line 6454.
+Package pdftex.def Info: pictures/Bolt/head-types.png  used on input line 6456.
 
 (pdftex.def)             Requested size: 452.9679pt x 243.71486pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Bolt/drive-types.jpg, id=2196, 547.8066pt x 277.5168pt>
+<pictures/Bolt/drive-types.jpg, id=2231, 547.8066pt x 277.5168pt>
 File: pictures/Bolt/drive-types.jpg Graphic file (type jpg)
 <use pictures/Bolt/drive-types.jpg>
-Package pdftex.def Info: pictures/Bolt/drive-types.jpg  used on input line 6461
+Package pdftex.def Info: pictures/Bolt/drive-types.jpg  used on input line 6463
 .
 (pdftex.def)             Requested size: 407.66833pt x 206.53218pt.
 
@@ -3732,29 +3717,29 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Bolt/thread-rolling.png, id=2205, 144.54pt x 88.1694pt>
+<pictures/Bolt/thread-rolling.png, id=2240, 144.54pt x 88.1694pt>
 File: pictures/Bolt/thread-rolling.png Graphic file (type png)
 <use pictures/Bolt/thread-rolling.png>
 Package pdftex.def Info: pictures/Bolt/thread-rolling.png  used on input line 6
-493.
+495.
 (pdftex.def)             Requested size: 226.48395pt x 138.16255pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Bolt/thread-cutting.png, id=2206, 481.8pt x 481.8pt>
+<pictures/Bolt/thread-cutting.png, id=2241, 481.8pt x 481.8pt>
 File: pictures/Bolt/thread-cutting.png Graphic file (type png)
 <use pictures/Bolt/thread-cutting.png>
 Package pdftex.def Info: pictures/Bolt/thread-cutting.png  used on input line 6
-499.
+501.
 (pdftex.def)             Requested size: 226.48395pt x 226.48279pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<pictures/Bolt/cut-rolled-thread.png, id=2207, 1249.66875pt x 528.97626pt>
+<pictures/Bolt/cut-rolled-thread.png, id=2242, 1249.66875pt x 528.97626pt>
 File: pictures/Bolt/cut-rolled-thread.png Graphic file (type png)
 <use pictures/Bolt/cut-rolled-thread.png>
 Package pdftex.def Info: pictures/Bolt/cut-rolled-thread.png  used on input lin
-e 6505.
+e 6507.
 (pdftex.def)             Requested size: 362.37569pt x 153.39111pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -3773,66 +3758,66 @@ d.png>] [146]
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [147] [148]
-Package mdframed Info: mdframed works in twoside mode on input line 6788.
+Package mdframed Info: mdframed works in twoside mode on input line 6790.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6788.
-Package mdframed Info: mdframed works in twoside mode on input line 6792.
+(mdframed)              on input line 6790.
+Package mdframed Info: mdframed works in twoside mode on input line 6794.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6792.
-Package mdframed Info: Not enough space on this page on input line 6824.
+(mdframed)              on input line 6794.
+Package mdframed Info: Not enough space on this page on input line 6826.
  [149]
-Package mdframed Info: Not enough space on this page on input line 6824.
+Package mdframed Info: Not enough space on this page on input line 6826.
  [150] [151]
-Package mdframed Info: mdframed works in twoside mode on input line 6918.
+Package mdframed Info: mdframed works in twoside mode on input line 6920.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6918.
-Package mdframed Info: mdframed works in twoside mode on input line 6931.
+(mdframed)              on input line 6920.
+Package mdframed Info: mdframed works in twoside mode on input line 6933.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6931.
+(mdframed)              on input line 6933.
  [152]
-Package mdframed Info: mdframed works in twoside mode on input line 6985.
+Package mdframed Info: mdframed works in twoside mode on input line 6987.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 6985.
+(mdframed)              on input line 6987.
  [153]
-Package mdframed Info: mdframed works in twoside mode on input line 7014.
+Package mdframed Info: mdframed works in twoside mode on input line 7016.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 7014.
+(mdframed)              on input line 7016.
  [154] [155]
-Package mdframed Info: mdframed works in twoside mode on input line 7133.
+Package mdframed Info: mdframed works in twoside mode on input line 7135.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 7133.
-Package mdframed Info: mdframed works in twoside mode on input line 7138.
+(mdframed)              on input line 7135.
+Package mdframed Info: mdframed works in twoside mode on input line 7140.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 7138.
+(mdframed)              on input line 7140.
  [156]
 Underfull \vbox (badness 5711) has occurred while \output is active []
 
  [157]
-<pictures/Bolt/bicycle-dimension.pdf, id=2362, 426.59375pt x 318.18875pt>
+<pictures/Bolt/bicycle-dimension.pdf, id=2397, 426.59375pt x 318.18875pt>
 File: pictures/Bolt/bicycle-dimension.pdf Graphic file (type pdf)
 <use pictures/Bolt/bicycle-dimension.pdf>
 Package pdftex.def Info: pictures/Bolt/bicycle-dimension.pdf  used on input lin
-e 7210.
+e 7212.
 (pdftex.def)             Requested size: 255.95822pt x 190.9147pt.
-<pictures/Bolt/bicycle-fork.pdf, id=2363, 259.97125pt x 347.2975pt>
+<pictures/Bolt/bicycle-fork.pdf, id=2398, 259.97125pt x 347.2975pt>
 File: pictures/Bolt/bicycle-fork.pdf Graphic file (type pdf)
 <use pictures/Bolt/bicycle-fork.pdf>
 Package pdftex.def Info: pictures/Bolt/bicycle-fork.pdf  used on input line 721
-1.
+3.
 (pdftex.def)             Requested size: 129.9853pt x 173.64832pt.
-<pictures/Bolt/bolt-on-plate-exercise.pdf, id=2366, 275.0275pt x 158.5925pt>
+<pictures/Bolt/bolt-on-plate-exercise.pdf, id=2401, 275.0275pt x 158.5925pt>
 File: pictures/Bolt/bolt-on-plate-exercise.pdf Graphic file (type pdf)
 <use pictures/Bolt/bolt-on-plate-exercise.pdf>
 Package pdftex.def Info: pictures/Bolt/bolt-on-plate-exercise.pdf  used on inpu
-t line 7220.
+t line 7222.
 (pdftex.def)             Requested size: 165.01776pt x 95.15622pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3840,30 +3825,30 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [158 <./pictures/Bolt/bicycle-dimension.pdf> <./pictures/Bolt/bicycle-fork.pdf
 
 
-pdfTeX warning: pdflatex (file ./pictures/Bolt/bicycle-fork.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Bolt/bicycle-fork.pdf): PDF inclu
+sion: multiple pdfs with page group included in a single page
 >]
-<pictures/Bolt/pressure-vessel-exercise.pdf, id=2395, 275.0275pt x 158.5925pt>
+<pictures/Bolt/pressure-vessel-exercise.pdf, id=2430, 275.0275pt x 158.5925pt>
 File: pictures/Bolt/pressure-vessel-exercise.pdf Graphic file (type pdf)
 <use pictures/Bolt/pressure-vessel-exercise.pdf>
 Package pdftex.def Info: pictures/Bolt/pressure-vessel-exercise.pdf  used on in
-put line 7228.
+put line 7230.
 (pdftex.def)             Requested size: 165.01776pt x 95.15622pt.
-<pictures/Bolt/bolted-fixture-exercise.pdf, id=2398, 397.485pt x 238.8925pt>
+<pictures/Bolt/bolted-fixture-exercise.pdf, id=2433, 397.485pt x 238.8925pt>
 File: pictures/Bolt/bolted-fixture-exercise.pdf Graphic file (type pdf)
 <use pictures/Bolt/bolted-fixture-exercise.pdf>
 Package pdftex.def Info: pictures/Bolt/bolted-fixture-exercise.pdf  used on inp
-ut line 7236.
+ut line 7238.
 (pdftex.def)             Requested size: 317.98842pt x 191.11424pt.
  [159 <./pictures/Bolt/bolt-on-plate-exercise.pdf> <./pictures/Bolt/pressure-ve
 ssel-exercise.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Bolt/pressure-vessel-exercise.pdf): P
-DF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Bolt/pressure-vessel-exercise.pdf
+): PDF inclusion: multiple pdfs with page group included in a single page
 > <./pictures/Bolt/bolted-fixture-exercise.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Bolt/bolted-fixture-exercise.pdf): PD
-F inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Bolt/bolted-fixture-exercise.pdf)
+: PDF inclusion: multiple pdfs with page group included in a single page
 >]
 Chapter 9.
 
@@ -3879,43 +3864,43 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [162] [163] [164] [165] [166] [167]
-<pictures/Machine-interaction/pedal-system.pdf, id=2508, 513.92pt x 463.7325pt>
+<pictures/Machine-interaction/pedal-system.pdf, id=2543, 513.92pt x 463.7325pt>
 
 File: pictures/Machine-interaction/pedal-system.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/pedal-system.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pedal-system.pdf  used on
- input line 7626.
+ input line 7628.
 (pdftex.def)             Requested size: 226.12549pt x 204.04292pt.
-<pictures/Machine-interaction/pedal.pdf, id=2509, 513.92pt x 513.92pt>
+<pictures/Machine-interaction/pedal.pdf, id=2544, 513.92pt x 513.92pt>
 File: pictures/Machine-interaction/pedal.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/pedal.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pedal.pdf  used on input 
-line 7627.
+line 7629.
 (pdftex.def)             Requested size: 154.17719pt x 154.17719pt.
-<pictures/Machine-interaction/pogostick.pdf, id=2510, 1850.8584pt x 2895.02771p
+<pictures/Machine-interaction/pogostick.pdf, id=2545, 1850.8584pt x 2895.02771p
 t>
 File: pictures/Machine-interaction/pogostick.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/pogostick.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pogostick.pdf  used on in
-put line 7663.
+put line 7665.
 (pdftex.def)             Requested size: 217.42761pt x 340.05537pt.
-<pictures/Machine-interaction/pogostick-bolt.pdf, id=2511, 419.34444pt x 133.83
+<pictures/Machine-interaction/pogostick-bolt.pdf, id=2546, 419.34444pt x 133.83
 334pt>
 File: pictures/Machine-interaction/pogostick-bolt.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/pogostick-bolt.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pogostick-bolt.pdf  used 
-on input line 7670.
+on input line 7672.
 (pdftex.def)             Requested size: 108.71173pt x 34.69577pt.
-<pictures/Machine-interaction/pogostick-compress.pdf, id=2512, 1311.29903pt x 2
+<pictures/Machine-interaction/pogostick-compress.pdf, id=2547, 1311.29903pt x 2
 836.19609pt>
 File: pictures/Machine-interaction/pogostick-compress.pdf Graphic file (type pd
 f)
 <use pictures/Machine-interaction/pogostick-compress.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pogostick-compress.pdf  u
-sed on input line 7673.
+sed on input line 7675.
 (pdftex.def)             Requested size: 108.71173pt x 235.12291pt.
 
-Overfull \hbox (1.49992pt too wide) in paragraph at lines 7661--7677
+Overfull \hbox (1.49992pt too wide) in paragraph at lines 7663--7679
 [][]  [] 
  []
 
@@ -3924,12 +3909,12 @@ Underfull \vbox (badness 7486) has occurred while \output is active []
 
  [168 <./pictures/Machine-interaction/pedal-system.pdf> <./pictures/Machine-int
 eraction/pedal.pdf>]
-<pictures/Machine-interaction/pogostick-load.pdf, id=2534, 1311.29903pt x 2983.
+<pictures/Machine-interaction/pogostick-load.pdf, id=2569, 1311.29903pt x 2983.
 74294pt>
 File: pictures/Machine-interaction/pogostick-load.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/pogostick-load.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/pogostick-load.pdf  used 
-on input line 7703.
+on input line 7705.
 (pdftex.def)             Requested size: 158.54152pt x 360.71986pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -3937,42 +3922,43 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [169 <./pictures/Machine-interaction/pogostick.pdf> <./pictures/Machine-intera
 ction/pogostick-bolt.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Machine-interaction/pogostick-bolt.pd
-f): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Machine-interaction/pogostick-bol
+t.pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./pictures/Machine-interaction/pogostick-compress.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Machine-interaction/pogostick-compres
-s.pdf): PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Machine-interaction/pogostick-com
+press.pdf): PDF inclusion: multiple pdfs with page group included in a single p
+age
 >]
-<pictures/Machine-interaction/bicycle-dimension.pdf, id=2586, 426.59375pt x 318
+<pictures/Machine-interaction/bicycle-dimension.pdf, id=2621, 426.59375pt x 318
 .18875pt>
 File: pictures/Machine-interaction/bicycle-dimension.pdf Graphic file (type pdf
 )
 <use pictures/Machine-interaction/bicycle-dimension.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/bicycle-dimension.pdf  us
-ed on input line 7737.
+ed on input line 7739.
 (pdftex.def)             Requested size: 307.14726pt x 229.0957pt.
-<pictures/Machine-interaction/bicycle-fork.pdf, id=2587, 259.97125pt x 347.2975
+<pictures/Machine-interaction/bicycle-fork.pdf, id=2622, 259.97125pt x 347.2975
 pt>
 File: pictures/Machine-interaction/bicycle-fork.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/bicycle-fork.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/bicycle-fork.pdf  used on
- input line 7738.
+ input line 7740.
 (pdftex.def)             Requested size: 155.98395pt x 208.3801pt.
-<pictures/Machine-interaction/bicycle-seat.pdf, id=2588, 282.05376pt x 238.8925
+<pictures/Machine-interaction/bicycle-seat.pdf, id=2623, 282.05376pt x 238.8925
 pt>
 File: pictures/Machine-interaction/bicycle-seat.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/bicycle-seat.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/bicycle-seat.pdf  used on
- input line 7739.
+ input line 7741.
 (pdftex.def)             Requested size: 197.43626pt x 167.2236pt.
  [170 <./pictures/Machine-interaction/pogostick-load.pdf>]
-<pictures/Machine-interaction/fruit-juicer.pdf, id=2606, 397.485pt x 166.6225pt
+<pictures/Machine-interaction/fruit-juicer.pdf, id=2641, 397.485pt x 166.6225pt
 >
 File: pictures/Machine-interaction/fruit-juicer.pdf Graphic file (type pdf)
 <use pictures/Machine-interaction/fruit-juicer.pdf>
 Package pdftex.def Info: pictures/Machine-interaction/fruit-juicer.pdf  used on
- input line 7757.
+ input line 7759.
 (pdftex.def)             Requested size: 397.48402pt x 166.62209pt.
 
 
@@ -3981,12 +3967,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [171 <./pictures/Machine-interaction/bicycle-dimension.pdf> <./pictures/Machine
 -interaction/bicycle-fork.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Machine-interaction/bicycle-fork.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Machine-interaction/bicycle-fork.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 > <./pictures/Machine-interaction/bicycle-seat.pdf
 
-pdfTeX warning: pdflatex (file ./pictures/Machine-interaction/bicycle-seat.pdf)
-: PDF inclusion: multiple pdfs with page group included in a single page
+pdfTeX warning: pdflatex.exe (file ./pictures/Machine-interaction/bicycle-seat.
+pdf): PDF inclusion: multiple pdfs with page group included in a single page
 >] [172 <./pictures/Machine-interaction/fruit-juicer.pdf>] [173] [174
 
 ]
@@ -3994,83 +3980,83 @@ Chapter 10.
 [175
 
 ] [176] [177] [178]
-Package mdframed Info: mdframed works in twoside mode on input line 8136.
+Package mdframed Info: mdframed works in twoside mode on input line 8138.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8136.
-<pictures/Intro-CAD/bike-crank-set.jpg, id=2715, 887.315pt x 642.4pt>
+(mdframed)              on input line 8138.
+<pictures/Intro-CAD/bike-crank-set.jpg, id=2750, 887.315pt x 642.4pt>
 File: pictures/Intro-CAD/bike-crank-set.jpg Graphic file (type jpg)
 <use pictures/Intro-CAD/bike-crank-set.jpg>
 Package pdftex.def Info: pictures/Intro-CAD/bike-crank-set.jpg  used on input l
-ine 8140.
+ine 8142.
 (pdftex.def)             Requested size: 354.91971pt x 256.95544pt.
  [179]
-Package mdframed Info: mdframed works in twoside mode on input line 8144.
+Package mdframed Info: mdframed works in twoside mode on input line 8146.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8144.
-<pictures/Intro-CAD/Crank-before-running.png, id=2725, 443.40656pt x 591.71063p
+(mdframed)              on input line 8146.
+<pictures/Intro-CAD/Crank-before-running.png, id=2760, 443.40656pt x 591.71063p
 t>
 File: pictures/Intro-CAD/Crank-before-running.png Graphic file (type png)
 <use pictures/Intro-CAD/Crank-before-running.png>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-before-running.png  used on i
-nput line 8152.
+nput line 8154.
 (pdftex.def)             Requested size: 177.35948pt x 236.68005pt.
-<pictures/Intro-CAD/Crank-result-front.png, id=2726, 767.86874pt x 626.34pt>
+<pictures/Intro-CAD/Crank-result-front.png, id=2761, 767.86874pt x 626.34pt>
 File: pictures/Intro-CAD/Crank-result-front.png Graphic file (type png)
 <use pictures/Intro-CAD/Crank-result-front.png>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-result-front.png  used on inp
-ut line 8161.
+ut line 8163.
 (pdftex.def)             Requested size: 307.14206pt x 250.53156pt.
-<pictures/Intro-CAD/Crank-result-back.png, id=2727, 767.86874pt x 626.34pt>
+<pictures/Intro-CAD/Crank-result-back.png, id=2762, 767.86874pt x 626.34pt>
 File: pictures/Intro-CAD/Crank-result-back.png Graphic file (type png)
 <use pictures/Intro-CAD/Crank-result-back.png>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-result-back.png  used on inpu
-t line 8168.
+t line 8170.
 (pdftex.def)             Requested size: 307.14206pt x 250.53156pt.
-<pictures/Intro-CAD/Crank-safety-factor.png, id=2728, 767.86874pt x 626.34pt>
+<pictures/Intro-CAD/Crank-safety-factor.png, id=2763, 767.86874pt x 626.34pt>
 File: pictures/Intro-CAD/Crank-safety-factor.png Graphic file (type png)
 <use pictures/Intro-CAD/Crank-safety-factor.png>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-safety-factor.png  used on in
-put line 8175.
+put line 8177.
 (pdftex.def)             Requested size: 307.14206pt x 250.53156pt.
  [180 <./pictures/Intro-CAD/bike-crank-set.jpg> <./pictures/Intro-CAD/Crank-bef
 ore-running.png>] [181 <./pictures/Intro-CAD/Crank-result-front.png (PNG copy)>
  <./pictures/Intro-CAD/Crank-result-back.png (PNG copy)>]
-Package mdframed Info: mdframed works in twoside mode on input line 8185.
+Package mdframed Info: mdframed works in twoside mode on input line 8187.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8185.
-Package mdframed Info: mdframed works in twoside mode on input line 8189.
+(mdframed)              on input line 8187.
+Package mdframed Info: mdframed works in twoside mode on input line 8191.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8189.
-<pictures/Intro-CAD/Crank-buckling.png, id=2743, 398.23781pt x 507.39563pt>
+(mdframed)              on input line 8191.
+<pictures/Intro-CAD/Crank-buckling.png, id=2778, 398.23781pt x 507.39563pt>
 File: pictures/Intro-CAD/Crank-buckling.png Graphic file (type png)
 <use pictures/Intro-CAD/Crank-buckling.png>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-buckling.png  used on input l
-ine 8195.
+ine 8197.
 (pdftex.def)             Requested size: 199.11841pt x 253.69719pt.
  [182 <./pictures/Intro-CAD/Crank-safety-factor.png (PNG copy)>]
-Package mdframed Info: mdframed works in twoside mode on input line 8219.
+Package mdframed Info: mdframed works in twoside mode on input line 8221.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8219.
-Package mdframed Info: mdframed works in twoside mode on input line 8225.
+(mdframed)              on input line 8221.
+Package mdframed Info: mdframed works in twoside mode on input line 8227.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8225.
-<pictures/Intro-CAD/Crank-fatigue-front.jpg, id=2753, 764.8575pt x 626.34pt>
+(mdframed)              on input line 8227.
+<pictures/Intro-CAD/Crank-fatigue-front.jpg, id=2788, 764.8575pt x 626.34pt>
 File: pictures/Intro-CAD/Crank-fatigue-front.jpg Graphic file (type jpg)
 <use pictures/Intro-CAD/Crank-fatigue-front.jpg>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-fatigue-front.jpg  used on in
-put line 8230.
+put line 8232.
 (pdftex.def)             Requested size: 191.2139pt x 156.58461pt.
-<pictures/Intro-CAD/Crank-fatigue-back.jpg, id=2754, 764.8575pt x 626.34pt>
+<pictures/Intro-CAD/Crank-fatigue-back.jpg, id=2789, 764.8575pt x 626.34pt>
 File: pictures/Intro-CAD/Crank-fatigue-back.jpg Graphic file (type jpg)
 <use pictures/Intro-CAD/Crank-fatigue-back.jpg>
 Package pdftex.def Info: pictures/Intro-CAD/Crank-fatigue-back.jpg  used on inp
-ut line 8231.
+ut line 8233.
 (pdftex.def)             Requested size: 191.2139pt x 156.58461pt.
 
 [183 <./pictures/Intro-CAD/Crank-buckling.PNG>] [184 <./pictures/Intro-CAD/Cran
@@ -4085,32 +4071,32 @@ Underfull \vbox (badness 1629) has occurred while \output is active []
 [188] [189] [190]
 Appendix B.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8494--8494
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8496--8496
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8494--8494
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8496--8496
  []|
  []
 
 
-Overfull \hbox (12.91785pt too wide) in paragraph at lines 8492--8528
+Overfull \hbox (12.91785pt too wide) in paragraph at lines 8494--8530
 [][] 
  []
 
 
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8540--8540
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8542--8542
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8540--8540
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8542--8542
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8538--8589
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8540--8591
 [][] 
  []
 
@@ -4120,17 +4106,17 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [191
 
 ]
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8595--8595
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8597--8597
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8595--8595
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8597--8597
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8593--8645
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8595--8647
 [][] 
  []
 
@@ -4140,14 +4126,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [192]
 [193]
 Appendix C.
-Package mdframed Info: mdframed works in twoside mode on input line 8658.
+Package mdframed Info: mdframed works in twoside mode on input line 8660.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8658.
-Package mdframed Info: mdframed works in twoside mode on input line 8676.
+(mdframed)              on input line 8660.
+Package mdframed Info: mdframed works in twoside mode on input line 8678.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8676.
+(mdframed)              on input line 8678.
 [194
 
 ] [195]
@@ -4159,16 +4145,16 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 ] [197]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 8767.
+(Font)              scaled to size 10.0pt on input line 8769.
  [198
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8769.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8769.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8771.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8771.
  (./me310.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8769.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8769.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8771.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8771.
 
 Package rerunfilecheck Info: File `me310.out' has not changed.
 (rerunfilecheck)             Checksum: FA288393556948DE38FC407E6CCF2E8A;5601.
@@ -4182,40 +4168,38 @@ Package logreq Info: Writing requests to 'me310.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 62617 strings out of 492609
- 1385231 string characters out of 6129508
- 1894186 words of memory out of 5000000
- 64474 multiletter control sequences out of 15000+600000
- 677128 words of font info for 221 fonts, out of 8000000 for 9000
+ 63203 strings out of 492609
+ 1398418 string characters out of 6132818
+ 1916892 words of memory out of 5000000
+ 65036 multiletter control sequences out of 15000+600000
+ 679936 words of font info for 222 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  64i,17n,100p,1290b,2180s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/home/sup/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{/
-home/sup/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{/home/s
-up/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{/home/sup/texliv
-e/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/home/sup/texlive/2019/
-texmf-dist/fonts/enc/dvips/base/8r.enc}{/home/sup/texlive/2019/texmf-dist/fonts
-/enc/dvips/tex-gyre/q-ec.enc}</home/sup/texlive/2019/texmf-dist/fonts/type1/pub
-lic/tex-gyre/qhvb.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/tex
--gyre/qhvr.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/q
-tmb.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb
-></home/sup/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb></hom
-e/sup/texlive/2019/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb></home/sup/te
-xlive/2019/texmf-dist/fonts/type1/public/newtx/rntxmi5.pfb></home/sup/texlive/2
-019/texmf-dist/fonts/type1/public/newtx/rntxmi7.pfb></home/sup/texlive/2019/tex
-mf-dist/fonts/type1/public/newtx/rtxbmi-rev.pfb></home/sup/texlive/2019/texmf-d
-ist/fonts/type1/public/txfonts/rtxmi.pfb></home/sup/texlive/2019/texmf-dist/fon
-ts/type1/public/newtx/rtxmi7.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1
-/public/txfonts/rtxr.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/
-txfonts/t1xtt.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/newtx/t
-xexs.pfb></home/sup/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txmia.pf
-b></home/sup/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb></hom
-e/sup/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb></home/sup/tex
-live/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></home/sup/texlive/2019/
-texmf-dist/fonts/type1/public/wasy2-ps/wasy10.pfb>
-Output written on me310.pdf (206 pages, 11312790 bytes).
+{c:/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc}{c:/texli
+ve/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}{c:/texlive/2019/texmf
+-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2019/texmf-dist/fonts/enc/
+dvips/newtx/ntx-ec-tlf.enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.
+enc}{c:/texlive/2019/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}<c:/texlive/2
+019/texmf-dist/fonts/type1/public/tex-gyre/qhvb.pfb><c:/texlive/2019/texmf-dist
+/fonts/type1/public/tex-gyre/qhvr.pfb><c:/texlive/2019/texmf-dist/fonts/type1/p
+ublic/tex-gyre/qtmb.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre
+/qtmr.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/tex-gyre/qtmri.pfb><c:
+/texlive/2019/texmf-dist/fonts/type1/public/newtx/rntxmi.pfb><c:/texlive/2019/t
+exmf-dist/fonts/type1/public/newtx/rntxmi5.pfb><c:/texlive/2019/texmf-dist/font
+s/type1/public/newtx/rntxmi7.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public
+/newtx/rtxbmi-rev.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/txfonts/rt
+xmi.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/newtx/rtxmi7.pfb><c:/tex
+live/2019/texmf-dist/fonts/type1/public/txfonts/rtxr.pfb><c:/texlive/2019/texmf
+-dist/fonts/type1/public/txfonts/t1xtt.pfb><c:/texlive/2019/texmf-dist/fonts/ty
+pe1/public/newtx/txexs.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/txfon
+ts/txmia.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><
+c:/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2019/
+texmf-dist/fonts/type1/urw/times/utmri8a.pfb><c:/texlive/2019/texmf-dist/fonts/
+type1/public/wasy2-ps/wasy10.pfb>
+Output written on me310.pdf (206 pages, 11278010 bytes).
 PDF statistics:
- 3169 PDF objects out of 3580 (max. 8388607)
- 2670 compressed objects within 27 object streams
+ 3204 PDF objects out of 3580 (max. 8388607)
+ 2682 compressed objects within 27 object streams
  1084 named destinations out of 1200 (max. 500000)
- 1113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1258 words of extra memory for PDF output out of 10000 (max. 10000000)
 

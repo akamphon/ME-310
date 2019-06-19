@@ -14,7 +14,7 @@
 \contentsline {section}{\numberline {1.1}Engineering Design Processes}{2}{section.1.1}% 
 \contentsline {section}{\numberline {1.2}Safety Factor}{5}{section.1.2}% 
 \contentsline {subsection}{\numberline {1.2.1}Definition of Safety Factor}{5}{subsection.1.2.1}% 
-\contentsline {subsection}{\numberline {1.2.2}Selection of Safety Factors}{6}{subsection.1.2.2}% 
+\contentsline {subsection}{\numberline {1.2.2}Selection of Safety Factors}{5}{subsection.1.2.2}% 
 \contentsline {subsection}{\numberline {1.2.3}Recommended Values for Safety Factors}{6}{subsection.1.2.3}% 
 \contentsline {chapter}{\numberline {2}Material Selection}{9}{chapter.2}% 
 \contentsline {section}{\numberline {2.1}Cast Iron}{9}{section.2.1}% 

@@ -102,6 +102,7 @@
     "titlesec"
     "tikz"
     "pgfplots"
+    "smartdiagram"
     "thmtools"
     "mdframed"
     "float"
