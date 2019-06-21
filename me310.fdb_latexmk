@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber me310"] 1560838711 "me310.bcf" "me310.bbl" "me310" 1560912700
-  "me310.bcf" 1560912699 93472 a3e912d0db4842443a9a2a339ce5ac14 "pdflatex"
+["biber me310"] 1560838711 "me310.bcf" "me310.bbl" "me310" 1561108384
+  "me310.bcf" 1561108382 93472 a3e912d0db4842443a9a2a339ce5ac14 "pdflatex"
   "me310.bib" 1560819300 2523 a1d6534e66614825ad1ba1c96298225f ""
   (generated)
   "me310.blg"
   "me310.bbl"
-["pdflatex"] 1560912679 "me310.tex" "me310.pdf" "me310" 1560912700
+["pdflatex"] 1561108364 "me310.tex" "me310.pdf" "me310" 1561108384
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc" 1560409450 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-sc.enc" 1560412701 3096 d5cbf7aaa5d98173845186200e5ccea8 ""
   "c:/texlive/2019/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1560412701 2880 847ca622ad468c3dafba6a3f9d89a636 ""
@@ -378,17 +378,17 @@
   "c:/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty" 1560416133 55589 34128738f682d033422ca125f82e5d62 ""
   "c:/texlive/2019/texmf-dist/tex/latex/xkeyval/xkeyval.sty" 1560416250 4962 9c1069474ff71dbc47d5006555e352d3 ""
   "c:/texlive/2019/texmf-dist/web2c/texmf.cnf" 1560411346 35683 50a220a7a2a515000b0c7ffa04d5889f ""
-  "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1560739112 4481702 93fea8dcf8736145ce68e9e85e5749ee ""
+  "c:/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1561002943 4481702 93fea8dcf8736145ce68e9e85e5749ee ""
   "c:/texlive/2019/texmf-var/web2c/pdftex/pdflatex.fmt" 1560416576 4261111 b5d8b1bd353249f6e8095e535a5eba75 ""
   "c:/texlive/2019/texmf.cnf" 1560416415 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "me310.aux" 1560912699 109293 cbc66fe6921b8fd263c5a6c986f7d843 "pdflatex"
+  "me310.aux" 1561108382 109293 cbc66fe6921b8fd263c5a6c986f7d843 "pdflatex"
   "me310.bbl" 1560838713 17356 0320b49851d123e4c719585dfe6d6fed "biber me310"
-  "me310.lof" 1560912699 13225 490aa9f75890f4e8b6a78464221712b8 "pdflatex"
-  "me310.lot" 1560912699 4345 895694886f56629dbc013ab6224bc8f4 "pdflatex"
-  "me310.out" 1560912699 5601 fa288393556948de38fc407e6ccf2e8a "pdflatex"
-  "me310.run.xml" 1560912699 2307 bad6036d08eb3573ad7883fa44217103 "pdflatex"
-  "me310.tex" 1560912638 549679 508fe7f15aee8e5c145d2766b36929ba ""
-  "me310.toc" 1560912699 19177 bdf00220b4f56df3a0a82318976ed19f "pdflatex"
+  "me310.lof" 1561108382 13225 490aa9f75890f4e8b6a78464221712b8 "pdflatex"
+  "me310.lot" 1561108382 4345 895694886f56629dbc013ab6224bc8f4 "pdflatex"
+  "me310.out" 1561108382 5601 fa288393556948de38fc407e6ccf2e8a "pdflatex"
+  "me310.run.xml" 1561108382 2307 bad6036d08eb3573ad7883fa44217103 "pdflatex"
+  "me310.tex" 1561108363 550406 68ddb1710f5cd0a431bdcaa4b34f5380 ""
+  "me310.toc" 1561108382 19177 bdf00220b4f56df3a0a82318976ed19f "pdflatex"
   "nul" 0 0 d41d8cd98f00b204e9800998ecf8427e ""
   "pictures/Bolt/bicycle-dimension.pdf" 1560819300 211482 90067d13acce364d3d7f0712532ea857 ""
   "pictures/Bolt/bicycle-fork.pdf" 1560819300 691807 d2ca906717b763358df1babd0dff85f2 ""
@@ -467,17 +467,17 @@
   "pythontex-files-me310/me310.pytxpyg" 1560819300 17362 e7ca7597120fd555fb8aab7806245841 ""
   "pythontex-files-me310/py_default_default_0.stdout" 1560819300 644 fd018aef15002a0f87b2db7ac64d5111 ""
   (generated)
-  "me310.lot"
-  "me310.log"
-  "me310.run.xml"
   "me310.bcf"
+  "me310.log"
+  "me310.lot"
   "me310.pytxcode"
-  "me310.lof"
-  "me310.pdf"
-  "me310.toc"
   "me310.out"
+  "me310.run.xml"
+  "me310.pdf"
   "me310.aux"
-["pythontex me310"] 1560912659 "me310.pytxcode" "pythontex-files-me310/me310.pytxmcr" "me310" 1560912700
-  "me310.pytxcode" 1560912699 1583 d5c2e3a3e7440891bf693c54bffc3b88 "pdflatex"
+  "me310.toc"
+  "me310.lof"
+["pythontex me310"] 1561108383 "me310.pytxcode" "pythontex-files-me310/me310.pytxmcr" "me310" 1561108384
+  "me310.pytxcode" 1561108382 1583 d5c2e3a3e7440891bf693c54bffc3b88 "pdflatex"
   (generated)
   "pythontex-files-me310/me310.pytxmcr"

@@ -8476,6 +8476,25 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   Setting $E_{before} = E_{after}$ we can solve for the maximum force. 
 
+  \begin{align*}
+    750 + 1500\delta = \frac{4F_{\max}^2}{3EI}
+  \end{align*}
+
+  Substituting the equation for $F_{\max}$, we have
+
+  \begin{align*}
+    750 + 1500 \left( \frac{ F_{\max}L^3 }{3EI} \right) &= \frac{ 4F_{\max}^2 }{3EI} \\
+    750 \left[ 3 (210 \times 10^9)(1/12 (0.5)h^3 \right] + 1500 F_{\max} \left( 2^3 \right) &= 4 F_{\max}^2 \\
+    4F_{\max}^2 - 12000F_{\max} - 1.97 \times 10^{13}h^3 &= 0 \\
+    F_{\max} = - \frac{-12000 \pm \sqrt{ (12000)^2 - 4(4)(-1.97 \times 10^{13}h^3)}}{8}
+  \end{align*}
+
+  As the force definitely cannot be negative, the only viable solution is
+
+  \begin{align*}
+    F_{\max} = \frac{12000 + \sqrt{ (12000)^2 + 4(4)(1.97 \times 10^{13}h^3)}}{8}
+  \end{align*}
+
 \end{exercises}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
