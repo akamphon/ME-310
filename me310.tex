@@ -8564,6 +8564,37 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   Since $\lambda < \lambda_c$, the failure mode of the beam is buckling, confirming our assumption.
 
+  The rail and plank designs are much more straightforward; they are under bending. The only mode of failure is through fracture. For the rail, the design equation is 
+
+  \begin{align*}
+    N_s = \frac{S_y}{\dfrac{My}{I}} \\
+    \frac{5(5000)6}{ a^3} = 6 \times 10^6 \\
+    a = 0.29 \text{ m}
+  \end{align*}
+
+  The plank design equation is rather similar.
+
+  \begin{align*}
+    N_s = \frac{S_y}{\dfrac{My}{I}} \\
+    \frac{4(1000)6}{ a^3} = 6 \times 10^6 \\
+    R = 0.159 \text{ m}
+  \end{align*}
+
+  Finally, to take into account fatigue failure, the maximum stress once again happens when the child jumps on the middle of the plank. The maximum and minimum stresses are
+
+  \begin{align*}
+    \sigma_{\max} &= \frac{1500*2*6}{4a^3} = \frac{4500}{a^3} \\
+    \sigma_{\min} &= 0
+  \end{align*}
+
+  Substituting this into Soderberg relation, we have that
+
+  \begin{align*}
+    \frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_y} = \frac{1}{N_s} \\
+    \frac{2250}{3 \times 10^6 a^3} + \frac{2250}{3 \times 10^6 a^3} = \frac{1}{4} \\
+    a = 0.182 \text{ m}
+  \end{align*}
+  
 \end{exercises}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
