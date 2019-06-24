@@ -49,7 +49,6 @@ svgnames,
 \let\openbox\relax
 \usepackage{amsthm}
 \usepackage{bm}
-\usepackage{multirow}
 \usepackage{array}
 \usepackage{cleveref}
 \usepackage{siunitx}
@@ -71,6 +70,7 @@ svgnames,
 \definecolor{lightblue}{RGB}{180,220,255}
 \definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
 \definecolor{namecolor}{cmyk}{1,.50,0,.10}
+\usepackage{multirow}
 \usepackage{smartdiagram}
 
 \titleformat{\chapter}
@@ -8534,6 +8534,35 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \begin{align*}
     h = 0.031 \text{ m} = 3.1 \text{ cm}
   \end{align*}
+
+\item  
+
+  If a pedestrian is standing on the bridge, the plank will be under a bending load. And depending on the location of the bridge, the rail will be under a bending load (if standing in the middle) or no load at all (if standing at either ends). The columns will simply be under compressive load from the weight.
+
+  The free body diagram part is a little tricky because the maximum load applied to each component happens when the pedestrian stands on different locations on the bridge. For the column, the maximum compressive load happends when the pedestrian is standing right on top of the column, hence the 2000-N compressive load. On the rail, the maximum bending moment happens when the pedestrian is standing right on the rail in the middle of its length, resulting in downward force in the middle of 2000 N. The support upward force at the left and right ends of the rail would be equal to 1000 N due to symmetry. Finally, the maximum load on the plank also happens when there is a pedestrian is standing in the middle of its length, giving the downward force of 2000 N and resulting in 1000-N support forces from each end.
+
+  The column is under compressive load, so we need to determine possible failure from crushing (stress exceeding $S_{ut}$) and buckling. Assume that the beam will fail due to buckling, the design equation for buckling gives us that
+
+  \begin{align*}
+    P_{cr} &= N_s P = 10 \times 10000 = \frac{\pi^2 (10 \times 10^9) (\pi/4)R^4}{(2 \times 3)^2} \\
+    R &= 0.0826 \text{ m} = 8.26 \text{ cm}
+  \end{align*}
+
+  To double check if our assumption about buckling is right. Calculate the slenderness ratio $\lambda$ and compare with the critical value $\lambda_c$
+
+  \begin{align*}
+    \lambda &= \frac{KL}{r_g} = \frac{2(3)}{0.5(0.0826)} \\
+            &= 145
+  \end{align*}
+
+  The critical slenderness ratio is 
+
+  \begin{align*}
+    \lambda_c &= \sqrt{\frac{\pi^2 E}{S_{uc}}} \\
+              &= 40.6
+  \end{align*}
+
+  Since $\lambda < \lambda_c$, the failure mode of the beam is buckling, confirming our assumption.
 
 \end{exercises}
 
