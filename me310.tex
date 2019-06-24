@@ -4482,7 +4482,7 @@ This chapter discusses the design criteria for simple load-bearing members—nam
   \begin{enumerate}
   \item Static loading. No jumping on the board.
   \item Impact loading. Assume the diver can jump 0.5 m from the horizontal level of the board.
-  \item Fatigue loading. Assume the diver jumps 1 m up and down repeatedly on the board.
+  \item Fatigue loading. Assume the diver jumps 0.5 m up and down repeatedly on the board.
   \end{enumerate}
   
   \exercise A shaft fitted with pulley and belt is used to transmit engine power. The shaft is made of AISI1023 with yield strength of 400 MPa and ultimate tensile strength of 650 MPa. The belt tensions on the tight and slack sides are 4000 and 1000 N respectively. The pulley’s diameter is 10 cm. Size the shaft under
@@ -8493,6 +8493,46 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   \begin{align*}
     F_{\max} = \frac{12000 + \sqrt{ (12000)^2 + 4(4)(1.97 \times 10^{13}h^3)}}{8}
+  \end{align*}
+
+  The stress in a cantilever beam with end load is 
+
+  \begin{align*}
+    \sigma &= \frac{My}{I} = \frac{6F_{\max}L}{bh^2} \\
+           &= \frac{6F_{\max}(2)}{0.5h^2}
+  \end{align*}
+
+  Set $\sigma = S_y$ = 400 MPa and then solve for $h$
+
+  \begin{align*}
+    h = 0.0249 \text{ m} = 2.49 \text{ cm}
+  \end{align*}
+
+  For the final part, if the load is repeated, the deflection and stress would remain the same. We simply have to determine failure using a fatigue failure criterion (Soderberg in this case). The maximum stress is simply the stress found earlier for impact loading. The minimum stress is when the diver jumped off the board, hence no load on the board. That leaves us with
+
+  \begin{align*}
+    \sigma_{\max} &= \frac{6F_{\max}(2)}{0.5h^2} = \frac{24F_{\max}}{h^2} \\
+    \sigma_{\min} &= 0
+  \end{align*}
+
+  The stress amplitude and average stress are  
+
+  \begin{align*}
+    \sigma_a = \frac{\sigma_{\max} - \sigma_{\min}}{2} = \frac{12F_{\max}}{h^2} \\
+    \sigma_m = \frac{\sigma_{\max} + \sigma_{\min}}{2} = \frac{12F_{\max}}{h^2}
+  \end{align*}
+
+  Applying Soderberg relation, we have
+
+  \begin{align*}
+    \frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_y} = 1 \\
+    \frac{\dfrac{12F_{\max}}{h^2}}{0.5(600 \times 10^6)} + \frac{\dfrac{12F_{\max}}{h^2}}{400 \times 10^6} = 1 \\
+  \end{align*}
+
+  Solving for $h$, we have 
+
+  \begin{align*}
+    h = 0.031 \text{ m} = 3.1 \text{ cm}
   \end{align*}
 
 \end{exercises}

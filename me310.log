@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.13)  21 JUN 2019 16:12
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=pdflatex 2019.6.13)  24 JUN 2019 11:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -4068,93 +4068,93 @@ Appendix A.
 Underfull \vbox (badness 1629) has occurred while \output is active []
 
  [187]
-[188] [189] [190]
+[188] [189] [190] [191]
 Appendix B.
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8515--8515
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8555--8555
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8515--8515
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8555--8555
  []|
  []
 
 
-Overfull \hbox (12.91785pt too wide) in paragraph at lines 8513--8549
+Overfull \hbox (12.91785pt too wide) in paragraph at lines 8553--8589
 [][] 
  []
 
 
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8561--8561
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8601--8601
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8561--8561
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8601--8601
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8559--8610
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8599--8650
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [191
+ [192
 
 ]
-Overfull \hbox (22.7623pt too wide) in paragraph at lines 8616--8616
+Overfull \hbox (22.7623pt too wide) in paragraph at lines 8656--8656
 []|  
  []
 
 
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 8616--8616
+Overfull \hbox (28.45276pt too wide) in paragraph at lines 8656--8656
  []|
  []
 
 
-Overfull \hbox (18.6083pt too wide) in paragraph at lines 8614--8666
+Overfull \hbox (18.6083pt too wide) in paragraph at lines 8654--8706
 [][] 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [192]
-[193]
+ [193]
+[194]
 Appendix C.
-Package mdframed Info: mdframed works in twoside mode on input line 8679.
+Package mdframed Info: mdframed works in twoside mode on input line 8719.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8679.
-Package mdframed Info: mdframed works in twoside mode on input line 8697.
+(mdframed)              on input line 8719.
+Package mdframed Info: mdframed works in twoside mode on input line 8737.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 8697.
-[194
+(mdframed)              on input line 8737.
+[195
 
-] [195]
+] [196]
 Appendix D.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[196
+[197
 
-] [197]
+] [198]
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 8788.
- [198
+(Font)              scaled to size 10.0pt on input line 8828.
+ [199
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8790.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 8790.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 8830.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 8830.
  (./me310.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8790.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8790.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 8830.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 8830.
 
 Package rerunfilecheck Info: File `me310.out' has not changed.
 (rerunfilecheck)             Checksum: FA288393556948DE38FC407E6CCF2E8A;5601.
@@ -4168,8 +4168,8 @@ Package logreq Info: Writing requests to 'me310.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 63203 strings out of 492609
- 1398418 string characters out of 6132818
+ 63204 strings out of 492609
+ 1398426 string characters out of 6132818
  1915892 words of memory out of 5000000
  65036 multiletter control sequences out of 15000+600000
  679936 words of font info for 222 fonts, out of 8000000 for 9000
@@ -4196,11 +4196,11 @@ ts/txmia.pfb><c:/texlive/2019/texmf-dist/fonts/type1/public/txfonts/txsya.pfb><
 c:/texlive/2019/texmf-dist/fonts/type1/public/newtx/txsys.pfb><c:/texlive/2019/
 texmf-dist/fonts/type1/urw/times/utmri8a.pfb><c:/texlive/2019/texmf-dist/fonts/
 type1/public/wasy2-ps/wasy10.pfb>
-Output written on me310.pdf (206 pages, 11278945 bytes).
+Output written on me310.pdf (207 pages, 11281042 bytes).
 PDF statistics:
- 3204 PDF objects out of 3580 (max. 8388607)
- 2682 compressed objects within 27 object streams
- 1084 named destinations out of 1200 (max. 500000)
+ 3208 PDF objects out of 3580 (max. 8388607)
+ 2685 compressed objects within 27 object streams
+ 1085 named destinations out of 1200 (max. 500000)
  1258 words of extra memory for PDF output out of 10000 (max. 10000000)
 
 No file "pythontex-files-me310/me310.pytxmcr". 

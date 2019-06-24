@@ -209,9 +209,9 @@
 \contentsline {section}{\numberline {A.3}Chapter 3}{186}{section.A.3}% 
 \contentsline {section}{\numberline {A.4}Chapter 4}{188}{section.A.4}% 
 \contentsline {section}{\numberline {A.5}Chapter 5}{189}{section.A.5}% 
-\contentsline {chapter}{\numberline {B}Properties of Structural Steel Sections}{191}{appendix.B}% 
-\contentsline {chapter}{\numberline {C}Sectional Properties of Geometric Shapes}{194}{appendix.C}% 
-\contentsline {section}{\numberline {C.1}Moment of Inertia}{194}{section.C.1}% 
-\contentsline {chapter}{\numberline {D}Tabulated Material Designations and Properties}{196}{appendix.D}% 
-\contentsline {section}{\numberline {D.1}SAE Steel Designation}{196}{section.D.1}% 
-\contentsline {chapter}{Bibliography}{198}{appendix*.190}% 
+\contentsline {chapter}{\numberline {B}Properties of Structural Steel Sections}{192}{appendix.B}% 
+\contentsline {chapter}{\numberline {C}Sectional Properties of Geometric Shapes}{195}{appendix.C}% 
+\contentsline {section}{\numberline {C.1}Moment of Inertia}{195}{section.C.1}% 
+\contentsline {chapter}{\numberline {D}Tabulated Material Designations and Properties}{197}{appendix.D}% 
+\contentsline {section}{\numberline {D.1}SAE Steel Designation}{197}{section.D.1}% 
+\contentsline {chapter}{Bibliography}{199}{appendix*.190}% 
