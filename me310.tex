@@ -8583,7 +8583,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   Finally, to take into account fatigue failure, the maximum stress once again happens when the child jumps on the middle of the plank. The maximum and minimum stresses are
 
   \begin{align*}
-    \sigma_{\max} &= \frac{1500*2*6}{4a^3} = \frac{4500}{a^3} \\
+    \sigma_{\max} &= \frac{1500(2)(6)}{4a^3} = \frac{4500}{a^3} \\
     \sigma_{\min} &= 0
   \end{align*}
 
@@ -8603,8 +8603,40 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 \item First we need to determine the spring constant. The spring energy must be equal to the kinetic energy in the dart.
 
   \begin{align*}
-    \frac{1}{2} kx^2 &= \frac{1}{2}mv^2
+    \frac{1}{2} kx^2 &= \frac{1}{2}mv^2 \\
+    k &= \frac{0.05(2^2)}{(0.04-0.02)^2} \\
+                     &= 500 \text{ N/m}
   \end{align*}
+
+  Additionally we can determine the maximum force on the spring now that we know $k$.
+
+  \begin{align*}
+    F_{\max} = kx = 500(0.04-0.02) = 10 \text{ N}
+  \end{align*}
+  
+  Let us next design the spring index $C$ and wire diameter $d$. Assuming that the wire diameter is $d$ = 0.6 mm. Using hard-drawn wire ($A$ = 1783, $m$ = 0.190), we have that
+  
+  \begin{align*}
+    \alpha &= \frac{0.5(1783}{1.25 (0.6)^m} \\
+    \beta &= \frac{8(1+0.15)(10)}{\pi(0.0006)^2(10^6)} \\
+    C &= \frac{2\alpha - \beta}{4\beta} + \sqrt{ \left( \frac{2\alpha - \beta}{4\beta} \right)^2 - \frac{3\alpha}{4\beta} }
+  \end{align*}
+  \begin{pycode}
+    d = 0.0006
+    A = 1783
+    m = 0.190
+    zeta = 0.15
+    N_s = 1.25
+    F_max = 10
+    alpha = 0.5*A/(d*10**3)**m / N_s
+    beta = 8*(1+zeta)*F_max/(3.142 * d**2)/10**6
+    C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
+
+    print(r'\begin{align*}')
+    print(r'C = %.1f' %C)
+    print(r'\end{align*}')
+  \end{pycode}
+
 \end{exercises}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

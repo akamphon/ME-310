@@ -20,6 +20,20 @@
     print(r'\bottomrule')
     print(r'\end{tabular}')
     print(r'\end{center}')
+=>PYTHONTEX#py#default#default#1#code#####8624#
+    d = 0.0006
+    A = 1783
+    m = 0.190
+    zeta = 0.15
+    N_s = 1.25
+    F_max = 10
+    alpha = 0.5*A/(d*10**3)**m / N_s
+    beta = 8*(1+zeta)*F_max/(3.142 * d**2)/10**6
+    C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
+
+    print(r'\begin{align*}')
+    print(r'C = %.1f' %C)
+    print(r'\end{align*}')
 =>PYTHONTEX:SETTINGS#
 version=0.16
 outputdir=pythontex-files-me310
