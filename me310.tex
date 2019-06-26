@@ -8735,6 +8735,32 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     F_f = \frac{5000*0.2}{1.2} = 833 \text{ N} \\
     F_r = \frac{5000*1}{1.2} = 4167 \text{ N}
   \end{align*}
+
+  Since the axis of the bolt and direction of the load are perpendicular, we know that these are friction joints. For each joint, there are two forks squeezing on a wheel hub using the bolt, thereby effectively creating two friction surfaces. Choosing grade 8.8, the sizing equation becomes
+
+  \begin{align*}
+    A_{tf} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
+        &= \frac{3(833/2}{0.75(0.5)(600)} \\
+    A_{tr} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
+           &= \frac{3(4167/2}{0.75(0.5)(600)}
+  \end{align*}
+  \begin{pycode}
+    N_s = 3
+    P_sf = 833/2.0
+    P_sr = 4167/2.0
+    mu = 0.5
+    S_p = 600
+    A_tf = N_s * P_sf / 0.75 / mu / S_p
+    A_tr = N_s * P_sr / 0.75 / mu / S_p
+
+    print(r'\begin{align*}')
+    print(r'A_{tf} = %.2f \\' %A_tf)
+    print(r'A_{tr} = %.2f' %A_tr)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  The bolt size for the front fork should be M7$\times$1 and M33$\times$3.5 for the rear.
+  
 \end{exercises}
 
 

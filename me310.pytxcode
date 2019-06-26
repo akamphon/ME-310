@@ -78,6 +78,19 @@
     print(r'\begin{align*}')
     print(r'F = %d \text{ N}' %F)
     print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#7#code#####8747#
+    N_s = 3
+    P_sf = 833/2.0
+    P_sr = 4167/2.0
+    mu = 0.5
+    S_p = 600
+    A_tf = N_s * P_sf / 0.75 / mu / S_p
+    A_tr = N_s * P_sr / 0.75 / mu / S_p
+
+    print(r'\begin{align*}')
+    print(r'A_{tf} = %.2f \\' %A_tf)
+    print(r'A_{tr} = %.2f' %A_tr)
+    print(r'\end{align*}')
 =>PYTHONTEX:SETTINGS#
 version=0.16
 outputdir=pythontex-files-me310
