@@ -8613,11 +8613,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \begin{align*}
     F_{\max} = kx = 500(0.04-0.02) = 10 \text{ N}
   \end{align*}
-  
-  Let us next design the spring index $C$ and wire diameter $d$. Assuming that the wire diameter is $d$ = 0.6 mm. Using hard-drawn wire ($A$ = 1783, $m$ = 0.190), we have that
+
+  Let us next design the spring index $C$ and wire diameter $d$. Assuming that the wire diameter is $d$ = 0.6 mm. Using hard-drawn wire ($A$ = 1783, $m$ = 0.190), we have that 
   
   \begin{align*}
-    \alpha &= \frac{0.5(1783}{1.25 (0.6)^m} \\
+    \alpha &= \frac{0.5(1783}{1.25 (0.6)^{0.19}} \\
     \beta &= \frac{8(1+0.15)(10)}{\pi(0.0006)^2(10^6)} \\
     C &= \frac{2\alpha - \beta}{4\beta} + \sqrt{ \left( \frac{2\alpha - \beta}{4\beta} \right)^2 - \frac{3\alpha}{4\beta} }
   \end{align*}
@@ -8633,11 +8633,110 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
 
     print(r'\begin{align*}')
-    print(r'C = %.1f' %C)
+    print(r'C = %.2f' %C)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  We can then obtain the coil diameter $D$ from $D = Cd$ = \py{8.26*6*10**-4} m. To determine the number of active coils, we use
+
+  \begin{align*}
+    N_a &= \frac{Gd}{8C^3k} \\
+        &= \frac{77.2 \times 10^{9}(0.0006)}{8(8.29^3)(500)}
+  \end{align*}
+  \begin{pycode}
+    G = 77.2 * 10**9
+    d = 0.0006
+    C = 8.29
+    k = 500
+    N_a = G*d/8/C**3/k
+    
+    print(r'\begin{align*}')
+    print(r'N_a = %.0f' %N_a)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  Note that $N_a > 15$ would otherwise be considered excessive without outer diameter guide--the gun barrel prevents buckling here. 
+  Finally, the required pitch can be calculated by 
+
+  \begin{align*}
+    0.8 &= \frac{\delta}{N_a(p-d)} \\
+    p &= \frac{\delta}{0.8N_a} + d
+  \end{align*}
+  \begin{pycode}
+    d = 0.0006
+    delta = 0.02
+    N_a = 20
+    p = delta/0.8/N_a + d
+    
+    print(r'\begin{align*}')
+    print(r'p = %.5f \text{ m}' %p)
     print(r'\end{align*}')
   \end{pycode}
 
 \end{exercises}
+
+\section{Chapter 7}
+
+\begin{exercises}
+\item In this problem we have two conditions for failure: 1) the board is broken and 2) the welds failed. All we need to do is determine the maximum loads allowed on each component; the smaller of the two is our final answer.
+
+  First, the beam. We can determine the allowable load using bending equation.
+
+  \begin{align*}
+    N_s &= \frac{S_y}{\sigma} = \frac{S_ybh^2}{6FL_b} \\
+    F &= \frac{S_ybh^2}{6N_sL_b} = \frac{(300 \times 10^6)(0.3)(0.05^2)}{6(2)(3)}
+  \end{align*}
+
+  \begin{pycode}
+    S_y = 300 * 10**6
+    b = 0.3
+    h = 0.05
+    N_s = 2
+    L = 3
+    F = S_y*b*h**2/6/N_s/L
+
+    print(r'\begin{align*}')
+    print(r'F = %d \text{ N}' %F)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  For the weld, the we can determine the maximum allowable load by
+
+  \begin{align*}
+    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} I_{group}}{ FL_bd_0 } \\
+    F &= \frac{S_{ut} \left[ 2 \left(\frac{1}{12}LH^3 + \frac{1}{12}HL^3 + LHd_0^2 \right) \right] }{N_s L_b d_0}
+  \end{align*}
+
+  \begin{pycode}
+    L = 0.3
+    S_ut = 551 * 10**6
+    L_b = 3
+    d_0 = 0.025
+    H = 0.005
+    N_s = 4
+    F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
+
+    print(r'\begin{align*}')
+    print(r'F = %d \text{ N}' %F)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  This shows that the beam would break before then weld, hence the maximum allowable load is 6250 N.
+\end{exercises}
+
+\section{Chapter 8}
+
+\begin{exercises}
+\item We need to determine the load carried by the front and rear wheels and their respective forks.
+
+  Using moment equilibrium, we have that
+
+  \begin{align*}
+    F_f = \frac{5000*0.2}{1.2} = 833 \text{ N} \\
+    F_r = \frac{5000*1}{1.2} = 4167 \text{ N}
+  \end{align*}
+\end{exercises}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

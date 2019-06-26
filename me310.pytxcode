@@ -32,7 +32,51 @@
     C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
 
     print(r'\begin{align*}')
-    print(r'C = %.1f' %C)
+    print(r'C = %.2f' %C)
+    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#2#i#####8640#
+8.26*6*10**-4
+=>PYTHONTEX#py#default#default#3#code#####8646#
+    G = 77.2 * 10**9
+    d = 0.0006
+    C = 8.29
+    k = 500
+    N_a = G*d/8/C**3/k
+
+    print(r'\begin{align*}')
+    print(r'N_a = %.0f' %N_a)
+    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#4#code#####8665#
+    d = 0.0006
+    delta = 0.02
+    N_a = 20
+    p = delta/0.8/N_a + d
+
+    print(r'\begin{align*}')
+    print(r'p = %.5f \text{ m}' %p)
+    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#5#code#####8690#
+    S_y = 300 * 10**6
+    b = 0.3
+    h = 0.05
+    N_s = 2
+    L = 3
+    F = S_y*b*h**2/6/N_s/L
+
+    print(r'\begin{align*}')
+    print(r'F = %d \text{ N}' %F)
+    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#6#code#####8710#
+    L = 0.3
+    S_ut = 551 * 10**6
+    L_b = 3
+    d_0 = 0.025
+    H = 0.005
+    N_s = 4
+    F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
+
+    print(r'\begin{align*}')
+    print(r'F = %d \text{ N}' %F)
     print(r'\end{align*}')
 =>PYTHONTEX:SETTINGS#
 version=0.16
