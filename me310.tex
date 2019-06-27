@@ -8742,7 +8742,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     A_{tf} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
         &= \frac{3(833/2}{0.75(0.5)(600)} \\
     A_{tr} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
-           &= \frac{3(4167/2}{0.75(0.5)(600)}
+           &= \frac{3(4167/2)}{0.75(0.5)(600)}
   \end{align*}
   \begin{pycode}
     N_s = 3
@@ -8759,8 +8759,52 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     print(r'\end{align*}')
   \end{pycode}
 
-  The bolt size for the front fork should be M7$\times$1 and M33$\times$3.5 for the rear.
+  The bolt sizes for the front fork should be M7$\times$1 and M33$\times$3.5 for the rear.
   
+\end{exercises}
+
+\section{Chapter 9}
+
+\begin{exercises}
+\item Since there are two identical springs connected in parallel, the loads are shared evenly. The maximum force on each spring then would be 1000/2 = 500 N. And for every 100/2 = 50 N, the indicator should be 2 cm apart, telling us that the spring constant $k$ should be 50/0.02 = 2500 N/m.
+
+  We can now determine the wire diameter $d$ and spring index $C$. We will choose an inexpensive hard-drawn wire as scales should not expect any shock or impact loading. The problem also did not give us the specific about the hooks at the ends of the springs, we will assume that they do not exist and that the maximum stress in the springs happen in their coils. Setting $C$ = 4, the design equation becomes
+
+  \begin{align*}
+    \frac{8KF_{\max}C}{\pi d^2} = \frac{0.5A}{N_s d^m} \\
+    \frac{8 \frac{4C + 2}{4C - 3} (500) C}{\pi d^2} = \frac{0.5(1783)}{2d^{0.19}}
+  \end{align*}
+  \begin{pycode}
+    A = 1783
+    m = 0.190
+    N_s = 2
+    F_max = 500
+    C = 4
+    d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
+    
+    print(r'\begin{align*}')
+    print(r'd = %d \text{ mm}' %d)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  So the diameter of the wire is 14.8 cm. Finally, to determine the required number of active coils, we use
+
+  \begin{align*}
+    N_a = \frac{79.3 \times 10^9(0.148)}{8(4^3)(2500)}
+  \end{align*}
+  \begin{pycode}
+    G = 79.3 * 10**9
+    d = 0.148
+    C = 4
+    k = 2500
+    N_a = G*d/8/C**3/k
+    
+    print(r'\begin{align*}')
+    print(r'N_a = %d' %N_a)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  The plates will be taking the entire load, thus joining them by two bolts should allow the load to be shared equally. This is a simple tension joint design.
 \end{exercises}
 
 
