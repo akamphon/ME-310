@@ -112,6 +112,25 @@
     print(r'\begin{align*}')
     print(r'N_a = %d' %N_a)
     print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#10#code#####8812#
+    N_s = 3
+    S_p = 6 * 10**8
+    P   = 500
+    A_t = N_s * P / S_p
+
+    print(r'\begin{align*}')
+    print(r'A_t = %.7f \text{ m}^2' %A_t)
+    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#11#code#####8831#
+    N_s  = 3
+    S_ut = 482 * 10**6
+    P    = 1000
+    H    = 0.003
+    L    = N_s * P / S_ut / H
+
+    print(r'\begin{align*}')
+    print(r'L = %.5f \text{ m}' %L)
+    print(r'\end{align*}')
 =>PYTHONTEX:SETTINGS#
 version=0.16
 outputdir=pythontex-files-me310

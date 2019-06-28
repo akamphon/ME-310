@@ -8804,7 +8804,48 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     print(r'\end{align*}')
   \end{pycode}
 
-  The plates will be taking the entire load, thus joining them by two bolts should allow the load to be shared equally. This is a simple tension joint design.
+  The plates will be taking the entire load, thus joining them by two bolts should allow the load to be shared equally. This is a simple tension joint design. The tensile load applied to the plate is 1000 N, but is shared so each bolt takes 500 N. Choosing grade 8.8, the design equation for the bolts is
+
+  \begin{align*}
+    A_t = \frac{3(500)}{600 \times 10^6}
+  \end{align*}
+  \begin{pycode}
+    N_s = 3
+    S_p = 6 * 10**8
+    P   = 500
+    A_t = N_s * P / S_p
+    
+    print(r'\begin{align*}')
+    print(r'A_t = %.7f \text{ m}^2' %A_t)
+    print(r'\end{align*}')
+  \end{pycode}
+
+  Since the required tensile area is smaller than the smallest standard bolt, we can pick M3$\times$0.5 as our choice.
+
+  If we decide to instead weld the plate and handle together, forming a butt weld, the required weld length would be
+
+  \begin{align*}
+    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} HL}{P} \\
+    L &= \frac{N_sP}{S_{ut}H}
+  \end{align*}
+  \begin{pycode}
+    N_s  = 3
+    S_ut = 482 * 10**6
+    P    = 1000
+    H    = 0.003
+    L    = N_s * P / S_ut / H
+    
+    print(r'\begin{align*}')
+    print(r'L = %.5f \text{ m}' %L)
+    print(r'\end{align*}')
+  \end{pycode}
+
+\end{exercises}
+
+\section{Chapter 10}
+
+\begin{exercises}
+\item With increasing thickness of the beam, the errors between the theory and Solidworks simulation should increase. Beam bending theory assumes that there is only pure bending with no shear deformation in the beams. This assumption is accurate when the beam is long and thin, but as the thickness increases, so do the errors from the omitted shear deformation.
 \end{exercises}
 
 
