@@ -1655,7 +1655,7 @@ When a circular bar is twisted by torques $T$ at the ends, every cross section o
     \node at (O.center) [left, yshift=1mm, xshift=-1mm] {$\phi$};
   \end{tikzpicture}
   % \includegraphics[scale=0.8]{pictures/Static-body-load-analysis/3d-torsion}
-  \caption{A circular bar under torsion. The figure shows the torque and deformation on the cross section.}
+  \caption[A circular bar under torsion]{A circular bar under torsion. The figure shows the torque and deformation on the cross section.}
   \label{fig: 3d torsional deformation}
 \end{figure}
 
@@ -2984,7 +2984,17 @@ It is important to remember that \cref{eqn: stress concentration} is valid as lo
     M &= 1.3(50000)(9.8) \left( \frac{35-3}{2} \right) \\
       &= 1.02 \times 10^7 \text{ N-m}
   \end{align*}
+
+  The stress resulting from the bending moment on the wing is 
+
+  \begin{align*}
+    \sigma_b &= \frac{1.02 \times 10^7(0.5)}{1/12(2)(0.5^3)} \\
+             &= 122 \text{ MPa}
+  \end{align*}
+
+  Combining the stresses, we have that the total stress from bending and cabin pressure is 17.1 + 122 $\approx$ 139 MPa. This stress, without stress concentration, can be considered safe since it is much lower than $S_y$ = 250 MPa and $S_e$ = 0.5(450) = 225 MPa (bending). However, stress concentration is considered. We can see that under bending, the stress concentration for a 4-mm hole with thickness of 1 cm is approximately 2, resulting in 2(122) = 244 MPa stress. And for stress concentration from pressure cabin (axial load) is approximately 2.5, resulting in 2.5(17.1) $\approx$ 43 MPa. The total stress from combined loading then is 244 + 43 = 287 MPa, which is higher than both the endurance limit and yield strength, easily causing failure starting from the hole at the corner of a window frame and eventually the fuselage.
 \end{solution}
+
 \section*{Summary}
 
 In this chapter, fundamentals of mechanics of materials are reviewed. To be able to analyze and properly design mechanical components, a designer must understand resultant stresses and deformations from applied loads. First, stress and deformation analysis for members under single type of loading—axial load, torsion, or bending—are discussed. Subsequently, analysis of multiaxial stress and combined loadings are detailed. Since mechanical components often have to take multiple loads simultaneously, we must understand the interactions between multiple loads and stresses.
@@ -6829,7 +6839,7 @@ Rewriting \cref{eqn: 2-member compound bar} using stiffnesses of the bolt $k_b$ 
     \node at (B.east) [anchor=west, draw, rectangle, fill=Grey!70, minimum height=1cm, minimum width=0.7cm]{};
     \node at (B.west) [anchor=east, draw, rectangle, fill=Grey!30, minimum height=1cm, minimum width=0.7cm]{};
   \end{tikzpicture}
-  \caption{A bolted joint stiffness represented by two springs in parallel. The inner coil represents the bolt stiffness, while the other represents the clamped part stiffness.}
+  \caption[Stiffness representation of a bolted joint]{A bolted joint stiffness represented by two springs in parallel. The inner coil represents the bolt stiffness, while the other represents the clamped part stiffness.}
 \end{figure}
 
 \begin{equation}
