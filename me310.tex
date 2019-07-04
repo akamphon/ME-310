@@ -3167,6 +3167,24 @@ For design equations, the failure condition under MSST with safety factor $N_s$ 
   \end{align*}
 
   Since the principal stresses are of opposite signs, we are in the `high shear stress region' and must use maximum in-plane shear stress to determine failure under MSST.
+
+  \begin{align*}
+    \tau_{\max} &\leqslant \frac{S_y}{2} \\
+    125 &\leqslant \frac{120}{2}
+  \end{align*}
+
+  Obviously, the in-plane shear stress is larger than half of yield strength, meaning it has failed. We can also plot the principal stresses on the safe-zone diagram as follows.
+
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+      \draw [fill=lightblue] (0,-3) node[right]{$-120$} -- (3,0) node[below right]{$120$} -- (3,3) -- (0,3) node[left]{$120$} -- (-3,0) node[above left]{$-120$} -- (-3,-3) -- cycle;
+      \draw [<->] (-4,0) --++ (0:8) node[right]{$\sigma_1$};
+      \draw [<->] (0,-4) --++ (90:8) node[above]{$\sigma_2$};
+      \node at (-3.3, 2.8) [fill=Black, draw, minimum height=1mm, minimum width=1mm, inner sep=0](state){};
+      \node at (state) [below right]{(-135, 115)};
+    \end{tikzpicture}
+  \end{figure}
 \end{solution}
 
 \subsection{Maximum distortion energy theory (Von Mises criteria)}
