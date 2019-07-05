@@ -1,4 +1,14 @@
-=>PYTHONTEX#py#default#default#0#code#####4557#
+=>PYTHONTEX#py#default#default#0#i#####4048#
+round((1200*10**6)**(2/3)/7800,0)
+=>PYTHONTEX#py#default#default#1#i#####4049#
+round((350*10**6)**(2/3)/1500,0)
+=>PYTHONTEX#py#default#default#2#i#####4050#
+round((400*10**6)**(2/3)/2300,0)
+=>PYTHONTEX#py#default#default#3#i#####4071#
+round((2*4*750/350/10**6/3.1416)**(1/3),4)
+=>PYTHONTEX#py#default#default#3#i#####4071#
+round((2*4*750/350/10**6/3.1416)**(1/3),4)
+=>PYTHONTEX#py#default#default#4#code#####4607#
     F = 100000
     L = 4
     M = F*L/8
@@ -20,7 +30,7 @@
     print(r'\bottomrule')
     print(r'\end{tabular}')
     print(r'\end{center}')
-=>PYTHONTEX#py#default#default#1#code#####8849#
+=>PYTHONTEX#py#default#default#5#code#####8899#
     d = 0.0006
     A = 1783
     m = 0.190
@@ -34,9 +44,9 @@
     print(r'\begin{align*}')
     print(r'C = %.2f' %C)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#2#i#####8865#
+=>PYTHONTEX#py#default#default#6#i#####8915#
 8.26*6*10**-4
-=>PYTHONTEX#py#default#default#3#code#####8871#
+=>PYTHONTEX#py#default#default#7#code#####8921#
     G = 77.2 * 10**9
     d = 0.0006
     C = 8.29
@@ -46,7 +56,7 @@
     print(r'\begin{align*}')
     print(r'N_a = %.0f' %N_a)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#4#code#####8890#
+=>PYTHONTEX#py#default#default#8#code#####8940#
     d = 0.0006
     delta = 0.02
     N_a = 20
@@ -55,7 +65,7 @@
     print(r'\begin{align*}')
     print(r'p = %.5f \text{ m}' %p)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#5#code#####8915#
+=>PYTHONTEX#py#default#default#9#code#####8965#
     S_y = 300 * 10**6
     b = 0.3
     h = 0.05
@@ -66,7 +76,7 @@
     print(r'\begin{align*}')
     print(r'F = %d \text{ N}' %F)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#6#code#####8935#
+=>PYTHONTEX#py#default#default#10#code#####8985#
     L = 0.3
     S_ut = 551 * 10**6
     L_b = 3
@@ -78,7 +88,7 @@
     print(r'\begin{align*}')
     print(r'F = %d \text{ N}' %F)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#7#code#####8972#
+=>PYTHONTEX#py#default#default#11#code#####9022#
     N_s = 3
     P_sf = 833/2.0
     P_sr = 4167/2.0
@@ -91,7 +101,7 @@
     print(r'A_{tf} = %.2f \\' %A_tf)
     print(r'A_{tr} = %.2f' %A_tr)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#8#code#####9002#
+=>PYTHONTEX#py#default#default#12#code#####9052#
     A = 1783
     m = 0.190
     N_s = 2
@@ -102,7 +112,7 @@
     print(r'\begin{align*}')
     print(r'd = %d \text{ mm}' %d)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#9#code#####9020#
+=>PYTHONTEX#py#default#default#13#code#####9070#
     G = 79.3 * 10**9
     d = 0.148
     C = 4
@@ -112,7 +122,7 @@
     print(r'\begin{align*}')
     print(r'N_a = %d' %N_a)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#10#code#####9037#
+=>PYTHONTEX#py#default#default#14#code#####9087#
     N_s = 3
     S_p = 6 * 10**8
     P   = 500
@@ -121,7 +131,7 @@
     print(r'\begin{align*}')
     print(r'A_t = %.7f \text{ m}^2' %A_t)
     print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#11#code#####9056#
+=>PYTHONTEX#py#default#default#15#code#####9106#
     N_s  = 3
     S_ut = 482 * 10**6
     P    = 1000

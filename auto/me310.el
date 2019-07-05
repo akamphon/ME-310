@@ -133,6 +133,7 @@
     "tab: resin props"
     "tab: reinforcement props"
     "fig: strength stiffness diagram"
+    "subsub: strength-density"
     "fig: strength density diagram"
     "fig: strength temperature diagram"
     "fig: 3d-stress-element"
