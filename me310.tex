@@ -8891,11 +8891,6 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   Let us next design the spring index $C$ and wire diameter $d$. Assuming that the wire diameter is $d$ = 0.6 mm. Using hard-drawn wire ($A$ = 1783, $m$ = 0.190), we have that 
   
-  \begin{align*}
-    \alpha &= \frac{0.5(1783}{1.25 (0.6)^{0.19}} \\
-    \beta &= \frac{8(1+0.15)(10)}{\pi(0.0006)^2(10^6)} \\
-    C &= \frac{2\alpha - \beta}{4\beta} + \sqrt{ \left( \frac{2\alpha - \beta}{4\beta} \right)^2 - \frac{3\alpha}{4\beta} }
-  \end{align*}
   \begin{pycode}
     d = 0.0006
     A = 1783
@@ -8906,47 +8901,36 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     alpha = 0.5*A/(d*10**3)**m / N_s
     beta = 8*(1+zeta)*F_max/(3.142 * d**2)/10**6
     C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
-
-    print(r'\begin{align*}')
-    print(r'C = %.2f' %C)
-    print(r'\end{align*}')
+    G = 77.2 * 10**9
+    d = 0.0006
+    k = 500
+    N_a = G*d/8/C**3/k
+    delta = 0.02
+    p = delta/0.8/N_a + d
   \end{pycode}
+  \begin{align*}
+    \alpha &= \frac{0.5(1783}{1.25 (0.6)^{0.19}} \\
+    \beta &= \frac{8(1+0.15)(10)}{\pi(0.0006)^2(10^6)} \\
+    C &= \frac{2\alpha - \beta}{4\beta} + \sqrt{ \left( \frac{2\alpha - \beta}{4\beta} \right)^2 - \frac{3\alpha}{4\beta} } \\
+           &= \py{round(C,2)}
+  \end{align*}
 
   We can then obtain the coil diameter $D$ from $D = Cd$ = \py{8.26*6*10**-4} m. To determine the number of active coils, we use
 
   \begin{align*}
     N_a &= \frac{Gd}{8C^3k} \\
-        &= \frac{77.2 \times 10^{9}(0.0006)}{8(8.29^3)(500)}
+        &= \frac{77.2 \times 10^{9}(0.0006)}{8(8.29^3)(500)} \\
+        &= \py{int(N_a)}
   \end{align*}
-  \begin{pycode}
-    G = 77.2 * 10**9
-    d = 0.0006
-    C = 8.29
-    k = 500
-    N_a = G*d/8/C**3/k
-    
-    print(r'\begin{align*}')
-    print(r'N_a = %.0f' %N_a)
-    print(r'\end{align*}')
-  \end{pycode}
 
   Note that $N_a > 15$ would otherwise be considered excessive without outer diameter guide--the gun barrel prevents buckling here. 
   Finally, the required pitch can be calculated by 
 
   \begin{align*}
     0.8 &= \frac{\delta}{N_a(p-d)} \\
-    p &= \frac{\delta}{0.8N_a} + d
+    p &= \frac{\delta}{0.8N_a} + d \\
+        &= \py{round(p,6)} \text{ m}
   \end{align*}
-  \begin{pycode}
-    d = 0.0006
-    delta = 0.02
-    N_a = 20
-    p = delta/0.8/N_a + d
-    
-    print(r'\begin{align*}')
-    print(r'p = %.5f \text{ m}' %p)
-    print(r'\end{align*}')
-  \end{pycode}
 
 \end{exercises}
 
@@ -8957,11 +8941,6 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   First, the beam. We can determine the allowable load using bending equation.
 
-  \begin{align*}
-    N_s &= \frac{S_y}{\sigma} = \frac{S_ybh^2}{6FL_b} \\
-    F &= \frac{S_ybh^2}{6N_sL_b} = \frac{(300 \times 10^6)(0.3)(0.05^2)}{6(2)(3)}
-  \end{align*}
-
   \begin{pycode}
     S_y = 300 * 10**6
     b = 0.3
@@ -8969,18 +8948,15 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     N_s = 2
     L = 3
     F = S_y*b*h**2/6/N_s/L
-
-    print(r'\begin{align*}')
-    print(r'F = %d \text{ N}' %F)
-    print(r'\end{align*}')
   \end{pycode}
+  \begin{align*}
+    N_s &= \frac{S_y}{\sigma} = \frac{S_ybh^2}{6FL_b} \\
+    F &= \frac{S_ybh^2}{6N_sL_b} = \frac{(300 \times 10^6)(0.3)(0.05^2)}{6(2)(3)} \\
+    F &= \py{int(F)} \text{ N}
+  \end{align*}
+
 
   For the weld, the we can determine the maximum allowable load by
-
-  \begin{align*}
-    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} I_{group}}{ FL_bd_0 } \\
-    F &= \frac{S_{ut} \left[ 2 \left(\frac{1}{12}LH^3 + \frac{1}{12}HL^3 + LHd_0^2 \right) \right] }{N_s L_b d_0}
-  \end{align*}
 
   \begin{pycode}
     L = 0.3
@@ -8990,11 +8966,13 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     H = 0.005
     N_s = 4
     F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
-
-    print(r'\begin{align*}')
-    print(r'F = %d \text{ N}' %F)
-    print(r'\end{align*}')
   \end{pycode}
+  \begin{align*}
+    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} I_{group}}{ FL_bd_0 } \\
+    F &= \frac{S_{ut} \left[ 2 \left(\frac{1}{12}LH^3 + \frac{1}{12}HL^3 + LHd_0^2 \right) \right] }{N_s L_b d_0} \\
+    F &= \py{int(F)} \text{ N}
+  \end{align*}
+
 
   This shows that the beam would break before then weld, hence the maximum allowable load is 6250 N.
 \end{exercises}
@@ -9013,12 +8991,6 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   Since the axis of the bolt and direction of the load are perpendicular, we know that these are friction joints. For each joint, there are two forks squeezing on a wheel hub using the bolt, thereby effectively creating two friction surfaces. Choosing grade 8.8, the sizing equation becomes
 
-  \begin{align*}
-    A_{tf} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
-        &= \frac{3(833/2}{0.75(0.5)(600)} \\
-    A_{tr} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
-           &= \frac{3(4167/2)}{0.75(0.5)(600)}
-  \end{align*}
   \begin{pycode}
     N_s = 3
     P_sf = 833/2.0
@@ -9027,12 +8999,15 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     S_p = 600
     A_tf = N_s * P_sf / 0.75 / mu / S_p
     A_tr = N_s * P_sr / 0.75 / mu / S_p
-
-    print(r'\begin{align*}')
-    print(r'A_{tf} = %.2f \\' %A_tf)
-    print(r'A_{tr} = %.2f' %A_tr)
-    print(r'\end{align*}')
   \end{pycode}
+  \begin{align*}
+    A_{tf} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
+        &= \frac{3(833/2}{0.75(0.5)(600)} \\
+           &= \py{round(A_tf,2)} \text{ mm}^2 \\
+    A_{tr} &= \frac{N_s P_{shear}}{0.75 \mu S_p} \\
+           &= \frac{3(4167/2)}{0.75(0.5)(600)} \\
+           &= \py{round(A_tr,2)} \text{ mm}^2
+  \end{align*}
 
   The bolt sizes for the front fork should be M7$\times$1 and M33$\times$3.5 for the rear.
   
@@ -9045,75 +9020,59 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   We can now determine the wire diameter $d$ and spring index $C$. We will choose an inexpensive hard-drawn wire as scales should not expect any shock or impact loading. The problem also did not give us the specific about the hooks at the ends of the springs, we will assume that they do not exist and that the maximum stress in the springs happen in their coils. Setting $C$ = 4, the design equation becomes
 
-  \begin{align*}
-    \frac{8KF_{\max}C}{\pi d^2} = \frac{0.5A}{N_s d^m} \\
-    \frac{8 \frac{4C + 2}{4C - 3} (500) C}{\pi d^2} = \frac{0.5(1783)}{2d^{0.19}}
-  \end{align*}
   \begin{pycode}
     A = 1783
     m = 0.190
     N_s = 2
     F_max = 500
     C = 4
+    G = 79.3 * 10**9
+    k = 2500
     d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
-    
-    print(r'\begin{align*}')
-    print(r'd = %d \text{ mm}' %d)
-    print(r'\end{align*}')
+    N_a = G*d/8/C**3/k*10**-3
   \end{pycode}
+  \begin{align*}
+    \frac{8KF_{\max}C}{\pi d^2} &= \frac{0.5A}{N_s d^m} \\
+    \frac{8 \frac{4C + 2}{4C - 3} (500) C}{\pi d^2} &= \frac{0.5(1783)}{2d^{0.19}} \\
+    d &= \py{int(d)} \text{ mm}
+  \end{align*}
 
-  So the diameter of the wire is 14.8 cm. Finally, to determine the required number of active coils, we use
+  So the diameter of the wire is 148 mm. Finally, to determine the required number of active coils, we use
 
   \begin{align*}
-    N_a = \frac{79.3 \times 10^9(0.148)}{8(4^3)(2500)}
+    N_a &= \frac{79.3 \times 10^9(0.148)}{8(4^3)(2500)} \\
+        &= \py{int(N_a)}
   \end{align*}
-  \begin{pycode}
-    G = 79.3 * 10**9
-    d = 0.148
-    C = 4
-    k = 2500
-    N_a = G*d/8/C**3/k
-    
-    print(r'\begin{align*}')
-    print(r'N_a = %d' %N_a)
-    print(r'\end{align*}')
-  \end{pycode}
 
   The plates will be taking the entire load, thus joining them by two bolts should allow the load to be shared equally. This is a simple tension joint design. The tensile load applied to the plate is 1000 N, but is shared so each bolt takes 500 N. Choosing grade 8.8, the design equation for the bolts is
 
-  \begin{align*}
-    A_t = \frac{3(500)}{600 \times 10^6}
-  \end{align*}
   \begin{pycode}
     N_s = 3
     S_p = 6 * 10**8
     P   = 500
     A_t = N_s * P / S_p
-    
-    print(r'\begin{align*}')
-    print(r'A_t = %.7f \text{ m}^2' %A_t)
-    print(r'\end{align*}')
   \end{pycode}
+  \begin{align*}
+    A_t &= \frac{3(500)}{600 \times 10^6} \\
+        &= \py{round(A_t,7)} \text{ m}^2
+  \end{align*}
 
   Since the required tensile area is smaller than the smallest standard bolt, we can pick M3$\times$0.5 as our choice.
 
   If we decide to instead weld the plate and handle together, forming a butt weld, the required weld length would be
 
-  \begin{align*}
-    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} HL}{P} \\
-    L &= \frac{N_sP}{S_{ut}H}
-  \end{align*}
   \begin{pycode}
     N_s  = 3
     S_ut = 482 * 10**6
     P    = 1000
     H    = 0.003
     L    = N_s * P / S_ut / H
-    
-    print(r'\begin{align*}')
-    print(r'L = %.5f \text{ m}' %L)
-    print(r'\end{align*}')
   \end{pycode}
+  \begin{align*}
+    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut} HL}{P} \\
+    L &= \frac{N_sP}{S_{ut}H} \\
+        &= \py{round(L,5)} \text{ m}
+  \end{align*}
 
 \end{exercises}
 

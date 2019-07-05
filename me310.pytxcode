@@ -30,7 +30,7 @@ round((2*4*750/350/10**6/3.1416)**(1/3),4)
     print(r'\bottomrule')
     print(r'\end{tabular}')
     print(r'\end{center}')
-=>PYTHONTEX#py#default#default#5#code#####8899#
+=>PYTHONTEX#py#default#default#5#code#####8894#
     d = 0.0006
     A = 1783
     m = 0.190
@@ -40,43 +40,38 @@ round((2*4*750/350/10**6/3.1416)**(1/3),4)
     alpha = 0.5*A/(d*10**3)**m / N_s
     beta = 8*(1+zeta)*F_max/(3.142 * d**2)/10**6
     C = (2*alpha - beta)/(4*beta) + (((2*alpha - beta)/(4*beta))**2 - (3*alpha/(4*beta)))**0.5
-
-    print(r'\begin{align*}')
-    print(r'C = %.2f' %C)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#6#i#####8915#
-8.26*6*10**-4
-=>PYTHONTEX#py#default#default#7#code#####8921#
     G = 77.2 * 10**9
     d = 0.0006
-    C = 8.29
     k = 500
     N_a = G*d/8/C**3/k
-
-    print(r'\begin{align*}')
-    print(r'N_a = %.0f' %N_a)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#8#code#####8940#
-    d = 0.0006
     delta = 0.02
-    N_a = 20
     p = delta/0.8/N_a + d
-
-    print(r'\begin{align*}')
-    print(r'p = %.5f \text{ m}' %p)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#9#code#####8965#
+=>PYTHONTEX#py#default#default#6#i#####8916#
+round(C,2)
+=>PYTHONTEX#py#default#default#6#i#####8916#
+round(C,2)
+=>PYTHONTEX#py#default#default#7#i#####8918#
+8.26*6*10**-4
+=>PYTHONTEX#py#default#default#8#i#####8924#
+int(N_a)
+=>PYTHONTEX#py#default#default#8#i#####8924#
+int(N_a)
+=>PYTHONTEX#py#default#default#9#i#####8933#
+round(p,6)
+=>PYTHONTEX#py#default#default#9#i#####8933#
+round(p,6)
+=>PYTHONTEX#py#default#default#10#code#####8944#
     S_y = 300 * 10**6
     b = 0.3
     h = 0.05
     N_s = 2
     L = 3
     F = S_y*b*h**2/6/N_s/L
-
-    print(r'\begin{align*}')
-    print(r'F = %d \text{ N}' %F)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#10#code#####8985#
+=>PYTHONTEX#py#default#default#11#i#####8956#
+int(F)
+=>PYTHONTEX#py#default#default#11#i#####8956#
+int(F)
+=>PYTHONTEX#py#default#default#12#code#####8961#
     L = 0.3
     S_ut = 551 * 10**6
     L_b = 3
@@ -84,11 +79,11 @@ round((2*4*750/350/10**6/3.1416)**(1/3),4)
     H = 0.005
     N_s = 4
     F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
-
-    print(r'\begin{align*}')
-    print(r'F = %d \text{ N}' %F)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#11#code#####9022#
+=>PYTHONTEX#py#default#default#13#i#####8974#
+int(F)
+=>PYTHONTEX#py#default#default#13#i#####8974#
+int(F)
+=>PYTHONTEX#py#default#default#14#code#####8994#
     N_s = 3
     P_sf = 833/2.0
     P_sr = 4167/2.0
@@ -96,51 +91,51 @@ round((2*4*750/350/10**6/3.1416)**(1/3),4)
     S_p = 600
     A_tf = N_s * P_sf / 0.75 / mu / S_p
     A_tr = N_s * P_sr / 0.75 / mu / S_p
-
-    print(r'\begin{align*}')
-    print(r'A_{tf} = %.2f \\' %A_tf)
-    print(r'A_{tr} = %.2f' %A_tr)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#12#code#####9052#
+=>PYTHONTEX#py#default#default#15#i#####9010#
+round(A_tf,2)
+=>PYTHONTEX#py#default#default#16#i#####9010#
+round(A_tr,2)
+=>PYTHONTEX#py#default#default#15#i#####9010#
+round(A_tf,2)
+=>PYTHONTEX#py#default#default#16#i#####9010#
+round(A_tr,2)
+=>PYTHONTEX#py#default#default#17#code#####9023#
     A = 1783
     m = 0.190
     N_s = 2
     F_max = 500
     C = 4
-    d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
-
-    print(r'\begin{align*}')
-    print(r'd = %d \text{ mm}' %d)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#13#code#####9070#
     G = 79.3 * 10**9
-    d = 0.148
-    C = 4
     k = 2500
-    N_a = G*d/8/C**3/k
-
-    print(r'\begin{align*}')
-    print(r'N_a = %d' %N_a)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#14#code#####9087#
+    d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
+    N_a = G*d/8/C**3/k*10**-3
+=>PYTHONTEX#py#default#default#18#i#####9038#
+int(d)
+=>PYTHONTEX#py#default#default#18#i#####9038#
+int(d)
+=>PYTHONTEX#py#default#default#19#i#####9045#
+int(N_a)
+=>PYTHONTEX#py#default#default#19#i#####9045#
+int(N_a)
+=>PYTHONTEX#py#default#default#20#code#####9049#
     N_s = 3
     S_p = 6 * 10**8
     P   = 500
     A_t = N_s * P / S_p
-
-    print(r'\begin{align*}')
-    print(r'A_t = %.7f \text{ m}^2' %A_t)
-    print(r'\end{align*}')
-=>PYTHONTEX#py#default#default#15#code#####9106#
+=>PYTHONTEX#py#default#default#21#i#####9058#
+round(A_t,7)
+=>PYTHONTEX#py#default#default#21#i#####9058#
+round(A_t,7)
+=>PYTHONTEX#py#default#default#22#code#####9064#
     N_s  = 3
     S_ut = 482 * 10**6
     P    = 1000
     H    = 0.003
     L    = N_s * P / S_ut / H
-
-    print(r'\begin{align*}')
-    print(r'L = %.5f \text{ m}' %L)
-    print(r'\end{align*}')
+=>PYTHONTEX#py#default#default#23#i#####9075#
+round(L,5)
+=>PYTHONTEX#py#default#default#23#i#####9075#
+round(L,5)
 =>PYTHONTEX:SETTINGS#
 version=0.16
 outputdir=pythontex-files-me310
