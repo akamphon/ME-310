@@ -4609,13 +4609,15 @@ This interaction method is often specified in design codes for steel, aluminum, 
     L = 4
     M = F*L/8
     Ns = 3 
-
-    print(r'The bending moment caused by the midpoint load is %d N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.\\' %M)
-
     sigmaallow = 300 * 10**6 / Ns
     designation = ['S610 x 149', 'S510 x 143', 'S460 x 104', 'S380 x 74', 'S310 x 74', 'S250 x 52']
     Area = [18900*10**-6, 18200*10**-6, 13200*10**-6, 9480*10**-6, 9420*10**-6, 6650*10**-6]
     S = [3260 * 10**-6, 2700 * 10**-6, 1690*10**-6, 1060*10**-6, 829*10**-6, 482*10**-6]
+  \end{pycode}
+
+  The bending moment caused by the midpoint load is $FL/8$ = \py{int(M)} N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.
+
+  \begin{pycode}
     print(r'\begin{center}')
     print(r'\begin{tabular}{lccc}')
     print(r'\toprule')
@@ -4637,7 +4639,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
   \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{pictures/Simple-load-bearing/tower-crane2}
-    \caption{a typical luffing crane \cite{monokloncrane}}
+    \caption{A typical luffing crane. Modified from \cite{monokloncrane}}
     \label{tower crane}
   \end{figure}
   
@@ -7134,6 +7136,31 @@ For the bolted joint to have a safety factor of $N_s$
 \begin{equation} \label{eqn: tension joint bolt sizing}
   A_t = \frac{N_sP}{S_p}
 \end{equation}
+
+\begin{example} Design of a tension bolted joint
+
+You are to determine the proper bolt sizes for a ceiling-mounted electric fan. The fan requires 2 bolts and weighs 50 kg. Use grade 4.6 bolts.
+  
+\end{example}
+\begin{solution}
+  A ceiling-mounted electric fan obviously belongs in a house, which requires that safety be of utmost importance, we are going to assume a safety factor of 3. The proof strength of grade 4.6 bolts is 225 MPa. The fan requires two bolts, and since the problem did not specify any special configuration, we can safely assume that they equally share the fan weight. In that case, the design equation for the bolts become
+
+  \begin{pycode}
+    N_s = 3.0
+    P   = 500.0
+    S_p = 225 * 10**6
+    N   = 2.0
+    A_t = N_s * P / N / S_p
+  \end{pycode}
+
+  \begin{align*}
+    N A_t &= \frac{N_S P}{S_p} \\
+    A_t &= \frac{3(500)}{2(225 \times 10^6)} \\
+          &= \py{round(A_t,7)} \text{ m}^2 = \py{round(A_t * 10**6,2)} \text{ mm}^2
+  \end{align*}
+
+  From the table, we see that this is smaller than the smallest standard bolt, thus we will pick M3$\times$0.5.
+\end{solution}
 
 \subsection{Friction Joints}
 
