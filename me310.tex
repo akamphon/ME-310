@@ -7140,6 +7140,20 @@ For the bolted joint to have a safety factor of $N_s$
 \begin{example} Design of a tension bolted joint
 
 You are to determine the proper bolt sizes for a ceiling-mounted electric fan. The fan requires 2 bolts and weighs 50 kg. Use grade 4.6 bolts.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node [pattern=north west lines, minimum height=5mm, minimum width=2cm](ceil){};
+    \draw (ceil.south east) -- (ceil.south west);
+    \node at (ceil.south) [anchor=north, draw, fill=Grey, minimum height=3mm, minimum width=1cm](plate){};
+    \node at (plate.south) [anchor=north, draw, fill=Grey, minimum height=2cm, minimum width=2mm](shaft){}; 
+    \node at (plate.south west) [anchor=south, fill=Black, minimum height=5mm, minimum width=1mm, xshift=1mm, yshift=-1mm, inner sep=0]{};
+    \node at (plate.south east) [anchor=south, fill=Black, minimum height=5mm, minimum width=1mm, xshift=-1mm, yshift=-1mm, inner sep=0]{};
+    \node at (shaft.south west) [anchor=east, draw, fill=Grey, minimum height=2mm, minimum width=2cm, yshift=1mm, inner sep=0](left){};
+    \node at (shaft.south east) [anchor=west, draw, fill=Grey, minimum height=2mm, minimum width=2cm, yshift=1mm, inner sep=0](right){};
+  \end{tikzpicture}
+\end{figure}
   
 \end{example}
 \begin{solution}
