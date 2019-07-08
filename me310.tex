@@ -950,10 +950,10 @@ Since a composite is made from combinations of materials they can be designed to
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.8]{pictures/Material-selection/composite-types}
+  \includegraphics[width=\textwidth]{pictures/Material-selection/composites}
   \begin{tikzpicture}
   \end{tikzpicture}
-  \caption{Different types of engineering composites.}
+  \caption{Different types of engineering composites. \cite{shigley2011shigley}}
 \end{figure}
 
 As common examples, engineering composites are combinations of strong fibers such as glass, carbon, and boron bonded together in a material like nylon, epoxy, or polyester. The constituents of a composite material are comprised of (1) matrix materials and (2) reinforcement materials. Various plastic resins and sometimes even metals are used as matrix materials. Common reinforcement materials are (a) glass, (b) carbon, (c) SiC, and (d) Kevlar (aramid), which can be in the form of (i) short fibers, (ii) long fibers, (iii) continuous fibers, (iv) randomly oriented fibers, (v) woven fibers (cloth), or (vi) particulates (fillers). Particulates (fillers) can act as reinforcement although they are usually added to a matrix to reduce costs or achieve specific material properties. Examples would be glass beads added to a thermoplastic matrix to reduce cost or mica added to a phenolic matrix to improve electrical properties and/or material processing. As the names suggest, reinforcement materials provide improved physical and mechanical properties—strength and stiffness—and the matrix material supports, surrounds and maintains the position of and transfers load to the reinforcement material.
@@ -964,7 +964,7 @@ Glass fiber reinforcement improves the strength of plastics by a factor of two o
 
 Thermosetting plastics benefit similarly from glass reinforcement, the most commercially important being polyester and epoxy resins. In using tables giving properties of plastics, it is important as well to recall pitfalls in the use of such handbook data on the properties of materials. These pitfalls are particularly true for the data on plastics. Published values reflect values obtained from standardized molding conditions that are simple, economical, and readily reproduced. Strength values corresponding to actual molding conditions may differ significantly. Furthermore, temperature and rate of loading influence the strength of plastics to a greater extent than they do the strength of metals, thus requiring additional effort for the proper selection of a plastic.
 
-In general, because of the influence of directionality of the composite material, a minimum of at least two Young’s moduli, a shear modulus, and a Poisson ratio are needed for the analysis of stiffness. Figure 2.3, 2.4, and 2.5 provide additional information for composite materials with respect to strength vs. modulus, strength vs. density, and strength vs. temperature, respectively. Types of composite materials identified include carbon-fiber-reinforced polymers (CFRP), glass-fiber-reinforced polymers (GFRP), SiC-reinforced aluminum (Al-SiC), and Kevlar-fiber-reinforced polymers (KFRP). Additional technical information including applications of polymer matrix composites (PMC), metal matrix composites (MMC) and ceramic matrix composites (CMC) is provided in references [17], [18], and [19]
+In general, because of the influence of directionality of the composite material, a minimum of at least two Young’s moduli, a shear modulus, and a Poisson ratio are needed for the analysis of stiffness. Figures \ref{fig: strength stiffness diagram}, \ref{fig: strength density diagram}, and \ref{fig: strength temperature diagram} provide additional information for composite materials with respect to strength vs. modulus, strength vs. density, and strength vs. temperature, respectively. 
 
 \subsection{Fibers}
 
@@ -1000,12 +1000,10 @@ The materials used as matrix in composite materials are
 The characteristics of composite materials resulting from the combination of reinforcement and matrix depend on
 
 \begin{itemize}
-\item the proportions of reinforcements and matrix
-\item the form of the reinforcement
-\item the fabrication process
+\item the proportions of reinforcements and matrix. In most cases, reinforcements have higher strengths and moduli than the matrix materials. The more reinforcements usually lead to higher strength/modulus of the composite material.
+\item the form of the reinforcement. Long fibers provide the highest boost to strength and modulus but only along the fiber direction. Short, randomly oriented fiber provide less reinforcement but does so in all directions.
+\item the fabrication process. Woven fabric provides good reinforcement along the fiber directions (typically 0$^{\circ}$ and 90$^{\circ}$), but does not improve shear resistances. Laminates can provide shear support but with the added risk of delamination.
 \end{itemize}
-
-These characteristics maybe observed in ... {\color{Red}Figure...} which shows the tensile strength for different fiber fractions and different forms of reinforcement for the case of glass/resin composite, and {\color{Red}Figure 1.6} which gives an interesting view on the specific resistance of the principal composites as a function of temperature.
 
 Other remarkable properties of these materials include the following:
 
@@ -1014,7 +1012,7 @@ Other remarkable properties of these materials include the following:
 \item Composite materials are very fatigue resistant.
 \item Composite materials \emph{age} subject to humidity and heat.
 \item Composite materials do not corrode.
-\item Composite materials are not sensitive to common chemicals used in engines like crease, oils, paints, solvents. Paint thinners attact epoxy resins, however.
+\item Composite materials are not sensitive to common chemicals used in engines like crease, oils, paints, solvents. Paint thinners attack epoxy resins, however.
 \item Composite materials have medium to low level impact resistance, inferior to that of metallic materails.
 \item Composite materials have excellent fire resistance as compared with the light alloys with identical thicknesses. However, smokes from the combustion of certain metrices can be toxic.
 \end{itemize}
