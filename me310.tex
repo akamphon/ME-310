@@ -184,7 +184,7 @@ numbered=no
 }
 
 \newlist{evensolution}{enumerate}{2}
-\setlist[evensolution]{start=0,label=\textbf{\thesection-\theevensolutioni}}
+\setlist[evensolution]{label=\textbf{\arabic{section}-\theevensolutioni}}
 \makeatletter
 \renewcommand\theevensolutioni{\@arabic{\numexpr2*\value{evensolutioni}}}
 \makeatother
@@ -8695,7 +8695,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \section{Chapter 2}
 
-\begin{exercises}
+\begin{evensolution}
 \item Steel-reinforced concrete is very strong because steel and concrete are strong in opposite directions. Steel wire is strong under tension, and relatively weak under compression (due to buckling). Concrete is brittle and is strong under compression, but weak under tension. When combined, steel-reinforced concrete is strong both under tension and compression.
 
 \item The main purpose of an engine shaft is to transfer torque. To minimize the weight of a torque-loaded shaft, we use the minimum weight index formula
@@ -8707,11 +8707,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   By checking the strength-density diagram, we see that the materials that should give us the lightest torque-loaded shaft are engineering ceramics, titanium alloys, nickel alloys, and some steel alloys.
 
   Let us choose the following materials to represent each qualified categories:
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 3}
 
-\begin{exercises}
+\begin{evensolution}
 
 \item This is a problem of restricted deformation $\rightarrow$ statically indeterminate, hence we follow the three steps to solve them.
 
@@ -8797,11 +8797,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     \theta_p &= \tan^{-1} \frac{2(-75)}{40-100} = \tan^{-1} 2.5 \\
                  &= 68^{\circ}
   \end{align*}
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 4}
 
-\begin{exercises}
+\begin{evensolution}
 \item In this condition, since the column is pin-supported at the ends and
   also in the middle. Therefore, the smallest compressive load that could
   cause buckling would be corresponding to the 2nd ($n$ = 2) mode shape. In
@@ -8844,11 +8844,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     100 \times 10^6 &= \sqrt{ \left( \frac{900}{t_2} \right)^2 - \left( \frac{900}{t_2} \right) \left( \frac{1800}{t_2} \right) + \left( \frac{1800}{t_2} \right)^2 } \\
     t_2 &= 1.56 \times 10^{-5} \text{ m}
   \end{align*}
-\end{exercises} 
+\end{evensolution} 
 
 \section{Chapter 5}
 
-\begin{exercises}
+\begin{evensolution}
 \item We first need to determine the maximum bending moment and resulting bending stress. In this case, the maximum bending moment happens at the right leg, which is 1 m from the end of the board. Hence,
 
   \begin{align*}
@@ -9013,11 +9013,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     a = 0.182 \text{ m}
   \end{align*}
   
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 6}
 
-\begin{exercises}
+\begin{evensolution}
 \item First we need to determine the spring constant. The spring energy must be equal to the kinetic energy in the dart.
 
   \begin{align*}
@@ -9075,11 +9075,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
         &= \py{round(p,6)} \text{ m}
   \end{align*}
 
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 7}
 
-\begin{exercises}
+\begin{evensolution}
 \item In this problem we have two conditions for failure: 1) the board is broken and 2) the welds failed. All we need to do is determine the maximum loads allowed on each component; the smaller of the two is our final answer.
 
   First, the beam. We can determine the allowable load using bending equation.
@@ -9118,11 +9118,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 
   This shows that the beam would break before then weld, hence the maximum allowable load is 6250 N.
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 8}
 
-\begin{exercises}
+\begin{evensolution}
 \item We need to determine the load carried by the front and rear wheels and their respective forks.
 
   Using moment equilibrium, we have that
@@ -9154,11 +9154,11 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   The bolt sizes for the front fork should be M7$\times$1 and M33$\times$3.5 for the rear.
   
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 9}
 
-\begin{exercises}
+\begin{evensolution}
 \item Since there are two identical springs connected in parallel, the loads are shared evenly. The maximum force on each spring then would be 1000/2 = 500 N. And for every 100/2 = 50 N, the indicator should be 2 cm apart, telling us that the spring constant $k$ should be 50/0.02 = 2500 N/m.
 
   We can now determine the wire diameter $d$ and spring index $C$. We will choose an inexpensive hard-drawn wire as scales should not expect any shock or impact loading. The problem also did not give us the specific about the hooks at the ends of the springs, we will assume that they do not exist and that the maximum stress in the springs happen in their coils. Setting $C$ = 4, the design equation becomes
@@ -9217,13 +9217,13 @@ However, powerful though an FEA program may be, it is still far from all-knowing
         &= \py{round(L,5)} \text{ m}
   \end{align*}
 
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 10}
 
-\begin{exercises}
+\begin{evensolution}
 \item With increasing thickness of the beam, the errors between the theory and Solidworks simulation should increase. Beam bending theory assumes that there is only pure bending with no shear deformation in the beams. This assumption is accurate when the beam is long and thin, but as the thickness increases, so do the errors from the omitted shear deformation.
-\end{exercises}
+\end{evensolution}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
