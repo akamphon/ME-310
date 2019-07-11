@@ -4584,6 +4584,24 @@ Column design for structural aluminum is specified by the Aluminum Association u
 
 Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two parts are linear, used to model the effects of short and medium columns. The third has the same form as the Euler formula and is used for long columns.
 
+\begin{example} A mixed-mode solar dryer design with aluminum columns and beams. \cite{akamphon2018integrated} 
+
+  To validate the resultant moisture removal rate obtained from the developed model, we have to conduct experiments using actual solar dryer. For the publication, we selected a mixed-mode solar dryer which combines direct sunlight exposure and hot air from a solar air heater to dry products within. The dryer is designed so that the maximum weight of a product inside is 25 kg. The dryer's dimensions are shown in a schematic drawing in  
+  
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+      \node [draw, minimum height=3mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](heater){};
+      \node at (heater.south east) [anchor=south west, draw, minimum height=6mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](dryer){};
+      \node at (heater.south west) [anchor=north west, draw, minimum height=1cm, minimum width=2mm, fill=LightGrey](lleg){};
+      \node at (dryer.south east) [anchor=north east, draw, minimum height=2cm, minimum width=2mm, fill=LightGrey](lleg){};
+    \end{tikzpicture}
+    \caption{Schematic drawing of the designed solar dryer}
+    \label{fig: solar dryer}
+  \end{figure}
+  
+\end{example}
+
 \begin{figure}[h]
   \centering
   \begin{tikzpicture}
