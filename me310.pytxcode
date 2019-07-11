@@ -1,14 +1,14 @@
-=>PYTHONTEX#py#default#default#0#i#####4143#
+=>PYTHONTEX#py#default#default#0#i#####4149#
 round((1200*10**6)**(2/3)/7800,0)
-=>PYTHONTEX#py#default#default#1#i#####4144#
+=>PYTHONTEX#py#default#default#1#i#####4150#
 round((350*10**6)**(2/3)/1500,0)
-=>PYTHONTEX#py#default#default#2#i#####4145#
+=>PYTHONTEX#py#default#default#2#i#####4151#
 round((400*10**6)**(2/3)/2300,0)
-=>PYTHONTEX#py#default#default#3#i#####4166#
+=>PYTHONTEX#py#default#default#3#i#####4172#
 round((2*4*750/350/10**6/3.1416)**(1/3),4)
-=>PYTHONTEX#py#default#default#3#i#####4166#
+=>PYTHONTEX#py#default#default#3#i#####4172#
 round((2*4*750/350/10**6/3.1416)**(1/3),4)
-=>PYTHONTEX#py#default#default#4#code#####4702#
+=>PYTHONTEX#py#default#default#4#code#####4708#
     F = 100000
     L = 4
     M = F*L/8
@@ -17,9 +17,9 @@ round((2*4*750/350/10**6/3.1416)**(1/3),4)
     designation = ['S610 x 149', 'S510 x 143', 'S460 x 104', 'S380 x 74', 'S310 x 74', 'S250 x 52']
     Area = [18900*10**-6, 18200*10**-6, 13200*10**-6, 9480*10**-6, 9420*10**-6, 6650*10**-6]
     S = [3260 * 10**-6, 2700 * 10**-6, 1690*10**-6, 1060*10**-6, 829*10**-6, 482*10**-6]
-=>PYTHONTEX#py#default#default#5#i#####4713#
+=>PYTHONTEX#py#default#default#5#i#####4719#
 int(M)
-=>PYTHONTEX#py#default#default#6#code#####4715#
+=>PYTHONTEX#py#default#default#6#code#####4721#
     print(r'\begin{center}')
     print(r'\begin{tabular}{lccc}')
     print(r'\toprule')
@@ -30,21 +30,21 @@ int(M)
     print(r'\bottomrule')
     print(r'\end{tabular}')
     print(r'\end{center}')
-=>PYTHONTEX#py#default#default#7#code#####7257#
+=>PYTHONTEX#py#default#default#7#code#####7264#
     N_s = 3.0
     P   = 500.0
     S_p = 225 * 10**6
     N   = 2.0
     A_t = N_s * P / N / S_p
-=>PYTHONTEX#py#default#default#8#i#####7269#
+=>PYTHONTEX#py#default#default#8#i#####7276#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#9#i#####7269#
+=>PYTHONTEX#py#default#default#9#i#####7276#
 round(A_t * 10**6,2)
-=>PYTHONTEX#py#default#default#8#i#####7269#
+=>PYTHONTEX#py#default#default#8#i#####7276#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#9#i#####7269#
+=>PYTHONTEX#py#default#default#9#i#####7276#
 round(A_t * 10**6,2)
-=>PYTHONTEX#py#default#default#10#code#####9030#
+=>PYTHONTEX#py#default#default#10#code#####9037#
     d = 0.0006
     A = 1783
     m = 0.190
@@ -60,32 +60,32 @@ round(A_t * 10**6,2)
     N_a = G*d/8/C**3/k
     delta = 0.02
     p = delta/0.8/N_a + d
-=>PYTHONTEX#py#default#default#11#i#####9052#
+=>PYTHONTEX#py#default#default#11#i#####9059#
 round(C,2)
-=>PYTHONTEX#py#default#default#11#i#####9052#
+=>PYTHONTEX#py#default#default#11#i#####9059#
 round(C,2)
-=>PYTHONTEX#py#default#default#12#i#####9054#
+=>PYTHONTEX#py#default#default#12#i#####9061#
 8.26*6*10**-4
-=>PYTHONTEX#py#default#default#13#i#####9060#
+=>PYTHONTEX#py#default#default#13#i#####9067#
 int(N_a)
-=>PYTHONTEX#py#default#default#13#i#####9060#
+=>PYTHONTEX#py#default#default#13#i#####9067#
 int(N_a)
-=>PYTHONTEX#py#default#default#14#i#####9069#
+=>PYTHONTEX#py#default#default#14#i#####9076#
 round(p,6)
-=>PYTHONTEX#py#default#default#14#i#####9069#
+=>PYTHONTEX#py#default#default#14#i#####9076#
 round(p,6)
-=>PYTHONTEX#py#default#default#15#code#####9080#
+=>PYTHONTEX#py#default#default#15#code#####9087#
     S_y = 300 * 10**6
     b = 0.3
     h = 0.05
     N_s = 2
     L = 3
     F = S_y*b*h**2/6/N_s/L
-=>PYTHONTEX#py#default#default#16#i#####9092#
+=>PYTHONTEX#py#default#default#16#i#####9099#
 int(F)
-=>PYTHONTEX#py#default#default#16#i#####9092#
+=>PYTHONTEX#py#default#default#16#i#####9099#
 int(F)
-=>PYTHONTEX#py#default#default#17#code#####9097#
+=>PYTHONTEX#py#default#default#17#code#####9104#
     L = 0.3
     S_ut = 551 * 10**6
     L_b = 3
@@ -93,11 +93,11 @@ int(F)
     H = 0.005
     N_s = 4
     F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
-=>PYTHONTEX#py#default#default#18#i#####9110#
+=>PYTHONTEX#py#default#default#18#i#####9117#
 int(F)
-=>PYTHONTEX#py#default#default#18#i#####9110#
+=>PYTHONTEX#py#default#default#18#i#####9117#
 int(F)
-=>PYTHONTEX#py#default#default#19#code#####9130#
+=>PYTHONTEX#py#default#default#19#code#####9137#
     N_s = 3
     P_sf = 833/2.0
     P_sr = 4167/2.0
@@ -105,15 +105,15 @@ int(F)
     S_p = 600
     A_tf = N_s * P_sf / 0.75 / mu / S_p
     A_tr = N_s * P_sr / 0.75 / mu / S_p
-=>PYTHONTEX#py#default#default#20#i#####9146#
+=>PYTHONTEX#py#default#default#20#i#####9153#
 round(A_tf,2)
-=>PYTHONTEX#py#default#default#21#i#####9146#
+=>PYTHONTEX#py#default#default#21#i#####9153#
 round(A_tr,2)
-=>PYTHONTEX#py#default#default#20#i#####9146#
+=>PYTHONTEX#py#default#default#20#i#####9153#
 round(A_tf,2)
-=>PYTHONTEX#py#default#default#21#i#####9146#
+=>PYTHONTEX#py#default#default#21#i#####9153#
 round(A_tr,2)
-=>PYTHONTEX#py#default#default#22#code#####9159#
+=>PYTHONTEX#py#default#default#22#code#####9166#
     A = 1783
     m = 0.190
     N_s = 2
@@ -123,32 +123,32 @@ round(A_tr,2)
     k = 2500
     d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
     N_a = G*d/8/C**3/k*10**-3
-=>PYTHONTEX#py#default#default#23#i#####9174#
+=>PYTHONTEX#py#default#default#23#i#####9181#
 int(d)
-=>PYTHONTEX#py#default#default#23#i#####9174#
+=>PYTHONTEX#py#default#default#23#i#####9181#
 int(d)
-=>PYTHONTEX#py#default#default#24#i#####9181#
+=>PYTHONTEX#py#default#default#24#i#####9188#
 int(N_a)
-=>PYTHONTEX#py#default#default#24#i#####9181#
+=>PYTHONTEX#py#default#default#24#i#####9188#
 int(N_a)
-=>PYTHONTEX#py#default#default#25#code#####9185#
+=>PYTHONTEX#py#default#default#25#code#####9192#
     N_s = 3
     S_p = 6 * 10**8
     P   = 500
     A_t = N_s * P / S_p
-=>PYTHONTEX#py#default#default#26#i#####9194#
+=>PYTHONTEX#py#default#default#26#i#####9201#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#26#i#####9194#
+=>PYTHONTEX#py#default#default#26#i#####9201#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#27#code#####9200#
+=>PYTHONTEX#py#default#default#27#code#####9207#
     N_s  = 3
     S_ut = 482 * 10**6
     P    = 1000
     H    = 0.003
     L    = N_s * P / S_ut / H
-=>PYTHONTEX#py#default#default#28#i#####9211#
+=>PYTHONTEX#py#default#default#28#i#####9218#
 round(L,5)
-=>PYTHONTEX#py#default#default#28#i#####9211#
+=>PYTHONTEX#py#default#default#28#i#####9218#
 round(L,5)
 =>PYTHONTEX:SETTINGS#
 version=0.16

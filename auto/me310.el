@@ -258,7 +258,8 @@
     "C"
     "R")
    (LaTeX-add-enumitem-newlists
-    '("exercises" "enumerate"))
+    '("exercises" "enumerate")
+    '("evensolution" "enumerate"))
    (LaTeX-add-enumitem-SetLabelAligns
     "parright")
    (LaTeX-add-color-definecolors

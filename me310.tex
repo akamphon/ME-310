@@ -180,8 +180,14 @@ numbered=no
 }
 
 \newcommand{\exercise}{%
-\item \label{lab:\arabic{chapter}.\arabic{exercisesi}}  % Append label to item
+\item \label{lab:\arabic{chapter}-\arabic{exercisesi}}  % Append label to item
 }
+
+\newlist{evensolution}{enumerate}{2}
+\setlist[evensolution]{start=0,label=\textbf{\thesection-\theevensolutioni}}
+\makeatletter
+\renewcommand\theevensolutioni{\@arabic{\numexpr2*\value{evensolutioni}}}
+\makeatother
 
 \SetLabelAlign{parright}{\parbox[t]{\labelwidth}{\raggedleft#1}}
 
@@ -4893,6 +4899,7 @@ This chapter discusses the design criteria for simple load-bearing members—nam
   \item If the columns have circular cross sections, while the rails and planks have square cross sections, determine the diameter of the columns and the sizes of the cross section of the rails and planks so that the safety factor of the columns, rails, and planks are 10, 5, and 4, respectively. You may ignore fatigue failure.
   \item If a child comes to play on this bridge everyday by jumping repeatedly on the middle of a single plank, causing the maximum downward load on the plank of 1500 N, recalculate the proper cross section size of the plank so that the fatigue safety factor is 4.
   \end{enumerate}
+
 \end{exercises}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -8666,7 +8673,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \section{Chapter 1}
 
-\begin{exercises}
+\begin{evensolution}
   
 \item An elevator cable: There is nothing new about this component. The cable must have been tested and its behavior well understood already. Additionally, there are usually overweight sensors in elevator cars nowaday so there is very little chance of cable abuse. So, with well-tested material, controlled environment and operation, the proper safety factor should be 1.5 - 2. For human safety and economic impact safety factor, broken cables definitely leads to serious injuries and disastrous failure of the elevator system. Thus, the corresponding safety factor is 1.6. The combined safety factor is 2.4 - 3.2.
 \item Mobile phone case: If we allow that the phone case is `disposable', it opens up a possibility that the case may be made by a relatively untested and inexpensive material. The design will mainly aim aesthetics rather than actual impact absorption. Loading conditions can also hardly be controlled because impact load from dropping a phone can be still be determined, but often widely different depending on height and the angle of impact. This suggests that the safety factor should be around 2.5 - 3.
@@ -8684,7 +8691,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   The cost both to human safety and economy of a fuselage failure needs no explanation. It's high. Very, very high. $N_{s\text{, cost}}$ = 1.6, giving us the total safety factor of 2 - 2.4.
   
-\end{exercises}
+\end{evensolution}
 
 \section{Chapter 2}
 
