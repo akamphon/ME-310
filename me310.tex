@@ -4584,24 +4584,6 @@ Column design for structural aluminum is specified by the Aluminum Association u
 
 Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two parts are linear, used to model the effects of short and medium columns. The third has the same form as the Euler formula and is used for long columns.
 
-\begin{example} A mixed-mode solar dryer design with aluminum columns and beams. \cite{akamphon2018integrated} 
-
-  To validate the resultant moisture removal rate obtained from the developed model, we have to conduct experiments using actual solar dryer. For the publication, we selected a mixed-mode solar dryer which combines direct sunlight exposure and hot air from a solar air heater to dry products within. The dryer is designed so that the maximum weight of a product inside is 25 kg. The dryer's dimensions are shown in a schematic drawing in  
-  
-  \begin{figure}[H]
-    \centering
-    \begin{tikzpicture}
-      \node [draw, minimum height=3mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](heater){};
-      \node at (heater.south east) [anchor=south west, draw, minimum height=6mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](dryer){};
-      \node at (heater.south west) [anchor=north west, draw, minimum height=1cm, minimum width=2mm, fill=LightGrey](lleg){};
-      \node at (dryer.south east) [anchor=north east, draw, minimum height=2cm, minimum width=2mm, fill=LightGrey](lleg){};
-    \end{tikzpicture}
-    \caption{Schematic drawing of the designed solar dryer}
-    \label{fig: solar dryer}
-  \end{figure}
-  
-\end{example}
-
 \begin{figure}[h]
   \centering
   \begin{tikzpicture}
@@ -4627,6 +4609,97 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
   \caption{Ratio of designed allowable stress to compressive strength for aluminum columns of various slenderness ratio}
   \label{fig: aluminum column}
 \end{figure}
+
+\begin{example} A mixed-mode solar dryer design with aluminum columns and beams. \cite{akamphon2018integrated} 
+
+  To validate the resultant moisture removal rate obtained from the developed model, we have to conduct experiments using actual solar dryer. For the publication, we selected a mixed-mode solar dryer which combines direct sunlight exposure and hot air from a solar air heater to dry products within. The dryer is designed so that the maximum weight of a product inside is 25 kg. The dryer's dimensions are shown in a schematic drawing in  
+  
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+      \node [minimum height=3mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](heater){\scriptsize air heater};
+      \node at (heater.south east) [anchor=south west, minimum height=6mm, minimum width=3cm, rotate=15, fill=LightSkyBlue](dryer){dryer};
+      \draw (heater.south west) -- (heater.north west) -- (heater.north east) -- (dryer.north west) -- (dryer.north east) -- (dryer.south east) -- cycle;
+      \node at (heater.south west) [anchor=north west, draw, minimum height=2mm, minimum width=6cm, rotate=15, fill=LightGrey](beam){};
+      \node at (heater.south west) [anchor=north west, draw, minimum height=1cm, minimum width=2mm, fill=LightGrey](lleg){};
+      \node at (dryer.south east) [anchor=north east, draw, minimum height=2.6cm, minimum width=2mm, fill=LightGrey](lleg){};
+      \draw [->, ultra thick] (heater.south) --++ (-90:0.5) node[below]{10 kg};
+      \draw [->, ultra thick] (dryer.south) --++ (-90:1) node[below]{30 kg};
+    \end{tikzpicture}
+    \caption{Schematic drawing of the designed solar dryer}
+    \label{fig: solar dryer}
+  \end{figure}
+
+  The air heater does not have a product inside, obviously, just a black aluminum plate. The air heater is otherwise a transparent acrylic box, and the same goes for the dryer. The air heater weighs 10 kg. The dryer, slighly larger than the air heater, weighs 30 kg, including the products. Design the supporting beams and the legs.
+\end{example}
+\begin{solution}
+  By assuming $g$ = 10 m/s$^2$ we can determine the required support forces in each column so that
+
+  \begin{pycode}
+    import math
+    N = 2
+    F1 = 100
+    F2 = 300
+    L_l = 0.25
+    L_r = 0.25
+    L   = 1
+    theta = math.radians(15)
+    F_l = (F2*L_r + F1*(L - L_l))/L
+    F_r = F1 + F2 - F_l
+    M = F_r * L_r * math.cos(theta)
+    sigma_y = 300 * 10**6
+    S = N * M / sigma_y
+  \end{pycode}
+
+  The support forces in the left and right columns are \py{int(F_l)} and \py{int(F_r)}, respectively. Now, considering the beam first, We can determine the distribution of bending moment along the length of the beam. Taking $x = 0$ from the left column, the bending moment is
+
+  \begin{align*}
+    M(x) = \left\{ \begin{array}{llc}
+                     150x\cos(15) &  & x < 0.25 \\
+                     150x\cos(15) - 100(x-0.25)\cos(15) &  & 0.25 < x < 0.75 \\
+                     250(1-x)\cos(15) &  & x > 0.75
+                   \end{array}
+                                           \right.
+  \end{align*}
+
+  We can plot resultant bending moment as shown here.
+
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+      \begin{axis}[
+        width=0.9\textwidth,
+        height=.6\textwidth,
+        xmin=0,xmax=1,
+        ymin=0,
+        xlabel={$x$},
+        ylabel={$M(x)$},
+        % ylabel style={rotate=-90},
+        cycle list name=exotic,
+        samples=100,
+        grid=both,
+        axis background/.style={fill=SkyBlue!50},
+        no markers,
+        every axis plot/.append style={thick},
+        ]
+        \addplot [domain=0:0.25, DarkBlue]{150*x*cos(15)};
+        \addplot [domain=0.25:0.75, DarkRed]{150*x*cos(15) - 100*(x-0.25)*cos(15)};
+        \addplot [domain=0.75:1, DarkGrey!20!Black] {250*(1-x)*cos(15)} node[midway, above right]{long};
+      \end{axis}
+    \end{tikzpicture}
+  \end{figure}
+
+  The diagram illustrates that the maximum bending moment is at $x = 0.75$ m where $M(x) = \py{round(M,1)}$ N-m. Since this is an experiment equipment whose load is relatively small and almost no risk of injury to anyone or anything upon failure, the chosen safety factor is 2. The design equation for the beam is
+
+  \begin{align*}
+    S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{sigma_y}} \\
+      &= \py{'{:.2E}'.format(S)} \text{ m}^3
+  \end{align*}
+
+  We can look up a catalog to determine a proper cross section for the beam.
+
+  Now, for the column, we can determine the proper section from 
+\end{solution}
 \subsubsection{Timber Columns}
 
 Columns used in timber construction are designed based on formulas published by the National forest Products Association (NFPA) or the American Institute of Timber Construction (AITC). For example, the NFPA formulas for the allowable in short, intermediate, and long columns have a rectangular cross section of dimensions $b$ and $h$, where $h$ is the smallest dimension of the cross section, are
