@@ -4647,8 +4647,12 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
     F_l = (F2*L_r + F1*(L - L_l))/L
     F_r = F1 + F2 - F_l
     M = F_r * L_r * math.cos(theta)
-    sigma_y = 300 * 10**6
-    S = N * M / sigma_y
+    S_y = 300 * 10**6
+    E  = 70 * 10**9 
+    S = N * M / S_y
+    I_l = N * F_l * L**2 / math.pi**2 / E
+    I_r = N * F_r * L**2 / math.pi**2 / E
+    lambda_c = ((math.pi**2*E)/S_y)**0.5
   \end{pycode}
 
   The support forces in the left and right columns are \py{int(F_l)} and \py{int(F_r)}, respectively. Now, considering the beam first, We can determine the distribution of bending moment along the length of the beam. Taking $x = 0$ from the left column, the bending moment is
@@ -4692,13 +4696,28 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
   The diagram illustrates that the maximum bending moment is at $x = 0.75$ m where $M(x) = \py{round(M,1)}$ N-m. Since this is an experiment equipment whose load is relatively small and almost no risk of injury to anyone or anything upon failure, the chosen safety factor is 2. The design equation for the beam is
 
   \begin{align*}
-    S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{sigma_y}} \\
+    S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{S_y}} \\
       &= \py{'{:.2E}'.format(S)} \text{ m}^3
   \end{align*}
 
   We can look up a catalog to determine a proper cross section for the beam.
 
-  Now, for the column, we can determine the proper section from 
+  Now, for the column, we can determine the proper section from the buckling design equation in which
+
+  \begin{align*}
+    N_s P &= \frac{\pi^2 EI}{L^2} \\
+    I_l &= \frac{\py{N}(\py{round(F_l)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
+          &= \py{'{:.2E}'.format(I_l)} \text{ m}^4 \\
+    I_r &= \frac{\py{N}(\py{round(F_r)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
+          &= \py{'{:.2E}'.format(I_r)} \text{ m}^4
+  \end{align*}
+
+  We should also check that the mode of failure of the column is actually buckling by checking the slenderness ratio.
+
+  \begin{align*}
+    \lambda_c &= \sqrt{ \frac{ \pi^2 E }{S_y}} = \sqrt{ \frac{ \pi^2 (\py{'{:.0E}'.format(E)}) }{\py{'{:.0E}'.format(S_y)}}} \\
+              &= \py{round(lambda_c,2)}
+  \end{align*}
 \end{solution}
 \subsubsection{Timber Columns}
 
