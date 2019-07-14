@@ -252,7 +252,8 @@
     "eqn: beam element displacement function"
     "eqn: inverse displacement matrix"
     "appendix: structural steel properties"
-    "table: s-shaped sections")
+    "table: s-shaped sections"
+    "tab: alum i-beams")
    (LaTeX-add-bibliographies)
    (LaTeX-add-array-newcolumntypes
     "L"

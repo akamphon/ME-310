@@ -4653,6 +4653,8 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
     I_l = N * F_l * L**2 / math.pi**2 / E
     I_r = N * F_r * L**2 / math.pi**2 / E
     lambda_c = ((math.pi**2*E)/S_y)**0.5
+    K = 2
+    r_g = 15.5*0.001
   \end{pycode}
 
   The support forces in the left and right columns are \py{int(F_l)} and \py{int(F_r)}, respectively. Now, considering the beam first, We can determine the distribution of bending moment along the length of the beam. Taking $x = 0$ from the left column, the bending moment is
@@ -4688,7 +4690,7 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
         ]
         \addplot [domain=0:0.25, DarkBlue]{150*x*cos(15)};
         \addplot [domain=0.25:0.75, DarkRed]{150*x*cos(15) - 100*(x-0.25)*cos(15)};
-        \addplot [domain=0.75:1, DarkGrey!20!Black] {250*(1-x)*cos(15)} node[midway, above right]{long};
+        \addplot [domain=0.75:1, DarkGrey!20!Black] {250*(1-x)*cos(15)};
       \end{axis}
     \end{tikzpicture}
   \end{figure}
@@ -4697,10 +4699,11 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
 
   \begin{align*}
     S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{S_y}} \\
-      &= \py{'{:.2E}'.format(S)} \text{ m}^3
+      &= \py{'{:.2E}'.format(S)} \text{ m}^3 \\
+      &= \py{'{:.2E}'.format(S*10**9)} \text{ mm}^3
   \end{align*}
 
-  We can look up a catalog to determine a proper cross section for the beam.
+  We can look up a catalog to determine a proper cross section for the beam in \cref{tab: alum i-beams}. The smallest of the standard i-beam (depth = 76.2 mm, width = 63.5 mm) is still larger than the required section modulus, and so it is our selection.
 
   Now, for the column, we can determine the proper section from the buckling design equation in which
 
@@ -4712,12 +4715,18 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
           &= \py{'{:.2E}'.format(I_r)} \text{ m}^4
   \end{align*}
 
+  According to the required $I$, again the smallest value of $I$ for axis 2-2 is still larger. Hence the same beam that we chose for the dryer beam is our choice here.
+
   We should also check that the mode of failure of the column is actually buckling by checking the slenderness ratio.
 
   \begin{align*}
     \lambda_c &= \sqrt{ \frac{ \pi^2 E }{S_y}} = \sqrt{ \frac{ \pi^2 (\py{'{:.0E}'.format(E)}) }{\py{'{:.0E}'.format(S_y)}}} \\
-              &= \py{round(lambda_c,2)}
+              &= \py{round(lambda_c,2)} \\
+    \lambda &= \frac{KL}{r_g} = \frac{\py{K}(\py{L})}{\py{r_g}} \\
+              &= \py{round(K*L/r_g,2)}
   \end{align*}
+
+  The actual slenderness ratio is greater that the critical value, confirming our assumption that buckling is the mode of failure of these columns.
 \end{solution}
 \subsubsection{Timber Columns}
 
@@ -9500,6 +9509,44 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     W150 $\times$ 18  & 2290  & 9.19 & 120  & 63.3 & 1.26  & 24.7 & 23.5 \\
     \rowcolor{LightSkyBlue!50}
     W150 $\times$ 14  & 1730  & 6.84 & 91.2 & 62.9 & 0.912 & 18.2 & 23.0 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+  \caption{Cross-sectional properties of aluminum i-beams.}
+  \label{tab: alum i-beams}
+  \begin{tabular}{lcccccccc}
+    \multirow{2}{1.5cm}{Depth} & \multirow{2}{1.5cm}{Width} & \multirow{2}{1.5cm}{Area} & \multicolumn{3}{c}{Axis 1-1} & \multicolumn{3}{c}{Axis 2-2} \\
+    \cmidrule{4-9}
+                             & & & $I$ & $S$ & $r_g$ & $I$ & $S$ & $r_g$ \\
+    \midrule
+    mm & mm & mm$^2$ & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm & $\times$ 10$^6$ mm$^4$ & $\times$ 10$^3$ mm$^3$ & mm \\
+    \midrule
+    76.2  & 63.5  & 898  & 0.932   & 24.4  & 32.3  & 0.216  & 6.88   & 15.5 \\
+    76.2  & 63.5  & 1114 & 1.128   & 29.7  & 31.8  & 0.283  & 8.85   & 16.0 \\
+    \rowcolor{LightSkyBlue!50}
+    101.6 & 76.2  & 1268 & 2.339   & 46.0  & 42.9  & 0.433  & 11.31  & 18.5 \\
+    \rowcolor{LightSkyBlue!50}
+    101.6 & 76.2  & 1532 & 2.793   & 55.1  & 42.7  & 0.545  & 14.26  & 18.8 \\
+    127   & 88.9  & 2030 & 5.802   & 91.4  & 53.6  & 0.953  & 21.47  & 21.6 \\
+    \rowcolor{LightSkyBlue!50}
+    152.4 & 101.6 & 2211 & 9.153   & 120.1 & 64.3  & 1.290  & 25.40  & 24.1 \\
+    \rowcolor{LightSkyBlue!50}
+    152.4 & 101.6 & 2574 & 10.614  & 139.3 & 64.3  & 1.557  & 30.64  & 24.6 \\
+    177.8 & 114.3 & 3182 & 17.852  & 200.7 & 74.9  & 2.406  & 42.11  & 27.4 \\
+    \rowcolor{LightSkyBlue!50}
+    203.2 & 127   & 3391 & 24.845  & 244.5 & 85.6  & 3.038  & 47.85  & 30.0 \\
+    \rowcolor{LightSkyBlue!50}
+    203.2 & 127   & 3853 & 28.212  & 277.6 & 85.6  & 3.559  & 56.04  & 30.5 \\
+    228.6 & 139.7 & 4587 & 42.464  & 371.5 & 96.3  & 5.086  & 72.76  & 33.3 \\
+    \rowcolor{LightSkyBlue!50}
+    254   & 152.4 & 4743 & 54.980  & 432.9 & 107.7 & 6.152  & 80.79  & 36.1 \\
+    \rowcolor{LightSkyBlue!50}
+    254   & 152.4 & 5643 & 64.845  & 510.6 & 107.2 & 7.505  & 98.49  & 36.6 \\
+    304.8 & 177.8 & 6403 & 106.376 & 698.1 & 128.8 & 11.197 & 126.02 & 41.9 \\
+    304.8 & 177.8 & 7841 & 132.083 & 866.7 & 129.8 & 14.768 & 166.16 & 43.4 \\
     \bottomrule
   \end{tabular}
 \end{table}
