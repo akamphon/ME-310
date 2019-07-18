@@ -5328,7 +5328,7 @@ is the effective slenderness ratio, equivalent the same quantity for column buck
 \begin{table}
   \centering
   {\renewcommand{\arraystretch}{1.2}
-  \begin{tabular}{L{11cm} C{2cm}}
+  \begin{tabular}{lc}
     \toprule
     End Condition & Constant $K$ \\
     \midrule
@@ -5453,7 +5453,7 @@ The process of helical compression spring design can be summarized by a process 
 
     \draw [->] (4.east) --++ (0:1) node[midway, above]{Yes} --++ (90:3.5) -- (2);
     \draw [->] (5.east) --++ (0:1.5) node[midway, above]{Yes} --++ (90:7) -- (1);
-    \draw [->] (6.east) --++ (0:1.6) node[midway, above]{Yes} --++ (90:9) -- (1);
+    \draw [->] (6.east) --++ (0:1.575) node[midway, above]{Yes} --++ (90:9) -- (1);
   \end{tikzpicture}
   % \includegraphics[scale=0.6]{pictures/Spring-design/spring-design-flowchart}
   \caption{Helical spring design process flowchart}
@@ -5507,7 +5507,7 @@ The first inequality sets a range of spring index value for standard helical spr
   Next, consider the stress limitation to select $D$ and $d$. By setting $N_s$ = 1.25 and $\xi$ = 0.15, if we choose $d$ = 2.5 mm for the front suspension, the spring index $C$ can be calculated.
 
   \begin{align*}
-    \alpha  &= \frac{\tau _{allow}}{N_s} = \frac{0.45}{1.25}\frac{2005}{2.5^{0.168}} \times 10^6 = 619 \text{ MPa} \\ 
+    \alpha  &= \frac{\tau _{allow}}{N_s} = \frac{0.45}{1.25}\frac{2005}{2.5^{0.168}} = 619 \text{ MPa} \\ 
     \beta  &= \frac{8(1 + \xi )F_{\max}}{\pi d^2} = \frac{8(1 + 0.15)167}{\pi (2.5 \times 10^{-3})^2} = 78.2 \text{ MPa}
   \end{align*}
   \begin{align*}
@@ -5519,7 +5519,7 @@ The first inequality sets a range of spring index value for standard helical spr
   Repeating the same procedure for the seat spring, setting the same safety measures and choosing $d$ = 5 mm.
 
   \begin{align*}
-    \alpha &= \frac{\tau_{allow}}{N_s} = \frac{0.45}{1.25}\frac{2005}{5^{0.168}} \times 10^6 = 550\text{ MPa} \\ 
+    \alpha &= \frac{\tau_{allow}}{N_s} = \frac{0.45}{1.25}\frac{2005}{5^{0.168}} = 550\text{ MPa} \\ 
     \beta &= \frac{8(1 + \xi )F_{\max}}{\pi d^2} = \frac{8(1 + 0.15)700}{\pi (5 \times 10^{-3})^2} = 82\text{ MPa}
   \end{align*}
   \begin{align*}
@@ -5605,7 +5605,7 @@ First, we need to find the maximum load in the front and rear suspension. Use st
   We perform the same calculation for the rear springs. Pick $d$ = 13 mm since the maximum force is slightly smaller than the front springs.
 
    \begin{align*}
-     \alpha &= \frac{\tau_{allow}}{N_s} = \frac{0.5}{1.25}\frac{2005}{13^{0.168}} \times 10^6 = 521 \text{ MPa} \\ 
+     \alpha &= \frac{\tau_{allow}}{N_s} = \frac{0.5}{1.25}\frac{2005}{13^{0.168}} = 521 \text{ MPa} \\ 
     \beta &= \frac{8(1 + \xi)F_{\max}}{\pi d^2} = \frac{8(1 + 0.15)3434}{\pi (13 \times 10^{-3})^2} = 59.5 \text{ MPa}
   \end{align*}
   \begin{align*}
