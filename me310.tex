@@ -4824,6 +4824,8 @@ This interaction method is often specified in design codes for steel, aluminum, 
 
   A gantry crane with a 4-m long horizontal beam is fixed on each end at the top of two 3-m long columns. The crane is supposed to support a maximum weight of 10 ton. Determine the proper section to use. Refer to S-shaped steel from \cref{appendix: structural steel properties}.
 
+\end{example} 
+\begin{solution}
   \begin{pycode}
     F = 100000
     L = 4
@@ -4852,7 +4854,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
   \end{pycode}
 
   In this example, the proper section will give the sum of stress ratios closest to but less than 1, which is S310 x 74.
-\end{example}
+\end{solution}
 \begin{example} Design of a luffing crane
   
   A crane is a type of machine mainly used to lift, lower, and horizontally move heavy objects. It is immensely useful in construction works. In this problem, we will be analyzing a type of crane called a \emph{luffing crane}.
@@ -4860,7 +4862,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
   \begin{figure}[H]
     \centering
     \includegraphics[scale=0.6]{pictures/Simple-load-bearing/tower-crane2}
-    \caption{A typical luffing crane. Modified from \cite{monokloncrane}}
+    \caption{A typical luffing crane. Modified from \cite{monokloncrane}.}
     \label{tower crane}
   \end{figure}
   
@@ -6285,6 +6287,7 @@ The corresponding shear stresses for fillet welds under axial or shear loading i
 Throat length $H$ should be reasonably proportioned in comparison to the thickness of plates being welded. For practical reasons, $H$ is usually a minimum of 3 mm for plate less than 6 mm thick, and up to a minimum of 15 mm for plates over 150 mm thick. It is also important to note that fillet welds are typically done in pairs to maintain symmetry and avoid any resultant moments, in which case the effective weld area doubles.
 
 \section{Welded Joints under Static Torsional and Bending Loading}
+\label{section: weld joints under torsion and bending}
 
 External loading can cause torsional or bending to welded joints when the loads do not pass through the centroid of the welds—also called eccentric loading. If the load is in the plane of the weld group, the welded connection will be subjected to torsion, and if the load is out of plane of the weld group, it will cause bending. Note that there usually are direct loading to the welds caused by these loads as considered in the previous section.
 
@@ -6657,7 +6660,7 @@ There may arise situations where weld joints need not, or cannot, be symmetrical
 
   The resultant shear stress at $C$ is larger, hence $C$ is the critical point. So the safety factor of this weld is
   \begin{align*}  
-    N_s &= \frac{427}{135} = 3.12
+    N_s &= \frac{427}{137} = 3.11
   \end{align*}
 \end{solution}
 
@@ -7617,15 +7620,27 @@ In applications where there is a bending moment applied on a bolted joint, we ma
 \begin{figure}[h]
   \centering
   \begin{tikzpicture}
-    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
+    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
     \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
     \draw (wall.north east) -- (wall.south east);
-    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0]{};
-    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0]{};
+    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
+    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
+    \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
+    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$P$};
+    \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
   \end{tikzpicture}
   \caption{A typical bolted joint under a bending load.}
   \label{fig: bolted joint under bending}
 \end{figure}
+
+The additional resultant support forces the bolt(s) must provide to resist the moment can be calculated similar to those derived in \cref{section: weld joints under torsion and bending} for welded joints, namely to translate the loads to the centroid of the bolts. In the referred figure, we can see that the bending moment from force $P$ is $PL$, and that the centroid of the bolts in the middle between the two bolts. We can then find the response of the bolt to the exerted moment using the following expressions.
+
+\begin{align}
+  \label{eq: bolted stress under bending}
+  \sigma = \frac{My}{I}
+\end{align}
+
+where $y$ is the bolt distance from the centroid and $I$ is the moment of inertia of the bolts.
 
 \section{Bolt Selection for Fatigue Loading}
 
