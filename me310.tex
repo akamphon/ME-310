@@ -4838,7 +4838,8 @@ This interaction method is often specified in design codes for steel, aluminum, 
   The bending moment caused by the midpoint load is $FL/8$ = \py{int(M)} N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.
 
   \begin{pycode}
-    print(r'\begin{center}')
+    print(r'\begin{table}[H]')
+    print(r'\centering')
     print(r'\begin{tabular}{lccc}')
     print(r'\toprule')
     print(r'Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a}{(\sigma_a)_{allow}} + \dfrac{\sigma_b}{(\sigma_b)_{allow}}$ \\')
@@ -4847,7 +4848,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
         print(r'%s & %.2f & %.2f & %.2f \\' %(designation[i],F/Area[i]/10**6,M/S[i]/10**6,(F/Area[i] + M/S[i])/sigmaallow))
     print(r'\bottomrule')
     print(r'\end{tabular}')
-    print(r'\end{center}')
+    print(r'\end{table}')
   \end{pycode}
 
   In this example, the proper section will give the sum of stress ratios closest to but less than 1, which is S310 x 74.
@@ -4954,7 +4955,8 @@ This chapter discusses the design criteria for simple load-bearing members—nam
     \begin{tikzpicture}
       \node[draw, rectangle, fill=SkyBlue, minimum height=7cm, minimum width=0.5cm](A){};
       \draw[<-] (A.north) -- ++(90:1) node[above]{$P = 50000$ N};
-      \node at (A.south) [anchor=north, rectangle, pattern=north east lines, minimum height=1cm, minimum width=2cm]{};
+      \node at (A.south) [anchor=north, rectangle, pattern=north east lines, minimum height=1cm, minimum width=2cm](ground){};
+      \draw (ground.north west) -- (ground.north east);
       \draw[fill=SkyBlue] (2,0) rectangle ++(1,1) node[midway]{$a \times a$};
     \end{tikzpicture}
   \end{figure}
@@ -4965,6 +4967,7 @@ This chapter discusses the design criteria for simple load-bearing members—nam
     \centering
     \begin{tikzpicture}
       \node[pattern=north west lines, minimum height=1.5cm, minimum width=1cm](wall){};
+      \draw (wall.north east) -- (wall.south east);
       \node at (wall.east) [anchor=west, draw, fill=SkyBlue, minimum height=2.5mm, minimum width=6cm](board){};
       \node at (board.north east) [anchor=south, draw, fill=Grey, minimum height=1cm, minimum width=5mm](person){}; 
       \node at (person.west) [left]{150 kg};
@@ -6535,7 +6538,7 @@ Given that the centroid of the weld group is at (0,0), and that  the weld cross 
 
 \section{Asymmetric Welded Joints}
 
-There may arise situations where weld joints need not, or cannot, be symmetrical. This is mostly due to the geometry of the joining parts. In such cases, the same methodology applied to design of symmetrical joints is still applicable, but we must be cautious and do not assume any symmetry in the direction or magnitude of a stress or load. Since the welds are not symmetric, the center of weld will likely not be in the ``middle.'' As such, critical point analysis must be done more carefully.
+There may arise situations where weld joints need not, or cannot, be symmetrical. This is mostly due to the geometry of the joining parts. In such cases, the same methodology applied to design of symmetrical joints is still applicable, but we must be cautious and do not assume any symmetry in the direction or magnitude of a stress or load. Since the welds are not symmetric, the center of weld will likely not be in the ``middle.'' As such, critical point analysis must be done more carefully. Consider the following example to understand the added complications of determining the actual critical point.
 
 \begin{example}
   The weld dimensions and load are given in the figure.
@@ -8790,7 +8793,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \chapter{Solutions to Selected Exercises}
 
-\section{Chapter 1}
+\section{Introduction to Engineering Design}
 
 \begin{evensolution}
   
@@ -8812,7 +8815,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   
 \end{evensolution}
 
-\section{Chapter 2}
+\section{Materials Selection}
 
 \begin{evensolution}
 \item Steel-reinforced concrete is very strong because steel and concrete are strong in opposite directions. Steel wire is strong under tension, and relatively weak under compression (due to buckling). Concrete is brittle and is strong under compression, but weak under tension. When combined, steel-reinforced concrete is strong both under tension and compression.
@@ -8828,7 +8831,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   Let us choose the following materials to represent each qualified categories:
 \end{evensolution}
 
-\section{Chapter 3}
+\section{Review of Mechanics of Materials}
 
 \begin{evensolution}
 
@@ -8918,7 +8921,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \end{align*}
 \end{evensolution}
 
-\section{Chapter 4}
+\section{Introduction to Theories of Failure}
 
 \begin{evensolution}
 \item In this condition, since the column is pin-supported at the ends and
@@ -8965,10 +8968,12 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \end{align*}
 \end{evensolution} 
 
-\section{Chapter 5}
+\section{Design of Simple Machine Elements}
 
 \begin{evensolution}
-\item We first need to determine the maximum bending moment and resulting bending stress. In this case, the maximum bending moment happens at the right leg, which is 1 m from the end of the board. Hence,
+\item We first need to determine the maximum bending moment and resulting
+  bending stress. In this case, the maximum bending moment happens at the right
+  leg, which is 1 m from the end of the board. Hence,
 
   \begin{align*}
     M_{\max} &= 150 \times 10 \times 2 = 3000 \text{ N-m} \\
@@ -8976,7 +8981,9 @@ However, powerful though an FEA program may be, it is still far from all-knowing
              &= \frac{36000}{h^2}
   \end{align*}
 
-  Now we can tackle the problems. The critical point is on the top part of the beam where there is only bending stress along its length. Under static loading, the design equation for the thickness of the beam is
+  Now we can tackle the problems. The critical point is on the top part of the
+  beam where there is only bending stress along its length. Under static
+  loading, the design equation for the thickness of the beam is
 
   \begin{align*}
     \sigma_e = \sigma_b &= S_y \\
@@ -8984,14 +8991,21 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     h &= 9.5 \times 10^{-3}
   \end{align*}
 
-  For impact loading, we need to use conservation of energy to determine the response of the beam. The energy of the system before the impact and right at the moment of impact must be the same. Before the impact, the energy consists purely of gravitational potential energy.
+  For impact loading, we need to use conservation of energy to determine the
+  response of the beam. The energy of the system before the impact and right at
+  the moment of impact must be the same. Before the impact, the energy consists
+  purely of gravitational potential energy.
 
   \begin{align*}
     E_{before} &= mg(H+\delta) = 150(10)(0.5+\delta) \\
                &= 750 + 1500 \delta
   \end{align*}
 
-  At the maximum deflection where the mass's velocity is zero and all its kinetic energy transferred to the strain energy in the beam. To do that, we must first derive the bending moment function along the length of the board. Assume that the maximum force exerted by the beam is $F_{\max}$ right when the beam is at maximum deflection, we will have that
+  At the maximum deflection where the mass's velocity is zero and all its
+  kinetic energy transferred to the strain energy in the beam. To do that, we
+  must first derive the bending moment function along the length of the board.
+  Assume that the maximum force exerted by the beam is $F_{\max}$ right when the
+  beam is at maximum deflection, we will have that
 
   \begin{align*}
     M(x) &= -F_{\max}(2 - x)
@@ -9005,13 +9019,15 @@ However, powerful though an FEA program may be, it is still far from all-knowing
               &=  \frac{4F_{\max}^2}{3EI}
   \end{align*}
 
-  We can express the maximum deflection $\delta$ using the force exerted at the end of the beam $F_{\max}$ using the formula proven in \ref{subsub: energy method}.
+  We can express the maximum deflection $\delta$ using the force exerted at the
+  end of the beam $F_{\max}$ using the formula proven in \ref{subsub: energy
+    method}.
 
   \begin{align*}
     \delta = \frac{F_{\max}L^3}{3EI}
   \end{align*}
 
-  Setting $E_{before} = E_{after}$ we can solve for the maximum force. 
+  Setting $E_{before} = E_{after}$ we can solve for the maximum force.
 
   \begin{align*}
     750 + 1500\delta = \frac{4F_{\max}^2}{3EI}
@@ -9032,7 +9048,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     F_{\max} = \frac{12000 + \sqrt{ (12000)^2 + 4(4)(1.97 \times 10^{13}h^3)}}{8}
   \end{align*}
 
-  The stress in a cantilever beam with end load is 
+  The stress in a cantilever beam with end load is
 
   \begin{align*}
     \sigma &= \frac{My}{I} = \frac{6F_{\max}L}{bh^2} \\
@@ -9045,14 +9061,18 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     h = 0.0249 \text{ m} = 2.49 \text{ cm}
   \end{align*}
 
-  For the final part, if the load is repeated, the deflection and stress would remain the same. We simply have to determine failure using a fatigue failure criterion (Soderberg in this case). The maximum stress is simply the stress found earlier for impact loading. The minimum stress is when the diver jumped off the board, hence no load on the board. That leaves us with
+  For the final part, if the load is repeated, the deflection and stress would
+  remain the same. We simply have to determine failure using a fatigue failure
+  criterion (Soderberg in this case). The maximum stress is simply the stress
+  found earlier for impact loading. The minimum stress is when the diver jumped
+  off the board, hence no load on the board. That leaves us with
 
   \begin{align*}
     \sigma_{\max} &= \frac{6F_{\max}(2)}{0.5h^2} = \frac{24F_{\max}}{h^2} \\
     \sigma_{\min} &= 0
   \end{align*}
 
-  The stress amplitude and average stress are  
+  The stress amplitude and average stress are
 
   \begin{align*}
     \sigma_a = \frac{\sigma_{\max} - \sigma_{\min}}{2} = \frac{12F_{\max}}{h^2} \\
@@ -9066,42 +9086,62 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     \frac{\dfrac{12F_{\max}}{h^2}}{0.5(600 \times 10^6)} + \frac{\dfrac{12F_{\max}}{h^2}}{400 \times 10^6} = 1 \\
   \end{align*}
 
-  Solving for $h$, we have 
+  Solving for $h$, we have
 
   \begin{align*}
     h = 0.031 \text{ m} = 3.1 \text{ cm}
   \end{align*}
 
-\item  
+\item
 
-  If a pedestrian is standing on the bridge, the plank will be under a bending load. And depending on the location of the bridge, the rail will be under a bending load (if standing in the middle) or no load at all (if standing at either ends). The columns will simply be under compressive load from the weight.
+  If a pedestrian is standing on the bridge, the plank will be under a bending
+  load. And depending on the location of the bridge, the rail will be under a
+  bending load (if standing in the middle) or no load at all (if standing at
+  either ends). The columns will simply be under compressive load from the
+  weight.
 
-  The free body diagram part is a little tricky because the maximum load applied to each component happens when the pedestrian stands on different locations on the bridge. For the column, the maximum compressive load happends when the pedestrian is standing right on top of the column, hence the 2000-N compressive load. On the rail, the maximum bending moment happens when the pedestrian is standing right on the rail in the middle of its length, resulting in downward force in the middle of 2000 N. The support upward force at the left and right ends of the rail would be equal to 1000 N due to symmetry. Finally, the maximum load on the plank also happens when there is a pedestrian is standing in the middle of its length, giving the downward force of 2000 N and resulting in 1000-N support forces from each end.
+  The free body diagram part is a little tricky because the maximum load applied
+  to each component happens when the pedestrian stands on different locations on
+  the bridge. For the column, the maximum compressive load happends when the
+  pedestrian is standing right on top of the column, hence the 2000-N
+  compressive load. On the rail, the maximum bending moment happens when the
+  pedestrian is standing right on the rail in the middle of its length,
+  resulting in downward force in the middle of 2000 N. The support upward force
+  at the left and right ends of the rail would be equal to 1000 N due to
+  symmetry. Finally, the maximum load on the plank also happens when there is a
+  pedestrian is standing in the middle of its length, giving the downward force
+  of 2000 N and resulting in 1000-N support forces from each end.
 
-  The column is under compressive load, so we need to determine possible failure from crushing (stress exceeding $S_{ut}$) and buckling. Assume that the beam will fail due to buckling, the design equation for buckling gives us that
+  The column is under compressive load, so we need to determine possible failure
+  from crushing (stress exceeding $S_{ut}$) and buckling. Assume that the beam
+  will fail due to buckling, the design equation for buckling gives us that
 
   \begin{align*}
     P_{cr} &= N_s P = 10 \times 10000 = \frac{\pi^2 (10 \times 10^9) (\pi/4)R^4}{(2 \times 3)^2} \\
     R &= 0.0826 \text{ m} = 8.26 \text{ cm}
   \end{align*}
 
-  To double check if our assumption about buckling is right. Calculate the slenderness ratio $\lambda$ and compare with the critical value $\lambda_c$
+  To double check if our assumption about buckling is right. Calculate the
+  slenderness ratio $\lambda$ and compare with the critical value $\lambda_c$
 
   \begin{align*}
     \lambda &= \frac{KL}{r_g} = \frac{2(3)}{0.5(0.0826)} \\
             &= 145
   \end{align*}
 
-  The critical slenderness ratio is 
+  The critical slenderness ratio is
 
   \begin{align*}
     \lambda_c &= \sqrt{\frac{\pi^2 E}{S_{uc}}} \\
               &= 40.6
   \end{align*}
 
-  Since $\lambda < \lambda_c$, the failure mode of the beam is buckling, confirming our assumption.
+  Since $\lambda < \lambda_c$, the failure mode of the beam is buckling,
+  confirming our assumption.
 
-  The rail and plank designs are much more straightforward; they are under bending. The only mode of failure is through fracture. For the rail, the design equation is 
+  The rail and plank designs are much more straightforward; they are under
+  bending. The only mode of failure is through fracture. For the rail, the
+  design equation is
 
   \begin{align*}
     N_s = \frac{S_y}{\dfrac{My}{I}} \\
@@ -9117,7 +9157,9 @@ However, powerful though an FEA program may be, it is still far from all-knowing
     R = 0.159 \text{ m}
   \end{align*}
 
-  Finally, to take into account fatigue failure, the maximum stress once again happens when the child jumps on the middle of the plank. The maximum and minimum stresses are
+  Finally, to take into account fatigue failure, the maximum stress once again
+  happens when the child jumps on the middle of the plank. The maximum and
+  minimum stresses are
 
   \begin{align*}
     \sigma_{\max} &= \frac{1500(2)(6)}{4a^3} = \frac{4500}{a^3} \\
@@ -9134,7 +9176,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   
 \end{evensolution}
 
-\section{Chapter 6}
+\section{Design of Mechanical Springs}
 
 \begin{evensolution}
 \item First we need to determine the spring constant. The spring energy must be equal to the kinetic energy in the dart.
@@ -9196,7 +9238,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \end{evensolution}
 
-\section{Chapter 7}
+\section{Design of Welded Joints}
 
 \begin{evensolution}
 \item In this problem we have two conditions for failure: 1) the board is broken and 2) the welds failed. All we need to do is determine the maximum loads allowed on each component; the smaller of the two is our final answer.
@@ -9239,7 +9281,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   This shows that the beam would break before then weld, hence the maximum allowable load is 6250 N.
 \end{evensolution}
 
-\section{Chapter 8}
+\section{Design of Bolted Joints}
 
 \begin{evensolution}
 \item We need to determine the load carried by the front and rear wheels and their respective forks.
@@ -9275,7 +9317,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   
 \end{evensolution}
 
-\section{Chapter 9}
+\section{Machine Component Interrelationship}
 
 \begin{evensolution}
 \item Since there are two identical springs connected in parallel, the loads are shared evenly. The maximum force on each spring then would be 1000/2 = 500 N. And for every 100/2 = 50 N, the indicator should be 2 cm apart, telling us that the spring constant $k$ should be 50/0.02 = 2500 N/m.
@@ -9338,7 +9380,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \end{evensolution}
 
-\section{Chapter 10}
+\section{Introduction to Finite Element Method}
 
 \begin{evensolution}
 \item With increasing thickness of the beam, the errors between the theory and Solidworks simulation should increase. Beam bending theory assumes that there is only pure bending with no shear deformation in the beams. This assumption is accurate when the beam is long and thin, but as the thickness increases, so do the errors from the omitted shear deformation.
