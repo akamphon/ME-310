@@ -7626,21 +7626,71 @@ In applications where there is a bending moment applied on a bolted joint, we ma
     \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
     \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
     \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
-    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$P$};
+    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
     \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
+    \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
   \end{tikzpicture}
   \caption{A typical bolted joint under a bending load.}
   \label{fig: bolted joint under bending}
 \end{figure}
 
-The additional resultant support forces the bolt(s) must provide to resist the moment can be calculated similar to those derived in \cref{section: weld joints under torsion and bending} for welded joints, namely to translate the loads to the centroid of the bolts. In the referred figure, we can see that the bending moment from force $P$ is $PL$, and that the centroid of the bolts in the middle between the two bolts. We can then find the response of the bolt to the exerted moment using the following expressions.
+The additional resultant support forces the bolt(s) must provide to resist the moment can be calculated similar to those derived in \cref{section: weld joints under torsion and bending} for welded joints, namely to translate the loads to the centroid of the bolts. In the referred figure, we can see that the bending moment from force $F$ is $FL$, and that the centroid of the bolts in the middle between the two bolts. We can then find the resultant axial force $P$ of the bolt to the exerted moment using the following expressions.
 
 \begin{align}
   \label{eq: bolted stress under bending}
-  \sigma = \frac{My}{I}
+  \sigma = \frac{My}{I} \\
+  P = \frac{My}{I} A
 \end{align}
 
-where $y$ is the bolt distance from the centroid and $I$ is the moment of inertia of the bolts.
+where $y$ is the bolt distance from the centroid, $I$ is the moment of inertia, and $A$ is the cross-sectional area of the bolts. We need to be mindful about the direction of the stresses, depending on the direction of the moment. In \cref{fig: bolted joint under bending}, the top bolt would be under additional tension and the bottom compression from the exerted moment. 
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
+    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
+    \draw (wall.north east) -- (wall.south east);
+    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
+    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
+    % \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
+    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
+    % \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
+    % \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
+    \draw [dashdotted] (wall.west) ++ (-90:0.2) ++ (180:0.5) --++ (0:1.5) node[right]{centroid};
+    \draw [->] (top.east) --++ (0:0.5) node[right]{$\sigma$};
+    \draw [->] (top.west) --++ (180:0.5);
+    \draw [<-] (bottom.east) --++ (0:0.5) node[right]{$\sigma$};
+    \draw [<-] (bottom.west) --++ (180:0.5);
+  \end{tikzpicture}
+  \caption{Bolt resultant stresses from exerted moment.}
+  \label{fig: bolted joint under bending}
+\end{figure}
+
+The moment of inertia $I$ of a group of bolts about a centroid can be calculated by summing all the individual moments of inertia about that centroid $I_i$.
+
+\begin{align}
+  \label{eq: moment of inertia of bolts}
+  I &= \sum I_i \\
+  I_i &= I_{ci} + A_ir_i^2 = \frac{\pi}{64}r_i^4 + \frac{\pi}{4}d_i^2 r_i^2
+\end{align}
+
+where $A_i, d_i,$ and $r_i$ are the cross-sectional area, bolt diameter, and distance from the centroid of bolt $i$. In most bolt patterns, the centroidal moment of inertia $I_{ci}$ is much smaller than the $A_ir_i^2$, thus, the equation can be simplified to.
+
+\begin{align}
+  I_i = \frac{\pi}{4}d_i^2 r_i^2
+\end{align}
+
+If the bolts are identical, the equation for moments of inertia and resultant forces reduce to
+
+\begin{align}
+  \label{eq: reduced bolts under bending}
+  I &= n I_i \\
+  P &= M
+\end{align}
+
+\subsection{Bolted Joints under Torsion}
+
+
 
 \section{Bolt Selection for Fatigue Loading}
 

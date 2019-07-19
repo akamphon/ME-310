@@ -233,6 +233,8 @@
     "example: static flange joint bolt sizing"
     "fig: bolted joint under bending"
     "eq: bolted stress under bending"
+    "eq: moment of inertia of bolts"
+    "eq: reduced bolts under bending"
     "table: fatigue limit bolt"
     "table: fatigue stress concentration bolt"
     "exercise: bolt for bicycle fork"
