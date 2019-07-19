@@ -3288,6 +3288,7 @@ For design equations, the failure condition under MSST with safety factor $N_s$ 
 \end{solution}
 
 \subsection{Maximum distortion energy theory (Von Mises criteria)}
+\label{sub: mdet}
 
 We know that when a material deforms by an external loading, it stores energy internally throughout its volume. The energy per unit volume of material is called the strain-energy density, and if the material is subjected to a uniaxial stress, the strain energy density can be written as
 
@@ -4822,7 +4823,7 @@ This interaction method is often specified in design codes for steel, aluminum, 
 
 \begin{example} Design of a gantry crane column
 
-  A gantry crane with a 4-m long horizontal beam is fixed on each end at the top of two 3-m long columns. The crane is supposed to support a maximum weight of 10 ton. Determine the proper section to use. Refer to S-shaped steel from \cref{appendix: structural steel properties}.
+  A gantry crane with a 4-m long horizontal beam is fixed on each end at the top of two 3-m long columns. The crane is supposed to support a maximum weight of 10 ton. Determine the proper section to use so that the safety factor is 3. Refer to S-shaped steel from \cref{appendix: structural steel properties}. Assume that structural steel has $S_y$ of 300 MPa.
 
 \end{example} 
 \begin{solution}
@@ -4837,17 +4838,34 @@ This interaction method is often specified in design codes for steel, aluminum, 
     S = [3260 * 10**-6, 2700 * 10**-6, 1690*10**-6, 1060*10**-6, 829*10**-6, 482*10**-6]
   \end{pycode}
 
-  The bending moment caused by the midpoint load is $FL/8$ = \py{int(M)} N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}.
+  The column will be under two simultaneous loads: compression from the weight and bending moment from the fixed support. The compression is equal to half of the maximum weight = 10/2 = 5 ton = 50000 N. The bending moment caused by the midpoint load is $FL/8$ = \py{int(M)} N-m. Refering to the S-shaped steel, we can generate results using interaction formula \cref{eqn: interaction formula}. The axial and bending stresses can be calculated by
+
+  \begin{align*}
+    \sigma_a &= \frac{F}{A} \\
+    \sigma_b &= \frac{My}{I} = \frac{M}{S}
+  \end{align*}
+
+  For structural steels, a ductile material, the allowable axial and bending stresses are identical. Using the maximum distortion energy theory in \cref{sub: mdet}, the allowable stress, taking the safety factor into account, is
+
+  \begin{align*}
+    \sigma_{allow} &= \frac{S_y}{N_s} \\
+                   &= \py{sigmaallow/1000000} \text{ MPa}
+  \end{align*}
+  and so the interaction formula reduces to
+
+  \begin{align*}
+    \frac{\sigma_a + \sigma_b}{\sigma_{allow}} \leqslant 1
+  \end{align*}
 
   \begin{pycode}
     print(r'\begin{table}[H]')
     print(r'\centering')
     print(r'\begin{tabular}{lccc}')
     print(r'\toprule')
-    print(r'Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a}{(\sigma_a)_{allow}} + \dfrac{\sigma_b}{(\sigma_b)_{allow}}$ \\')
+    print(r'Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a + \sigma_b}{\sigma_{allow}}$ \\')
     print('\midrule')
     for i in range(6):
-        print(r'%s & %.2f & %.2f & %.2f \\' %(designation[i],F/Area[i]/10**6,M/S[i]/10**6,(F/Area[i] + M/S[i])/sigmaallow))
+        print(r'%s & %.2f & %.2f & %.2f \\' %(designation[i],F/2/Area[i]/10**6,M/S[i]/10**6,(F/2/Area[i] + M/S[i])/sigmaallow))
     print(r'\bottomrule')
     print(r'\end{tabular}')
     print(r'\end{table}')
