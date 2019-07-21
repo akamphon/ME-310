@@ -3540,7 +3540,7 @@ The failure condition diagram for the theory is illustrated in \cref{fig: MCM sa
 With an exception of a few, most ductile materials have the same tensile and compressive yield strengths. Therefore, \emph{maximum distortion energy theory} should be applicable. It is also more convenient than other maximum shear stress theory in that one mathematical expression applies to all states of stress regardless of the signs of the principal stresses.
 For brittle materials, \emph{modified Coulomb-Mohr theory} shows the best fit to most experimental results and should be applied.
 
-\section{Fatigue}
+\section{Fatigue} \label{sec: fatigue}
 
 Fatigue has been defined as “the progressive localized permanent structural change that occurs in a material subjected to repeated or fluctuating strains at stresses having a maximum value less than the tensile strength of the material” (ASM, 1975). Fracture of a structural member as a result of repeated cycles of load or fluctuating loads in commonly referred to as a fatigue fracture or fatigue failure. The corresponding number of load cycles or the time during which the member is subjected to these loads before fracture occurs is referred to as the fatigue life.
 
@@ -7158,20 +7158,21 @@ Bolts are typically used to hold parts together in opposition to forces pulling 
 
 Upon tightening, the bolt starts to exert compressive load on the clamped parts, and in the process the clamped parts exert tensile load on the bolt. After initial tightening, the bolt is going to be in under a tensile load $F_i$ while the clamped parts are under an equal compressive load. This load $F_i$ is called the \emph{preload}.
 
-In an event where there is an external axial load applied to the joint, both the bolt and the clamped parts undergo axial deformation depending on the load distributed between the two. One method of analyzing load distribution in a bolted joint is to consider it as a compound bar. Similar to a bolted joint, a compound bar is made of multiple materials connected together in parallel, undergoing identical longitudinal deformation. Recalling the formula for load distribution in a 2-member compound bar, we have
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=0.8]
+    \draw [->] (0,0) node(A){} node[below right]{bolt extension $\rightarrow$} --++ (90:6) node[above]{$F_b$};
+    \draw (0,0) --++ (0:10);
+    \draw [->, xshift=10cm] (0,0) node(B){} node[below left]{$\leftarrow$ joint compression} --++ (90:6) node[above]{$F_j$};
+    \draw [SkyBlue!50!Blue, very thick](A.center) --++ (30:8) node(C){} node(F)[above, black,yshift=0.5cm]{$P=0$} node[midway, above, rotate=30]{bolt} -- (B.center) node[midway, above, rotate=-60]{joint};
+    \draw [dashed] (C) -- ++ (180:7) node[left]{$F_i$};
+    \draw [->] (C) -- (F);
+  \end{tikzpicture}
+  \caption{Forces in bolt and clamped parts in a bolted joint assembly.}
+  \label{fig: bolt-joint interaction}
+\end{figure}
 
-\begin{equation} \label{eqn: 2-member compound bar}
-  P_i = P_{ext}\frac{\dfrac{E_iA_i}{L_i}}{\dfrac{E_1A_1}{L_1} + \dfrac{E_2A_2}{L_2}}
-\end{equation}
-
-where $P_i$ is the load distributed in the ith member of the bar and $P$ is the axial load applied on the compound bar. Looking back at Hooke’s law, the term $EA/L$ in fact represents the stiffness in axially loaded member, for example,
-
-\[\begin{gathered}
-  \delta  = \frac{FL}{AE} = \frac{F}{k} \hfill \\
-  k = \frac{EA}{L} \hfill \\ 
-\end{gathered} \]
-
-Rewriting \cref{eqn: 2-member compound bar} using stiffnesses of the bolt $k_b$ and of the clamped parts $k_j$, the new expression becomes
+\Cref{fig: bolt-joint interaction} graphically represents the bolt-clamped-parts interaction. When there is no external load ($P$ = 0), the bolt and the clamped parts carry equal and opposite load $F_i$. The slopes represent the stiffnesses of the bolt and the joint and will have a significant impact on how the bolted joint distribute loads between the bolt and the clamped parts, as will be discussed in \cref{sec: bolt for static loading}.
 
 \begin{figure}[h]
   \centering
@@ -7193,36 +7194,7 @@ Rewriting \cref{eqn: 2-member compound bar} using stiffnesses of the bolt $k_b$ 
   \caption[Stiffness representation of a bolted joint]{A bolted joint stiffness represented by two springs in parallel. The inner coil represents the bolt stiffness, while the other represents the clamped part stiffness.}
 \end{figure}
 
-\begin{equation}
-  P_b = P\frac{k_b}{k_b + k_j}
-\end{equation}
-
-This shows that the amount of external load distributed in the bolt and clamped parts depends on their stiffness. The total loads carried in the bolt and clamped parts are simply
-
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}[scale=0.8]
-    \draw [->] (0,0) node(A){} node[below right]{bolt extension $\rightarrow$} --++ (90:6) node[above]{$F_b$};
-    \draw (0,0) --++ (0:10);
-    \draw [->, xshift=10cm] (0,0) node(B){} node[below left]{$\leftarrow$ joint compression} --++ (90:6) node[above]{$F_j$};
-    \draw [SkyBlue!50!Blue, very thick](A.center) --++ (30:8) node(C){} node(F)[above, black,yshift=0.5cm]{$P=0$} -- (B.center);
-    \draw [SkyBlue!50!Blue, dashed] (C.center) --++ (30:1.5) node(D){} --++ (-90:2.3) node(E){};
-    \draw [|<->|] (D.east) -- (E.east) node[midway, right]{$P>0$};
-    \draw [dashed] (C) -- ++ (180:7) node[left]{$F_i$};
-    \draw [->] (C) -- (F);
-  \end{tikzpicture}
-  \caption{Forces in bolt and clamped parts with and without external applied force $P$.}
-  \label{fig: bolt-joint interaction}
-\end{figure}
-
-\begin{align} \label{eqn: bolt-joint interaction}
-  F_b &= P_b + F_i = CP + F_i \\
-  F_j &= (1 - C)P - F_i
-\end{align}
-
-where $C = k_b/(k_b + k_j)$.
-
-\Cref{fig: bolt-joint interaction} graphically represents the bolt-clamped-parts interaction. When there is no external load ($P$ = 0), there bolt and the clamped parts carry equal and opposite load $F_i$. When there is external load, the fraction of the load distributed depend on their stiffnesses and simply add (or subtract) from the original preload $F_i$.
+The total stiffness of a bolted joint can simply be represented as two springs conneted in parallel. Each spring represents the stiffness of the bolt $k_b$ and the clamped parts or joint $k_j$. The total stiffness is simply the sum of the two $k = k_b + k_j$.
 
 \subsection{Bolt Stiffness}
 
@@ -7348,39 +7320,342 @@ In many bolted joints, the two (or more) clamped parts are made of the same mate
 \end{solution}
 
 
-\section{Bolt Selection for Static Loading}
+\section{Bolt Selection for Static Loading} \label{sec: bolt for static loading}
 
 The primary loading applied to bolts is tensile, shear, or a combination of the two. There may be some bending when the clamped parts are not parallel or not perpendicular to the bolt axis. Before considering more sophisticated examples, it is important to recognize that screws and bolts are sometimes chosen arbitrarily. This is true for most noncritical applications where loads are small in which case bolt size selection is simply a matter of judgment and ease of assembly.
 
-\subsection{Tension Joints}
+Our tasks therefore is first to determine the total external axial and shear forces on the bolt(s). When that is done, determine the required bolt size to resist those external forces. The direction of the loads are defined with respect to the axis of the bolt in consideration. 
+
+\subsection{Axial Load}
 
 The primary application of bolted joints is to exert compressive load on clamped parts, thus preventing them from coming apart under external tensile loads. In tension joints, the preload in the bolts directly combat the external tensile loads.
 
-From the bolt-joint stiffness interaction \cref{eqn: bolt-joint interaction}, it is clear that preload plays a crucial role in maintaining the integrity of a bolted joint. By keeping the clamped parts intact, the bolted joint distribute a small fraction of external load to the bolt, while the main bulk of the load is carried by the clamped parts. If ever the clamping force in the clamped parts become positive (no longer compressive), the joint would separate. The bolt will have to carry the entire external load, which usually breaks the bolt.
 
-With that understanding, the required clamping force (and thus bolt size) when an external tensile load $P$ is applied can be determined by making sure that the clamping force remains compressive (less than zero) with the applied external load. Let us explore the external force that leads to zero clamping load.
+In an event where there is an external axial load applied to the joint, both the bolt and the clamped parts undergo axial deformation depending on the load distributed between the two. One method of analyzing load distribution in a bolted joint is to consider it as a compound bar. Similar to a bolted joint, a compound bar is made of multiple materials connected together in parallel, undergoing identical longitudinal deformation. Recalling the formula for load distribution in a 2-member compound bar, we have
 
-\[\begin{gathered}
-  F_j = 0 = (1 - C)P - F_i \\ 
-  P = \frac{F_i}{1 - C} \\ 
-\end{gathered} \]
-
-For non-permanent joints, the general guideline is that the preload should approximately be 75\% of the bolt’s proof load.
-
-\[P = \frac{0.75F_p}{1 - C} = \frac{0.75S_pA_t}{1 - C}\]
-
-For general bolt joint designs, it is safe to assume that the stiffness ratio $C$ is close to 0.25
-
-\[\begin{gathered}
-  P = \frac{0.75S_pA_t}{1 - 0.25} = S_pA_t \\ 
-  A_t = \frac{P}{S_p} \\ 
-\end{gathered} \]
-
-For the bolted joint to have a safety factor of $N_s$
-
-\begin{equation} \label{eqn: tension joint bolt sizing}
-  A_t = \frac{N_sP}{S_p}
+\begin{equation} \label{eqn: 2-member compound bar}
+  P_i = P_{ext}\frac{\dfrac{E_iA_i}{L_i}}{\dfrac{E_1A_1}{L_1} + \dfrac{E_2A_2}{L_2}}
 \end{equation}
+
+where $P_i$ is the load distributed in the ith member of the bar and $P$ is the axial load applied on the compound bar. Looking back at Hooke’s law, the term $EA/L$ in fact represents the stiffness in axially loaded member, for example,
+
+\[\begin{gathered}
+  \delta  = \frac{FL}{AE} = \frac{F}{k} \hfill \\
+  k = \frac{EA}{L} \hfill \\ 
+\end{gathered} \]
+
+Rewriting \cref{eqn: 2-member compound bar} using stiffnesses of the bolt $k_b$ and of the clamped parts $k_j$, the new expression becomes
+
+\begin{equation}
+  P_b = P\frac{k_b}{k_b + k_j}
+\end{equation}
+
+This shows that the amount of external load distributed in the bolt and clamped parts depends on their stiffness. The total loads carried in the bolt and clamped parts are simply
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[scale=0.8]
+    \draw [->] (0,0) node(A){} node[below right]{bolt extension $\rightarrow$} --++ (90:6) node[above]{$F_b$};
+    \draw (0,0) --++ (0:10);
+    \draw [->, xshift=10cm] (0,0) node(B){} node[below left]{$\leftarrow$ joint compression} --++ (90:6) node[above]{$F_j$};
+    \draw [SkyBlue!50!Blue, very thick](A.center) --++ (30:8) node(C){} node(F)[above, black,yshift=0.5cm]{$P=0$} -- (B.center);
+    \draw [SkyBlue!50!Blue, dashed] (C.center) --++ (30:1.5) node(D){} --++ (-90:2.3) node(E){};
+    \draw [|<->|] (D.east) -- (E.east) node[midway, right]{$P>0$};
+    \draw [dashed] (C) -- ++ (180:7) node[left]{$F_i$};
+    \draw [->] (C) -- (F);
+  \end{tikzpicture}
+  \caption{Forces in bolt and clamped parts with and without external applied force $P$.}
+  \label{fig: bolt-joint interaction}
+\end{figure}
+
+\begin{align} \label{eqn: bolt-joint interaction}
+  F_b &= P_b + F_i = CP + F_i \\
+  F_j &= (1 - C)P - F_i
+\end{align}
+
+where $C = k_b/(k_b + k_j)$.
+
+When there is external load, the fraction of the load distributed depend on their stiffnesses and simply add (or subtract) from the original preload $F_i$.
+
+\subsection{Shear Load}
+
+Another application for bolted joints is to prevent clamped parts from sliding apart under shear forces. It is a common misconception that bolted joints can prevent such sliding by the interference of bolts or screws, as in the case of pins. Bolted joints rely friction between the parts to prevent them from sliding. The only contribution bolts makes to friction joints is the preload which increases friction between clamped parts. Therefore, the maximum shear force capacity $P_{shear}$ of a friction joint is
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[>=latex]
+    \draw[decorate,thick,decoration={screw, screw radius=0.65cm, thread amplitude=2pt, thread separation=4pt, head width=2.5cm, head length=0.8cm}] (0,5) -- (0,-1);
+    % clamped members
+    \draw[fill=LightBlue] (-3,0.5) rectangle (-0.8,2.3);
+    \draw[fill=LightBlue, xshift=3.8cm] (-3,0.5) rectangle (-0.8,2.3);
+    \draw[fill=LightGrey] (-3,2.3) rectangle (-0.8,4.2);
+    \draw[fill=LightGrey, xshift=3.8cm] (-3,2.3) rectangle (-0.8,4.2);
+    % nut
+    \draw[fill=Grey!30] (-1.5,0) rectangle (-0.75,0.5);
+    \draw[fill=Grey!30] (0.75,0) rectangle (1.5,0.5);
+    \draw[fill=Grey!50] (-0.75,0) rectangle (0.75,0.5);
+    % forces
+    \draw[->, ultra thick] (-2,2.3) --++ (-90:2) node(A){} node[right]{$F_i$};
+    % \draw[->, ultra thick] (A.west) --++ (90:0.8) node(B){} node[midway,left]{$P(1-C)$};
+    % \draw[<-, ultra thick, Blue]  (B.center) --++ (90:1.2) node[midway,left]{$F_j$};
+    \draw[->, line width=3pt] (-3,3.3) --++ (180:2) node[left]{$P_{shear}$};
+    \draw[->, line width=3pt] (3,1.4) --++ (0:2) node[right]{$P_{shear}$};
+  \end{tikzpicture}
+  \caption{Forces in a typical friction joint.}
+\end{figure}
+
+\[P_{shear} = -\mu F_j\]
+
+where $\mu$ is the coefficient of friction between clamped parts and $F_j$ is the clamping force on the parts. The negative sign is there to correct the sign: friction is generated only when clamping force is compressive ($F_j < 0$), and for later calculation it is more convenient if friction comes out positive.
+
+\begin{align*}
+  P_{shear} &= -\mu F_j = -\mu \left(  - F_i \right) \\
+            &= \mu (0.75S_pA_t)
+\end{align*}
+
+For the friction joint to have a safety factor of $N_s$, the potential friction force generated by the bolted joint must be Ns times the external shear force.
+
+\begin{equation}
+  N_s = \frac{\mu F_j}{P_{shear}} = \frac{0.75\mu S_pA_t}{P_{shear}}
+\end{equation}
+
+Therefore, the required tensile area of the bolt is
+
+\begin{equation}
+  \label{eqn: req bolt area of shear load}
+  A_t = \frac{N_s P_{shear}}{0.75\mu S_p}
+\end{equation}
+
+\begin{example}
+  An bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
+
+  \centering
+  \begin{tikzpicture}
+    \node [draw, rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
+    \node at (A.east) [anchor=west, draw, rectangle, minimum height=1cm, minimum width=0.3cm, fill=lightblue](B){};
+    \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
+    \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
+    \draw [->, ultra thick] (B.south east) --++ (-60:1.5) node[right]{2000 N};
+    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30^{\circ}$};
+  \end{tikzpicture}
+\end{example}
+\begin{solution}
+  In this problem, the load applies both a tensile and shear loads onto the joint. We must consider bolt sizing equations for both tension and friction joints to determine the proper answer.
+
+  Let us first consider the joint as a tension joint, the horizontal component of the 2000-N load is one applying the tensile load. If we pick material SAE grade 4.8 for our bolts, the proper sizing is
+
+  \begin{align*}
+    A_t &= \frac{N_s P}{S_p} \\
+        &= \frac{(2)(2000 \sin 30^{\circ})}{225 \times 10^6} \\
+        &= 8.89 \times 10^{-6} \text{ m}^2 = 8.89 \text{ mm}^2
+  \end{align*}
+
+  Looking back at \cref{table: ISO Screw Dimensions}, this calls for an M5$\times$0.8 bolt.
+
+  Now, let us consider the joint as a friction joint, the vertical component is the shearing load, and the horizontal component is the tensile load, the proper bolt size is
+
+  \begin{align*}
+    A_t &= \frac{\dfrac{N_s P_{shear}}{0.75\mu } + P}{S_p} \\
+        &= \frac{\dfrac{2(2000 \cos 30^{\circ})}{0.75(0.5)} + 2000 \sin 30^{\circ}}{225 \times 10^6} \\
+        &= 4.55 \times 10^{-5} = 45.5 \text{ mm}^2
+  \end{align*}
+
+  The smallest bolt with $A_t$ of at least 45.5 mm$^2$ is M10$\times$1.5 or M10$\times$1.25. Since this is larger than the M5 answer for the tension joint, M10 bolt is the answer.
+\end{solution}
+
+\subsection{Bending Load}
+
+In applications where there is a bending moment applied on a bolted joint, we may consider the required strength of the bolted joint by breaking the external load down into corresponding shear or tensile loads on the bolt. We will also assume that bolt exert only compressive load on the clamp parts. Generally, a bolted joint under bending will have at least two bolts spaced apart to provide leverage to resist the exerted moment, as illustrated in \cref{fig: bolted joint under bending}.
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}
+    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
+    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
+    \draw (wall.north east) -- (wall.south east);
+    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
+    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
+    \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
+    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
+    \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
+    \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
+  \end{tikzpicture}
+  \caption{A typical bolted joint under a bending load.}
+  \label{fig: bolted joint under bending}
+\end{figure}
+
+The additional resultant support forces the bolt(s) must provide to resist the moment can be calculated similar to those derived in \cref{section: weld joints under torsion and bending} for welded joints, namely to translate the loads to the centroid of the bolts. In the referred figure, we can see that the bending moment from force $F$ is $FL$, and that the centroid of the bolts in the middle between the two bolts. We can then find the resultant axial force $P$ of the bolt to the exerted moment using the following expressions.
+
+\begin{align}
+  \label{eq: bolted stress under bending}
+  \sigma = \frac{My}{I} \\
+  P = \frac{My}{I} A
+\end{align}
+
+where $y$ is the bolt distance from the centroid, $I$ is the moment of inertia, and $A$ is the cross-sectional area of the bolts. We need to be mindful about the direction of the stresses, depending on the direction of the moment. In \cref{fig: bolted joint under bending}, the top bolt would be under additional tension and the bottom compression from the exerted moment. 
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
+    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
+    \draw (wall.north east) -- (wall.south east);
+    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
+    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
+    % \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
+    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
+    % \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
+    % \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
+    \draw [dashdotted] (wall.west) ++ (-90:0.2) ++ (180:0.5) --++ (0:1.5) node[right]{centroid};
+    \draw [->] (top.east) --++ (0:0.5) node[right]{$\sigma$};
+    \draw [->] (top.west) --++ (180:0.5);
+    \draw [<-] (bottom.east) --++ (0:0.5) node[right]{$\sigma$};
+    \draw [<-] (bottom.west) --++ (180:0.5);
+  \end{tikzpicture}
+  \caption{Bolt resultant stresses from exerted moment.}
+  \label{fig: bolted joint under bending}
+\end{figure}
+
+The moment of inertia $I$ of a group of bolts about a centroid can be calculated by summing all the individual moments of inertia about that centroid $I_i$. Using parallel axis theorem, we can express the moment of inertia of the individual bolt as the sume of its centroidal moment of inertia $I_{ci}$ and product of bolt cross-sectional area $A_i$ and distance from the centroid squared $r_i^2$.
+
+\begin{align}
+  \label{eq: moment of inertia of bolts}
+  I &= \sum I_i \\
+  I_i &= I_{ci} + A_ir_i^2 %= \frac{\pi}{64}d_i^4 + \frac{\pi}{4}d_i^2 r_i^2
+\end{align}
+
+In most cases, the bolt centroidal moment of inertia $I_{ci}$ is much smaller than the $A_ir_i^2$, thus, the equation can be simplified to.
+
+\begin{align}
+  I_i \approx A_ir_i^2
+\end{align}
+
+We can determine the resultant force in each bolt $P_i$ as.
+
+\begin{align}
+  P_i &= \frac{My}{I}A = \frac{Mr_iA_i}{\sum A_ir_i^2} 
+\end{align}
+
+If all bolts in the group are identical, the equation for the resultant forces reduce to
+
+\begin{align}
+  \label{eq: reduced bolts under bending}
+  P_i = \frac{Mr_i}{\sum r_i^2}
+\end{align}
+
+\subsection{Torsion Load}
+
+In this case, the bolts are arranged so that they resist the twisting moment or torque using the shear forces and the distances from the centroid. Once again, the method for analyzing load distribution in bolt patterns under torsion bears striking resemblances to that of weld groups detailed in \cref{section: weld joints under torsion and bending}.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \node [draw, fill=LightGrey, minimum height=6cm, minimum width=6cm](A){};
+    \node at (A.east) [xshift=-0.0cm, anchor=center, draw, fill=lightblue, minimum height=3cm, minimum width=7cm](B){};
+    \draw (B.west) ++ (0:1.5) node(center){+} node[above right]{$O$};
+    % force
+    \draw [->, ultra thick] (B.east) --++ (-90:2) node[below]{20000 N};
+    \foreach \x in {45, 135, 225, 315} {
+      \draw (center.center) ++ (\x:1.5) node[draw, fill=Black, circle, minimum height=3mm, inner sep=0]{};
+    }
+    \draw [|<->|] (center.center) ++ (-90:2) --++ (0:5.5) node[midway, fill=White]{$L_o$};
+    \draw [|<->|] (center.center) ++ (-45:0.4) --++ (45:1.5) node[midway, fill=lightblue]{$r_i$};
+  \end{tikzpicture}
+  \caption[Bolted Joint under Torsion]{A typical bolt pattern under torsion. $O$ is the center of the pattern.}
+  \label{fig: bolts under torsion}
+\end{figure}
+
+Consider the clamped parts rigid, we can determine the shear load carried in each bolt by
+
+\begin{align}
+  \label{eq: bolt stress under torsion}
+  \tau = \frac{Tr_i}{J} 
+\end{align}
+
+The polar moment of inertia of the bolt pattern can be determined by summing the individual moments and applying parallel axis theorem. 
+
+\begin{align}
+  J &= \sum J_i \\
+  J_i &= J_{ci} + A_ir_i^2 
+\end{align}
+
+In most bolt patterns, the centroidal polar moment of inertia is much smaller than the $A_ir_i^2$ term, reducing the equations for the shear force in each bolt to
+
+\begin{align}
+  J_i &\approx A_ir_i^2 \\
+  P_{shear, i} &= \tau_i A_i = \frac{T r_i}{J} A_i 
+\end{align}
+
+If all the bolts are identical, the shear force in each bolt is
+
+\begin{align}
+  \label{eq: force in bolt under torsion}
+  P_{shear, i} = \frac{T r_i}{\sum r_i^2}
+\end{align}
+
+\subsection{Design Equations for Bolted Joint Under Static Loadings}
+
+Once we have evaluated and distributed the loads on a bolt resulting from external axial, shear, bending, and torsion loads, we can use the following considerations to determine the proper bolt size. The total axial and shear forces on the bolted joint can be written as
+
+\begin{align}
+  \label{eq: total forces on bolted joint}
+  P_{total, axial} &= P_{axial} + P_{bending} \\
+  P_{total, shear} &= P_{shear} + P_{torsion}
+\end{align}
+
+Note that forces are vectors and these have to be added vectorially. This is relatively simple for $P_{total, axial}$ since the forces is either tensile (+) or compressive (-) along the bolt axis. However, it can complicate things a bit for $P_{total, shear}$ because the two forces from shear and torsion loads can be at an angle.
+
+\begin{figure}[h]
+  \centering
+  \begin{tikzpicture}[>=latex]
+    \draw[decorate,thick,decoration={screw, screw radius=0.65cm, thread amplitude=2pt, thread separation=4pt, head width=2.5cm, head length=0.8cm}] (0,5) -- (0,-1);
+    % clamped members
+    \draw[fill=LightBlue] (-3,0.5) rectangle (-0.8,2.3);
+    \draw[fill=LightBlue, xshift=3.8cm] (-3,0.5) rectangle (-0.8,2.3);
+    \draw[fill=LightGrey] (-3,2.3) rectangle (-0.8,4.2);
+    \draw[fill=LightGrey, xshift=3.8cm] (-3,2.3) rectangle (-0.8,4.2);
+    % nut
+    \draw[fill=Grey!30] (-1.5,0) rectangle (-0.75,0.5);
+    \draw[fill=Grey!30] (0.75,0) rectangle (1.5,0.5);
+    \draw[fill=Grey!50] (-0.75,0) rectangle (0.75,0.5);
+    % forces
+    \draw[->, ultra thick] (-2,2.3) --++ (-90:2) node (A){} node[right]{$F_i$};
+    \draw[->, ultra thick] (A.west) --++ (90:0.8) node (B){} node[midway,left]{$P(1-C)$};
+    \draw[<-, ultra thick, Blue]  (B.center) --++ (90:1.2) node[midway,left]{$F_j$};
+    \draw[->, line width=3pt] (-3,3.3) --++ (180:2) node[left]{$P_{shear}$};
+    \draw[->, line width=3pt] (3,1.4) --++ (0:2) node[right]{$P_{shear}$};
+  \end{tikzpicture}
+  \caption{Forces in a typical bolted joint.}
+\end{figure}
+
+From the bolt-joint stiffness interaction \cref{eqn: bolt-joint interaction}, it is clear that preload plays a crucial role in maintaining the integrity of a bolted joint. By keeping the clamped parts intact, the bolted joint distribute a small fraction of external load to the bolt, while the main bulk of the load is carried by the clamped parts. If ever the clamping force in the clamped parts become positive (no longer compressive), the joint would separate. The bolt will have to carry the entire external load, which usually breaks the bolt. Furthermore, if the joint is loaded in shear, then the clamping force also has to be strong enough to generate sufficient friction to resist that load.
+
+With that understanding, the required clamping force (and thus bolt size) when an external tensile load $P$ is applied can be determined by making sure that the clamping force remains compressive (less than zero) even with the applied external load and that they can generate the required friction. To do this we make a modification to the equation for shear load \cref{eqn: req bolt area of shear load}. 
+
+When the joint is loaded in the tensile direction, the clamping force is changed. Taking the same assumptions for tension joints (preload is approximately 75\% of proof load and stiffness ratio is 0.25), the expression for shear force capacity of the joint is 
+ 
+\begin{align*}
+  P_{shear} &= -\mu F_j = -\mu \left( P_{axial}(1 - C) - F_i \right) \\
+            &= \mu (0.75S_pA_t - 0.75P_{axial})
+\end{align*}
+
+Therefore, the required tensile area of the bolt is
+
+\begin{equation}
+  A_t = \frac{\dfrac{P_{shear}}{0.75\mu } + P_{axial}{S_p}
+\end{equation}
+
+Upon closer inspection of the equation, the required tensile area is simply the sum of the areas for a friction joint without external load $P$ and tension joint under load $P$.
+
+\begin{equation}
+  A_t = \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}{S_p}
+\end{equation} 
+
+Finally, if a design calls for a safety factor of $N_s$, that means the bolt must be able to resist $N_s$ times the shear force \emph{and} the axial load. The final required tensile area is
+
+\begin{equation}
+  A_t = \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}{S_p}
+  \end{equation} 
 
 \begin{example} Design of a tension bolted joint
 
@@ -7419,99 +7694,6 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
   \end{align*}
 
   From the table, we see that this is smaller than the smallest standard bolt, thus we will pick M3$\times$0.5.
-\end{solution}
-
-\subsection{Friction Joints}
-
-Another application for bolted joints is to prevent clamped parts from sliding apart under shear forces. It is a common misconception that bolted joints can prevent such sliding by the interference of bolts or screws, as in the case of pins. Bolted joints rely friction between the parts to prevent them from sliding. The only contribution bolts makes to friction joints is the preload which increases friction between clamped parts. Therefore, the maximum shear force capacity $P_{shear}$ of a friction joint is
-
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}[>=latex]
-    \draw[decorate,thick,decoration={screw, screw radius=0.65cm, thread amplitude=2pt, thread separation=4pt, head width=2.5cm, head length=0.8cm}] (0,5) -- (0,-1);
-    % clamped members
-    \draw[fill=LightBlue] (-3,0.5) rectangle (-0.8,2.3);
-    \draw[fill=LightBlue, xshift=3.8cm] (-3,0.5) rectangle (-0.8,2.3);
-    \draw[fill=LightGrey] (-3,2.3) rectangle (-0.8,4.2);
-    \draw[fill=LightGrey, xshift=3.8cm] (-3,2.3) rectangle (-0.8,4.2);
-    % nut
-    \draw[fill=Grey!30] (-1.5,0) rectangle (-0.75,0.5);
-    \draw[fill=Grey!30] (0.75,0) rectangle (1.5,0.5);
-    \draw[fill=Grey!50] (-0.75,0) rectangle (0.75,0.5);
-    % forces
-    \draw[->, ultra thick] (-2,2.3) --++ (-90:2) node (A){} node[right]{$F_i$};
-    \draw[->, ultra thick] (A.west) --++ (90:0.8) node (B){} node[midway,left]{$P(1-C)$};
-    \draw[<-, ultra thick, Blue]  (B.center) --++ (90:1.2) node[midway,left]{$F_j$};
-    \draw[->, line width=3pt] (-3,3.3) --++ (180:2) node[left]{$P_{shear}$};
-    \draw[->, line width=3pt] (3,1.4) --++ (0:2) node[right]{$P_{shear}$};
-  \end{tikzpicture}
-  \caption{Forces in a typical friction joint.}
-\end{figure}
-
-\[P_{shear} = -\mu F_j\]
-
-where $\mu$ is the coefficient of friction between clamped parts and $F_j$ is the clamping force on the parts. The negative sign is there to correct the sign: friction is generated only when clamping force is compressive ($F_j < 0$), and for later calculation it is more convenient if friction comes out positive.
-
-Typically, when the friction joint is not also loaded in tensile direction, the clamping force is equal to the preload. However, when the joint is loaded in the tensile direction, the clamping force is changed. Taking the same assumptions for tension joints (preload is approximately 75\% of proof load and stiffness ratio is 0.25), the expression for shear force capacity of the joint is 
-
-\begin{align*}
-  P_{shear} &= -\mu F_j = -\mu \left( P(1 - C) - F_i \right) \\
-            &= \mu (0.75S_pA_t - 0.75P)
-\end{align*}
-
-For the friction joint to have a safety factor of $N_s$, the potential friction force generated by the bolted joint must be Ns times the external shear force.
-
-\begin{equation}
-  N_s = \frac{\mu F_j}{P_{shear}} = \frac{0.75\mu (S_pA_t - P)}{P_{shear}}
-\end{equation}
-
-Therefore, the required tensile area of the bolt is
-
-\begin{equation}
-  A_t = \frac{\dfrac{N_s P_{shear}}{0.75\mu } + P}{S_p}
-\end{equation}
-
-Upon closer inspection of the equation, the required tensile area is simply the sum of the areas for a friction joint without external load $P$ and tension joint under load $P$.
-
-\begin{equation}
-  A_t = \frac{N_s P_{shear}}{0.75\mu S_p } + \frac{P}{S_p}
-\end{equation}
-
-\begin{example}
-  An bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
-
-  \centering
-  \begin{tikzpicture}
-    \node [draw, rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
-    \node at (A.east) [anchor=west, draw, rectangle, minimum height=1cm, minimum width=0.3cm, fill=lightblue](B){};
-    \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
-    \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
-    \draw [->, ultra thick] (B.south east) --++ (-60:1.5) node[right]{2000 N};
-    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30^{\circ}$};
-  \end{tikzpicture}
-\end{example}
-\begin{solution}
-  In this problem, the load applies both a tensile and shear loads onto the joint. We must consider bolt sizing equations for both tension and friction joints to determine the proper answer.
-
-  Let us first consider the joint as a tension joint, the horizontal component of the 2000-N load is one applying the tensile load. If we pick material SAE grade 4.8 for our bolts, the proper sizing is
-
-  \begin{align*}
-    A_t &= \frac{N_s P}{S_p} \\
-        &= \frac{(2)(2000 \sin 30^{\circ})}{225 \times 10^6} \\
-        &= 8.89 \times 10^{-6} \text{ m}^2 = 8.89 \text{ mm}^2
-  \end{align*}
-
-  Looking back at \cref{table: ISO Screw Dimensions}, this calls for an M5$\times$0.8 bolt.
-
-  Now, let us consider the joint as a friction joint, the vertical component is the shearing load, and the horizontal component is the tensile load, the proper bolt size is
-
-  \begin{align*}
-    A_t &= \frac{\dfrac{N_s P_{shear}}{0.75\mu } + P}{S_p} \\
-        &= \frac{\dfrac{2(2000 \cos 30^{\circ})}{0.75(0.5)} + 2000 \sin 30^{\circ}}{225 \times 10^6} \\
-        &= 4.55 \times 10^{-5} = 45.5 \text{ mm}^2
-  \end{align*}
-
-  The smallest bolt with $A_t$ of at least 45.5 mm$^2$ is M10$\times$1.5 or M10$\times$1.25. Since this is larger than the M5 answer for the tension joint, M10 bolt is the answer.
 \end{solution}
 
 \subsection{Flange Joints}
@@ -7572,7 +7754,6 @@ A cylindrical pressure vessel is pressurized to 10 MPa. The cross section of the
   \end{tikzpicture}
 \end{figure}
 \end{example}
-
 \begin{solution}
 
 In this problem, there is no specification about changes in the pressure, so it is assumed that the pressure is constant and the load is static. Most bolts are ductile and so the proper safety factor is 1.5 – 2. We will use 2 in this problem, just to be safe. Using sizing equation for bolts to determine proper bolt tensile area, we have
@@ -7631,88 +7812,9 @@ Since there is no standard bolts with that size, we pick the next larger bolt, M
 Therefore, we need 26 M27 $\times$ 2 for this flange joint.
 \end{solution}
 
-\subsection{Bolted Joints under Bending}
-
-In applications where there is a bending moment applied on a bolted joint, we may consider the required strength of the bolted joint by breaking the external load down into corresponding shear or tensile loads on the bolt. We will also assume that bolt exert only compressive load on the clamp parts. Generally, a bolted joint under bending will have at least two bolts spaced apart to provide leverage to resist the exerted moment, as illustrated in \cref{fig: bolted joint under bending}.
-
-\begin{figure}[h]
-  \centering
-  \begin{tikzpicture}
-    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
-    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
-    \draw (wall.north east) -- (wall.south east);
-    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
-    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
-    \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
-    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
-    \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
-    \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
-  \end{tikzpicture}
-  \caption{A typical bolted joint under a bending load.}
-  \label{fig: bolted joint under bending}
-\end{figure}
-
-The additional resultant support forces the bolt(s) must provide to resist the moment can be calculated similar to those derived in \cref{section: weld joints under torsion and bending} for welded joints, namely to translate the loads to the centroid of the bolts. In the referred figure, we can see that the bending moment from force $F$ is $FL$, and that the centroid of the bolts in the middle between the two bolts. We can then find the resultant axial force $P$ of the bolt to the exerted moment using the following expressions.
-
-\begin{align}
-  \label{eq: bolted stress under bending}
-  \sigma = \frac{My}{I} \\
-  P = \frac{My}{I} A
-\end{align}
-
-where $y$ is the bolt distance from the centroid, $I$ is the moment of inertia, and $A$ is the cross-sectional area of the bolts. We need to be mindful about the direction of the stresses, depending on the direction of the moment. In \cref{fig: bolted joint under bending}, the top bolt would be under additional tension and the bottom compression from the exerted moment. 
-
-\begin{figure}[H]
-  \centering
-  \begin{tikzpicture}
-    \draw [fill=LightSkyBlue] (0,0) --++ (90:4) --++ (0:5) node(topright){} --++ (-90:0.5) --++ (180:4.5) --++ (-90:3.5) -- cycle;
-    \node at (0,2) [anchor=east, pattern=north west lines, minimum height=6cm, minimum width=0.5cm](wall){};
-    \draw (wall.north east) -- (wall.south east);
-    \node at (wall.east) [xshift=2mm, yshift=1cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](top){};
-    \node at (wall.east) [xshift=2mm, yshift=-1.5cm, draw, fill=Grey, minimum height=2mm, minimum width=8mm, inner sep=0](bottom){};
-    % \draw [|<->|] (top.east) ++ (0:0.3) --++ (-90:2.5) node[midway, fill=White]{$h$};
-    \draw [<-, ultra thick] (topright.center) --++ (90:1) node[above]{$F$};
-    % \draw [|<->|] (topright.center) ++ (90:0.5) --++ (180:5) node[midway, fill=White]{$L$};
-    % \draw [->, ultra thick] (top.east) ++ (0:1) arc (90:-90:1) node[midway, right]{$M = FL$};
-    \draw [dashdotted] (wall.west) ++ (-90:0.2) ++ (180:0.5) --++ (0:1.5) node[right]{centroid};
-    \draw [->] (top.east) --++ (0:0.5) node[right]{$\sigma$};
-    \draw [->] (top.west) --++ (180:0.5);
-    \draw [<-] (bottom.east) --++ (0:0.5) node[right]{$\sigma$};
-    \draw [<-] (bottom.west) --++ (180:0.5);
-  \end{tikzpicture}
-  \caption{Bolt resultant stresses from exerted moment.}
-  \label{fig: bolted joint under bending}
-\end{figure}
-
-The moment of inertia $I$ of a group of bolts about a centroid can be calculated by summing all the individual moments of inertia about that centroid $I_i$.
-
-\begin{align}
-  \label{eq: moment of inertia of bolts}
-  I &= \sum I_i \\
-  I_i &= I_{ci} + A_ir_i^2 = \frac{\pi}{64}r_i^4 + \frac{\pi}{4}d_i^2 r_i^2
-\end{align}
-
-where $A_i, d_i,$ and $r_i$ are the cross-sectional area, bolt diameter, and distance from the centroid of bolt $i$. In most bolt patterns, the centroidal moment of inertia $I_{ci}$ is much smaller than the $A_ir_i^2$, thus, the equation can be simplified to.
-
-\begin{align}
-  I_i = \frac{\pi}{4}d_i^2 r_i^2
-\end{align}
-
-If the bolts are identical, the equation for moments of inertia and resultant forces reduce to
-
-\begin{align}
-  \label{eq: reduced bolts under bending}
-  I &= n I_i \\
-  P &= M
-\end{align}
-
-\subsection{Bolted Joints under Torsion}
-
-
-
 \section{Bolt Selection for Fatigue Loading}
 
-Fatigue in bolts is caused by fluctuating tension. In this section, principles of fatigue covered in section 4.2 is applied to bolts. However, experimental data show that, when tightened properly, bolt dynamic load capacity tends to be insensitive to the average load. In other words, their fatigue strengths (aka endurance limits) are mostly independent of their preloads. \Cref{table: fatigue limit bolt} illustrates the endurance limits of bolt materials from grade 8.8 through 12.9.
+Fatigue in bolts is caused by fluctuating tension. In this section, principles of fatigue covered in \cref{sec: fatigue} is applied to bolts. However, experimental data show that, when tightened properly, bolt dynamic load capacity tends to be insensitive to the average load. In other words, their fatigue strengths (aka endurance limits) are mostly independent of their preloads. \Cref{table: fatigue limit bolt} illustrates the endurance limits of bolt materials from grade 8.8 through 12.9.
 
 \begin{table}[h]
   \centering
