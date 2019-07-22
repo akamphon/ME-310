@@ -7664,7 +7664,8 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
 
   \centering
   \begin{tikzpicture}
-    \node [draw, rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
+    \node [rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
+    \draw (A.north east) -- (A.south east);
     \node at (A.east) [anchor=west, draw, rectangle, minimum height=1cm, minimum width=0.3cm, fill=lightblue](B){};
     \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
     \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
@@ -7727,7 +7728,7 @@ Flange joints are joints in which bolts are arranged in circular arrays. They ar
   3 \leqslant \frac{\pi D_b}{Nd} \leqslant 6
 \end{equation}
 
-This expression essentially states that bolt spacing should be between 3 and 6 bolt diameters. The lower limit provides sufficient wrench clearance for assembly and disassembly. The upper limit provides sufficient clamped area coverage along the circumference of the flange joint.
+where $D_b$ is the diameter of the bolt array, $N$ is the number of bolts, and $d$ is the bolt major diameter. This expression essentially states that bolt spacing should be between 3 and 6 bolt diameters. The lower limit provides sufficient wrench clearance for assembly and disassembly. The upper limit provides sufficient clamped area coverage along the circumference of the flange joint.
 
 \begin{example} Bolt sizing for a flange joint on a pressure vessel \label{example: static flange joint bolt sizing}
 

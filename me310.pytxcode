@@ -163,7 +163,7 @@ round(A_t * 10**6,2)
 round(A_t,7)
 =>PYTHONTEX#py#default#default#36#i#####7657#
 round(A_t * 10**6,2)
-=>PYTHONTEX#py#default#default#37#code#####7678#
+=>PYTHONTEX#py#default#default#37#code#####7679#
     P = 2000
     angle = 30
     N_s = 2
@@ -173,55 +173,55 @@ round(A_t * 10**6,2)
     P_axial = 2000*math.sin(theta)
     P_shear = 2000*math.cos(theta)
     A_t = N_s*(P_axial/S_p + P_shear/0.75/mu/S_p)
-=>PYTHONTEX#py#default#default#38#i#####7696#
+=>PYTHONTEX#py#default#default#38#i#####7697#
 P
-=>PYTHONTEX#py#default#default#39#i#####7696#
+=>PYTHONTEX#py#default#default#39#i#####7697#
 angle
-=>PYTHONTEX#py#default#default#40#i#####7696#
+=>PYTHONTEX#py#default#default#40#i#####7697#
 round(P_axial)
-=>PYTHONTEX#py#default#default#41#i#####7696#
+=>PYTHONTEX#py#default#default#41#i#####7697#
 P
-=>PYTHONTEX#py#default#default#42#i#####7696#
+=>PYTHONTEX#py#default#default#42#i#####7697#
 angle
-=>PYTHONTEX#py#default#default#43#i#####7696#
+=>PYTHONTEX#py#default#default#43#i#####7697#
 round(P_shear)
-=>PYTHONTEX#py#default#default#44#i#####7696#
+=>PYTHONTEX#py#default#default#44#i#####7697#
 N_s
-=>PYTHONTEX#py#default#default#45#i#####7696#
+=>PYTHONTEX#py#default#default#45#i#####7697#
 S_p
-=>PYTHONTEX#py#default#default#46#i#####7696#
+=>PYTHONTEX#py#default#default#46#i#####7697#
 round(P_shear)
-=>PYTHONTEX#py#default#default#47#i#####7696#
+=>PYTHONTEX#py#default#default#47#i#####7697#
 mu
-=>PYTHONTEX#py#default#default#48#i#####7696#
+=>PYTHONTEX#py#default#default#48#i#####7697#
 round(P_axial)
-=>PYTHONTEX#py#default#default#49#i#####7696#
+=>PYTHONTEX#py#default#default#49#i#####7697#
 '{:.2E}'.format(A_t)
-=>PYTHONTEX#py#default#default#38#i#####7696#
+=>PYTHONTEX#py#default#default#38#i#####7697#
 P
-=>PYTHONTEX#py#default#default#39#i#####7696#
+=>PYTHONTEX#py#default#default#39#i#####7697#
 angle
-=>PYTHONTEX#py#default#default#40#i#####7696#
+=>PYTHONTEX#py#default#default#40#i#####7697#
 round(P_axial)
-=>PYTHONTEX#py#default#default#41#i#####7696#
+=>PYTHONTEX#py#default#default#41#i#####7697#
 P
-=>PYTHONTEX#py#default#default#42#i#####7696#
+=>PYTHONTEX#py#default#default#42#i#####7697#
 angle
-=>PYTHONTEX#py#default#default#43#i#####7696#
+=>PYTHONTEX#py#default#default#43#i#####7697#
 round(P_shear)
-=>PYTHONTEX#py#default#default#44#i#####7696#
+=>PYTHONTEX#py#default#default#44#i#####7697#
 N_s
-=>PYTHONTEX#py#default#default#45#i#####7696#
+=>PYTHONTEX#py#default#default#45#i#####7697#
 S_p
-=>PYTHONTEX#py#default#default#46#i#####7696#
+=>PYTHONTEX#py#default#default#46#i#####7697#
 round(P_shear)
-=>PYTHONTEX#py#default#default#47#i#####7696#
+=>PYTHONTEX#py#default#default#47#i#####7697#
 mu
-=>PYTHONTEX#py#default#default#48#i#####7696#
+=>PYTHONTEX#py#default#default#48#i#####7697#
 round(P_axial)
-=>PYTHONTEX#py#default#default#49#i#####7696#
+=>PYTHONTEX#py#default#default#49#i#####7697#
 '{:.2E}'.format(A_t)
-=>PYTHONTEX#py#default#default#50#code#####9385#
+=>PYTHONTEX#py#default#default#50#code#####9386#
     d = 0.0006
     A = 1783
     m = 0.190
@@ -237,32 +237,32 @@ round(P_axial)
     N_a = G*d/8/C**3/k
     delta = 0.02
     p = delta/0.8/N_a + d
-=>PYTHONTEX#py#default#default#51#i#####9407#
+=>PYTHONTEX#py#default#default#51#i#####9408#
 round(C,2)
-=>PYTHONTEX#py#default#default#51#i#####9407#
+=>PYTHONTEX#py#default#default#51#i#####9408#
 round(C,2)
-=>PYTHONTEX#py#default#default#52#i#####9409#
+=>PYTHONTEX#py#default#default#52#i#####9410#
 8.26*6*10**-4
-=>PYTHONTEX#py#default#default#53#i#####9415#
+=>PYTHONTEX#py#default#default#53#i#####9416#
 int(N_a)
-=>PYTHONTEX#py#default#default#53#i#####9415#
+=>PYTHONTEX#py#default#default#53#i#####9416#
 int(N_a)
-=>PYTHONTEX#py#default#default#54#i#####9424#
+=>PYTHONTEX#py#default#default#54#i#####9425#
 round(p,6)
-=>PYTHONTEX#py#default#default#54#i#####9424#
+=>PYTHONTEX#py#default#default#54#i#####9425#
 round(p,6)
-=>PYTHONTEX#py#default#default#55#code#####9435#
+=>PYTHONTEX#py#default#default#55#code#####9436#
     S_y = 300 * 10**6
     b = 0.3
     h = 0.05
     N_s = 2
     L = 3
     F = S_y*b*h**2/6/N_s/L
-=>PYTHONTEX#py#default#default#56#i#####9447#
+=>PYTHONTEX#py#default#default#56#i#####9448#
 int(F)
-=>PYTHONTEX#py#default#default#56#i#####9447#
+=>PYTHONTEX#py#default#default#56#i#####9448#
 int(F)
-=>PYTHONTEX#py#default#default#57#code#####9452#
+=>PYTHONTEX#py#default#default#57#code#####9453#
     L = 0.3
     S_ut = 551 * 10**6
     L_b = 3
@@ -270,11 +270,11 @@ int(F)
     H = 0.005
     N_s = 4
     F = S_ut*2*(L*H**3/12 + H*L**3/12 + L*H*d_0**2)/N_s/L_b/d_0
-=>PYTHONTEX#py#default#default#58#i#####9465#
+=>PYTHONTEX#py#default#default#58#i#####9466#
 int(F)
-=>PYTHONTEX#py#default#default#58#i#####9465#
+=>PYTHONTEX#py#default#default#58#i#####9466#
 int(F)
-=>PYTHONTEX#py#default#default#59#code#####9485#
+=>PYTHONTEX#py#default#default#59#code#####9486#
     N_s = 3
     P_sf = 833/2.0
     P_sr = 4167/2.0
@@ -282,15 +282,15 @@ int(F)
     S_p = 600
     A_tf = N_s * P_sf / 0.75 / mu / S_p
     A_tr = N_s * P_sr / 0.75 / mu / S_p
-=>PYTHONTEX#py#default#default#60#i#####9501#
+=>PYTHONTEX#py#default#default#60#i#####9502#
 round(A_tf,2)
-=>PYTHONTEX#py#default#default#61#i#####9501#
+=>PYTHONTEX#py#default#default#61#i#####9502#
 round(A_tr,2)
-=>PYTHONTEX#py#default#default#60#i#####9501#
+=>PYTHONTEX#py#default#default#60#i#####9502#
 round(A_tf,2)
-=>PYTHONTEX#py#default#default#61#i#####9501#
+=>PYTHONTEX#py#default#default#61#i#####9502#
 round(A_tr,2)
-=>PYTHONTEX#py#default#default#62#code#####9514#
+=>PYTHONTEX#py#default#default#62#code#####9515#
     A = 1783
     m = 0.190
     N_s = 2
@@ -300,32 +300,32 @@ round(A_tr,2)
     k = 2500
     d = (8*(4*C+2)/(4*C-3)*F_max*C/3.142/0.5/A*2)**(2-m)
     N_a = G*d/8/C**3/k*10**-3
-=>PYTHONTEX#py#default#default#63#i#####9529#
+=>PYTHONTEX#py#default#default#63#i#####9530#
 int(d)
-=>PYTHONTEX#py#default#default#63#i#####9529#
+=>PYTHONTEX#py#default#default#63#i#####9530#
 int(d)
-=>PYTHONTEX#py#default#default#64#i#####9536#
+=>PYTHONTEX#py#default#default#64#i#####9537#
 int(N_a)
-=>PYTHONTEX#py#default#default#64#i#####9536#
+=>PYTHONTEX#py#default#default#64#i#####9537#
 int(N_a)
-=>PYTHONTEX#py#default#default#65#code#####9540#
+=>PYTHONTEX#py#default#default#65#code#####9541#
     N_s = 3
     S_p = 6 * 10**8
     P   = 500
     A_t = N_s * P / S_p
-=>PYTHONTEX#py#default#default#66#i#####9549#
+=>PYTHONTEX#py#default#default#66#i#####9550#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#66#i#####9549#
+=>PYTHONTEX#py#default#default#66#i#####9550#
 round(A_t,7)
-=>PYTHONTEX#py#default#default#67#code#####9555#
+=>PYTHONTEX#py#default#default#67#code#####9556#
     N_s  = 3
     S_ut = 482 * 10**6
     P    = 1000
     H    = 0.003
     L    = N_s * P / S_ut / H
-=>PYTHONTEX#py#default#default#68#i#####9566#
+=>PYTHONTEX#py#default#default#68#i#####9567#
 round(L,5)
-=>PYTHONTEX#py#default#default#68#i#####9566#
+=>PYTHONTEX#py#default#default#68#i#####9567#
 round(L,5)
 =>PYTHONTEX:SETTINGS#
 version=0.16
