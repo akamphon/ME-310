@@ -7426,43 +7426,6 @@ Therefore, the required tensile area of the bolt is
   A_t = \frac{N_s P_{shear}}{0.75\mu S_p}
 \end{equation}
 
-\begin{example}
-  An bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
-
-  \centering
-  \begin{tikzpicture}
-    \node [draw, rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
-    \node at (A.east) [anchor=west, draw, rectangle, minimum height=1cm, minimum width=0.3cm, fill=lightblue](B){};
-    \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
-    \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
-    \draw [->, ultra thick] (B.south east) --++ (-60:1.5) node[right]{2000 N};
-    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30^{\circ}$};
-  \end{tikzpicture}
-\end{example}
-\begin{solution}
-  In this problem, the load applies both a tensile and shear loads onto the joint. We must consider bolt sizing equations for both tension and friction joints to determine the proper answer.
-
-  Let us first consider the joint as a tension joint, the horizontal component of the 2000-N load is one applying the tensile load. If we pick material SAE grade 4.8 for our bolts, the proper sizing is
-
-  \begin{align*}
-    A_t &= \frac{N_s P}{S_p} \\
-        &= \frac{(2)(2000 \sin 30^{\circ})}{225 \times 10^6} \\
-        &= 8.89 \times 10^{-6} \text{ m}^2 = 8.89 \text{ mm}^2
-  \end{align*}
-
-  Looking back at \cref{table: ISO Screw Dimensions}, this calls for an M5$\times$0.8 bolt.
-
-  Now, let us consider the joint as a friction joint, the vertical component is the shearing load, and the horizontal component is the tensile load, the proper bolt size is
-
-  \begin{align*}
-    A_t &= \frac{\dfrac{N_s P_{shear}}{0.75\mu } + P}{S_p} \\
-        &= \frac{\dfrac{2(2000 \cos 30^{\circ})}{0.75(0.5)} + 2000 \sin 30^{\circ}}{225 \times 10^6} \\
-        &= 4.55 \times 10^{-5} = 45.5 \text{ mm}^2
-  \end{align*}
-
-  The smallest bolt with $A_t$ of at least 45.5 mm$^2$ is M10$\times$1.5 or M10$\times$1.25. Since this is larger than the M5 answer for the tension joint, M10 bolt is the answer.
-\end{solution}
-
 \subsection{Bending Load}
 
 In applications where there is a bending moment applied on a bolted joint, we may consider the required strength of the bolted joint by breaking the external load down into corresponding shear or tensile loads on the bolt. We will also assume that bolt exert only compressive load on the clamp parts. Generally, a bolted joint under bending will have at least two bolts spaced apart to provide leverage to resist the exerted moment, as illustrated in \cref{fig: bolted joint under bending}.
@@ -7642,19 +7605,19 @@ When the joint is loaded in the tensile direction, the clamping force is changed
 Therefore, the required tensile area of the bolt is
 
 \begin{equation}
-  A_t = \frac{\dfrac{P_{shear}}{0.75\mu } + P_{axial}{S_p}
+  A_t = \frac{\dfrac{P_{shear}}{0.75\mu } + P_{axial}}{S_p}
 \end{equation}
 
 Upon closer inspection of the equation, the required tensile area is simply the sum of the areas for a friction joint without external load $P$ and tension joint under load $P$.
 
 \begin{equation}
-  A_t = \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}{S_p}
+  A_t = \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}}{S_p}
 \end{equation} 
 
 Finally, if a design calls for a safety factor of $N_s$, that means the bolt must be able to resist $N_s$ times the shear force \emph{and} the axial load. The final required tensile area is
 
 \begin{equation}
-  A_t = \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}{S_p}
+  A_t = \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}}{S_p}
   \end{equation} 
 
 \begin{example} Design of a tension bolted joint
@@ -7694,6 +7657,45 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
   \end{align*}
 
   From the table, we see that this is smaller than the smallest standard bolt, thus we will pick M3$\times$0.5.
+\end{solution}
+
+\begin{example}
+  An bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
+
+  \centering
+  \begin{tikzpicture}
+    \node [draw, rectangle, minimum height=3cm, minimum width=1cm, pattern=north east lines](A){};
+    \node at (A.east) [anchor=west, draw, rectangle, minimum height=1cm, minimum width=0.3cm, fill=lightblue](B){};
+    \node at (B.center) [draw, rectangle, minimum height=0.3cm, minimum width=0.6cm, fill=black](C){};
+    \draw [<-](C.north east) --++ (45:1) node[above]{bolt};
+    \draw [->, ultra thick] (B.south east) --++ (-60:1.5) node[right]{2000 N};
+    \draw [dashed, thin] (B.south east) --++ (-90:1.4) node[right]{$30^{\circ}$};
+  \end{tikzpicture}
+\end{example}
+\begin{solution}
+  In this problem, the load applies both a tensile and shear loads onto the joint. We must consider bolt sizing equations for both tension and friction joints to determine the proper answer. We can break the load down into the axial load and shear load in which we have
+
+  \begin{pycode}
+    P = 2000
+    angle = 30
+    N_s = 2
+    S_p = 225*10**6
+    mu = 0.5
+    theta = math.radians(angle)
+    P_axial = 2000*math.sin(theta)
+    P_shear = 2000*math.cos(theta)
+    A_t = N_s*(P_axial/S_p + P_shear/0.75/mu/S_p)
+  \end{pycode}
+
+  \begin{align*}
+    P_{axial} &= \py{P} \cos \py{angle}^{\circ} = \py{round(P_axial)} \\
+    P_{shear} &= \py{P} \sin \py{angle}^{\circ} = \py{round(P_shear)} \\
+    A_t &= \frac{N_s}{S_p} \left( \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}}{S_p} \right) \\
+              &= \frac{\py{N_s}}{\py{S_p}} \left( \frac{\py{round(P_shear)}}{0.75(\py{mu}) } + \py{round(P_axial)} \right) \\
+              &= \py{'{:.2E}'.format(A_t)} \text{ m}^2
+  \end{align*}
+
+  According to \cref{table: ISO Screw Dimensions} the proper size for this bolt is M10$\times$1.5 (coarse thread) or M10$\times$1.25 (fine thread).
 \end{solution}
 
 \subsection{Flange Joints}
