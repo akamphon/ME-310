@@ -130,6 +130,7 @@
     "tab: carbon steel classification"
     "table: effective alloys"
     "tab: alum alloy description"
+    "tab: nickel alloy props"
     "fig: polymers and repeating units"
     "tab: resin props"
     "tab: reinforcement props"
