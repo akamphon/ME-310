@@ -1014,8 +1014,90 @@ Plastics constitute a large and varied group of synthetic organic materials. The
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.5]{pictures/Material-selection/polymer}
-  \caption{Monomers and repeating polymer units of common polymers. \cite{secondaryscience4all}}
+  \begin{tikzpicture}
+    \node(A){\large C};
+    \draw [double, double distance=1mm, very thick] (A) --++ (0:0.75) node[right](B){\large C};
+    \draw [very thick] (B) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (B) --++ (-90:0.75) node[below]{\large F};
+    \draw [very thick] (A) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (A) --++ (-90:0.75) node[below]{\large F};
+
+    \draw [->, very thick] (B.east) ++ (0:0.2) --++ (0:1) node(C){};
+
+    \draw [very thick] (C) --++ (0:0.75) node[right](D){\large C};
+    \draw [very thick] (D) --++ (0:0.75) node[right](E){\large C};
+    \draw [very thick] (E) --++ (0:0.75);
+    \draw [very thick] (D) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (D) --++ (-90:0.75) node[below]{\large F};
+    \draw [very thick] (E) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (E) --++ (-90:0.75) node[below]{\large F};
+
+    \node at (C.south) [yshift=-1.5cm]{tetrafluoroethene $\rightarrow$ poly(tetrafluoroethene)};
+  \end{tikzpicture}
+  \hspace{5mm}
+  \begin{tikzpicture}
+    \node(A){\large C};
+    \draw [double, double distance=1mm, very thick] (A) --++ (0:0.75) node[right](B){\large C};
+    \draw [very thick] (A) --++ (90:0.75) node[above]{\large H};
+    \draw [very thick] (A) --++ (-90:0.75) node[below]{\large H};
+    \draw [very thick] (B) --++ (90:0.75) node[above]{\large Cl};
+    \draw [very thick] (B) --++ (-90:0.75) node[below]{\large H};
+
+    \draw [->, very thick] (B.east) ++ (0:0.2) --++ (0:1) node(C){};
+
+    \draw [very thick] (C) --++ (0:0.75) node[right](D){\large C};
+    \draw [very thick] (D) --++ (0:0.75) node[right](E){\large C};
+    \draw [very thick] (E) --++ (0:0.75);
+    \draw [very thick] (D) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (D) --++ (-90:0.75) node[below]{\large F};
+    \draw [very thick] (E) --++ (90:0.75) node[above]{\large Cl};
+    \draw [very thick] (E) --++ (-90:0.75) node[below]{\large F};
+
+    \node at (C.south) [yshift=-1.5cm]{vinyl chloride $\rightarrow$ poly(vinyl chloride)};
+  \end{tikzpicture} \\
+  \begin{tikzpicture}
+    \node(A){\large C};
+    \draw [double, double distance=1mm, very thick] (A) --++ (0:0.75) node[right](B){\large C};
+    \draw [very thick] (A) --++ (90:0.75) node[above]{\large H};
+    \draw [very thick] (A) --++ (-90:0.75) node[below]{\large H};
+    \draw [very thick] (B) --++ (90:0.75) node[above]{\large CH$_3$};
+    \draw [very thick] (B) --++ (-90:0.75) node[below]{\large H};
+
+    \draw [->, very thick] (B.east) ++ (0:0.2) --++ (0:1) node(C){};
+
+    \draw [very thick] (C) --++ (0:0.75) node[right](D){\large C};
+    \draw [very thick] (D) --++ (0:0.75) node[right](E){\large C};
+    \draw [very thick] (E) --++ (0:0.75);
+    \draw [very thick] (D) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (D) --++ (-90:0.75) node[below]{\large F};
+    \draw [very thick] (E) --++ (90:0.75) node[above]{\large CH$_3$};
+    \draw [very thick] (E) --++ (-90:0.75) node[below]{\large F};
+
+    \node at (C.south) [yshift=-1.5cm]{propene $\rightarrow$ poly(propene)};
+  \end{tikzpicture}
+  \hspace{10mm}
+  \begin{tikzpicture}
+    \node(A){\large C};
+    \draw [double, double distance=1mm, very thick] (A) --++ (0:0.75) node[right](B){\large C};
+    \draw [very thick] (A) --++ (90:0.75) node[above]{\large H};
+    \draw [very thick] (A) --++ (-90:0.75) node[below]{\large H};
+    \draw [very thick] (B) --++ (90:0.75) node[above]{\large C$_6$H$_5$};
+    \draw [very thick] (B) --++ (-90:0.75) node[below]{\large H};
+
+    \draw [->, very thick] (B.east) ++ (0:0.2) --++ (0:1) node(C){};
+
+    \draw [very thick] (C) --++ (0:0.75) node[right](D){\large C};
+    \draw [very thick] (D) --++ (0:0.75) node[right](E){\large C};
+    \draw [very thick] (E) --++ (0:0.75);
+    \draw [very thick] (D) --++ (90:0.75) node[above]{\large F};
+    \draw [very thick] (D) --++ (-90:0.75) node[below]{\large F};
+    \draw [very thick] (E) --++ (90:0.75) node[above]{\large C$_6$H$_5$};
+    \draw [very thick] (E) --++ (-90:0.75) node[below]{\large F};
+
+    \node at (C.south) [yshift=-1.5cm]{styrene $\rightarrow$ poly(styrene)};
+  \end{tikzpicture} \\
+  % \includegraphics[scale=0.5]{pictures/Material-selection/polymer}
+  \caption{Monomers and repeating polymer units of common polymers.} %\cite{secondaryscience4all}}
   \label{fig: polymers and repeating units}
 \end{figure}
  
