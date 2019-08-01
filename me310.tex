@@ -1172,6 +1172,133 @@ Strength-temperature relationship is used to determine suitable materials for de
   For the minimum weight design, we refer to the strength-density chart. For shaft, the index $S^{1/2}/\rho$ is used to determine a proper material. The material (or group of materials) with the highest index will yield the minimum weight for a given torque requirement. From \cref{fig: strength density diagram}, the possible candidates are metal alloys. Combining this with the elimination we have made for the temperature requirement, the qualified materials are steels, titanium alloys, and Ni alloys. 
 
 \end{solution}
+
+\subsection{Material Selection Indices}
+
+In many design problems, the objectives are coupled to the constrains of the components. For example, if we are to design a light bar that would be under tension, the constraint on the component would be that its stress cannot be more than its yield strength (given that the material is ductile), which involve its cross-sectional area. However, the mass of the bar would also be dependent on its volume and, obviously, its cross-sectional area. There must be a way for us to determine the essential paramaters that will help determine that optimal material for a component, right?
+
+In fact, according to Ashby et al. \cite{ashby2010materials}, there is such a method. It requires us to identify the performance $P$ of the element, the functional requirements $F$, the geometric parameters $G$, and the material properties $M$ of the component. The performance of a component can be determined by $F$, $G$, and $M$, described by an equation of the form
+
+\begin{equation}
+  \label{eqn: material performance metric}
+  P = f \left(F, G, M \right)
+\end{equation}
+
+where the $P$, the performance metric describes some aspect of the performance of the component such as mass, volume, or cost. To determine an optimal material, we derive a function $f$ which establishes the relationship between the three parameters and our performance metric $P$. In many cases, the three group of parameters in \cref{eqn: material performance metric} can be written as
+
+\begin{equation}
+  \label{eq: separable mat perf metric}
+  P = f_1(F) \cdot f_2(G) \cdot f_3(M)
+\end{equation}
+
+in which case the paramaters are said to be \emph{separable}. When this is possible, the optimum choice of material becomes independent of the geometry $G$ and the functional requirements $F$. This greatly simplifies to material selection process as we no longer have to solve the complete design problem. In fact, we do not even have to know all the details of the functional requirement or the geometry of the part. All we need to do is to minimize or maximize $f_3(M)$, which is called the \emph{material selection index}. Each combination of function, objective, and constraint leads to a material index; it is characteristics of the combination and the function the component performs. This method can be applied to a wide range of material selection problems. Let us now look at a couple of examples to better understand this method.
+
+\begin{example} Minimum Weight Tension Bar
+  
+  Design a lightest possible 2-m tensile bar that can take $F_{\max} = 50000 \text{ N}$. We have 3 material choices.
+  
+  \begin{center}
+    \begin{tabular}[H]{lcc}
+      \toprule
+      Material & Density [kg/m$^3$] & Yield Strength [MPa] \\
+      \midrule
+      HSS      & 7800 & 1200 \\
+      Aluminum & 2300 & 400 \\
+      CFRP     & 1500 & 350 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+  
+  Let us assume that $N_s = 2$.
+\end{example}
+\begin{solution}
+  We will first attempt to solve the full design problem by determining the required cross-sectional area for each material and calculated the weight of the bar. The cross-sectional area for the bar is
+  
+  \begin{gather*}
+    N_s = \frac{S_y}{\dfrac{F}{A}} \\
+    A = \frac{N_S F}{S_y}
+  \end{gather*}
+
+  \begin{pycode}
+    d_st = 7800
+    d_al = 2300
+    d_cf = 1500
+    y_st = 1200*10**6
+    y_al = 400*10**6
+    y_cf = 350*10**6
+    
+    N_s = 2
+    F = 50000
+    L = 2
+    
+    A_st = N_s * F / y_st
+    A_al = N_s * F / y_al
+    A_cf = N_s * F / y_cf
+  \end{pycode}
+
+  \begin{center}
+    \begin{tabular}{lc}
+      \toprule
+      HSS & \py{'{:.2e}'.format(A_st)} m$^2$ \\
+      Aluminum & \py{'{:.2e}'.format(A_al)} m$^2$ \\
+      CFRP & \py{'{:.2e}'.format(A_cf)} m$^2$ \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  Once cross-sectional areas are obtained, mass is just
+
+  \begin{equation*}
+    m = \rho A L
+  \end{equation*}
+  
+  \begin{pycode}
+    m_st = d_st * A_st * L
+    m_al = d_al * A_al * L
+    m_cf = d_cf * A_cf * L
+  \end{pycode}
+    
+  \begin{center}
+    \begin{tabular}{lc}
+      \toprule
+      Material & Mass (kg) \\
+      \midrule
+      HSS & \py{round(m_st,2)} \\
+      Aluminum & \py{round(m_al,2)} \\
+      CFRP & \py{round(m_cf,2)} \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  So CFRP will make the lightest bar.
+
+  Now we will attempt the method introduced by Ashby. Combine the equations for area and mass. Our performance parameter is the mass, the functional requirement are the force and safety factor, the geometric parameters are the area and length, and the material properties are the yield strength and density. We can separate the parameters according to \cref{eq: separable mat perf metric} as
+
+  \begin{align*}
+    m &= \rho A l \\
+      &= \left( N_s F \right) ( L ) \left( \frac{\rho}{S_y} \right) 
+  \end{align*}
+
+  Well, $N_s$, $F$, and $L$ are all given by the problem, independent of our choice of material. We therefore simply need to minimize a single ratio
+  \begin{gather*}
+    m \sim \frac{\rho}{S_y}
+  \end{gather*}
+
+  to identify the lightest material for the application. The ratios are
+
+  \begin{center}
+    \begin{tabular}[H]{ll}
+      \toprule
+      HSS  & \py{'{:.2e}'.format(d_st/y_st)} \\
+      Al   & \py{'{:.2e}'.format(d_al/y_al)} \\
+      CFRP & \py{'{:.2e}'.format(d_cf/y_cf)} \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+  
+  This confirms that CFRP will make the lightest bar.
+\end{solution}
+
 \subsection{Material Selection Procedure}
 
 Just like mechanical design problems, material selection tends to involve making decisions with neither complete nor accurate information about the functional requirements of the design. A simple methodology for materials selection is based on the performance, the importance, and the availability and final cost of the component.
