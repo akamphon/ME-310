@@ -313,7 +313,7 @@ In this textbook, students will be introduced to engineering design process and 
 
 After the previous two chapter to introduce the design process, we brush up on important materials covered in Mechanics of Materials: axially loaded members, torsion, bending, and multiaxial stress analysis. This links to the next chapter, theories of failure, which completes all the theoretical knowledge required to tackle component design.
 
-Component design is divided into load-bearing components (beams, shafts, columns, and mechanical springs) and joints (bolted and welded). Finally we step back and look at a bigger picture of component interaction and how design of one component can affect the design of another.
+Component design is divided into load-bearing components (beams, shafts, columns, and mechanical springs) and joints (bolted and welded). Finally, we step back and reflect on all of the chapters we have covered. Different components come together through joint techniques and in most cases will affect the design of another.
 
 Lastly, the text cover a longstanding and ever-growing trend of computer-aided design by discussing the its basics and employing Solidworks as a reference software for basic finite element analysis and design tool.
 
@@ -4220,7 +4220,7 @@ Once the beam has been selected, engineers can use the shear-stress formula $\ta
     \end{tabular}
   \end{table}
 
-  Determine the material and corresponding cross-sectional radius that will give a minimum weight beam with a safety factor of 2.
+  Determine the material and corresponding cross-sectional radius that will give a minimum weight beam with a safety factor of 2. 
   
 \end{example}
 \begin{solution}
@@ -4250,7 +4250,7 @@ Once the beam has been selected, engineers can use the shear-stress formula $\ta
   \begin{align*}
     M(x) = \left\{ \begin{array}{l}
                      \dfrac{3Fx}{4} \\
-                     \dfrac{F(L-x)}{4} 
+                     \dfrac{3F(L-x)}{4} 
                    \end{array}
     \right.
   \end{align*}
@@ -4301,7 +4301,7 @@ inertia $I_{req}$ from the stress and deflection requirement, respectively.
 Subsequently, the optimal section can be selected on minimum weight or minimum cost criterion.
 
 \begin{example}
-  A gantry crane with 3-m span has a maximum load capacity of 3 ton. Determine a proper structural steel (S shape) so that the safety factor is 3 and the maximum deflection does not exceed 1 cm.
+  A gantry crane with 3-m span has a maximum load capacity of 3 ton. Determine a proper structural steel (S shape) with a proper safety factor and the maximum deflection should not exceed 1 cm.
 
   \begin{figure}[H]
     \centering
@@ -4309,7 +4309,7 @@ Subsequently, the optimal section can be selected on minimum weight or minimum c
   \end{figure}
 \end{example}
 \begin{solution}
-  In this problem, first of all, we must make sure that the designed beam does not fail under the 3-ton load regardless of the weight position on the crane. With the beam supported on both ends, the maximum bending moment occur when the load is hoisted from the middle. The corresponding bending moment is $M = FL / 4$ and the required section modulus $S_{req}$ is
+  In this problem, first of all, we must make sure that the designed beam does not fail under the 3-ton load regardless of the weight position on the crane. Structural steels are made to standard and from steel which is well understood. However, the outdoor and load conditions can vary so, according to \cref{table: safety factor guideline} the safety factor should be 2. For the economic and human safety factor, this is probably used in a warehouse with people working close by. Any failure can result in damages to the cargo or to the workers. The results can in this case be considered severe so the safety factor, according to \cref{tab: safety factor safety econ}, should be 1.5. The combined safety factor then is 2 $\times$ 1.5 = 3. With the beam supported on both ends, the maximum bending moment occur when the load is hoisted from the middle. The corresponding bending moment is $M = FL / 4$ and the required section modulus $S_{req}$ is
 
   \begin{align*}
     S_{req} &= \frac{N_s M}{S_y} \\
@@ -6415,6 +6415,7 @@ Though a rigorous analysis of each weld segment under torsion or bending is poss
 Since the cross section on which the stresses are calculated is the weld group, the corresponding moment of inertia ($I$) and polar moment of inertia ($J$) must be calculated from the weld cross section. In order to determine such moments, we must first locate the centroid of the weld group. The expression for the $x$ and $y$ coordinates of the centroid, $x_c$ and $y_c$ is
 
 \begin{align}
+  \label{eqn: center of welds}
   x_c = \int_A xdA = \sum x_{ci}A_i \\
   y_c = \int_A ydA = \sum y_{ci}A_i
 \end{align}
@@ -6773,6 +6774,15 @@ There may arise situations where weld joints need not, or cannot, be symmetrical
   \end{align*}
 \end{solution}
 
+In summary, to determine strength or design an asymmetric weld joint, you should follow these steps.
+
+\begin{enumerate}
+\item Determine the center of welds using \cref{eqn: center of welds}. 
+\item Break down loads on the welds into axial, shear, bending, and/or torsion.
+\item Determine the $I_{group}$ and/or $J_{group}$ for cases with bending or torsion loads.
+\item Calculate stresses according to each type of loads.
+\item If there are multiple stresses, combine the stresses using stress transformation (when there are normal AND shear stresses) or vector addition (when there are only shear or only normal stresses).
+\end{enumerate}
 
 \section{Fatigue Considerations in Welded Joints}
 
