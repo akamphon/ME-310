@@ -3586,6 +3586,7 @@ Experimentally, the criterion has been found to be in close agreement with the b
     \end{array} \right\} & & \sigma_1 > 0 > \sigma_2 \\[10pt]
     \sigma_2 <  - \dfrac{S_{uc}}{N_s} & & \sigma _2 < \sigma _1 < 0
   \end{array}
+  \label{eqn: MNST design eq}
 \end{equation}
 
 \subsection{Modified Coulomb-Mohr theory}
@@ -4791,8 +4792,8 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
 
   \begin{align*}
     S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{S_y}} \\
-      &= \py{'{:.2E}'.format(S)} \text{ m}^3 \\
-      &= \py{'{:.2E}'.format(S*10**9)} \text{ mm}^3
+      &= \py{'{:.2e}'.format(S)} \text{ m}^3 \\
+      &= \py{'{:.2e}'.format(S*10**9)} \text{ mm}^3
   \end{align*}
 
   We can look up a catalog to determine a proper cross section for the beam in \cref{tab: alum i-beams}. The smallest of the standard i-beam (depth = 76.2 mm, width = 63.5 mm) is still larger than the required section modulus, and so it is our selection.
@@ -4802,9 +4803,9 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
   \begin{align*}
     N_s P &= \frac{\pi^2 EI}{L^2} \\
     I_l &= \frac{\py{N}(\py{round(F_l)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
-          &= \py{'{:.2E}'.format(I_l)} \text{ m}^4 \\
+          &= \py{'{:.2e}'.format(I_l)} \text{ m}^4 \\
     I_r &= \frac{\py{N}(\py{round(F_r)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
-          &= \py{'{:.2E}'.format(I_r)} \text{ m}^4
+          &= \py{'{:.2e}'.format(I_r)} \text{ m}^4
   \end{align*}
 
   According to the required $I$, again the smallest value of $I$ for axis 2-2 is still larger. Hence the same beam that we chose for the dryer beam is our choice here.
@@ -6330,6 +6331,7 @@ The stresses in welds depend both on its geometry and loading direction. In butt
 \end{figure}
 
 \begin{equation}
+  \label{eqn: butt weld}
   \sigma  = \frac{F_n}{A_w} = \frac{F_n}{HL}
 \end{equation}
 
@@ -6337,6 +6339,7 @@ where $H$ is the throat length and $L$ is the weld length.
 Similarly, under a shear force $F_s$, the weld is under a shear stress.
 
 \begin{equation}
+  \label{eqn: fillet weld}
   \tau  = \frac{F_s}{A_w} = \frac{F_s}{HL}
 \end{equation}
 
@@ -7721,6 +7724,8 @@ Finally, if a design calls for a safety factor of $N_s$, that means the bolt mus
   A_t = \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}}{S_p}
   \end{equation} 
 
+  Once we obtained $A_t$ we can check back at \cref{table: ISO Screw Dimensions} for standard coarse- and fine-threaded bolt sizes. Once safety factor is properly incorporated, we simply choose the next bigger bolt so that it will have sufficient tensile area $A_t$ but not larger than what we need.
+
 \begin{example} Design of a tension bolted joint
 
 You are to determine the proper bolt sizes for a ceiling-mounted electric fan. The fan requires 2 bolts and weighs 50 kg. Use grade 4.6 bolts.
@@ -7757,7 +7762,7 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
           &= \py{round(A_t,7)} \text{ m}^2 = \py{round(A_t * 10**6,2)} \text{ mm}^2
   \end{align*}
 
-  From the table, we see that this is smaller than the smallest standard bolt, thus we will pick M3$\times$0.5.
+  Since the required bolt size is smaller than the smallest standard bolt, M3$\times$0.5 we will pick this smallest bolt.
 \end{solution}
 
 \begin{example}
@@ -7794,7 +7799,7 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
     P_{shear} &= \py{P} \sin \py{angle}^{\circ} = \py{round(P_shear)} \\
     A_t &= \frac{N_s}{S_p} \left( \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}}{S_p} \right) \\
               &= \frac{\py{N_s}}{\py{S_p}} \left( \frac{\py{round(P_shear)}}{0.75(\py{mu}) } + \py{round(P_axial)} \right) \\
-              &= \py{'{:.2E}'.format(A_t)} \text{ m}^2
+              &= \py{'{:.2e}'.format(A_t)} \text{ m}^2
   \end{align*}
 
   According to \cref{table: ISO Screw Dimensions} the proper size for this bolt is M10$\times$1.5 (coarse thread) or M10$\times$1.25 (fine thread).
@@ -8077,6 +8082,8 @@ Bolted joints are, in most cases, non-permanent joints that utilize clamping for
 The goal of any mechanical component is so that each of them come together to form a machine that serves a useful purpose. The design of a machine takes imagination and creative processes to determine the proper combination of components, optimization of said components, and to take into consideration a multitude of internal and external factors that apply to specific design problems. Making a progress from component design to sub-system and system design requires deeper knowledge and even more profound experiences.
 
 The purpose of this chapter is to help us make that progress by demonstrating the decisions involved in designing a few simple machines that can be seen in day-to-day lives. By observing and studying the way a design of one component affect that of another, the examples should start us on thinking about machine design as a network of interconnected, interdependent processes.
+
+Note that this chapter is a culmination of all of the topics that we have covered in this book. It should go to show that in order to properly design a system/subsystem or a mechanism, we must fully understand how to design individual components, how to join them, and how external loads are distributed among them.
 
 \section{Processes of Mechanism Analysis}
 
@@ -8385,45 +8392,101 @@ Note: Assume any other values or dimensions you think are necessary to solve the
 
 \subsubsection{Solution}
 
-The problem did not mention the maximum stretched length of the spring. However, this is a chest exercise machine and its reasonable maximum length should approximately be of a length of an average human reach, say 1.5 m. We can calculate the required spring stiffness.
+\begin{enumerate}
 
-\[k = \frac{\Delta F}{\Delta x} = \frac{350 - 0}{1.5 - 1} = 700\text{ N/m}\]
+\item  The problem did not mention the maximum stretched length of the spring. However, this is a chest exercise machine and its reasonable maximum length should approximately be of a length of an average human reach, say 1.5 m. We can calculate the required spring stiffness.
+  
+  \[k = \frac{\Delta F}{\Delta x} = \frac{350 - 0}{1.5 - 1} = 700\text{ N/m}\]
 
-The springs used here should be extension spring since the exercise machine will mainly receive pulling loads.
+  The springs used here should be extension spring since the exercise machine will mainly receive pulling loads.
 
-For these extension springs, there are no requirements for resistances against shock load or corrosive environment. Cost, therefore, become the main criterion for material selection. In this problem, we will pick the inexpensive \emph{hard-drawn} wire, from which the equations for the required diameter are
+  For these extension springs, there are no requirements for resistances against shock load or corrosive environment. Cost, therefore, become the main criterion for material selection. In this problem, we will pick the inexpensive \emph{hard-drawn} wire, from which the equations for the required diameter are
 
-\[\begin{gathered}
-  \sigma_{\max} = \frac{16FD}{\pi d^3}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) \hfill \\
-  \tau_{\max} = \frac{8FD}{\pi d^3}\left( \frac{r_4}{r_2} \right) = \frac{8FC}{\pi d^2}\left( \frac{r_4}{r_2} \right) \hfill \\ 
-\end{gathered} \]
+  \[\begin{gathered}
+      \sigma_{\max} = \frac{16FD}{\pi d^3}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) \hfill \\
+      \tau_{\max} = \frac{8FD}{\pi d^3}\left( \frac{r_4}{r_2} \right) = \frac{8FC}{\pi d^2}\left( \frac{r_4}{r_2} \right) \hfill \\ 
+    \end{gathered} \]
 
-According to \cref{eqn: critical stresses in end hook}, $r_1 = D / 2$, $r_3 = (D - d) / 2$. Let us also assume that $r_4 = D / 3$, which gives $r_2 = D / 3 - d / 2$. For a relatively low stiffness spring, we will assume that the spring index $C$ = 8, which allows us to solve for $d$.
+  According to \cref{eqn: critical stresses in end hook}, $r_1 = D / 2$, $r_3 = (D - d) / 2$. Let us also assume that $r_4 = D / 3$, which gives $r_2 = D / 3 - d / 2$. For a relatively low stiffness spring, we will assume that the spring index $C$ = 8, which allows us to solve for $d$.
 
-\begin{gather*}
-  \sigma_{\max} = \frac{S_{ut}}{N_s} = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{D}{D - d} \right) \\
-  \frac{1}{2}\frac{A}{d^m} = \frac{16FC}{\pi d^2}\left( \frac{C}{C - 1} \right) \\ 
-  \frac{1}{2}\frac{1783 \times 10^6 \times 10^{-3(0.190)}}{d^{0.190}} = \frac{16(350)(8)(8)}{\pi d^2(8 - 1)} \\
-  \begin{aligned}
-  &d^{2-0.190} = 6.79 \times 10^{-5} \\ 
-  &d = 4.98 \times 10^{-3} \text{ m} = 4.98\text{ mm}
-  \end{aligned}
-\end{gather*}
+  \begin{gather*}
+    \sigma_{\max} = \frac{S_{ut}}{N_s} = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{D}{D - d} \right) \\
+    \frac{1}{2}\frac{A}{d^m} = \frac{16FC}{\pi d^2}\left( \frac{C}{C - 1} \right) \\ 
+    \frac{1}{2}\frac{1783 \times 10^6 \times 10^{-3(0.190)}}{d^{0.190}} = \frac{16(350)(8)(8)}{\pi d^2(8 - 1)} \\
+    \begin{aligned}
+      &d^{2-0.190} = 6.79 \times 10^{-5} \\ 
+      &d = 4.98 \times 10^{-3} \text{ m} = 4.98\text{ mm}
+    \end{aligned}
+  \end{gather*}
 
-\begin{gather*}
-  \tau_{\max} = \frac{\tau_{allow}}{N_s} = \frac{8FC}{\pi d^2}\left( \frac{r_4}{r_2} \right) = \frac{8FC}{\pi d^2}\left( \frac{D/3}{D/3 - d/2} \right) \\ 
-  \frac{0.45}{2}\frac{A}{d^m} = \frac{8FC}{\pi d^2}\left( \frac{C/3}{C/3 - 1/2} \right) \\ 
-  \frac{0.45}{2}\frac{1783 \times 10^6 \times 10^{-3(0.190)}}{d^{0.190}} = \frac{8(350)(8)(8/3)}{\pi d^2(8/3 - 1/2)} \\
-  \begin{aligned}
-  &d^{2-0.190} = 8.13 \times 10^{-5} \\ 
-  &d = 5.50 \times 10^{-3}\text{ m} = 5.50 \text{ mm}
-  \end{aligned}
-\end{gather*}
+  \begin{gather*}
+    \tau_{\max} = \frac{\tau_{allow}}{N_s} = \frac{8FC}{\pi d^2}\left( \frac{r_4}{r_2} \right) = \frac{8FC}{\pi d^2}\left( \frac{D/3}{D/3 - d/2} \right) \\ 
+    \frac{0.45}{2}\frac{A}{d^m} = \frac{8FC}{\pi d^2}\left( \frac{C/3}{C/3 - 1/2} \right) \\ 
+    \frac{0.45}{2}\frac{1783 \times 10^6 \times 10^{-3(0.190)}}{d^{0.190}} = \frac{8(350)(8)(8/3)}{\pi d^2(8/3 - 1/2)} \\
+    \begin{aligned}
+      &d^{2-0.190} = 8.13 \times 10^{-5} \\ 
+      &d = 5.50 \times 10^{-3}\text{ m} = 5.50 \text{ mm}
+    \end{aligned}
+  \end{gather*}
 
-In this problem, the limiting factor is the shear stress (since it requires the larger of the two diameters). Therefore, the wire diameter $d$ = 5.50 mm, which gives the coil diameter $D = Cd$ = 4.4 cm. Finally, the number of required active coils is
+  In this problem, the limiting factor is the shear stress (since it requires the larger of the two diameters). Therefore, the wire diameter $d$ = 5.50 mm, which gives the coil diameter $D = Cd$ = 4.4 cm. Finally, the number of required active coils is
 
-\[N_a = \frac{Gd}{8C^3k} = \frac{79.3 \times 10^9(5.5 \times 10^{-3})}{8(8^3)(700)} = 152\text{ coils}\]
+  \[N_a = \frac{Gd}{8C^3k} = \frac{79.3 \times 10^9(5.5 \times 10^{-3})}{8(8^3)(700)} = 152\text{ coils}\]
 
+\item If the spring is welded to the handles with the effective throat thickness $H$ = 5 mm. We may assume that the weld would be on the edge of the handle. The problem did not specify the electrode material and so we will assume that E60 series is used. In this problem the weld is simply butt weld and so the design equation \cref{eqn: MNST design eq} based on MNST and the butt weld stress equation, \cref{eqn: butt weld}, can be written as 
+
+  \begin{pycode}
+    N_s = 2
+    F = 700
+    H = 0.005
+    S_ut = 427*10**6
+    L = F*N_s/H/S_ut
+  \end{pycode}
+
+  \begin{align*}
+    N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut}}{\frac{F}{HL}} \\
+    L &= \frac{N_s F}{H S_{ut}} = \frac{\py{N_s}(\py{F})}{\py{H}(\py{'{:.2e}'.format(S_ut)})} \\
+        &= \py{'{:.2e}'.format(L)} \text{ m}
+  \end{align*}
+
+  Thus the required weld length is \py{'{:.5f}'.format(L)} m.
+
+\item If instead the spring is bolted down to the handle using 2 identical bolts on each side, then each bolt will take half of the maximum \py{F}-N load = \py{round(F/2)} N.
+
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[>=latex]
+      \node [draw, rectangle, fill=SkyBlue, minimum height=1.5cm, minimum width=0.5cm](A){};
+      \node [draw, rectangle, fill=white, minimum height=1cm, minimum width=0.3cm]{};
+      \node at (A.east) [anchor=west, draw, rectangle, fill=SkyBlue, minimum height=1.5cm, minimum width=2mm, inner sep=0](B){};
+      \node at (B.east) [yshift=2mm, xshift=-1mm, draw, rectangle, fill=Black, minimum height=1mm, minimum width=3mm, inner sep=0]{};
+      \node at (B.east) [yshift=-2mm, xshift=-1mm, draw, rectangle, fill=Black, minimum height=1mm, minimum width=3mm, inner sep=0]{};
+      \draw [decoration={aspect=0.3, segment length=0.1cm, amplitude=0.1cm,coil},decorate, line width=1pt] (B.east) ++ (90:0.2) --++ (0:1) node(C){};
+      \draw [decoration={aspect=0.3, segment length=0.1cm, amplitude=0.1cm,coil},decorate, line width=1pt] (B.east) ++ (90:-0.2) --++ (0:1) node(D){};
+      \draw [->, ultra thick] (A.west) --++ (180:1) node[left]{700 N};
+      \draw [->, ultra thick] (C.center) --++ (0:0.5) node[right]{350 N};
+      \draw [->, ultra thick] (D.center) --++ (0:0.5) node[right]{350 N};
+    \end{tikzpicture}
+    \label{fig: chest exercise bolted handle}
+  \end{figure}
+
+  Since the spring is directly pulling along the axis of the bolt, as show in \cref{fig: chest exercise bolted handle}. The external force exerted on the bolted joint will only be an axial tensile load, for which the design equation \cref{eq: total forces on bolted joint} can be written as 
+
+  \begin{pycode}
+    P_axial = F/2
+    S_p = 225 * 10**6
+    A_t = N_s * P_axial / S_p
+  \end{pycode}
+
+  \begin{align*}
+    A_t &= \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}}{S_p} \\
+        &= \frac{ \py{N_s} (0) }{ 0.75 \mu (\py{S_p})} = \frac{\py{N_s} ( \py{round(P_axial)} ) }{ \py{S_p} } \\
+        &= \py{'{:.2e}'.format(A_t)} \text{ m}^2
+  \end{align*}
+
+ Checking the required tensile stress area against \cref{table: ISO Screw Dimensions}, we find that the area is smaller than the smallest standard bolt M30 $\times$ 0.5. Hence M30 $\times$ 0.5 will be our selection.
+  
+\end{enumerate}
 \section*{Summary}
 
 This chapter discusses the application of concepts from Statics and Mechanics of Materials to analyze loads and stress on assembled mechanism. Students must understand how exerted loads transfer through materials and joints and translate them into corresponding stresses. Components are not designed solely to satisfy its requirements but those of the entire mechanism.
@@ -9971,10 +10034,9 @@ The moments of inertia of other geometric shapes are listed in ...
   \label{tab: cast iron props}
 \end{table}
 
-\section{SAE Steel Designation}
-
-\begin{table}[h] 
+\begin{table}[H] 
   \centering
+  \caption{SAE designations for carbon steel grades \cite{oberg2016machinery}}
   \begin{tabular}{ll}
     \toprule
     SAE designation & Type \\
@@ -10035,10 +10097,9 @@ The moments of inertia of other geometric shapes are listed in ...
     xxLxx & Leaded steels \\
     \bottomrule
   \end{tabular}
-  \caption{SAE designations for carbon steel grades \cite{oberg2016machinery}}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \centering
   \caption[Mechanical properties of common grade stainless steels]{Mechanical properties of common grade stainless streels. Note that properties can vary greatly under different heat treatments.}
   \label{tab: stainless steel props and uses}
@@ -10112,7 +10173,7 @@ The moments of inertia of other geometric shapes are listed in ...
   \end{tabular}
 \end{table}
 
-\begin{table}[]
+\begin{table}[H]
   \centering
   \caption{Properties and usages of popular copper alloys.}
   \label{tab: copper alloy props and uses}
@@ -10139,7 +10200,7 @@ The moments of inertia of other geometric shapes are listed in ...
   \end{tabular}}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \centering
   \caption{Properties and usages of popular magnesium alloys}
   \label{tab: mag alloy props and uses}
@@ -10163,6 +10224,7 @@ The moments of inertia of other geometric shapes are listed in ...
 
 \begin{table}[H]
   \centering
+  \caption{Properties of commonly used plastics \cite{gay2014composite}}
   \begin{tabular}{lcccccc}
     \toprule
     & $\rho$         & $E$ & $G$ & $\nu$ & $S_{ut}$ & Elongation \\
@@ -10186,12 +10248,12 @@ The moments of inertia of other geometric shapes are listed in ...
     Polyether-ether-ketone & 1300 & 4.0 & &      & 90  & 50 \\
     \bottomrule
   \end{tabular}
-  \caption{Properties of commonly used plastics \cite{gay2014composite}}
   \label{tab: resin props}
 \end{table}
 
-\begin{table}[h]
+\begin{table}[H]
   \centering
+  \caption{Properties of commonly used reinforcements \cite{gay2014composite}}
   \begin{tabular}{lcccccc}
     \toprule
                    & $\rho$         & $E$ & $G$       & $\nu$ & $S_{ut}$  & Elongation \\
@@ -10209,7 +10271,6 @@ The moments of inertia of other geometric shapes are listed in ...
     Polyethylene                & 960  & 100 &     &      & 3.0 & \\
     \bottomrule
   \end{tabular}
-  \caption{Properties of commonly used reinforcements \cite{gay2014composite}}
   \label{tab: reinforcement props}
 \end{table}
 \nocite{*}
