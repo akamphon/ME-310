@@ -1904,6 +1904,7 @@ The resultant moment is simply the sum of these small moments across the cross-s
 in which $J$ is the polar moment of inertia of the circular cross section. By rearranging this equation, we obtain the maximum shear stress as a function of applied torque:
 
 \begin{equation}
+  \label{eqn: torsional stress formula}
   \tau _{\max } = \frac{Tr}{J}
 \end{equation}
 
@@ -3415,6 +3416,7 @@ Since the theory requires that the distortion energy density be the same as the 
 Or in the case of plane or biaxial stress, we have
 
 \begin{equation}
+  \label{eqn: equiv stress for MDET}
   \sigma_e^2 = \sigma_1^2 - \sigma_1\sigma_2 + \sigma_2^2 = S_y^2
 \end{equation}
 
@@ -3440,6 +3442,7 @@ In comparison the maximum distortion energy theory is slightly more aggressive i
 The safety factor according to the criterion can be written as
 
 \begin{equation}
+  \label{eqn: design eqn for MDET}
   N_s(\text{MDET}) = \frac{S_y}{\sigma_e}
 \end{equation}
 
@@ -3679,6 +3682,7 @@ Typically, steel exhibit this endurance limit. However, many aluminum alloys do 
 When the load is completely reversed, resulting in zero mean stress ($\sigma_m = 0$), fatigue failure can mostly be described by stress amplitude. At the lower end of this spectrum where the number of cycles to failure $N = 10^3$, the stress amplitude that leads to failure is called the \emph{low cycle fatigue limit}, $S_l$, and can be approximated as
 
 \begin{equation}
+  \label{eqn: low cycle fatigue limit}
   S_l = \left\{
     \renewcommand{\arraystretch}{1.2}
     \begin{array}{ll}
@@ -3692,6 +3696,7 @@ When the load is completely reversed, resulting in zero mean stress ($\sigma_m =
 On the far end of the spectrum where $N = 10^7$, the stress amplitude is the \emph{endurance limit}, $S_e$, which can be approximated as
 
 \begin{equation}
+  \label{eqn: endurance limit}
   S_e = \left\{
     \renewcommand{\arraystretch}{1.2}
     \begin{array}{ll}
@@ -3724,14 +3729,17 @@ Nonzero mean stresses have a significant effect on the fatigue strength of a mat
 \begin{enumerate}
 \item Soderberg relation
   \begin{equation}
+    \label{eqn: soderberg design eqn}
     \frac{\sigma_a}{S_e} + \frac{\sigma _m}{S_y} = \frac{1}{N_s}
   \end{equation}
 \item Gerber relation
   \begin{equation}
+    \label{eqn: gerber design eqn}
     \frac{\sigma_a}{S_e} + \left( \frac{\sigma_m}{S_{ut}} \right)^2 = \frac{1}{N_s}
   \end{equation}
 \item Goodman relation
   \begin{equation}
+    \label{eqn: goodman design eqn}
     \frac{\sigma_a}{S_e} + \frac{\sigma _m}{S_{ut}} = \frac{1}{N_s}
   \end{equation}
 \end{enumerate}
@@ -4256,7 +4264,7 @@ Once the beam has been selected, engineers can use the shear-stress formula $\ta
     \right.
   \end{align*}
 
-  The maximum bending moment, according to $M(x)$ is at $x$ = 0.5 where $M$ = $\dfrac{3(2000)(0.5)}{4}$ = 750 N-m. Since we have assumed that the material is ductile, we will employ MDET for our design equation, which gives
+  The maximum bending moment, according to $M(x)$ is at $x$ = 0.5 where $M$ = $\dfrac{3(2000)(0.5)}{4}$ = \py{round(3*2000*0.5/4)} N-m. Since we have assumed that the material is ductile, we will employ MDET \cref{eqn: design eqn for MDET} and bending stress \cref{eqn: flexure formula} for our design equation, which gives
 
   \begin{align*}
     N_s &= \frac{S_y}{\sigma_e} = \frac{S_y}{My/I} \\
@@ -4508,20 +4516,34 @@ Note that the application of any other theories of failure or safety factor othe
 
   The shaft is supported by bearings on both sides, though it did not make any mention about whether it is a fixed or simple support. Applied torque in this problem does not depend on the type of support, while bending moment may. However, when the applied load is in the middle of the shaft like here, the type of support does not impact the bending moment either.
 
-  We have seen bending problems with midpoint loads many times before, so we know that the critical point is in the middle at the top of bottom surface of the shaft. Shear stress from torsion is uniform on the surface. The state of stress at the critical point reduces to
+  We have seen bending problems with midpoint loads many times before, so we know that the critical point is in the middle at the top of bottom surface of the shaft. Shear stress from torsion is uniform on the surface. The state of stress at the critical point consists of bending stress from the bending moment and shear stress from the torque, which we can use \cref{eqn: flexure formula} and \cref{eqn: torsional stress formula}. 
 
   $$ \sigma = \frac{Mr}{I} $$
   $$ \tau = \frac{Tr}{J} $$
 
-  in which case, the required shaft radius from \cref{eqn: shaft radius without axial} is
+  Since both timing belt ends are pulled in essentially the same direction, the resulting bending moment can be determined as
+
+  \begin{align*}
+    M &= \frac{FL}{4} = \frac{(2000 + 500)(0.6)}{4} \\
+      &= \py{round(2500*0.6/4)}
+  \end{align*}
+  
+  The torque on the shaft can be calculated by the sum of the torques generated the forces on the timing belt.
+
+  \begin{align*}
+    T &= 2000(0.05) - 500(0.05) \\
+      &= \py{round(2000*0.05 - 500*0.05)}
+  \end{align*}
+
+  The required shaft radius using \cref{eqn: shaft radius without axial} is
 
   \begin{align*}
     r &= \left( \frac{2 N_s}{\pi \tau _{allow}}\sqrt {M^2 +T^2}  \right)^{\frac{1}{3}} \\
-      &= \left( \frac{2 \times 2.5}{\pi (400 \times 10^6 /2 )}\sqrt {[(2000+500)(0.6/4)]^2 +[(2000-500)(0.05)]^2}  \right)^{\frac{1}{3}} \\
+      &= \left( \frac{2 \times 2.5}{\pi (400 \times 10^6 /2 )}\sqrt {[375]^2 +[75]^2}  \right)^{\frac{1}{3}} \\
       &= 1.51 \times 10^{-2} \text{ m} = 1.51 \text{ cm}
   \end{align*}
 
-  Note that $\tau_{allow}$ is derived from maximum shear stress theory, for which $\tau_{allow} = S_y/2$.
+  Note that $\tau_{allow}$ is derived from maximum shear stress theory in which , for which $\tau_{allow} = S_y/2$.
 \end{solution}
 
 \section{Column Design}
@@ -5849,10 +5871,11 @@ The critical stresses in an extension spring often occur in the end hooks. There
   \label{fig: stress in extension spring hooks}
 \end{figure}
 
-\begin{equation} \label{eqn: critical stresses in end hook}
+\begin{equation}
+  \label{eqn: critical stresses in end hook extension springs}
   \begin{gathered}
     \sigma_A = \frac{16FD}{\pi d^3}\left( \frac{r_1}{r_3} \right) \\ 
-    \tau_B = \frac{8FD}{\pi d^3}\left( \frac{r_4}{r_2} \right) \\ 
+    \tau_B = \frac{8FD}{\pi d^3}\left( \frac{r_4}{r_2} \right)
   \end{gathered}
 \end{equation}
 
@@ -6834,7 +6857,7 @@ When welded joints are subjected to fatigue loading, small voids and inclusions 
       \sigma_a = 1.2\left( \frac{5 \times 10^6}{L} \right) = \frac{6 \times 10^6}{L} \hfill \\ 
     \end{gathered} \]
 
-  The yield strength and endurance limit for E60 series are 345 MPa and $0.45 \times 427 = 192$ MPa, respectively. Substituting the values into Soderberg relation, we have
+  From \cref{table: electrode properties}, the yield strength is 435 MPa and endurance limit is, according to \cref{eqn: endurance limit}, $0.45 \times 427 = 192$ MPa for E60 series electrode. Substituting the values into Soderberg relation from \cref{eqn: soderberg design eqn}, we have
 
   \[\begin{gathered}
       \frac{\sigma_a}{S_e} + \frac{\sigma_m}{S_y} = \frac{1}{N_s} \hfill \\
@@ -7154,7 +7177,7 @@ where At is the tensile stress area of the thread, Sp is the proof strength of t
   \centering
   \begin{tikzpicture}
     % cylinder
-    \node (0,0) [fill=SkyBlue,cylinder, shape border rotate=180,draw, minimum height=7cm, minimum width=2cm]{};
+    \node (0,0) [top color=SkyBlue, bottom color=SkyBlue, middle color=SkyBlue!40!White,cylinder, shape border rotate=180,draw, minimum height=7cm, minimum width=2cm]{};
     % element
     \draw (-0.3,-0.3) rectangle (0.3,0.3);
     % stresses on element
@@ -8163,12 +8186,12 @@ We can now analyze each component.
 
 \paragraph{Lever}
 
-The lever is under bending and is most likely to fail from bending stress. The maximum bending stress occurs at the top and bottom surfaces at the middle.
+The lever is under bending and is most likely to fail from bending stress. The maximum bending stress occurs at the top and bottom surfaces at the middle. The bending stress can be calculated using \cref{eqn: flexure formula}. 
 
 \[\sigma  = \frac{My}{I} = \frac{W(0.1)(0.01/2)}{(0.01^4/12)} = 6 \times
   10^4W\]
 
-We can then determine the maximum allowable weight for the lever $W_{lever}$ using MNST with safety factor = 1 (since the material is brittle and safety factor is not specified) as
+We can then determine the maximum allowable weight for the lever $W_{lever}$ using MNST with safety factor = 1 (since the material is brittle and safety factor is not specified) from \cref{eqn: MNST design eq} as
 
 \[\begin{gathered}
   N_s\text{(MNST)} = 1 = \frac{S_{ut}}{\sigma _{1,2}} \hfill \\
@@ -8177,7 +8200,7 @@ We can then determine the maximum allowable weight for the lever $W_{lever}$ usi
 \end{gathered} \]
 
 \paragraph{Pin}
-The pin is under shearing load, which results in pure shear. Since the material is ductile, we will use MDET to determine $W_{pin}$.
+The pin is under shearing load, which results in pure shear. Since the material is ductile, we will use MDET, \cref{eqn: design eqn for MDET}, to determine $W_{pin}$.
 
 \[\begin{gathered}
   N_s\text{(MDET)} = 1 = \frac{S_y}{\sigma_e} \hfill \\
@@ -8189,7 +8212,7 @@ The pin is under shearing load, which results in pure shear. Since the material 
 
 The column, which is under a compressive load, can fail due to either excessive compressive stress or buckling. Let us first consider compressive stress.
 
-The problem did not specify the ultimate compressive strength of 6061-T4 Al, so we can assume that it is identical to the ultimate tensile strength. We can then determine $W_{column}$ to be
+The problem did not specify the ultimate compressive strength of 6061-T4 Al, so we can assume that it is identical to the ultimate tensile strength. We can then determine $W_{column}$ using MNST criteria, defined by \cref{eqn: MNST design eq}, as
 
 \[\begin{gathered}
   N_s\text{(MNST)} = 1 = \frac{S_{ut}}{\sigma_{1,2}} \hfill \\
@@ -8197,7 +8220,7 @@ The problem did not specify the ultimate compressive strength of 6061-T4 Al, so 
   W_{lever} = 12000\text{ N} \hfill \\ 
 \end{gathered} \]
 
-Now, let us consider buckling. 
+Now, let us consider buckling. The column is fixed at the bottom to the ground and free at the top. Using \cref{eqn: Euler's formula} with $K$ = 2 for fixed-free support, we will have that 
 
 \[\begin{gathered}
   2W_{column} = P_c = \frac{\pi ^2EI}{(2L)^2} \hfill \\
@@ -8318,7 +8341,7 @@ Determine the following on all components in consideration (handle, shaft, and c
   
   For the chamber, the circumferential and longitudinal stress are not dependent on the location (since the internal pressure is the same everywhere), so the critical point is also everywhere.
   
-\item The bending stress in the handle is
+\item The bending stress in the handle according to \cref{eqn: flexure formula} is
 
   \[\sigma = \frac{My}{I} = \frac{(500 \text{ N})(0.15 \text{ m})(0.01 \text{ m})}{\dfrac{\pi }{4}{(0.01 \text{ m})^4}} = 95.5 \text{ MPa}\]
 
@@ -8334,11 +8357,11 @@ The circumferential and longitudinal stresses in the chamber’s wall are
 \end{gathered} \]
 
 Note that there are no shear stresses in any of the component, therefore the normal stresses found are also principal stresses.
-\item The handle is made of HDPE, which is a brittle material, hence its safety factor is defined using a maximum normal stress theory as
+\item The handle is made of HDPE, which is a brittle material, hence its safety factor is defined using the maximum normal stress theory, \cref{eqn: MNST design eq}, as
 
   \[N_s = \frac{S_{ut}}{\sigma_1} = \frac{100\text{ MPa}}{95.5\text{ MPa}} = 1.05\]
 
-The shaft is a long slender column under compressive load, buckling is typically the main source of failure. The shaft can be considered fixed at the bottom as it is usually welded or attached to the piston, allowing very little translation or rotation, and free on the top as the handle bar is free to move.
+The shaft is a long slender column under compressive load, buckling is typically the main source of failure. The shaft can be considered fixed at the bottom as it is usually welded or attached to the piston, allowing very little translation or rotation, and free on the top as the handle bar is free to move. The design equation under buckling, \cref{eqn: Euler's formula}, is 
 
 \begin{align*}
   N_s &= \frac{P_{cr}}{P} = \frac{\dfrac{\pi ^2 EI}{L_e^2}}{1000\text{ N}} \\[0.5em] 
@@ -8346,15 +8369,15 @@ The shaft is a long slender column under compressive load, buckling is typically
       &= 0.67
 \end{align*}
 
-The chamber is made of a ductile material. Its safety factor may be determined using the maximum distortion energy theory (von Mises criteria) or the maximum shear stress theory (Tresca criteria). In this problem, we will choose the von Mises criteria, whose safety factor is defined by
+The chamber is made of a ductile material. Its safety factor may be determined using the maximum distortion energy theory (von Mises criteria) or the maximum shear stress theory (Tresca criteria). In this problem, we will choose the von Mises criteria, whose safety factor is defined using \cref{eqn: equiv stress for MDET} and \cref{eqn: design eqn for MDET} as
 
 \[N_s = \frac{S_y}{\sigma_e} = \frac{100\text{ MPa}}{\sqrt {42^2 - (42)(21) + 21^2}} = 2.75\]
 
-\item To determine the safety factor due to fatigue, the maximum and minimum stresses during a loading cycle must be calculated. The maximum stress in the chamber happens when the piston is being pushed down, compressing the air. The minimum stress happens when the piston is being lifted. The problem states that the lift force is assumed very small (zero), resulting in zero air pressure and zero stress on the chamber wall. Therefore, the fatigue stress amplitude goes between 42 MPa and 0 MPa, giving the mean stress of 21 MPa. Since the mean stress is nonzero, Soderberg theory must be used to determine the safety factor.
+\item To determine the safety factor due to fatigue, the maximum and minimum stresses during a loading cycle must be calculated. The maximum stress in the chamber happens when the piston is being pushed down, compressing the air. The minimum stress happens when the piston is being lifted. The problem states that the lift force is assumed very small (zero), resulting in zero air pressure and zero stress on the chamber wall. Therefore, the fatigue stress amplitude goes between 42 MPa and 0 MPa, giving the mean stress of 21 MPa. Since the mean stress is nonzero, Soderberg relation \cref{eqn: soderberg design eqn} must be used to determine the safety factor.
   
   \[\frac{\sigma _m}{S_y} + \frac{\sigma _a}{S_e} = \frac{1}{N_s}\]
   
-  The endurance limit of aluminum at zero mean stress for pressure vessel loading is not available. To be safe, it can be assumed that it is the smallest among the available cases, which is torsion, so that
+  The endurance limit of aluminum at zero mean stress for pressure vessel loading is not available. To be safe, it can be assumed that it is the smallest among the available cases, which is torsion according to \cref{eqn: endurance limit}, so that
   
   \[S_e = 0.29S _{ut} = 0.29(150\text{ MPa}) = 43.5\text{ MPa}\]
   
@@ -8384,7 +8407,7 @@ Chest exercise equipment is composed of two identical springs attached to a spri
   \end{figure}
 
 \begin{enumerate}
-\item Determine the proper spring to be used.
+\item Determine the proper spring to be used. Assume that the end hooks follow typical drawings in \cref{fig: stress in extension spring hooks} and that $r_1 = D / 2$, $r_3 = (D - d) / 2$, $r_4 = D / 3$, and $r_2 = D / 3 - d / 2$.
 \item If the spring plates are to be welded to the handle and the weld effective throat thickness is 5 mm, determine the proper electrode and weld length.
 \item If the spring plates are to be attached to the handle using 2 identical bolts. Determine the proper bolt size.
 \end{enumerate}
@@ -8400,14 +8423,14 @@ Note: Assume any other values or dimensions you think are necessary to solve the
 
   The springs used here should be extension spring since the exercise machine will mainly receive pulling loads.
 
-  For these extension springs, there are no requirements for resistances against shock load or corrosive environment. Cost, therefore, become the main criterion for material selection. In this problem, we will pick the inexpensive \emph{hard-drawn} wire, from which the equations for the required diameter are
+  For these extension springs, there are no requirements for resistances against shock load or corrosive environment. Cost, therefore, become the main criterion for material selection. In this problem, we will pick the inexpensive \emph{hard-drawn} wire, from which the equations for the required diameter using \cref{eqn: critical stresses in end hook extension springs} are
 
   \[\begin{gathered}
       \sigma_{\max} = \frac{16FD}{\pi d^3}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) \hfill \\
       \tau_{\max} = \frac{8FD}{\pi d^3}\left( \frac{r_4}{r_2} \right) = \frac{8FC}{\pi d^2}\left( \frac{r_4}{r_2} \right) \hfill \\ 
     \end{gathered} \]
 
-  According to \cref{eqn: critical stresses in end hook}, $r_1 = D / 2$, $r_3 = (D - d) / 2$. Let us also assume that $r_4 = D / 3$, which gives $r_2 = D / 3 - d / 2$. For a relatively low stiffness spring, we will assume that the spring index $C$ = 8, which allows us to solve for $d$.
+  For a relatively low stiffness spring, we will assume that the spring index $C$ = 8, which allows us to solve for $d$.
 
   \begin{gather*}
     \sigma_{\max} = \frac{S_{ut}}{N_s} = \frac{16FC}{\pi d^2}\left( \frac{r_1}{r_3} \right) = \frac{16FC}{\pi d^2}\left( \frac{D}{D - d} \right) \\
