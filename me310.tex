@@ -1058,6 +1058,8 @@ Main principal fiber materials are
 \item Silicon carbide: the principle of fabrication is analogous to that of boron fiber: chemical vapor deposition of methyl trichlorosilane mixed with hydrogen.
 \end{enumerate}
 
+Properties of some of the commonly used matrix materials are listed in \cref{tab: resin props}.
+
 \subsection{Matrix Materials}
 
 The materials used as matrix in composite materials are
@@ -1068,6 +1070,8 @@ The materials used as matrix in composite materials are
 \item Metallic matrix: aluminum alloys, titanium alloys.
 \end{itemize}
 
+Properties of some of the commonly used matrix materials are listed in \cref{tab: reinforcement props}.
+
 \subsection{Properties of Composite Materials}
 
 The characteristics of composite materials resulting from the combination of reinforcement and matrix depend on
@@ -1077,6 +1081,38 @@ The characteristics of composite materials resulting from the combination of rei
 \item the form of the reinforcement. Long fibers provide the highest boost to strength and modulus but only along the fiber direction. Short, randomly oriented fiber provide less reinforcement but does so in all directions.
 \item the fabrication process. Woven fabric provides good reinforcement along the fiber directions (typically 0$^{\circ}$ and 90$^{\circ}$), but does not improve shear resistances. Laminates can provide shear support but with the added risk of delamination.
 \end{itemize}
+
+Because of the aforementioned reasons, most composite materials are anisotropic, meaning that they have different properties depending on the direction of the applied force or load). If the fibers and matrix are aligned parallel to the loading direction, the deformation of both phases will be the same. This condition is called \emph{isostrain} and we can determine the properties of the composite just like we do compound bars using the rule of mixture.
+
+\begin{equation}
+  \label{eq: isostrain property for composites}
+  E_c = \sum_{i=1} V_i E_i = V_f E_f + V_m E_m 
+\end{equation}
+
+This provides the upperbound for composite strength, where $E_c$ is the effective composite Young's modulus and $V$ and $E$ are the volume fraction and Young's modulus, respectively, while the subscripts $f$ and $m$ denote the fiber and matrix. The lower bound of the strength is dictated by the isostress conditions, in which the fibers and matrix are oriented in perpendicular direction to the load so that the stresses in the fibers and matrix are the same (hence isostress).
+
+\begin{align*}
+  \sigma_c = \sigma_{f} = \sigma_{m} = \sigma
+\end{align*}
+
+The strain of the composite becomes a weighted average of the fiber and matrix.
+
+\begin{align*}
+  \varepsilon_c = \varepsilon_{f} V_{f} + \varepsilon_{m} V_{m}
+\end{align*}
+
+By applying Hooke's law to the matrix and fiber separately. We will have that
+
+\begin{align*}
+  \varepsilon_f = \frac{\sigma}{E_f} \\
+  \varepsilon_m = \frac{\sigma}{E_m}
+\end{align*}
+
+Substituting the results back into the weighted average strain, we have
+
+\begin{align*}
+  \varepsilon_c = V_f \frac{\sigma}{\varepsilon_f} + V_m \frac{\sigma}{\varepsilon_m}
+\end{align*}
 
 Other remarkable properties of these materials include the following:
 
@@ -1089,8 +1125,6 @@ Other remarkable properties of these materials include the following:
 \item Composite materials have medium to low level impact resistance, inferior to that of metallic materails.
 \item Composite materials have excellent fire resistance as compared with the light alloys with identical thicknesses. However, smokes from the combustion of certain metrices can be toxic.
 \end{itemize}
-
-Properties of some of the commonly used reinforcements are listed in \cref{tab: resin props} and \cref{tab: reinforcement props}.
 
 \subsection{Strengths and Limitations of Composite Materials}
 
@@ -3273,7 +3307,29 @@ A yield criterion can be any descriptive statement that defines conditions under
 
 \subsection{Maximum shear stress theory (Tresca criteria)}
 
-The most common cause of yielding of a ductile material is slipping, which occurs due to shear stress. If we make a specimen into a highly polished thin strip and subject it to a simple tension test, we can see that the slip planes will occur approximately 45 degree with the axis of the strip. This actually coincides with the direction of maximum shear stress in a uniaxial stress loading, indicating that ductile materials yield due to shear stress. The maximum shear stress in a material that is loaded to its shear stress is $\tau_{max} = S_y / 2$ where the yield stress is determined from a simple tension test.
+The most common cause of yielding of a ductile material is slipping in which material surfaces slides away from one another. This phenomenon occurs due to shear stress. If we make a specimen into a highly polished thin strip and subject it to a simple tension test, we can see that the slip planes will occur approximately 45 degree with the axis of the strip. Why is this? Let us take a look at Mohr's circle of a uniaxial state of stress in \cref{fig: mohr's circle uniaxial for MSST}.
+
+\begin{figure}[h]
+  \centering 
+  \begin{tikzpicture}
+    \node [anchor=west, draw, fill=SkyBlue, circle, minimum height=7cm](large){};
+    \draw [<->] (-2,0) --++ (0:10) node[right]{$\sigma$};
+    \draw [<->] (0,-5) --++ (90:10) node[above]{$\tau$};
+    \node at (large.east) [below right] {$\sigma_1 = S_y$};
+    \draw (0,0) node[below left]{0};
+    \draw [dashed](large.center) -- (large.north) node[above right](absolute){$\tau_{\max} = \dfrac{S_y}{2}$};
+  \end{tikzpicture}
+  \caption{Mohr's circle of uniaxial stress.}
+  \label{fig: mohr's circle uniaxial for MSST}
+\end{figure}
+
+This actually coincides with the direction of maximum shear stress in a uniaxial stress loading, indicating that ductile materials yield due to shear stress. The maximum shear stress in a material that is loaded to its shear stress is
+
+\begin{equation}
+  \label{eq: MSST max shear to yield}
+  \tau_{max} = S_y / 2
+\end{equation}
+where the yield stress is determined from a simple tension test.
 
 For application we will express the absolute maximum shear stress in terms of the principal stresses. If the two in-plane principal stresses have the same sign (both compressive or both tensile), the failure will occur out of plane and so
 
@@ -3290,12 +3346,12 @@ However, if the principal stresses have opposite signs, then failure occurs in t
 Using these equations, we can express the maximum shear stress theory for plane stress for any two in-plane principal stresses by the following criteria
 
 \begin{equation}
-  \begin{array}{l l}
+  \begin{array}{ll}
     \begin{gathered}
       \left| \sigma_1 \right| \leqslant S_y \hfill \\
       \left| \sigma_2 \right| \leqslant S_y \hfill \\ 
-    \end{gathered}  &\text{when } \dfrac{\sigma _1}{\sigma _2} > 0  \\[20pt]
-    \left| \sigma _1 - \sigma _2 \right| \leqslant S_y &\text{when } \dfrac{\sigma _1}{\sigma _2} < 0 \\ 
+    \end{gathered}  &\text{when } \sigma _1, \sigma _2 \text{ are of the same sign}  \\[20pt]
+    \left| \sigma _1 - \sigma _2 \right| \leqslant S_y &\text{when } \sigma _1, \sigma _2 \text{ are of opposite signs}
   \end{array}
 \end{equation}
 
@@ -3316,13 +3372,14 @@ Using these equations, we can express the maximum shear stress theory for plane 
 For design equations, the failure condition under MSST with safety factor $N_s$ can be written as
 
 \begin{equation}
-  \begin{gathered}
+  \label{eqn: MSST design eqn}
+  \begin{array}{ll}
     \begin{gathered}
-        \left| \sigma_1 \right| > \frac{S_y}{N_s} \\
-        \left| \sigma_2 \right| > \frac{S_y}{N_s}  \\ 
-      \end{gathered}  \hspace{1.5cm} \text{when } \dfrac{\sigma _1}{\sigma _2} > 0 \\
-      \left| {\sigma _1} - {\sigma _2} \right| > \frac{S_y}{N_s} \hspace{0.6cm} \text{when } \dfrac{\sigma_1}{\sigma_2} < 0
-  \end{gathered}
+      \left| \sigma_1 \right| > \frac{S_y}{N_s} \\
+      \left| \sigma_2 \right| > \frac{S_y}{N_s}  \\ 
+    \end{gathered} & \text{when } \sigma_1, \sigma_2 \text{ are of the same sign} \\[20pt]
+    \left| {\sigma _1} - {\sigma _2} \right| > \dfrac{S_y}{N_s} & \text{when } \sigma_1, \sigma_2 \text{ are of opposite signs}
+  \end{array}
 \end{equation}
 
 \begin{example} Failure of a ductile element under MSST
@@ -4202,6 +4259,13 @@ Most beams are made of ductile materials. When this is the case, it is generally
   S_{req} = \frac{M_{\max}}{\sigma_{allow}}
 \end{equation}
 
+If the beam is made of a ductile material, we can apply MDET design equation \eqref{eqn: design eqn for MDET} with safety factor $N_s$ so that the equation becomes
+
+\begin{equation}
+  \label{eq: ductile beam design equation}
+  S_{req} = \frac{M_{\max}}{\dfrac{S_y}{N_s}} = \frac{N_s M_{\max}}{S_y}
+\end{equation}
+
 It is important to note that the beam is assumed to be light so that its weight does not contribute significantly to the bending moment. If we do not make such assumption, the actual section modulus should be slightly larger than $S_{req}$. Once the section modulus is known, if the beam has a simple cross section like a square, a rectangle, or a circle, then its dimensions can be determined promptly since $S = I/c$. However, if the section is a complex shape or made up of several elements, there may be an infinite number of combinations that satisfy the value of $S_{req}$. In reality, engineers choose a particular beam meeting the section modulus requirement from a handbook or catalog that lists available standard shapes from manufacturers. If deflection is not a concern, then the beam with the smallest cross-sectional area (which is also the lightest and most economical) is chosen. If there is a constrain on deflection $\delta_{allow}$, however, a generalized beam deflection equation can be used to determine the required moment of inertia $I_{req}$.
 
 \begin{equation}
@@ -4318,7 +4382,7 @@ Subsequently, the optimal section can be selected on minimum weight or minimum c
   \end{figure}
 \end{example}
 \begin{solution}
-  In this problem, first of all, we must make sure that the designed beam does not fail under the 3-ton load regardless of the weight position on the crane. Structural steels are made to standard and from steel which is well understood. However, the outdoor and load conditions can vary so, according to \cref{table: safety factor guideline} the safety factor should be 2. For the economic and human safety factor, this is probably used in a warehouse with people working close by. Any failure can result in damages to the cargo or to the workers. The results can in this case be considered severe so the safety factor, according to \cref{tab: safety factor safety econ}, should be 1.5. The combined safety factor then is 2 $\times$ 1.5 = 3. With the beam supported on both ends, the maximum bending moment occur when the load is hoisted from the middle. The corresponding bending moment is $M = FL / 4$ and the required section modulus $S_{req}$ is
+  In this problem, first of all, we must make sure that the designed beam does not fail under the 3-ton load regardless of the weight position on the crane. Structural steels are made to standard and from steel which is well understood. However, the outdoor and load conditions can vary so, according to \cref{table: safety factor guideline} the safety factor should be 2. For the economic and human safety factor, this is probably used in a warehouse with people working close by. Any failure can result in damages to the cargo or to the workers. The results can in this case be considered severe so the safety factor, according to \cref{tab: safety factor safety econ}, should be 1.5. The combined safety factor then is 2 $\times$ 1.5 = 3. With the beam supported on both ends, the maximum bending moment occur when the load is hoisted from the middle. The corresponding bending moment is $M = FL / 4$ and the required section modulus $S_{req}$ can be determined by equation \eqref{eq: ductile beam design equation} as
 
   \begin{align*}
     S_{req} &= \frac{N_s M}{S_y} \\
@@ -4543,7 +4607,7 @@ Note that the application of any other theories of failure or safety factor othe
       &= 1.51 \times 10^{-2} \text{ m} = 1.51 \text{ cm}
   \end{align*}
 
-  Note that $\tau_{allow}$ is derived from maximum shear stress theory in which , for which $\tau_{allow} = S_y/2$.
+  Note that $\tau_{allow}$ is derived from maximum shear stress theory \cref{eq: MSST max shear to yield}, for which $\tau_{allow} = S_y/2$.
 \end{solution}
 
 \section{Column Design}
@@ -4810,7 +4874,7 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
     \end{tikzpicture}
   \end{figure}
 
-  The diagram illustrates that the maximum bending moment is at $x = 0.75$ m where $M(x) = \py{round(M,1)}$ N-m. Since this is an experiment equipment whose load is relatively small and almost no risk of injury to anyone or anything upon failure, the chosen safety factor is 2. The design equation for the beam is
+  The diagram illustrates that the maximum bending moment is at $x = 0.75$ m where $M(x) = \py{round(M,1)}$ N-m. Since this is an experiment equipment whose load is relatively small and almost no risk of injury to anyone or anything upon failure, the chosen safety factor is 2. The design equation for the beam using    is
 
   \begin{align*}
     S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{S_y}} \\
