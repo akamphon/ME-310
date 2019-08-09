@@ -1110,9 +1110,43 @@ By applying Hooke's law to the matrix and fiber separately. We will have that
 
 Substituting the results back into the weighted average strain, we have
 
-\begin{align*}
-  \varepsilon_c = V_f \frac{\sigma}{\varepsilon_f} + V_m \frac{\sigma}{\varepsilon_m}
-\end{align*}
+\begin{align}
+  \varepsilon_c &= V_f \frac{\sigma}{E_f} + V_m \frac{\sigma}{E_m} \nonumber \\
+  \frac{\varepsilon_c}{\sigma} &= \frac{1}{E_c} =  \frac{V_f}{E_f} + \frac{V_m}{E_m}
+\end{align}
+
+The isostrain condition implies that under an applied load, both phases are under the same strain but different stresses. On the other hand, under isostress conditions, both will be under the same stress but different strains. The composite stiffness is maximized when the fibers are aligned with the loading direction, but so is the possibility of fiber failure. As the angle between the loading direction and fiber orientation increases, the stress in the fiber decreases both due to the increased cross-sectioal area and the reduced load in the fiber from the angle misalignment. The effective composite Young's modulus upper and lower bounds can be shown in 
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis} [
+      width=0.8\textwidth,
+      height=0.5\textwidth,
+      % samples=50,
+      xlabel={Volume fraction},
+      ylabel={Effective Modulus},
+      domain=0:1,
+      xmin=0,xmax=1,
+      xtick distance=0.2,
+      ymin=1,ymax=2,
+      ytick={1,1.33,1.67,2},
+      yticklabels={$E_m$,,,$E_f$},
+      grid=both,
+      ]
+      \addplot+[mark=none]{(1-x) +2*x} node[midway, above left]{Upper};
+      \addplot+[mark=none]{2/(x + 2*(1-x))} node[midway, below right]{Lower};
+    \end{axis}
+  \end{tikzpicture}
+  \caption[Effective composite Young's modulus range based on volume fraction]{Plot of effective composite Young's modulus limited by upper bound and lower bound conditions.}
+  \label{fig: Composite modulus vs vol fraction}
+\end{figure}
+
+\subsection{Strengths and Limitations of Composite Materials}
+
+Composites, especially fiber-reinforced polymers (FRPs), are used in designs where conventional materials are mechanically or economically unsuitable. Since composite materials are engineered rather than processed from their original state, they can be tailor-made to take on the load and stresses in certain orientations, while leaving other directions with smaller loads and stresses weaker. For example, a beam can be designed with carbon-fiber reinforced polymer with uniaxial fibers along the length of the beam, aligning with the stress from bending. Steel or other convertional materials do not have this option available to them; most metals and plastics are isotropic and are equally strong (or weak) in all orientations. On the other hand, if strengths are required in all orientations, ply buildups and laminate patterns can be determined to provide those properties. Complex shapes are easily achievable because composites are typically made by molding process.
+
+However, composites are usually more brittle than wrought metals, thus more easily damaged. Once they are damanged they require special equipment for curing the resins and requires time. Thus, composites may be more suitable for parts that are geometrically complex and expensive to process using conventional materials, and are designed to be replaced rather than maintained.
 
 Other remarkable properties of these materials include the following:
 
@@ -1125,12 +1159,6 @@ Other remarkable properties of these materials include the following:
 \item Composite materials have medium to low level impact resistance, inferior to that of metallic materails.
 \item Composite materials have excellent fire resistance as compared with the light alloys with identical thicknesses. However, smokes from the combustion of certain metrices can be toxic.
 \end{itemize}
-
-\subsection{Strengths and Limitations of Composite Materials}
-
-Composites, especially fiber-reinforced polymers (FRPs), are used in designs where conventional materials are mechanically or economically unsuitable. Since composite materials are engineered rather than processed from their original state, they can be tailor-made to take on the load and stresses in certain orientations, while leaving other directions with smaller loads and stresses weaker. For example, a beam can be designed with carbon-fiber reinforced polymer with uniaxial fibers along the length of the beam, aligning with the stress from bending. Steel or other convertional materials do not have this option available to them; most metals and plastics are isotropic and are equally strong (or weak) in all orientations. On the other hand, if strengths are required in all orientations, ply buildups and laminate patterns can be determined to provide those properties. Complex shapes are easily achievable because composites are typically made by molding process.
-
-However, composites are usually more brittle than wrought metals, thus more easily damaged. Once they are damanged they require special equipment for curing the resins and requires time. Thus, composites may be more suitable for parts that are geometrically complex and expensive to process using conventional materials, and are designed to be replaced rather than maintained.
 
 \section{Engineering Material Selection Process}
 
