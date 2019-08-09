@@ -1084,6 +1084,32 @@ The characteristics of composite materials resulting from the combination of rei
 
 Because of the aforementioned reasons, most composite materials are anisotropic, meaning that they have different properties depending on the direction of the applied force or load). If the fibers and matrix are aligned parallel to the loading direction, the deformation of both phases will be the same. This condition is called \emph{isostrain} and we can determine the properties of the composite just like we do compound bars using the rule of mixture.
 
+\begin{align*}
+  \varepsilon_c = \varepsilon_f = \varepsilon_m = \varepsilon
+\end{align*}
+
+The total load on the composite is equal to the sum of the loads on the matrix and fiber.
+
+\begin{align*}
+  F &= F_m + F_f \\
+  \sigma A &= \sigma_f A_f + \sigma_m A_m \\
+  \sigma &= \sigma_f \frac{A_f}{A} + \sigma_m \frac{A_m}{A}
+\end{align*}
+
+Assuming that the fiber runs through out the length of the composite so the length of the matrix is the same ans the length of the fiber. The cross-sectional area fraction would be the same as that of the volume fraction.
+
+\begin{align*}
+  \sigma = \sigma_f V_f + \sigma_m V_m
+\end{align*}
+
+Applying Hooke's law, we have
+
+\begin{align*}
+  E_c \varepsilon_c = E_f \varepsilon_f V_f + E_m \varepsilon_m V_m
+\end{align*}
+
+Using the isostrain condition, all phases have the same strain. The expression will reduce to the final form.
+
 \begin{equation}
   \label{eq: isostrain property for composites}
   E_c = \sum V_i E_i = V_f E_f + V_m E_m 
