@@ -1086,7 +1086,7 @@ Because of the aforementioned reasons, most composite materials are anisotropic,
 
 \begin{equation}
   \label{eq: isostrain property for composites}
-  E_c = \sum_{i=1} V_i E_i = V_f E_f + V_m E_m 
+  E_c = \sum V_i E_i = V_f E_f + V_m E_m 
 \end{equation}
 
 This provides the upperbound for composite strength, where $E_c$ is the effective composite Young's modulus and $V$ and $E$ are the volume fraction and Young's modulus, respectively, while the subscripts $f$ and $m$ denote the fiber and matrix. The lower bound of the strength is dictated by the isostress conditions, in which the fibers and matrix are oriented in perpendicular direction to the load so that the stresses in the fibers and matrix are the same (hence isostress).
@@ -1110,9 +1110,21 @@ By applying Hooke's law to the matrix and fiber separately. We will have that
 
 Substituting the results back into the weighted average strain, we have
 
-\begin{align}
+\begin{align*}
   \varepsilon_c &= V_f \frac{\sigma}{E_f} + V_m \frac{\sigma}{E_m} \nonumber \\
-  \frac{\varepsilon_c}{\sigma} &= \frac{1}{E_c} =  \frac{V_f}{E_f} + \frac{V_m}{E_m}
+  \frac{\varepsilon_c}{\sigma} &= \frac{1}{E_c} =  \frac{V_f}{E_f} + \frac{V_m}{E_m} \nonumber 
+\end{align*}
+
+In a more generalized term,
+
+\begin{align}
+  \frac{1}{E_c} = \sum \frac{V_i}{E_i}
+\end{align}
+
+For typical composite materials with one matrix and one fiber materials. 
+
+\begin{align}
+  E_c &= \frac{E_cE_f}{V_fE_m + V_mE_f}
 \end{align}
 
 The isostrain condition implies that under an applied load, both phases are under the same strain but different stresses. On the other hand, under isostress conditions, both will be under the same stress but different strains. The composite stiffness is maximized when the fibers are aligned with the loading direction, but so is the possibility of fiber failure. As the angle between the loading direction and fiber orientation increases, the stress in the fiber decreases both due to the increased cross-sectioal area and the reduced load in the fiber from the angle misalignment. The effective composite Young's modulus upper and lower bounds can be shown in 
