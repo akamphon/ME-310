@@ -383,7 +383,7 @@ Solutions to design problems start at the very first with the recognition of pro
 \end{figure}
 
 \begin{enumerate}
-\item Ask: Engineers should ask critical questions about they want to create. There should be clear motivations as to why they product is needed. What kind of problems is the product supposed to solve? What is the goal? What are the requirements of the product? Are there any limitations?
+\item Ask: Engineers should ask critical questions about they want to create. There should be clear motivations as to why the product is needed. What kind of problems is the product supposed to solve? What is the goal? What are the requirements of the product? Are there any limitations?
 \item Research: This involves researching into the problem by talking to stakeholders about their requirements for the product. It is also ideal to review available technologies and related works that may be applicable and/or adaptable to your problems.
 \item Imagine: Brainstorm ideas and exchange opinions on differing solutions.
 \item Plan: Revisit the needs, constrains, and research. Evaluate each idea, select one optimal solution and make a plan to move forward.
@@ -1678,8 +1678,10 @@ Without any constraint, the change in length of the part can be computed using t
     \begin{tikzpicture}
       \path[fill=white] (-5,-2) rectangle (5,2);
       \node [draw, fill=SkyBlue, minimum height=4mm, minimum width=8cm](beam){};
-      \node at (beam.west) [anchor=east, draw, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](left){};
-      \node at (beam.east) [anchor=west, draw, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](right){};
+      \node at (beam.west) [anchor=east, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](left){};
+      \draw (left.north east) -- (left.south east);
+      \node at (beam.east) [anchor=west, fill=LightGrey, pattern=north west lines, minimum height=2cm, minimum width=5mm](right){};
+      \draw (right.north west) -- (right.south west);
       \draw[|<->|] (left.south east) ++ (-90:0.5) --++ (0:8) node[midway, fill=white]{$L$};
       \draw (0,0.5) node{$T_0 \rightarrow T$};
     \end{tikzpicture}
@@ -3876,12 +3878,26 @@ where $\sigma_a$ is the stress amplitude, $S_e$ is the endurance limit, $S_y$ is
   Ultimate tensile strength = 748 MPa
   Modified endurance limit = 300 MPa
   Determine the suitable diameter of the rod. Use Soderberg line with $N_s$ = 3
-
+  
   \begin{figure}[H]
     \centering
-    \includegraphics[scale=0.9]{pictures/Failure-theories/fatigue-example}
-    % \caption{'Safe-zone' diagram for material under modified Coulomb-Mohr criterion.}
-    % \label{fig: MCM safe zone}
+    % \includegraphics[scale=0.9]{pictures/Failure-theories/fatigue-example}
+    \begin{tikzpicture}
+      \node[draw, cylinder, minimum height=6cm, minimum width=5mm, inner sep=4](beam){};
+      \draw [->, very thick] (beam.east) ++ (180:0.15) --++ (0:1) node[below]{$F$};
+      \draw [->, very thick] (beam.west) --++ (180:1) node[below]{$F$};
+    \end{tikzpicture} \\[10pt]
+    \begin{tikzpicture}
+      \begin{axis} [
+        ymin=0,ymax=8000,
+        ylabel={$F$},
+        xlabel={time (s)},
+        xmin=0,
+        height=0.4\textwidth,
+        ]
+        \addplot [semithick, samples=100, domain=0:10.8] {abs(8000*sin(50*\x))};
+      \end{axis}
+    \end{tikzpicture}
   \end{figure}
 \end{example}
 \begin{solution}
