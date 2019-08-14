@@ -48,7 +48,9 @@ svgnames,
 
 \let\openbox\relax
 \usepackage{amsthm}
+\newcommand\bmmax{0}
 \usepackage{bm}
+\usepackage{amssymb}
 \usepackage{array}
 \usepackage{cleveref}
 \usepackage{siunitx}
@@ -1014,6 +1016,51 @@ Recall that thermoplastics are generally impact resistant; thermosets are genera
 \end{itemize}
 
 Nominal properties of thermoplastics and thermosets are listed in \cref{tab: resin props}.
+
+\begin{example} Plastic selection for solar water disinfection method. \cite{sukkasi2014heat}
+  
+  The method of solar water disinfection (sodis) relies solely on solar energy to produce clean water suitable for consumption. The water only needs to be left in the sun in a transparent bottle for at least 6 hours. Disinfection is caused by the synergy between the ultraviolet and the increased temperature of the water. The method is now recommended by World Health Organization in areas with limited access to clean drinking water.
+
+  So what material would make an ideal bottle for use in sodis?
+\end{example}
+\begin{solution}
+  Before scanning through materials, we should first establish desirable qualities for the sodis bottle material.
+
+  \begin{itemize}
+  \item Transparency, or at least translucency to allow UV and solar radiation through and heat up the water inside.
+  \item UV resistance to prevent degradation from solar exposure.
+  \item Low thermal conductivity to prevent heat loss.
+  \item Impact resistance to prevent cracks from occasional mishandling.
+  \item Low cost.
+  \end{itemize}
+
+  In order to save on cost, it is a good idea to use used empty bottles rather than make new bottles. That should elimimate the cost consideration. However, if in certain areas, these empty bottles have significantly values or are difficult to obtain, we should revisit the cost of making new bottles. Going through the rest of the list, and looking at available mass produced beverage bottles, our options are 
+
+  \begin{enumerate}
+  \item Glass
+  \item PET (polyethylene terephthalate)
+  \item LDPE (low density polyethylene)
+  \item PTFE (polytetrafluoroethylene)
+  \end{enumerate}
+
+  Plastics and glass are known for having low thermal conductivity. For transparency, only glass and PET can be made completely transparent, LDPE and PTFE are only translucent. PTFE, PET, and glass have excellent UV resistance. Finally, glass bottles are brittle, making it a poor choice for this use. We can summarize these analysis in the table below.
+
+  \begin{table}[H]
+    \centering
+    \begin{tabular}{lcccc}
+      \toprule
+      Properties & Glass & PET & LDPE & PTFE \\
+      \midrule
+      Transparency & $\checkmark$ & $\checkmark$ & $\times$ & $\times$ \\
+      UV resistance & $\checkmark$ & $\checkmark$ & $\times$ & $\checkmark$ \\
+      Low conductivity & $\checkmark$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+      Impact resistance & $\times$ & $\checkmark$ & $\checkmark$ & $\checkmark$ \\
+      \bottomrule
+    \end{tabular}
+  \end{table} 
+
+  With acceptable qualities on all columns, PET is our bottle material of choice for sodis application.
+\end{solution}
 
 \section{Composites}
 
