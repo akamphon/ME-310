@@ -1304,22 +1304,6 @@ Strength-temperature relationship is used to determine suitable materials for de
   \label{fig: strength temperature diagram}
 \end{figure}
 
-\begin{example} Material selection for a gas turbine transmission shaft.
-
-  An engineer is aiming to design a new transmission shaft for a luxury car. He wants the shaft to be as light as possible and to withstand the temperature of at least 300 C. Cost is not a main concern.
-
-\end{example}
-\begin{solution}
-  There are obviously two criteria for consideration here. We will first tackle the temperature limit.
-
-  In order for the shaft to still operate above 300 C, the shaft \emph{must} have strength above that temperature. This is where the strength-temperature chart is very useful.
-
-  According to \cref{fig: strength temperature diagram}, we can draw a vertical line at 300 C. Materials that fall to the left side do not qualify as they do not possess sufficient strength above 300 C. That means all engineering composites, plastics, foams, along with aluminum, zinc, and magnesium alloys do not pass this requirement.
-
-  For the minimum weight design, we refer to the strength-density chart. For shaft, the index $S^{1/2}/\rho$ is used to determine a proper material. The material (or group of materials) with the highest index will yield the minimum weight for a given torque requirement. From \cref{fig: strength density diagram}, the possible candidates are metal alloys. Combining this with the elimination we have made for the temperature requirement, the qualified materials are steels, titanium alloys, and Ni alloys. 
-
-\end{solution}
-
 \subsection{Material Selection Indices}
 
 In many design problems, the objectives are coupled to the constrains of the components. For example, if we are to design a light bar that would be under tension, the constraint on the component would be that its stress cannot be more than its yield strength (given that the material is ductile), which involve its cross-sectional area. However, the mass of the bar would also be dependent on its volume and, obviously, its cross-sectional area. There must be a way for us to determine the essential paramaters that will help determine that optimal material for a component, right?
@@ -1465,6 +1449,47 @@ Though the actual materials selection process can be iterative, requiring rethin
 \item \emph{Test, a lot of tests}: Perform test of the chosen material in operating conditions. Determine if an extensive testing of the final product is required. Reevaluate the risk and uncertainty of chosen material, for example, cost of product failure.
 
 \end{enumerate}
+
+\begin{example} Material selection for a gas turbine transmission shaft.
+
+  An engineer is aiming to design a new transmission shaft for a luxury car. He wants the shaft to be as light as possible and to withstand the temperature of at least 300 C. Cost is not a main concern.
+
+\end{example}
+\begin{solution}
+  There are obviously two criteria for consideration here. We will first tackle the temperature limit.
+
+  In order for the shaft to still operate above 300 C, the shaft \emph{must} have strength above that temperature. This is where the strength-temperature chart is very useful.
+
+  According to \cref{fig: strength temperature diagram}, we can draw a vertical line at 300 C. Materials that fall to the left side do not qualify as they do not possess sufficient strength above 300 C. That means engineering composites, plastics, foams, along with aluminum, zinc, and magnesium alloys do not pass this requirement.
+  
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[>=latex]
+      \node(A){\includegraphics[width=0.9\textwidth]{pictures/Material-selection/strength-temperature-diagram}};
+      \draw [dashed, red] (A.south) ++ (180:0.35) --++ (90:13.5) node[midway, left, red]{300 C};
+      \node at (A.north east) [xshift=-4cm, yshift=-4cm, circle, draw, red, minimum height=6cm](C){};
+      \node at (C.south) [below, Blue, text width=3cm, align=center]{Metal alloys and ceramics};
+    \end{tikzpicture}
+    \caption{Turbine engine shaft materials: thermal consideration. Modified from \cite{ashby2010materials}.}
+  \end{figure} 
+
+  Possible candidates going into the minimum weight considerations can be grouped as engineering ceramics, steel alloys, glass, titanium alloys, nickel alloys.
+
+  For the minimum weight design, we refer to the strength-density chart. For shaft under torsion, the index $S^{1/2}/\rho$ is used to determine a proper material. The material (or group of materials) with the highest index will yield the minimum weight for a given torque requirement. From \cref{fig: strength density diagram}, the group of materials with the highest indices are engineering ceramics, followed by titanium, nickel, and steel alloys. 
+
+  \begin{figure}[H]
+    \centering
+    \begin{tikzpicture}[>=latex]
+      \node(A){\includegraphics[width=0.9\textwidth]{pictures/Material-selection/strength-density-diagram}};
+      \draw [->, red] (A.east) ++ (180:1.5) --++ (135:7);
+      \draw [dashed, red] (A.north) ++ (0:1.5) ++ (-90:0.5) --++ (-145:10) node[midway, above, red]{$\dfrac{S^{2/3}}{\rho} = C_1$};
+    \end{tikzpicture}
+    \caption{Turbine engine shaft materials: minimum weight consideration. Modified from \cite{ashby2010materials}.}
+  \end{figure}
+
+  With further testing, the designer can rank the materials most suitable for engine turbine shafts depending on other constraints such as budget and cost of repair.
+
+\end{solution}
 
 \section*{Summary}
 
