@@ -5496,7 +5496,18 @@ Helical springs employ the same principles as torsion bar springs, but avoid the
 
 \subsection{Helical Spring Stress}
 
-Consider helical coil springs with relatively small helix angle and wire diameter d, illustrated in \cref{fig: helical spring geometry}. At each end of the spring, external force F is applied along the axis of the helix. In compression springs, this is accomplished by winding the end coils with zero pitch and grinding the ends flat to insure uniformly distributed load at end plates. In the tension spring, the end hooks are formed to position the load along the axis.
+Consider helical coil springs with relatively small helix angle and wire diameter $d$, illustrated in \cref{fig: helical spring geometry}. At each end of the spring, external force $F$ is applied along the axis of the helix. The length of the spring when there is no external force applied is called the \emph{free length}, $L_f$. As the compressive force increases, so do the compression in the spring until eventually the gaps between the spring coils disappear and the coils are pressed close to one another. This final shortest length is called the \emph{solid length}, $L_s$ and the corresponding compressive load is called the \emph{solid force}, $F_S$. The \emph{range} of the spring is the difference between its free length and solid length, which is equal to the number of gaps in between the coils multiplied by the length of the gaps.
+
+\begin{align}
+  L_f - L_s = N_a g
+\end{align}
+where $N_a$ is the number of gaps and is equal to the number of active coils, number of coils that actually contributes to the compression of the spring. The gap between each coil is equal to the distance between adjacent coils, also called the pitch $p$, subtracted by the diameter of the spring wire, $d$. The previous equation for range can be written again as
+
+\begin{align}
+  L_f - L_s = N_a (p - d)
+\end{align}
+
+In compression springs, their helices are formed by winding the end coils with zero pitch and grinding the ends flat to insure uniformly distributed load at end plates. In the tension spring, the end hooks are formed to position the load along the axis.
 
 \begin{figure}[h]
   \centering
@@ -5556,13 +5567,10 @@ Substitute the values for each parameter and let $N_a$ be the number of active c
 
 The spring constant or spring rate is the ratio between the axially applied force and the deflection, which gives
 
-\begin{equation} \label{eqn: spring constant}
-  \begin{gathered}
-    k = \frac{F}{\delta} = \frac{d^4G}{8D^3N_a} \hfill \\
-    \text{or} \hfill \\
-    k = \frac{Gd}{8C^3N_a} \hfill \\ 
-  \end{gathered}
-\end{equation}
+\begin{align}
+  \label{eqn: spring constant}
+  k &= \frac{F}{\delta} = \frac{d^4G}{8D^3N_a} = \frac{Gd}{8C^3N_a} 
+\end{align}
 
 \subsection{Analysis for Helical Compression Springs under Static Loading}
 
@@ -5640,7 +5648,7 @@ Besides the material strength, spring materials offer a variety of properties su
 
 \subsection{End Designs of Helical Compression Springs}
 
-In order to ensure that the resultant load coincides with the spring axis, spring ends must be designed properly for their uses. This usually involves grinding and squaring the ends to keep nearly a full turn of wire in contact with end plates. These ground/squared coils do not contribute to spring flexibility and are not counted as \emph{active coils}. The exact numbers for different end conditions are illustrated in \cref{table: spring end conditions}. Note that the range (maximum deflection) of a spring regardless of its end type is equal to $np - nd$.
+In order to ensure that the resultant load coincides with the spring axis, spring ends must be designed properly for their uses. This usually involves grinding and squaring the ends to keep nearly a full turn of wire in contact with end plates. These ground/squared coils do not contribute to spring flexibility and are not counted as \emph{active coils}. The exact numbers for different end conditions are illustrated in \cref{table: spring end conditions}. Note that the range (maximum deflection) of a spring regardless of its end type is equal to $N_a(p - d)$.
 
 \begin{table}[h]
   \centering
@@ -5727,6 +5735,13 @@ Observe the graph in \cref{fig: spring buckling} that both curves appear to have
 \end{equation}
 
 For squared and ground ends between flat parallel surfaces $K$ = 0.5 and $L_f < 5.26 D$.
+
+Another equation has been suggested by Juvinall and Marshek \cite{juvinall2006fundamentals} which follows a general rule of thumb that the maximum deflection $\delta_{\max}$ of a helical compression spring should not be more than 80\% of its range, $N_a(p - d)$. The rule can be expressed mathematically as
+
+\begin{align}
+  \label{eq: pitch find equation}
+  \delta_{\max} = \frac{F_{\max}}{k} = 0.8N_a(p-d)
+\end{align}
 
 \subsection{Design Procedure for Helical Compression Spring—Static Loading}
 
