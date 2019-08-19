@@ -5503,9 +5503,14 @@ Consider helical coil springs with relatively small helix angle and wire diamete
   \begin{tikzpicture}
     \node [pattern=north west lines, minimum height=1cm, minimum width=10cm](ground){};
     \draw (ground.north west) -- (ground.north east);
-    \draw [decoration={aspect=0.2, segment length=0.3cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north west) ++ (0:1) --++ (90:2.72) node(B){};
-    \draw [decoration={aspect=0.15, segment length=0.2cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north) --++ (90:1.65) node(B){};
-    \draw [decoration={aspect=0.1, segment length=0.1cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north east) ++ (180:1) --++ (90:0.75) node(B){};
+    \draw [double=Grey, double distance=1pt, decoration={aspect=0.2, segment length=0.3cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north west) ++ (0:1) --++ (90:2.72) node(left){};
+    \draw [|<->|] (left.center) ++ (0:0.6) ++ (-90:0.3) --++ (-90:0.3) node[midway, right]{$p$};
+    \draw [double=Grey, double distance=1pt, decoration={aspect=0.15, segment length=0.2cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north) --++ (90:1.63) node(mid){};
+    \draw [<-, ultra thick] (mid.center) --++ (90:0.5) node[above]{$F$};
+    \draw [double=Grey, double distance=1pt, decoration={aspect=0.1, segment length=0.1cm, amplitude=0.4cm,coil},decorate, line width=1pt] (ground.north east) ++ (180:1) --++ (90:0.74) node(right){};
+    \draw [<-, ultra thick] (right.center) --++ (90:0.5) node[above]{$F_s$};
+    \draw [|<->|] (ground.north west) ++ (0:0.1) --++ (90:2.72) node[midway, fill=White]{$L_f$};
+    \draw [|<->|] (ground.north) ++ (0:3) --++ (90:0.74) node[midway, fill=White]{$L_s$};
   \end{tikzpicture}
   \caption{Length and geometry of helical compression springs}
   \label{fig: com helical spring geometry}
