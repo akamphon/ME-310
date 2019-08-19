@@ -6046,11 +6046,32 @@ Determine pitch $p$, as a rule of thumb, max deflection should not exceed 80\% o
 
 \subsection{Design of Helical Compression Springs for Fatigue Loading}
 
-This section covers additional considerations for designing helical compression spring for fatigue loading. Figure 6.6 shows a typical $S-N$ diagram of a steel wire under reversed torsional load. Under fatigue loading, compression springs tend not to experience stress reversals—loadings typically only vary between zero and some compressive loads. Thus, when considering the constant--life fatigue diagram, the region of interest is the lower right diagonal of Figure 6.7, which lies between $\tau_a / \tau_m = 1$ and $\tau_a / \tau_m = 0$ in which the number represents the ratio of alternating shear stress to mean shear stress. These values can be referred to when calculating required wire and coil diameters to satisfy stress limitation.
+This section covers additional considerations for designing helical compression spring for fatigue loading. \Cref{fig: s-n curve for steel spring wire} shows a typical $S-N$ diagram of a steel wire under reversed torsional load. Under fatigue loading, compression springs tend not to experience stress reversals—loadings typically only vary between zero and some compressive loads. Thus, when considering the constant-life fatigue diagram, the region of interest is the lower right diagonal of Figure 6.7, which lies between $\tau_a / \tau_m = 1$ and $\tau_a / \tau_m = 0$ in which the number represents the ratio of alternating shear stress to mean shear stress. These values can be referred to when calculating required wire and coil diameters to satisfy stress limitation.
+
+\begin{figure}[H]
+  \centering
+  \begin{tikzpicture}
+    \begin{axis}[
+      width=0.8\textwidth,
+      height=0.6\textwidth,
+      ymode=log,
+      ymin=0.2, ymax=0.8,
+      log ticks with fixed point,
+      xmode=log,
+      xmin=1000, xmax=10000000,
+      ytick={0.2,0.3,0.4,0.5,0.6,0.7,0.8},
+      xlabel={Fatigue Life (cycles)},
+      ylabel={$\dfrac{\tau_a}{S_{ut}}$},
+      ]
+      \addplot+ [domain=1000:1000000, mark=none, thick] {x^(-1/7.58)*10^(3/7.58)*0.72};
+      \addplot+ [Blue, domain=1000000:10000000, mark=none, thick] {0.29};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Estimated $S-N$ curve for round steel spring wire under torsional loading}
+  \label{fig: s-n curve for steel spring wire}
+\end{figure}
 
 In designing helical springs for fatigue loading, two manufacturing methods proved effective in enhancing fatigue resistance: shot peening and presetting. Both of these methods create residual stress in the wire, allowing the spring to take more stress in the opposite direction.
-
-\subsection{Frequency Consideration}
 
 Spring used in high-speed machinery must have natural frequencies of vibration well in excess of the frequency of motion they control. For example, a conventional engine valve spring goes through one cycle of shortening and elongating every two engine revolutions. The valve motion is definitely not sinusoidal (single frequency), and a Fourier analysis indicates that harmonics up to about the thirteenth can be of significant magnitude. Thus, at 5000 engine rpm, the fundamental spring motion has a frequency of 2500 (once every two revolutions), and the thirteenth harmonic 32,500 rpm or 542 Hz.
 
@@ -6062,10 +6083,10 @@ When a helical spring is compressed and suddenly released, it vibrates longitudi
 
 where
 
-\[\begin{gathered}
-    k \propto \frac{Gd^4}{D^3N_a} \hfill \\
-    m \propto d^2DN_a\rho  \hfill
-\end{gathered} \]
+\begin{align*}
+    k &\propto \frac{Gd^4}{D^3N_a} \\
+    m &\propto d^2DN_a\rho
+\end{align*}
 
 So we have that
 
