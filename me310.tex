@@ -6062,6 +6062,7 @@ This section covers additional considerations for designing helical compression 
       ytick={0.2,0.3,0.4,0.5,0.6,0.7,0.8},
       xlabel={Fatigue Life (cycles)},
       ylabel={$\dfrac{\tau_a}{S_{ut}}$},
+      grid=both,
       ]
       \addplot+ [domain=1000:1000000, mark=none, thick] {x^(-1/7.58)*10^(3/7.58)*0.72};
       \addplot+ [Blue, domain=1000000:10000000, mark=none, thick] {0.29};
@@ -6069,6 +6070,94 @@ This section covers additional considerations for designing helical compression 
   \end{tikzpicture}
   \caption{Estimated $S-N$ curve for round steel spring wire under torsional loading}
   \label{fig: s-n curve for steel spring wire}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  % big plot
+  \begin{tikzpicture} 
+    \begin{axis}[
+      width=0.8\textwidth,
+      height=0.6\textwidth,
+      ymin=0, ymax=0.9,
+      xmin=0, xmax=1.2,
+      no marks,
+      ylabel={$\tau_a/S_{ut}$},
+      xlabel={$\tau_m/S_{ut}$},
+      ytick distance=0.1,
+      ]
+      \addplot [SkyBlue, ultra thick] {-0.72/0.8*x + 0.72};
+      \addplot [SkyBlue, ultra thick] {-0.54/0.8*x + 0.54};
+      \addplot [SkyBlue, ultra thick] {-0.395/0.8*x + 0.395};
+      \addplot [SkyBlue, ultra thick] {-0.29/0.8*x + 0.29};
+      \addplot+ [domain=0:0.7, dashdotted, thick, Black] {x};
+    \end{axis}
+    % tau_m = 0
+    \begin{axis}[
+      width=0.2\textwidth,
+      height=0.15\textwidth,
+      no marks,
+      yshift=0.4\textwidth,
+      xshift=0.1\textwidth,
+      ymin=-1, ymax=1,
+      xmin=0, xmax=3,
+      axis lines=middle,
+      ytick={0},
+      xmajorticks=false,
+      ]
+      \addplot+ [domain=0:3, very thick, SkyBlue] {sin(300*x)};
+      \node {$\tau_m$ = 0};
+    \end{axis}
+    % tau_a / tau_m = 1
+    \begin{axis}[
+      width=0.2\textwidth,
+      height=0.15\textwidth,
+      no marks,
+      yshift=0.35\textwidth,
+      xshift=0.3\textwidth,
+      ymin=0, ymax=2,
+      xmin=0, xmax=3,
+      axis lines=middle,
+      ytick={0},
+      xmajorticks=false,
+      ]
+      \addplot+ [domain=0:3, very thick, SkyBlue] {sin(300*x)+1};
+      \addplot+ [Black, dashed] {1};
+    \end{axis}
+    % tau_a / tau_m < 1
+    \begin{axis}[
+      width=0.2\textwidth,
+      height=0.15\textwidth,
+      no marks,
+      yshift=0.2\textwidth,
+      xshift=0.45\textwidth,
+      ymin=0, ymax=2,
+      xmin=0, xmax=3,
+      axis lines=middle,
+      ytick={0},
+      xmajorticks=false,
+      ]
+      \addplot+ [domain=0:3, very thick, SkyBlue] {0.8*sin(300*x)+1};
+      \addplot+ [Black, dashed] {1};
+    \end{axis}
+    % tau_a / tau_m = 0
+    \begin{axis}[
+      width=0.2\textwidth,
+      height=0.15\textwidth,
+      no marks,
+      yshift=0.05\textwidth,
+      xshift=0.55\textwidth,
+      ymin=0, ymax=2,
+      xmin=0, xmax=3,
+      axis lines=middle,
+      ytick={0},
+      xmajorticks=false,
+      ]
+      \addplot+ [domain=0:3, very thick, SkyBlue] {1};
+    \end{axis}
+  \end{tikzpicture}
+  \caption{Constant-life fatigue diagram corresponding to \cref{fig: s-n curve for steel spring wire}}
+  \label{fig: constant-life diagram for spring}
 \end{figure}
 
 In designing helical springs for fatigue loading, two manufacturing methods proved effective in enhancing fatigue resistance: shot peening and presetting. Both of these methods create residual stress in the wire, allowing the spring to take more stress in the opposite direction.
