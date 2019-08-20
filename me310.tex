@@ -6090,7 +6090,7 @@ This section covers additional considerations for designing helical compression 
       \addplot [SkyBlue, ultra thick] {-0.54/0.8*x + 0.54};
       \addplot [SkyBlue, ultra thick] {-0.395/0.8*x + 0.395};
       \addplot [SkyBlue, ultra thick] {-0.29/0.8*x + 0.29};
-      \addplot+ [domain=0:0.7, dashdotted, thick, Black] {x};
+      \addplot+ [domain=0:0.5, dashdotted, thick, Black] {x};
     \end{axis}
     % tau_m = 0
     \begin{axis}[
@@ -6101,13 +6101,17 @@ This section covers additional considerations for designing helical compression 
       xshift=0.1\textwidth,
       ymin=-1, ymax=1,
       xmin=0, xmax=3,
-      axis lines=middle,
+      axis x line=middle,
+      axis y line=left,
       ytick={0},
+      yticklabels={0},
       xmajorticks=false,
+      clip=false,
       ]
       \addplot+ [domain=0:3, very thick, SkyBlue] {sin(300*x)};
-      \node {$\tau_m$ = 0};
+      \node [below right] {$\tau_m$ = 0};
     \end{axis}
+    \draw [-latex] (0.1\textwidth,0.4\textwidth) ++ (-0.6,0.4) --++ (-170:1);
     % tau_a / tau_m = 1
     \begin{axis}[
       width=0.2\textwidth,
@@ -6117,13 +6121,18 @@ This section covers additional considerations for designing helical compression 
       xshift=0.3\textwidth,
       ymin=0, ymax=2,
       xmin=0, xmax=3,
-      axis lines=middle,
+      axis x line=bottom,
+      axis y line=left,
       ytick={0},
+      yticklabels={0},
       xmajorticks=false,
+      clip=false,
       ]
       \addplot+ [domain=0:3, very thick, SkyBlue] {sin(300*x)+1};
-      \addplot+ [Black, dashed] {1};
+      \addplot+ [domain=0:3, Black, dashed] {1};
+      \node [below right, yshift=-0.1cm] {$\dfrac{\tau_a}{\tau_m} = 1$};
     \end{axis}
+    \draw [-latex] (0.3\textwidth,0.35\textwidth) ++ (-0.2,-0.2) --++ (-100:1.1);
     % tau_a / tau_m < 1
     \begin{axis}[
       width=0.2\textwidth,
@@ -6133,13 +6142,18 @@ This section covers additional considerations for designing helical compression 
       xshift=0.45\textwidth,
       ymin=0, ymax=2,
       xmin=0, xmax=3,
-      axis lines=middle,
+      axis x line=bottom,
+      axis y line=left,
       ytick={0},
+      yticklabels={0},
       xmajorticks=false,
+      clip=false,
       ]
       \addplot+ [domain=0:3, very thick, SkyBlue] {0.8*sin(300*x)+1};
-      \addplot+ [Black, dashed] {1};
+      \addplot+ [domain=0:3, Black, dashed] {1};
+      \node [below right] {$\dfrac{\tau_a}{\tau_m} < 1$};
     \end{axis}
+    \draw [-latex] (0.45\textwidth,0.2\textwidth) ++ (-90:0.2) --++ (-150:1.8);
     % tau_a / tau_m = 0
     \begin{axis}[
       width=0.2\textwidth,
@@ -6149,12 +6163,17 @@ This section covers additional considerations for designing helical compression 
       xshift=0.55\textwidth,
       ymin=0, ymax=2,
       xmin=0, xmax=3,
-      axis lines=middle,
+      axis x line=bottom,
+      axis y line=left,
       ytick={0},
+      yticklabels={0},
       xmajorticks=false,
+      clip=false,
       ]
       \addplot+ [domain=0:3, very thick, SkyBlue] {1};
+      \node[below right]{$\tau_a = 0$};
     \end{axis}
+    \draw [-latex] (0.55\textwidth,0.05\textwidth) ++ (-180:0.2) --++ (-135:1.1);
   \end{tikzpicture}
   \caption{Constant-life fatigue diagram corresponding to \cref{fig: s-n curve for steel spring wire}}
   \label{fig: constant-life diagram for spring}
