@@ -10402,7 +10402,7 @@ where $y$ is the distance perpendicular to the neutral axis $k$ and $dA$ is an a
 
 \end{example}
 
-The moments of inertia of other geometric shapes are listed in ...
+The moments of inertia of other geometric shapes are listed in \cref{tab: sec properties of shapes}.
 
 \begin{table}[H]
   \centering
@@ -10410,14 +10410,23 @@ The moments of inertia of other geometric shapes are listed in ...
     \toprule
     Section & Moment of Inertia & Polar Moment of Inertia & Section Modulus \\
     \midrule
-    \begin{tikzpicture}
-      \node[draw, minimum height=1cm, minimum width=5mm, fill=LightSkyBlue]{};
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[draw, minimum height=2cm, minimum width=1cm, fill=LightSkyBlue](rect){};
+      \draw [|<->|] (rect.south east) ++ (0:0.2) --++ (90:2) node[midway, right]{$h$};
+      \draw [|<->|] (rect.south east) ++ (-90:0.2) --++ (180:1) node[midway, below]{$b$};
     \end{tikzpicture}
             & $\dfrac{bh^3}{12}$ & $\dfrac{bh^3}{12} + \dfrac{hb^3}{12}$ & $\dfrac{bh^2}{6}$ \\
-    \begin{tikzpicture}
-      \node[draw, circle, minimum height=1cm, fill=LightSkyBlue]{};
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[draw, circle, minimum height=2cm, fill=LightSkyBlue](circ){};
+      \draw [->] (circ.center) --++ (60:1) node[midway, below right]{$R$};
     \end{tikzpicture}
             & $\dfrac{\pi R^4}{4}$ & $\dfrac{\pi R^4}{2}$ & $\dfrac{\pi R^3}{4}$ \\
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[draw, regular polygon, regular polygon sides=3, minimum height=2cm, fill=LightSkyBlue](tri){};
+      \draw [|<->|] (tri.south east) ++ (0:0.5) --++ (90:1.5) node[midway, right]{$h$};
+      \draw [|<->|] (tri.south east) ++ (0:0.4) ++ (-90:0.2) --++ (180:1.8) node[midway, below]{$b$};
+    \end{tikzpicture}
+            & $\dfrac{bh^3}{36}$ & $\dfrac{\sqrt{3} b^4}{48}$ & $\dfrac{bh^2}{24}$ \\
     \bottomrule
   \end{tabular}
   \caption{Section properties of various geometric shapes.}
