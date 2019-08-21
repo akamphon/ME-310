@@ -6064,8 +6064,8 @@ This section covers additional considerations for designing helical compression 
       ylabel={$\dfrac{\tau_a}{S_{ut}}$},
       grid=both,
       ]
-      \addplot+ [domain=1000:1000000, mark=none, thick] {x^(-1/7.58)*10^(3/7.58)*0.72};
-      \addplot+ [Blue, domain=1000000:10000000, mark=none, thick] {0.29};
+      \addplot+ [SkyBlue, ultra thick, domain=1000:1000000, mark=none, thick] {x^(-1/7.58)*10^(3/7.58)*0.72};
+      \addplot+ [SkyBlue, ultra thick, domain=1000000:10000000, mark=none, thick] {0.29};
     \end{axis}
   \end{tikzpicture}
   \caption{Estimated $S-N$ curve for round steel spring wire under torsional loading}
@@ -6085,11 +6085,12 @@ This section covers additional considerations for designing helical compression 
       ylabel={$\tau_a/S_{ut}$},
       xlabel={$\tau_m/S_{ut}$},
       ytick distance=0.1,
+      domain=0:0.8,
       ]
-      \addplot [SkyBlue, ultra thick] {-0.72/0.8*x + 0.72};
-      \addplot [SkyBlue, ultra thick] {-0.54/0.8*x + 0.54};
-      \addplot [SkyBlue, ultra thick] {-0.395/0.8*x + 0.395};
-      \addplot [SkyBlue, ultra thick] {-0.29/0.8*x + 0.29};
+      \addplot [SkyBlue, ultra thick] {-0.72/0.8*x + 0.72} node[at start, pin={[pin edge={latex-, Black}, pin distance=0.5cm, text=Black]0:0.72}]{};
+      \addplot [SkyBlue, ultra thick] {-0.54/0.8*x + 0.54} node[at start, pin={[pin edge={latex-, Black}, pin distance=0.5cm, text=Black]0:0.54}]{};
+      \addplot [SkyBlue, ultra thick] {-0.395/0.8*x + 0.395} node[at start, pin={[pin edge={latex-, Black}, pin distance=0.5cm, text=Black]0:0.395}]{};
+      \addplot [SkyBlue, ultra thick] {-0.29/0.8*x + 0.29} node[at start, pin={[pin edge={latex-, Black}, pin distance=0.5cm, text=Black]0:0.29}]{};
       \addplot+ [domain=0:0.5, dashdotted, thick, Black] {x};
     \end{axis}
     % tau_m = 0
@@ -6097,7 +6098,7 @@ This section covers additional considerations for designing helical compression 
       width=0.2\textwidth,
       height=0.15\textwidth,
       no marks,
-      yshift=0.4\textwidth,
+      yshift=0.43\textwidth,
       xshift=0.1\textwidth,
       ymin=-1, ymax=1,
       xmin=0, xmax=3,
@@ -6111,7 +6112,7 @@ This section covers additional considerations for designing helical compression 
       \addplot+ [domain=0:3, very thick, SkyBlue] {sin(300*x)};
       \node [below right] {$\tau_m$ = 0};
     \end{axis}
-    \draw [-latex] (0.1\textwidth,0.4\textwidth) ++ (-0.6,0.4) --++ (-170:1);
+    \draw [-latex] (0.1\textwidth,0.4\textwidth) ++ (-0.6,0.6) --++ (-170:1);
     % tau_a / tau_m = 1
     \begin{axis}[
       width=0.2\textwidth,
@@ -6179,7 +6180,13 @@ This section covers additional considerations for designing helical compression 
   \label{fig: constant-life diagram for spring}
 \end{figure}
 
-In designing helical springs for fatigue loading, two manufacturing methods proved effective in enhancing fatigue resistance: shot peening and presetting. Both of these methods create residual stress in the wire, allowing the spring to take more stress in the opposite direction.
+% In designing helical springs for fatigue loading, two manufacturing methods proved effective in enhancing fatigue resistance: shot peening and presetting. Both of these methods create residual stress in the wire, allowing the spring to take more stress in the opposite direction.
+
+If we are to design the spring for infinite life (i.e. $10^6$ cycles or more), we can follow the 10$^6$ constant life on \cref{fig: constant-life diagram for spring}. The modified equation for compressive spring design under fatigue loading with safety factor $N_s$ then becomes
+
+\begin{align}
+  \frac{\tau_a}{0.29 S_{ut}} + \frac{\tau_m}{0.8 S_{ut}} = \frac{1}{N_s}
+\end{align}
 
 Spring used in high-speed machinery must have natural frequencies of vibration well in excess of the frequency of motion they control. For example, a conventional engine valve spring goes through one cycle of shortening and elongating every two engine revolutions. The valve motion is definitely not sinusoidal (single frequency), and a Fourier analysis indicates that harmonics up to about the thirteenth can be of significant magnitude. Thus, at 5000 engine rpm, the fundamental spring motion has a frequency of 2500 (once every two revolutions), and the thirteenth harmonic 32,500 rpm or 542 Hz.
 
