@@ -55,6 +55,11 @@ svgnames,
 \usepackage{cleveref}
 \usepackage{siunitx}
 
+% convert engineering format to x 10^n
+\DeclareDocumentCommand{\pynum}{ m }{
+  \py{'\\num{'+str('{:.2e}'.format(#1))+'}'}
+}
+
 \usepackage[gobble=auto]{pythontex}
 
 %% Chapter Heading %%%%%
@@ -1370,9 +1375,9 @@ in which case the paramaters are said to be \emph{separable}. When this is possi
   \begin{center}
     \begin{tabular}{lc}
       \toprule
-      HSS & \py{'{:.2e}'.format(A_st)} m$^2$ \\
-      Aluminum & \py{'{:.2e}'.format(A_al)} m$^2$ \\
-      CFRP & \py{'{:.2e}'.format(A_cf)} m$^2$ \\
+      HSS & \pynum{A_st} m$^2$ \\
+      Aluminum & \pynum{A_al} m$^2$ \\
+      CFRP & \pynum{A_cf} m$^2$ \\
       \bottomrule
     \end{tabular}
   \end{center}
@@ -1420,9 +1425,9 @@ in which case the paramaters are said to be \emph{separable}. When this is possi
   \begin{center}
     \begin{tabular}[H]{ll}
       \toprule
-      HSS  & \py{'{:.2e}'.format(d_st/y_st)} \\
-      Al   & \py{'{:.2e}'.format(d_al/y_al)} \\
-      CFRP & \py{'{:.2e}'.format(d_cf/y_cf)} \\
+      HSS  & \pynum{d_st/y_st} \\
+      Al   & \pynum{d_al/y_al} \\
+      CFRP & \pynum{d_cf/y_cf} \\
       \bottomrule
     \end{tabular}
   \end{center}
@@ -5031,9 +5036,9 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
   The diagram illustrates that the maximum bending moment is at $x = 0.75$ m where $M(x) = \py{round(M,1)}$ N-m. Since this is an experiment equipment whose load is relatively small and almost no risk of injury to anyone or anything upon failure, the chosen safety factor is 2. The design equation for the beam using    is
 
   \begin{align*}
-    S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\py{S_y}} \\
-      &= \py{'{:.2e}'.format(S)} \text{ m}^3 \\
-      &= \py{'{:.2e}'.format(S*10**9)} \text{ mm}^3
+    S &= \frac{N M}{S_y} = \frac{\py{N}(\py{round(M,1)})}{\pynum{S_y}} \\
+      &= \pynum{S} \text{ m}^3 \\
+      &= \pynum{S*10**9} \text{ mm}^3
   \end{align*}
 
   We can look up a catalog to determine a proper cross section for the beam in \cref{tab: alum i-beams}. The smallest of the standard i-beam (depth = 76.2 mm, width = 63.5 mm) is still larger than the required section modulus, and so it is our selection.
@@ -5042,10 +5047,10 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
 
   \begin{align*}
     N_s P &= \frac{\pi^2 EI}{L^2} \\
-    I_l &= \frac{\py{N}(\py{round(F_l)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
-          &= \py{'{:.2e}'.format(I_l)} \text{ m}^4 \\
-    I_r &= \frac{\py{N}(\py{round(F_r)})(\py{L}^2)}{\pi^2 (\py{'{:.0E}'.format(E)})} \\
-          &= \py{'{:.2e}'.format(I_r)} \text{ m}^4
+    I_l &= \frac{\py{N}(\py{round(F_l)})(\py{L}^2)}{\pi^2 (\pynum{E})} \\
+          &= \pynum{I_l} \text{ m}^4 \\
+    I_r &= \frac{\py{N}(\py{round(F_r)})(\py{L}^2)}{\pi^2 (\pynum{E})} \\
+          &= \pynum{I_r} \text{ m}^4
   \end{align*}
 
   According to the required $I$, again the smallest value of $I$ for axis 2-2 is still larger. Hence the same beam that we chose for the dryer beam is our choice here.
@@ -6277,7 +6282,6 @@ This problem of critical stresses can be partially remedied by making the last f
       \node [draw, rectangle, fill=SkyBlue, minimum height=1cm, minimum width=0.5cm](A){};
       \node [draw, rectangle, fill=LightGrey, minimum height=0.6cm, minimum width=0.3cm]{};
       \draw [decoration={aspect=0.3, segment length=0.1cm, amplitude=0.1cm,coil},decorate, line width=1pt] (A.east) ++ (90:0.2) --++ (0:4) node(B){};
-      \draw (ground.north west) -- (ground.north east);
       \draw [decoration={aspect=0.3, segment length=0.1cm, amplitude=0.1cm,coil},decorate, line width=1pt] (A.east) ++ (90:-0.2) --++ (0:4);
       \node at (B.center) [anchor=west, draw, rectangle, fill=SkyBlue, minimum height=1cm, minimum width=0.5cm, yshift=-0.2cm](C){};
       \node at (C.center) [draw, rectangle, fill=LightGrey, minimum height=0.6cm, minimum width=0.3cm]{};
@@ -8210,7 +8214,7 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
     P_{shear} &= \py{P} \sin \py{angle}^{\circ} = \py{round(P_shear)} \\
     A_t &= \frac{N_s}{S_p} \left( \frac{P_{shear}}{0.75\mu S_p } + \frac{P_{axial}}{S_p} \right) \\
               &= \frac{\py{N_s}}{\py{S_p}} \left( \frac{\py{round(P_shear)}}{0.75(\py{mu}) } + \py{round(P_axial)} \right) \\
-              &= \py{'{:.2e}'.format(A_t)} \text{ m}^2
+              &= \pynum{A_t} \text{ m}^2
   \end{align*}
 
   According to \cref{table: ISO Screw Dimensions} the proper size for this bolt is M10$\times$1.5 (coarse thread) or M10$\times$1.25 (fine thread).
@@ -8856,8 +8860,8 @@ Note: Assume any other values or dimensions you think are necessary to solve the
 
   \begin{align*}
     N_s &= \frac{S_{ut}}{\sigma} = \frac{S_{ut}}{\frac{F}{HL}} \\
-    L &= \frac{N_s F}{H S_{ut}} = \frac{\py{N_s}(\py{F})}{\py{H}(\py{'{:.2e}'.format(S_ut)})} \\
-        &= \py{'{:.2e}'.format(L)} \text{ m}
+    L &= \frac{N_s F}{H S_{ut}} = \frac{\py{N_s}(\py{F})}{\py{H}(\pynum{S_ut})} \\
+        &= \pynum{L} \text{ m}
   \end{align*}
 
   Thus the required weld length is \py{'{:.5f}'.format(L)} m.
@@ -8891,8 +8895,8 @@ Note: Assume any other values or dimensions you think are necessary to solve the
 
   \begin{align*}
     A_t &= \frac{N_sP_{shear}}{0.75\mu S_p } + \frac{N_sP_{axial}}{S_p} \\
-        &= \frac{ \py{N_s} (0) }{ 0.75 \mu (\py{S_p})} = \frac{\py{N_s} ( \py{round(P_axial)} ) }{ \py{S_p} } \\
-        &= \py{'{:.2e}'.format(A_t)} \text{ m}^2
+        &= \frac{ \py{N_s} (0) }{ 0.75 \mu (\pynum{S_p})} + \frac{\py{N_s} ( \py{round(P_axial)} ) }{ \pynum{S_p} } \\
+        &= \pynum{A_t} \text{ m}^2
   \end{align*}
 
  Checking the required tensile stress area against \cref{table: ISO Screw Dimensions}, we find that the area is smaller than the smallest standard bolt M30 $\times$ 0.5. Hence M30 $\times$ 0.5 will be our selection.
@@ -10407,6 +10411,7 @@ The moments of inertia of other geometric shapes are listed in ...
 
 \begin{table}[H]
   \centering
+  \caption[Comparative qualities of cast irons]{Comparative qualities of cast irons \cite*{plisga2017standard}}
   \begin{tabular}{lll}
     \toprule
     \multirow{2}{2cm}{Name} & Nominal composition & \multirow{2}{3.5cm}{Form and condition} \\
@@ -10416,17 +10421,17 @@ The moments of inertia of other geometric shapes are listed in ...
     White cast iron           & C 3.4, Si 0.7, Mn 0.6                  & Cast (as cast) \\
     Malleable iron (ASTM A47) & C 2.5, Si 1.0, Mn 0.55                 & Cast (annealed) \\
     Nodular iron              & C 3.4, P 0.1, Mn 0.4, Ni 1.0, Mg 0.06  & Cast \\
-    Nodular iron (ASTM A339)  & —                                      & cast (quench tempered) \\
+    Nodular iron (ASTM A339)  & —                                      & Cast (quench tempered) \\
     Ni-hard type 2            & C 2.7, Si 0.6, Mn 0.5, Ni 4.5, Cr 2.0  & Sand-cast \\
     Ni-resist type 2          & C 3.0, Si 2.0, Mn 1.0, Ni 20.0, Cr 2.5 & Cast \\
     \bottomrule
   \end{tabular}
-  \caption{Comparative qualities of cast irons \cite*{plisga2017standard}}
   \label{tab: cast iron quals}
 \end{table}
 
 \begin{table}[H]
   \centering
+  \caption[Comparative mechanical properties of cast irons]{Comparative mechanical properties of cast irons \cite{plisga2017standard}}
   \begin{tabular}{lcccc}
     \toprule
     \multirow{2}{2cm}{Name} & Yield strength & Tensile strength & Elongation & Hardness \\
@@ -10441,7 +10446,6 @@ The moments of inertia of other geometric shapes are listed in ...
     Ni-resist type 2 & — & 27 & 2 & 140 \\
     \bottomrule
   \end{tabular}
-  \caption{Comparative mechanical properties of cast irons \cite{plisga2017standard}}
   \label{tab: cast iron props}
 \end{table}
 
@@ -10512,7 +10516,7 @@ The moments of inertia of other geometric shapes are listed in ...
 
 \begin{table}[H]
   \centering
-  \caption[Mechanical properties of common grade stainless steels]{Mechanical properties of common grade stainless streels. Note that properties can vary greatly under different heat treatments.}
+  \caption[Mechanical properties of common grade stainless steels]{Mechanical properties of common grade stainless streels. Note that properties can vary greatly under different heat treatments. \cite{davis2000alloy}}
   \label{tab: stainless steel props and uses}
   \begin{tabular}{lcccc}
     \toprule
@@ -10531,7 +10535,7 @@ The moments of inertia of other geometric shapes are listed in ...
 \end{table}
 
 \begin{table}[H]
-  \caption{Descriptions of designations of aluminum alloys and their uses.}
+  \caption{Descriptions of designations of aluminum alloys and their uses. \cite{davis2001alloying,grushko2016aluminum}}
   \label{tab: alum alloy description}
   \centering
   \begin{tabular}{lp{6cm}p{6cm}}
@@ -10586,7 +10590,7 @@ The moments of inertia of other geometric shapes are listed in ...
 
 \begin{table}[H]
   \centering
-  \caption{Properties and usages of popular copper alloys.}
+  \caption{Properties and usages of popular copper alloys. \cite{plisga2017standard}}
   \label{tab: copper alloy props and uses}
   {\renewcommand{\arraystretch}{1.4}
   \begin{tabular}{lL{3cm}llL{4cm}}
@@ -10613,7 +10617,7 @@ The moments of inertia of other geometric shapes are listed in ...
 
 \begin{table}[H]
   \centering
-  \caption{Properties and usages of popular magnesium alloys}
+  \caption{Properties and usages of popular magnesium alloys. \cite{avedesian1999asm}}
   \label{tab: mag alloy props and uses}
   {\renewcommand{\arraystretch}{1.4}
   \begin{tabular}{lccL{7cm}}
