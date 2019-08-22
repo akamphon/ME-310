@@ -10411,11 +10411,41 @@ Moments of inertia for simple geometric shapes can be evaluated analytically, as
 
 \section{Polar Moment of Inertia, $J$}
 
-Similar to the moment of inertia, the \emph{polar} moment of inertia is measured about the axis of rotation $I_k$. However, it measures the \emph{in-plane} resistance to rotation about the axis. It is evaluated by the expression
+Similar to the moment of inertia, the \emph{polar} moment of inertia is measured about the axis of rotation $J_k$. However, it measures the \emph{in-plane} resistance to rotation about the axis. It is evaluated by the expression
 
 \begin{align}
-  I_k = \iint_A r^2dA
+  J_k = \iint_A r^2dA
 \end{align}
+
+From the expression, we see that $J$ increases with cross section and with square of the distance of the area away from the centroid. This makes hollow section a very good choice when considering weight reduction in any torque-loaded members--area close to the centroid of the cross section contributes very little to $J$.
+
+For simple geometric cross sections, $J$ may be evaluated analytically, as shown in ...
+
+\begin{example} Polar moment of inertia of a circular cross section shaft.
+
+  With a solid radius $R$, the we can determine the polar moment of inertia following the formula as
+
+  \begin{align*}
+    J &= \iint_A r^2 dA
+  \end{align*}
+
+  In a circle, it is much simpler to integrate in polar coordinates. In that case $dA = r dr d\theta$
+
+  \begin{sympycode}
+    var('r,theta,R')
+    j = r**3
+    J = Integral(Integral(j,(r,0,R)),(theta,0,2*pi))
+
+    print(r'\begin{align*}')
+    print(r'J' + '&=' + latex(J) + r'\\')
+    right = Integral(Integral(j,(r,0,R)).doit(),(theta,0,2*pi))
+    print('&=' + latex(right) + r'\\')
+    right = Integral(Integral(j,(r,0,R)),(theta,0,2*pi)).doit()
+    print('&=' + latex(right))
+    print(r'\end{align*}')
+  \end{sympycode}
+  
+\end{example}
 
 \begin{table}[H]
   \centering
