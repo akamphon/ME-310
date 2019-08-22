@@ -10417,6 +10417,7 @@ The moments of inertia of other geometric shapes are listed in \cref{tab: sec pr
     \end{tikzpicture}
             & $\dfrac{bh^3}{12}$ & $\dfrac{bh^3}{12} + \dfrac{hb^3}{12}$ & $\dfrac{bh^2}{6}$ \\
     \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[minimum height=2.5cm]{};
       \node[draw, circle, minimum height=2cm, fill=LightSkyBlue](circ){};
       \draw [->] (circ.center) --++ (60:1) node[midway, below right]{$R$};
     \end{tikzpicture}
@@ -10427,6 +10428,36 @@ The moments of inertia of other geometric shapes are listed in \cref{tab: sec pr
       \draw [|<->|] (tri.south east) ++ (0:0.4) ++ (-90:0.2) --++ (180:1.8) node[midway, below]{$b$};
     \end{tikzpicture}
             & $\dfrac{bh^3}{36}$ & $\dfrac{\sqrt{3} b^4}{48}$ & $\dfrac{bh^2}{24}$ \\
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[draw, minimum height=2cm, minimum width=1cm, fill=LightSkyBlue](rect){};
+      \node[draw, minimum height=1.6cm, minimum width=0.6cm, fill=White](rect1){};
+      \draw [|<->|] (rect.south east) ++ (0:0.2) --++ (90:2) node[midway, right]{$h$};
+      \draw [|<->|] (rect.south east) ++ (-90:0.2) --++ (180:1) node[midway, below]{$b$};
+      \draw [|<->|] (rect1.north west) ++ (180:0.4) --++ (-90:1.6) node[midway, left]{$h_i$};
+      \draw [|<->|] (rect1.north west) ++ (90:0.4) --++ (0:0.6) node[midway, above]{$b_i$};
+    \end{tikzpicture}
+            & $\dfrac{bh^3 - b_ih_i^3}{12}$ & $\dfrac{bh^3 - b_ih_i^3}{12} + \dfrac{hb^3 - h_ib_i^3}{12}$ & $\dfrac{bh^2 - b_ih_i^2}{6}$ \\
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[draw, circle, minimum height=2cm, fill=LightSkyBlue](circ){};
+      \node[draw, circle, minimum height=1.6cm, fill=White](circi){};
+      \draw [->] (circ.center) --++ (60:1) node[midway, left]{$R$};
+      \draw [->] (circ.center) --++ (0:0.8) node[midway, below]{$R_i$};
+    \end{tikzpicture}
+            & $\dfrac{\pi \left( R^4 - R_i^4 \right)}{4}$ & $\dfrac{\pi \left( R^4 - R_i^4 \right) }{2}$ & $\dfrac{\pi \left(R^3 - R_i^3 \right)}{4}$ \\
+    \begin{tikzpicture}[baseline=(current bounding box.center)]
+      \node[minimum height=2.5cm]{};
+      \node [draw, LightSkyBlue, fill=LightSkyBlue, minimum height=1.2cm, minimum width=3mm, inner sep=0](mid){};
+      \node at (mid.north) [draw, LightSkyBlue, anchor=south, fill=LightSkyBlue, minimum height=3mm, minimum width=1.2cm, inner sep=0](top){};
+      \node at (mid.south) [draw, LightSkyBlue, anchor=north, fill=LightSkyBlue, minimum height=3mm, minimum width=1.2cm, inner sep=0](bottom){};
+      \draw (mid.north east) -- (mid.south east) -- (bottom.north east) -- (bottom.south east) -- (bottom.south west) -- (bottom.north west) -- (mid.south west) -- (mid.north west) -- (top.south west) -- (top.north west) -- (top.north east) -- (top.south east) -- cycle;
+      \draw [|<-] (top.south east) ++ (0:0.2) --++ (-90:0.3) node[at start, above right, yshift=-1mm]{$h$};
+      \draw [|<-] (top.north east) ++ (0:0.2) --++ (90:0.3);
+      \draw [|<-] (mid.north east) ++ (90:0.5) --++ (0:0.3) node[at start, above left, xshift=1mm]{$B$};
+      \draw [|<-] (mid.north west) ++ (90:0.5) --++ (180:0.3);
+      \draw [|<->|] (mid.north west) ++ (180:0.6) --++ (-90:1.2) node[midway, fill=White]{$H$};
+      \draw [|<->|] (bottom.south west) ++ (-90:0.3) --++ (0:1.2) node[midway, fill=White]{$b$};
+    \end{tikzpicture}
+            & $\dfrac{BH^3}{12} + 2 \left[ \dfrac{bh^3}{12} + bh \dfrac{(H+h)^2}{4} \right]$ & - & $\dfrac{\dfrac{BH^3}{12} + 2 \left[ \dfrac{bh^3}{12} + bh \dfrac{(H+h)^2}{4} \right]}{\dfrac{H}{2}+h}$ \\
     \bottomrule
   \end{tabular}
   \caption{Section properties of various geometric shapes.}
@@ -10436,7 +10467,7 @@ The moments of inertia of other geometric shapes are listed in \cref{tab: sec pr
 \begin{table}
 \end{table}
 
-\chapter{Tabulated Material Designations and Properties}
+\chapter{Material Designations and Properties}
 
 \begin{table}[H]
   \centering
