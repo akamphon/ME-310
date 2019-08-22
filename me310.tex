@@ -350,6 +350,9 @@ Migrated to \LaTeX\ from Microsoft Word. Added original graphics for Chapters 3 
 \paragraph{March 2018}
 Converted examples to Python\TeX\ to prevent any miscalculations. Add appendices on sectional properties of structural steels and moments of inertia.
 
+\paragraph{July 2019}
+More explanations, equations, and examples on each chapter. Additional safety factor explanation and economic safety factor. More diagrams in most chapters to better explain and help visualize concepts. Solutions to even-numbered exercises in \cref{chap: solutions to exercises}. Section properties for basic geometric shapes in \cref{chap: sect props of basic shapes}. Tables of engineering material properties in \cref{chap: material des and props}.
+
 \tableofcontents
 
 \listoffigures
@@ -9558,7 +9561,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
 \appendix
 
-\chapter{Solutions to Selected Exercises}
+\chapter{Solutions to Selected Exercises} \label{chap: solutions to exercises}
 
 \section{Introduction to Engineering Design}
 
@@ -10360,18 +10363,22 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \end{tabular}
 \end{table}
 
-\chapter{Sectional Properties of Geometric Shapes}
+\chapter{Sectional Properties of Geometric Shapes} \label{chap: sect props of basic shapes}
 
-\section{Moment of Inertia}
+\section{Moment of Inertia, $I$}
 
-The \emph{moment of inertia}, also known as the second moment of area or area moment of inertia, is a geometrical property of an area. Usually, it is evaluated about an axis of rotation. The moment of inertia of an area $A$ about a neutral axis $k$, denoted by $I_k$, is
+The \emph{moment of inertia}, also known as the second moment of area or area moment of inertia, is a geometrical property of an cross section. Usually, it is evaluated about an axis of rotation. The moment of inertia of an area $A$ about a neutral axis $k$, denoted by $I_k$, is
 
 \begin{equation}
   I_k = \iint_A y^2 dA
 \end{equation} 
 where $y$ is the distance perpendicular to the neutral axis $k$ and $dA$ is an arbitrary infinitessimally small area divided for the area integration.
 
-\begin{example} Moment of inertia of a rectangular cross section.
+The property represents the out-of-plane resistance of the cross section to bending with $I_k$ as the neutral axis. To maximize this property with a given cross sectional area, the cross section needs to be distributed as far away from the neutral axis as possibly can. This typically leads to a structural cross section such as an I beam.
+
+Moments of inertia for simple geometric shapes can be evaluated analytically, as shown in \cref{example: moment of inertia of rect} and \cref{example: moment of inertia of circle}. For other shapes, the properties are tabulated in \cref{tab: sec properties of shapes}.
+
+\begin{example} \label{example: moment of inertia of rect} Moment of inertia of a rectangular cross section.
 
   For a rectangular cross section whose width (dimension along the neutral axis) is $b$ and height (dimension perpendicular to the neutral axis) is $h$, we have that
 
@@ -10389,7 +10396,7 @@ where $y$ is the distance perpendicular to the neutral axis $k$ and $dA$ is an a
   
 \end{example}
 
-\begin{example} Moment of inertia of a circular cross section.
+\begin{example} \label{example: moment of inertia of circle} Moment of inertia of a circular cross section.
 
   For a circle with radius $R$, it is simpler to integrate using polar coordinates $r$ and $\theta$. The $dA$ element becomes $rdrd\theta$, $dy$ becomes $r \sin \theta$ so that we have
 
@@ -10402,7 +10409,13 @@ where $y$ is the distance perpendicular to the neutral axis $k$ and $dA$ is an a
 
 \end{example}
 
-The moments of inertia of other geometric shapes are listed in \cref{tab: sec properties of shapes}.
+\section{Polar Moment of Inertia, $J$}
+
+Similar to the moment of inertia, the \emph{polar} moment of inertia is measured about the axis of rotation $I_k$. However, it measures the \emph{in-plane} resistance to rotation about the axis. It is evaluated by the expression
+
+\begin{align}
+  I_k = \iint_A r^2dA
+\end{align}
 
 \begin{table}[H]
   \centering
@@ -10467,7 +10480,7 @@ The moments of inertia of other geometric shapes are listed in \cref{tab: sec pr
 \begin{table}
 \end{table}
 
-\chapter{Material Designations and Properties}
+\chapter{Material Designations and Properties} \label{chap: material des and props}
 
 \begin{table}[H]
   \centering
