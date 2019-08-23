@@ -10419,9 +10419,9 @@ Similar to the moment of inertia, the \emph{polar} moment of inertia is measured
 
 From the expression, we see that $J$ increases with cross section and with square of the distance of the area away from the centroid. This makes hollow section a very good choice when considering weight reduction in any torque-loaded members--area close to the centroid of the cross section contributes very little to $J$.
 
-For simple geometric cross sections, $J$ may be evaluated analytically, as shown in ...
+For simple geometric cross sections, $J$ may be evaluated analytically, as shown in \cref{example: J for circular section} and \cref{example: J for hollow circular section}.
 
-\begin{example} Polar moment of inertia of a circular cross section shaft.
+\begin{example} \label{example: J for circular section} Polar moment of inertia of a circular cross section shaft.
 
   With a solid radius $R$, the we can determine the polar moment of inertia following the formula as
 
@@ -10429,7 +10429,7 @@ For simple geometric cross sections, $J$ may be evaluated analytically, as shown
     J &= \iint_A r^2 dA
   \end{align*}
 
-  In a circle, it is much simpler to integrate in polar coordinates. In that case $dA = r dr d\theta$
+  In a circle, it is much simpler to integrate in polar coordinates. In that case $dA = r dr d\theta$. To cover the entire area, we integrate from 0 to $R$ in the radial direction $r$ and from 0 to $2\pi$ in the $\theta$ direction.
 
   \begin{sympycode}
     var('r,theta,R')
@@ -10444,8 +10444,56 @@ For simple geometric cross sections, $J$ may be evaluated analytically, as shown
     print('&=' + latex(right))
     print(r'\end{align*}')
   \end{sympycode}
-  
 \end{example}
+\begin{example} \label{example: J for hollow circular section} Polar moment of inertia of a hollow circular cross-sectioned shaft.
+
+  With an outer radius $R$ and inner radius $R_i$, the we can determine the polar moment of inertia similar to the solid circle case. The only difference being that we integrate from $R_i$ to $R$ instead of 0 to $R$.
+
+  \begin{sympycode}
+    var('r,theta,R,R_i')
+    j = r**3
+    J = Integral(Integral(j,(r,R_i,R)),(theta,0,2*pi))
+
+    print(r'\begin{align*}')
+    print(r'J' + '&=' + latex(J) + r'\\')
+    right = Integral(Integral(j,(r,R_i,R)).doit(),(theta,0,2*pi))
+    print('&=' + latex(right) + r'\\')
+    right = Integral(Integral(j,(r,R_i,R)),(theta,0,2*pi)).doit()
+    print('&=' + latex(right))
+    print(r'\end{align*}')
+  \end{sympycode}
+\end{example}
+
+\section{Section Modulus, $S$}
+
+The section modulus of a beam is a property that is used to determine the maximum stress in the beam under a given bending moment. It can be represented using the flexure formula, \cref{eqn: flexure formula}, as
+
+\begin{align}
+  \label{eq: section modulus formula}
+  \sigma_{\max} &= \frac{My_{\max}}{I} = \frac{M}{S} \nonumber \\
+  S &= \frac{I}{y_{\max}}
+\end{align}
+
+While moment of inertia $I$ can be used to determine resistance to bending of a section--a large $I$ leads to low bending stress and low deflection--section modulus $S$ has been normalized witht he maximum distance away from neutral axis $y_{\max}$ so that it is singly indicative of the resulting bending stress in the beam. For any cross section whose $I$ can be evaluated analytically, so can $S$.
+
+\begin{example} Section modulus of a rectangular cross-sectioned beam.
+
+  From the previous beam in \cref{example: moment of inertia of rect}, we will continue to determine its section modulus from the obtained moment of inertia. The original integral is divided through by the maximum distance from neutral axis, which in this case is $h/2$. 
+
+  \begin{sympycode}
+    var('b,y,h')
+    i = b*y**2/(h/2)
+    I = Integral(i,(y,-h/2,h/2))
+
+    print(r'\begin{align*}')
+    print(r'I' + '&=' + latex(I) + r'\\')
+    I = I.doit()
+    print('&=' + latex(I))    
+    print(r'\end{align*}')
+  \end{sympycode}
+\end{example}
+
+The section properties of basic geometric shapes are tabulated in \cref{tab: sec properties of shapes}.
 
 \begin{table}[H]
   \centering
