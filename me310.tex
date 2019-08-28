@@ -5061,7 +5061,7 @@ Again, in these design equations, $\lambda = KL/r_g$. Notice that the first two 
   We should also check that the mode of failure of the column is actually buckling by checking the slenderness ratio.
 
   \begin{align*}
-    \lambda_c &= \sqrt{ \frac{ \pi^2 E }{S_y}} = \sqrt{ \frac{ \pi^2 (\py{'{:.0E}'.format(E)}) }{\py{'{:.0E}'.format(S_y)}}} \\
+    \lambda_c &= \sqrt{ \frac{ \pi^2 E }{S_y}} = \sqrt{ \frac{ \pi^2 (\pynum{E})}{\pynum{S_y}}} \\
               &= \py{round(lambda_c,2)} \\
     \lambda &= \frac{KL}{r_g} = \frac{\py{K}(\py{L})}{\py{r_g}} \\
               &= \py{round(K*L/r_g,2)}
@@ -8184,7 +8184,7 @@ You are to determine the proper bolt sizes for a ceiling-mounted electric fan. T
 \end{solution}
 
 \begin{example}
-  An bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
+  A bracket is attached to a wall with a bolts. The bracket, during operation, will be subjected to a load as shown in the figure. Determine the required bolt size if the safety factor of the joint is 2 and the coefficient of friction between the bracket and the wall is 0.5.
 
   \centering
   \begin{tikzpicture}
