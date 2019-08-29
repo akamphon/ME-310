@@ -4812,14 +4812,17 @@ For long columns, the Euler’s formula--\cref{eqn: Euler's formula}--is propose
 
 where $\lambda = KL/r_g$ is the slenderness ratio and $r_g$ is the radius of gyration of the column cross section. The application of this formula requires the safety factor of 23/12 = 1.92 so that
 
-\[\sigma_{allow} = \frac{12\pi^2E}{23\lambda^2} \hspace{1cm} \lambda_c \leqslant \lambda \leqslant 200\]
+\begin{align}
+  \label{eq: allowable stress in long steel columns}
+  \sigma_{allow} = \frac{12\pi^2E}{23\lambda^2} \hspace{1cm} \lambda_c \leqslant \lambda \leqslant 200
+\end{align}
 
 This equation is applicable for the slenderness ratio between 200 and $\lambda_c$. This latter value is there to prevent the material reaching inelastic region. Experiments show that compressive residual stress can exist in rolled steel sections for an upward amount of one-half of the yield strength. Therefore, if the compressive stress in the material is more than one-half the yield strength, the material will be in the inelastic region and the formulas no longer apply. The value of $\lambda_c$ is therefore
 
-\begin{gather*}
-  \frac{S_y}{2} = \frac{\pi ^2E}{\lambda_c^2} \hfill \\
-  \lambda_c = \sqrt {\frac{2\pi^2E}{S_y}}  \hfill 
-\end{gather*}
+\begin{align}
+  \frac{S_y}{2} &= \frac{\pi ^2E}{\lambda_c^2} \nonumber \\
+  \lambda_c &= \sqrt {\frac{2\pi^2E}{S_y}} \label{eq: crit slender ratio for steel column}
+\end{align}
 
 Columns having slenderness ratio less than $\lambda_c$ are designed on the basis of an empirical formula that has the form
 
@@ -4902,13 +4905,25 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
     \lambda = \frac{KL}{r_g} = \frac{2 \times 3}{r_g} = \frac{6}{r_g}
   \end{align*}
 
-  The allowable \cref{eq: design eq for steel columns} to determine the allowable stress $\sigma_{allow}$. Finally, the allowable compressive load $P_{allow}$ can be determine by $\sigma_{allow} A$. The generated data table to determine the allowable compressive load, starting from our original choice of W360 $\times$ 39, is
-
   \begin{pycode}
     import math
+    K = 2
+    L = 3
     S_y = 300*10**6
     E = 210*10**9
     lambda_c = math.sqrt(2*math.pi**2*E/S_y)
+  \end{pycode}
+
+  We also must calculate the critical slenderness ratio $\lambda_c$. Using \cref{eq: crit slender ratio for steel column}, the critical slenderness ratio is
+
+  \begin{align*}
+    \lambda_c &= \sqrt{ \frac{2 \pi^2 E}{S_y}} \\
+              &= \py{round(lambda_c)}
+  \end{align*}
+
+  We can then use, depending on the slenderness ratio,  \cref{eq: allowable stress in long steel columns} or \cref{eq: design eq for steel columns} to determine the allowable stress $\sigma_{allow}$. Finally, the allowable compressive load $P_{allow}$ can be determine by $\sigma_{allow} A$. The generated data table to determine the allowable compressive load, starting from our original choice of W360 $\times$ 39, is
+
+  \begin{pycode}
     designation = ['W360 $\\times$ 39', 'W360 $\\times$ 45', 'W200 $\\times$ 36', 'W150 $\\times$ 22']
     r_g = [27.5*10**-3, 37.8*10**-3, 40.9*10**-3, 36.8*10**-3]
     Area = [4960*10**-6, 5710*10**-6, 4570*10**-6, 2860*10**-6]
@@ -4916,8 +4931,11 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
     sigma_allow = [0,0,0,0]
     P_allow = [0,0,0,0]
     for i in range(4):
-      lamda[i] = 6/r_g[i]
-      sigma_allow[i] = (1 - lamda[i]**2/(2*lambda_c**2))*S_y/(5/3 + 3*lamda[i]/(8*lambda_c) - lamda[i]**3/(8*lambda_c**3))
+      lamda[i] = K*L/r_g[i]
+      if lamda[i] <= lambda_c:
+        sigma_allow[i] = (1 - lamda[i]**2/(2*lambda_c**2))*S_y/(5/3 + 3*lamda[i]/(8*lambda_c) - lamda[i]**3/(8*lambda_c**3))
+      else:
+        sigma_allow[i] = 12/23*math.pi**2*E/lamda[i]**2
       P_allow[i] = sigma_allow[i]*Area[i]
 
     print(r'\begin{table}[H]')
@@ -4933,7 +4951,7 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
     print(r'\end{table}')
   \end{pycode}
   
-  At first, we find that our original choice W360 $\times$ 39 does not have the proper slenderness ratio (218 was higher than 200). So we pick a next larger one, W360 $\times$ 45, but find that it can support much larger load than required. Subsequently, by process of elimination, we find the lightest section that still support sufficient compressive load is the W150 $\times$ 22.
+  At first, we find that our original choice W360 $\times$ 39 does not have the proper slenderness ratio (218 was higher than 200). So we pick a next larger one, W360 $\times$ 45, but find that it can support much larger load than required. Our goal then is to find a section with larger $r_g$ than our original choice (27.5 mm), but with lower cross sectional area as to support less excessive load (and requiring less material). The two available choices left are W200 $\times$ 36 and W150 $\times$ 22. Subsequently, by repeating the same calculations, we find the lightest section that still support sufficient compressive load is the W150 $\times$ 22.
   
 \end{solution}
 
