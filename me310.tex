@@ -4849,7 +4849,7 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
       ymin=0,ymax=1,
       axis background/.style={fill=SkyBlue!50},
       ytick distance=0.2,
-      xtick distance=20,
+      xticklabels={},
       xlabel={Slenderness Ratio $\lambda$},
       ylabel={$\dfrac{\sigma_{allow}}{S_y}$},
       ylabel style={rotate=-90},
@@ -4951,7 +4951,7 @@ Note that the safety factor is 5/3 = 1.67 when $\lambda$ = 0 and increases to 23
     print(r'\end{table}')
   \end{pycode}
   
-  At first, we find that our original choice W360 $\times$ 39 does not have the proper slenderness ratio (218 was higher than 200). So we pick a next larger one, W360 $\times$ 45, but find that it can support much larger load than required. Our goal then is to find a section with larger $r_g$ than our original choice (27.5 mm), but with lower cross sectional area as to support less excessive load (and requiring less material). The two available choices left are W200 $\times$ 36 and W150 $\times$ 22. Subsequently, by repeating the same calculations, we find the lightest section that still support sufficient compressive load is the W150 $\times$ 22.
+  At first, we find that our original choice W360 $\times$ 39 does not have the proper slenderness ratio (218 was higher than 200). So we pick a next larger one, W360 $\times$ 45, but find that it can support much larger load than required. Our goal then is to find a section with larger radius of gyration than our original choice ($r_g > 27.5$ mm) to decrease slenderness ratio, but with lower cross sectional area ($A <$ 4960 mm$^2$) as to support less excessive load (and requiring less material). The two available choices left are W200 $\times$ 36 and W150 $\times$ 22. Subsequently, by repeating the same calculations, we find the lightest section that still support sufficient compressive load is the W150 $\times$ 22.
   
 \end{solution}
 
