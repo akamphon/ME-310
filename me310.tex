@@ -1468,7 +1468,7 @@ Though the actual materials selection process can be iterative, requiring rethin
 
   In order for the shaft to still operate above 300 C, the shaft \emph{must} have strength above that temperature. This is where the strength-temperature chart is very useful.
 
-  According to \cref{fig: strength temperature diagram}, we can draw a vertical line at 300 C. Materials that fall to the left side do not qualify as they do not possess sufficient strength above 300 C. That means engineering composites, plastics, foams, along with aluminum, zinc, and magnesium alloys do not pass this requirement.
+  According to \cref{fig: turbine shaft example strength-temp diagram}, we can draw a vertical line at 300 C. Materials that fall to the left side do not qualify as they do not possess sufficient strength above 300 C. That means engineering composites, plastics, foams, along with aluminum, zinc, and magnesium alloys do not pass this requirement.
   
   \begin{figure}[H]
     \centering
@@ -1479,11 +1479,12 @@ Though the actual materials selection process can be iterative, requiring rethin
       \node at (C.south) [below, Blue, text width=3cm, align=center]{Metal alloys and ceramics};
     \end{tikzpicture}
     \caption{Turbine engine shaft materials: thermal consideration. Modified from \cite{ashby2010materials}.}
+    \label{fig: turbine shaft example strength-temp diagram}
   \end{figure} 
 
   Possible candidates going into the minimum weight considerations can be grouped as engineering ceramics, steel alloys, glass, titanium alloys, nickel alloys.
 
-  For the minimum weight design, we refer to the strength-density chart. For shaft under torsion, the index $S^{1/2}/\rho$ is used to determine a proper material. The material (or group of materials) with the highest index will yield the minimum weight for a given torque requirement. From \cref{fig: strength density diagram}, the group of materials with the highest indices are engineering ceramics, followed by titanium, nickel, and steel alloys. 
+  For the minimum weight design, we refer to the strength-density chart. For shaft under torsion, the index $S^{1/2}/\rho$ is used to determine a proper material. The material (or group of materials) with the highest index will yield the minimum weight for a given torque requirement. From \cref{fig: turbine shaft example strength-density diagram}, the group of materials with the highest indices are engineering ceramics, followed by titanium, nickel, and steel alloys. 
 
   \begin{figure}[H]
     \centering
@@ -1493,6 +1494,7 @@ Though the actual materials selection process can be iterative, requiring rethin
       \draw [dashed, red] (A.north) ++ (0:1.5) ++ (-90:0.5) --++ (-145:10) node[midway, above, red]{$\dfrac{S^{2/3}}{\rho} = C_1$};
     \end{tikzpicture}
     \caption{Turbine engine shaft materials: minimum weight consideration. Modified from \cite{ashby2010materials}.}
+    \label{fig: turbine shaft example strength-density diagram}
   \end{figure}
 
   With further testing, the designer can rank the materials most suitable for engine turbine shafts depending on other constraints such as budget and cost of repair.
