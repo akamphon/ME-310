@@ -70,6 +70,7 @@ svgnames,
 \usetikzlibrary{arrows,calc,decorations,shapes,decorations.pathmorphing,patterns}
 \tikzset{>=latex}
 \usepackage{pgfplots}
+\usepackage{tikz-3dplot}
 \newcommand{\AxisRotator}[1][rotate=0]{%
     \tikz[x=0.25cm,y=0.60cm,line width=.2ex,-stealth,#1] \draw(0,0) arc (150:-150:1 and 1);%
 }
@@ -1591,7 +1592,35 @@ Consider an infinitesimal cubic element, illustrated in \cref{fig: 3d-stress-ele
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{pictures/Static-body-load-analysis/3d-element-stress}
+  % \includegraphics[scale=0.5]{pictures/Static-body-load-analysis/3d-element-stress}
+  \tdplotsetmaincoords{70}{110}
+  \begin{tikzpicture}[tdplot_main_coords, >=latex]
+    \def\length{4}
+    \draw [dashed]
+    (0,0,0) node(origin){} --++ (\length,0,0) node(x){}
+    (origin.center) --++ (0,\length,0) node(y){}
+    (origin.center) --++ (0,0,\length) node(z){};
+    \draw [thin, left color=LightSkyBlue, right color=LightSkyBlue!\length0]
+    (x.center) --++ (0,0,\length) --++ (0,\length,0) --++ (0,0,-\length) -- cycle;
+    \draw [thin, right color=LightSkyBlue, left color=LightSkyBlue!\length0]
+    (y.center) --++ (0,0,\length) --++ (\length,0,0) --++ (0,0,-\length) -- cycle;
+    \draw [thin, top color=LightSkyBlue, bottom color=LightSkyBlue!\length0]
+    (z.center) --++ (\length,0,0) --++ (0,\length,0) --++ (-\length,0,0) -- cycle;
+    \draw [dashed, ->] (x.center) --++ (\length/3,0,0) node[below left]{$x$};
+    \draw [dashed, ->] (y.center) --++ (0,\length/3,0) node[below right]{$y$} ;
+    \draw [dashed, ->] (z.center) --++ (0,0,1) node[above]{$z$};
+    % shear stresses
+    \draw [->, ultra thick] (x.center) ++ (0,\length/2,\length/3) --++ (0,0,\length/3) node[above]{$\tau_{xz}$};
+    \draw [->, ultra thick] (x.center) ++ (0,\length/3,\length/2) --++ (0,\length/3,0) node[right]{$\tau_{xy}$};
+    \draw [->, ultra thick] (y.center) ++ (\length/2,0,\length/3) --++ (0,0,\length/3) node[above]{$\tau_{yz}$};
+    \draw [->, ultra thick] (y.center) ++ (\length/3,0,\length/2) --++ (\length/3,0,0) node[left]{$\tau_{yx}$};
+    \draw [->, ultra thick] (z.center) ++ (\length/2,\length/3,0) --++ (0,\length/3,0) node[right]{$\tau_{zy}$};
+    \draw [->, ultra thick] (z.center) ++ (\length/3,\length/2,0) --++ (\length/3,0,0) node[below left]{$\tau_{zx}$};
+    % normal stresses
+    \draw [->, ultra thick] (x.center) ++ (0,\length/2,\length/2) --++ (\length/2,0,0) node[left]{$\sigma_{x}$};
+    \draw [->, ultra thick] (y.center) ++ (\length/2,0,\length/2) --++ (0,\length/2,0) node[right]{$\sigma_{y}$};
+    \draw [->, ultra thick] (z.center) ++ (\length/2,\length/2,0) --++ (0,0,\length/2) node[above]{$\sigma_{z}$};
+  \end{tikzpicture}
   \caption{Stresses on a three-dimensional element when considering a static equilibrium}
   \label{fig: 3d-stress-element}
 \end{figure}
@@ -1657,9 +1686,33 @@ Therefore, strain is positive when the line elongates and is negative when the l
 
 The change in angle that occurs between two line segments that were originally perpendicular is referred to as shear strain. This angle is denoted by and is measured in radians. Consider the same cubic element with shear stress couple applied in the $xy$-plane. The angle made by the original $x$ and $y$ axes is $90^{\circ}$. After the deformation, the angle is changed by $\theta$. The shear strain in the plane, $\gamma_{xy}$, can be defined as 
 
-\begin{figure}
+\begin{figure}[h]
   \centering
-  \includegraphics[scale=0.6]{pictures/Static-body-load-analysis/3d-shear-deformation}
+  % \includegraphics[scale=0.5]{pictures/Static-body-load-analysis/3d-shear-deformation}
+  \tdplotsetmaincoords{70}{110}
+  \begin{tikzpicture}[tdplot_main_coords, >=latex]
+    \draw [dashed]
+    (0,0,0) node(origin){} --++ (3,0,0) node(x){}
+    (origin.center) --++ (0,3,0) node(y){}
+    (origin.center) --++ (0,0,3) node(z){};
+    \draw [thin, left color=LightSkyBlue, right color=LightSkyBlue!30]
+    (x.center) --++ (0,0,3) --++ (0,3,0) --++ (0,0,-3) -- cycle;
+    \draw [thin, right color=LightSkyBlue, left color=LightSkyBlue!30]
+    (y.center) --++ (0,0,3) --++ (3,0,0) --++ (0,0,-3) -- cycle;
+    \draw [thin, top color=LightSkyBlue, bottom color=LightSkyBlue!30]
+    (z.center) --++ (3,0,0) --++ (0,3,0) --++ (-3,0,0) -- cycle;
+    \draw [dashed, ->] (x.center) --++ (1,0,0) node[below left]{$x$};
+    \draw [dashed, ->] (y.center) --++ (0,1,0) node[below right]{$y$} ;
+    \draw [dashed, ->] (z.center) --++ (0,0,1) node[above]{$z$};
+    % deformed shape
+    \draw [dashed]
+    (z.center) --++ (1,3,0) node[above left]{$\theta$} --++ (3,0,0)
+    (x.center) ++ (0,0,3) --++ (1,3,0) --++ (0,0,-3)
+    (x.center) --++ (1,3,0) --++ (-1,0,0);
+    % shear stresses
+    \draw [->, ultra thick] (x.center) ++ (0,1,1.5) --++ (0,1,0) node[midway, above]{$\tau_{xy}$};
+    \draw [->, ultra thick] (y.center) ++ (1,0,1.5) --++ (1,0,0) node[midway, above]{$\tau_{yx}$};
+  \end{tikzpicture}
   \caption{3-dimensional element under shear deformation.}
   \label{fig: 3d shear deformation}
 \end{figure}
