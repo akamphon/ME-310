@@ -9,6 +9,7 @@ svgnames,
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{1}
 
+\usepackage[utf8]{inputenc}
 \usepackage{geometry}
 \geometry{margin=1in}
 \usepackage{graphicx}
@@ -30,7 +31,7 @@ svgnames,
 
 %%% ToC (table of contents) APPEARANCE
 \usepackage[numbib]{tocbibind} % Put the bibliography in the ToC
-\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
+%\usepackage[titles,subfigure]{tocloft} % Alter the style of the Table of Contents
 
 \newcommand*\chem[1]{\textup{#1}}
 
@@ -50,7 +51,7 @@ svgnames,
 \usepackage{amsthm}
 \newcommand\bmmax{0}
 \usepackage{bm}
-\usepackage{amssymb}
+%\usepackage{amssymb}
 \usepackage{array}
 \usepackage{cleveref}
 \usepackage{siunitx}
@@ -376,7 +377,7 @@ A good design meets performance, cost, and safety requirements. An optimum desig
   \item Evaluate the mode of possible failure of components.
   \item Determine the relationship between the applied load and the resulting effect such as stress and deformation.
   \item Determine the maximum usable value of a significant quantity such as stress or deformation that may cause failure. Using this value together with equation(s) obtained from part 2 to determine allowable loads.
-    \item Select the safety factor.
+  \item Select the safety factor.
 \end{enumerate}
         
 The preceding procedure must be adjusted to each individual case, as certain steps may be unnecessary or obvious. No two design problems are exactly the same, and no two design solutions should be the same.
@@ -586,7 +587,7 @@ The total safety factor when considering both the design and operating condition
 \end{example}
 \begin{solution}
 
-  While individual safety factors may require knowledge of materials and requirements for each component, we can discuss the safety factor of the \emph{system}. Referring to \cref{table: safety factor guideline}, this bicycle probably will be using common materials whose properties are well known and understood. However, being a children's toy, it can be subjected to some unexpected `operating conditions'. (You know, kids being kids, they will invent some ridiculous ways to play with their toys.) If we already expect this unexpected operating conditions, we can simply increase the loading requirement and file this under `reasonably constant conditions.' Combining the two, the safety factor from the design and operating conditions should fall between 1.5 - 2.
+  While individual safety factors may require knowledge of materials and requirements for each component, we can discuss the safety factor of the \emph{system}. Referring to \cref{table: safety factor guideline}, this bicycle probably will be using common materials whose properties are well known and understood. However, being a children's toy, it can be subjected to some unexpected \emph{operating conditions}. (You know, kids being kids, they will invent some ridiculous ways to play with their toys.) If we already expect this unexpected operating conditions, we can simply increase the loading requirement and file this under `reasonably constant conditions.' Combining the two, the safety factor from the design and operating conditions should fall between 1.5 - 2.
 
   Now, considering safety and economic impact. This is a bike for toddler so accidents are likely to happen. Also toddlers are still small and weak so failure could have disastrous repercussions (severe). The cost of fixing the failure should be relatively low (mild), however, so the combined safety factor for human safety and economic impact is 1.4.
 \end{solution}
@@ -1632,12 +1633,12 @@ If we apply the equation of force equilibrium in the $x$ direction, then
 \begin{equation}
   \arraycolsep=1.4pt\def\arraystretch{1.5}
   \begin{array}{c}
-    \sigma _x(\Delta y\Delta z) + \sigma_x'(\Delta y\Delta z) = 0\\
-    \sigma _x =  - \sigma_x'
+    \sigma _x(\Delta y\Delta z) + \sigma_x^{\prime}(\Delta y\Delta z) = 0\\
+    \sigma _x =  - \sigma_x^{\prime}
   \end{array}
 \end{equation}
 
-We can similarly prove that $\sigma_y = \sigma_{y’}$ and $\sigma_z = \sigma_z’$. Therefore, for a constant state of stress, each of the three normal stress components must be equal in magnitude but opposite in direction.
+We can similarly prove that $\sigma_y = \sigma_{y^{\prime}}$ and $\sigma_z = \sigma_{z^{\prime}}$. Therefore, for a constant state of stress, each of the three normal stress components must be equal in magnitude but opposite in direction.
 
 \subsubsection{Shear Stress Components}
 
@@ -1647,8 +1648,8 @@ The force equilibrium in the $x$ direction gives
 \begin{equation}
   \arraycolsep=1.4pt\def\arraystretch{1.5}
   \begin{array}{c}
-    \tau _{yx}(\Delta y\Delta z) + \tau_{yx}'(\Delta y\Delta z) = 0\\
-    \tau _{yx} =  - \tau_{yx}'
+    \tau _{yx}(\Delta y\Delta z) + \tau_{yx}^{\prime}(\Delta y\Delta z) = 0\\
+    \tau _{yx} =  - \tau_{yx}^{\prime}
   \end{array}
 \end{equation}
 
@@ -1668,16 +1669,16 @@ In order to describe deformation by changes in the length or by the changes in a
 
 \subsubsection{Normal strain}
 
-The change in the length of a line segment per unit length, whether elongation or contraction, is called normal strain. For example, consider the line AB which is contained within an undeformed body with length $s$. During its deformation, points A and B move to point A’ and B’ and the line becomes a curve having the length $s’$. The average normal strain becomes
+The change in the length of a line segment per unit length, whether elongation or contraction, is called normal strain. For example, consider the line AB which is contained within an undeformed body with length $s$. During its deformation, points A and B move to point A’ and B’ and the line becomes a curve having the length $s^{\prime}$. The average normal strain becomes
 
 \begin{equation}
-  \varepsilon _{avg} = \frac{s' - s}{s}
+  \varepsilon _{avg} = \frac{s^{\prime} - s}{s}
 \end{equation}
 
 If the normal strain is known, we can use this equation to find the final length of the line segment after it is deformed. We have
 
 \begin{equation}
-  s' = (1 + \varepsilon_{avg})s
+  s^{\prime} = (1 + \varepsilon_{avg})s
 \end{equation}
 
 Therefore, strain is positive when the line elongates and is negative when the line contracts.
@@ -2951,11 +2952,11 @@ In this section, we will show how to transform the stress components that are as
 
 Normally, the state of stress at a point in a body is defined by six independent normal and shear stresses. However, this is rarely encountered in real life, as we usually approximate and simplify so that the stress can be analyzed in a single plane. This is called plane stress. In this case, it is assumed that there is no load on the surface of a body and the corresponding stress components (both normal and shear) in the out-of-plane direction are zero. Therefore, the only three components of stress left are $\sigma_x$, $\sigma_y$, and $\tau_{xy}$ which act on the sides of the element.
 
-The method of transforming the normal and shear stress components from the $x$, $y$ to $x’$, $y’$ coordinate axes will now be developed in a general manner and expressed as a set of stress transformation equations.
+The method of transforming the normal and shear stress components from the $x$, $y$ to $x^{\prime}$, $y^{\prime}$ coordinate axes will now be developed in a general manner and expressed as a set of stress transformation equations.
 
 \paragraph{Sign Convention} Before the transformation equations are derived, we must first establish a sign convention for the stress components. A normal or shear stress component is positive when it acts in a positive direction on a positive face, or it acts in a negative direction on a negative face. The stress component is negative otherwise.
 
-Given the state of plane stress, the orientation of the inclined plane on which the normal and shear stress components are to be determined will be defined using $\theta$. Note that both coordinate systems $x$-$y$ and $x’$-$y’$ must form right-handed coordinate systems, meaning the cross product $x \times y$ must give the direction of $z$.
+Given the state of plane stress, the orientation of the inclined plane on which the normal and shear stress components are to be determined will be defined using $\theta$. Note that both coordinate systems $x$-$y$ and $x^{\prime}$-$y^{\prime}$ must form right-handed coordinate systems, meaning the cross product $x \times y$ must give the direction of $z$.
 
 \begin{figure}[h]
   \centering
@@ -2981,8 +2982,8 @@ Given the state of plane stress, the orientation of the inclined plane on which 
     \draw [->, very thick] (H.center) ++ (0:1.3) --++ (-90:1) node[right]{$\sigma_y$};
     \draw [-left to, very thick] (I.center) ++ (-135:0.5) --++ (180:1.8);
     \draw [-right to, very thick] (G.center) ++ (-135:0.5) --++ (-90:1.8) node[below]{$\tau_{xy}$};
-    \draw [->, very thick] (J.center) --++ (45:1) node[above right]{$\sigma_{x'}$};
-    \draw [-right to, very thick] (I.center) ++ (90:0.5) --++ (135:2.6) node[above right]{$\tau_{x'y'}$};
+    \draw [->, very thick] (J.center) --++ (45:1) node[above right]{$\sigma_{x^{\prime}}$};
+    \draw [-right to, very thick] (I.center) ++ (90:0.5) --++ (135:2.6) node[above right]{$\tau_{x^{\prime}y^{\prime}}$};
   \end{tikzpicture}
   % \includegraphics[scale=0.8]{pictures/Static-body-load-analysis/stress-transformation}
   \caption{Derivation of stress transformation equation by cutting element at an angle.}
@@ -2992,19 +2993,19 @@ Given the state of plane stress, the orientation of the inclined plane on which 
 \paragraph{Normal and Shear Stress Components} The element is sectioned into a right-angle triangle with an angle of $\theta$ on the top as in the figure below. The resulting normal and shear stress on the newly sectioned side can be determined using equation of force equilibrium as
 
 \[ \begin{gathered}
-  \sum F_{x'}  = 0; \hfill \\[1em]
+  \sum F_{x^{\prime}}  = 0; \hfill \\[1em]
   \begin{split}
-    \sigma_{x'}\Delta A - (\tau_{xy}\Delta A\sin \theta )\cos \theta  &- (\sigma_y\Delta A\sin \theta )\sin \theta  \\
+    \sigma_{x^{\prime}}\Delta A - (\tau_{xy}\Delta A\sin \theta )\cos \theta  &- (\sigma_y\Delta A\sin \theta )\sin \theta  \\
     &- (\tau_{xy}\Delta A\cos \theta )\sin \theta  - (\sigma_x\Delta A\sin \theta )\cos \theta  = 0
   \end{split} \nonumber \\[0.5em]
-  \sigma_{x'} = \sigma_x\cos^2\theta  + \sigma_y\sin^2\theta  + 2\tau_{xy}\sin \theta \cos \theta  \\[1em]
-  \sum F_{y'}  = 0; \hfill \\ 
-  \tau_{x'y'} = (\sigma_x - \sigma_y)\sin \theta \cos \theta  + \tau_{xy}(\cos^2\theta  - \sin ^2\theta ) \\ 
+  \sigma_{x^{\prime}} = \sigma_x\cos^2\theta  + \sigma_y\sin^2\theta  + 2\tau_{xy}\sin \theta \cos \theta  \\[1em]
+  \sum F_{y^{\prime}}  = 0; \hfill \\
+  \tau_{x^{\prime}y^{\prime}} = (\sigma_x - \sigma_y)\sin \theta \cos \theta  + \tau_{xy}(\cos^2\theta  - \sin ^2\theta ) \\
 \end{gathered} \]
 
-Once we know $\sigma_{x’}, \sigma_{y’}$ can be obtained simply by substituting $\theta$ with 90 + $\theta$
+Once we know $\sigma_{x^{\prime}}, \sigma_{y^{\prime}}$ can be obtained simply by substituting $\theta$ with 90 + $\theta$
 
-\[\sigma_{y'} = \sigma_x\sin^2\theta  + \sigma_y\cos^2\theta  - 2\tau_{xy}\sin \theta \cos \theta \]
+\[\sigma_{y^{\prime}} = \sigma_x\sin^2\theta  + \sigma_y\cos^2\theta  - 2\tau_{xy}\sin \theta \cos \theta \]
 
 If we know the stress components for all possible orientations of faces through a point, we say that we know the \emph{state of stress} at a point.
 
@@ -3013,31 +3014,31 @@ If we know the stress components for all possible orientations of faces through 
 The stress transformation can be made easier to understand through the use of a graphical representation. However, first we have to rewrite stress transformation using double angle formulas.
 
 \[\begin{gathered}
-  \sigma_{x'} = \sigma_x\cos^2\theta  + \sigma_y\sin^2\theta  + 2\tau_{xy}\sin \theta \cos \theta  \hfill \\
-  \sigma _{x'} = \frac{\sigma_x}{2}(1 + \cos 2\theta ) + \frac{\sigma_y}{2}(1 - \cos 2\theta ) + {\tau_{xy}}\sin 2\theta  \hfill \\
-  \sigma_{x'} - \left( \frac{\sigma_x + \sigma_y}{2} \right) = \left( \frac{\sigma_x + \sigma_y}{2} \right)\cos 2\theta  + {\tau_{xy}}\sin 2\theta  \hfill \\ 
+  \sigma_{x^{\prime}} = \sigma_x\cos^2\theta  + \sigma_y\sin^2\theta  + 2\tau_{xy}\sin \theta \cos \theta  \hfill \\
+  \sigma _{x^{\prime}} = \frac{\sigma_x}{2}(1 + \cos 2\theta ) + \frac{\sigma_y}{2}(1 - \cos 2\theta ) + {\tau_{xy}}\sin 2\theta  \hfill \\
+  \sigma_{x^{\prime}} - \left( \frac{\sigma_x + \sigma_y}{2} \right) = \left( \frac{\sigma_x + \sigma_y}{2} \right)\cos 2\theta  + {\tau_{xy}}\sin 2\theta  \hfill \\
 \end{gathered} \]
 
 \[\begin{gathered}
-  \tau_{x'y'} = (\sigma_y - \sigma_x)\sin \theta \cos \theta  + \tau_{xy}(\cos^2\theta  - \sin^2\theta ) \\
-  \tau_{x'y'} = \left( \frac{\sigma_y - \sigma_x}{2} \right)\sin 2\theta  + \tau _{xy}\cos 2\theta \hfill \\ 
+  \tau_{x^{\prime}y^{\prime}} = (\sigma_y - \sigma_x)\sin \theta \cos \theta  + \tau_{xy}(\cos^2\theta  - \sin^2\theta ) \\
+  \tau_{x^{\prime}y^{\prime}} = \left( \frac{\sigma_y - \sigma_x}{2} \right)\sin 2\theta  + \tau _{xy}\cos 2\theta \hfill \\
 \end{gathered} \]
 
 Square both expressions and add them together, we have
 
 \[\begin{gathered}
-    \left[ \sigma_{x'} - \left( \frac{\sigma_x + \sigma_y}{2} \right) \right]^2 + \tau_{x'y'}^2 = \left( \frac{\sigma_x - \sigma_y}{2} \right)^2\cos^2 2\theta  + 2\left( \frac{\sigma_x - \sigma_y}{2} \right)\tau_{xy}\cos 2\theta \sin 2\theta  + \tau_{xy}^2\sin^2 2\theta \\
+    \left[ \sigma_{x^{\prime}} - \left( \frac{\sigma_x + \sigma_y}{2} \right) \right]^2 + \tau_{x^{\prime}y^{\prime}}^2 = \left( \frac{\sigma_x - \sigma_y}{2} \right)^2\cos^2 2\theta  + 2\left( \frac{\sigma_x - \sigma_y}{2} \right)\tau_{xy}\cos 2\theta \sin 2\theta  + \tau_{xy}^2\sin^2 2\theta \\
     \hspace{4.7cm} + \left( \frac{\sigma_x - \sigma_y}{2} \right)^2 \sin^2 2\theta  + 2\left( \frac{\sigma_y - \sigma_x}{2} \right)\tau_{xy}\cos 2\theta \sin 2\theta  + \tau_{xy}^2\cos^2 2\theta \\ 
 \end{gathered} \]
 
 Simplifying the expression using trigonometry identities, we have
 
-\[\left[ \sigma_{x'} - \left( \frac{\sigma_x + \sigma_y}{2} \right) \right]^2 + \tau_{x'y'}^2 = \left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2\]
+\[\left[ \sigma_{x^{\prime}} - \left( \frac{\sigma_x + \sigma_y}{2} \right) \right]^2 + \tau_{x^{\prime}y^{\prime}}^2 = \left( \frac{\sigma_x - \sigma_y}{2} \right)^2 + \tau_{xy}^2\]
 
 Since $\sigma_x$, $\sigma_y$, and $\tau_{xy}$ are known quantities for the problem, we can rewrite the expression as
 
 \begin{equation}
-  (\sigma_{x'} - \sigma_{avg})^2 + \tau_{x'y'}^2 = R^2
+  (\sigma_{x^{\prime}} - \sigma_{avg})^2 + \tau_{x^{\prime}y^{\prime}}^2 = R^2
 \end{equation}
 
 Note that this equation represents a circle having radius $R$ and center on the $\sigma$ axis at point ($\sigma_{avg}$, 0).
@@ -3051,7 +3052,7 @@ Note that this equation represents a circle having radius $R$ and center on the 
     \node at (large.east) [below right] {$\sigma_1$};
     \node at (large.west) [below left] {$\sigma_2$};
     \draw (0,0) node[below left]{0};
-    \draw [dashed](large.center) -- (large.south) node[below right](absolute){$(\tau_{x'y'})_{\max}$};
+    \draw [dashed](large.center) -- (large.south) node[below right](absolute){$(\tau_{x^{\prime}y^{\prime}})_{\max}$};
     \draw (large.center) --++ (50:3.5) node[above right]{$\sigma_x$} node(A){};
     \draw (large.center) --++ (-130:3.5) node[below left]{$\sigma_y$};
     \draw [dashed] (A.center) --++ (180:2.75) node[left]{$\tau_{xy}$};
@@ -3142,7 +3143,7 @@ Since the angle between the principal stresses and maximum shear stress on Mohr�
       &= 22.5^{\circ}
     \end{aligned} \]
 
-  We can also plot the expression for transformed normal stress $\sigma_x'$ and transformed shear stress $\tau_{x'y'}$ as
+  We can also plot the expression for transformed normal stress $\sigma_x^{\prime}$ and transformed shear stress $\tau_{x^{\prime}y^{\prime}}$ as
 
   \begin{figure}[H]
     \centering
@@ -3157,8 +3158,8 @@ Since the angle between the principal stresses and maximum shear stress on Mohr�
         xtick distance=45,
         xmin=0,
         ]
-        \addplot+[mark=none]{-30*(cos(x))^2 + 20*(sin(x))^2 + 50*sin(x)*cos(x)} node[right]{$\sigma_x'$};
-        \addplot+[mark=none]{-(-30 - 20)*sin(x)*cos(x) + 25*((cos(x))^2 - (sin(x))^2)} node[right]{$\tau_{x'y'}$};
+        \addplot+[mark=none]{-30*(cos(x))^2 + 20*(sin(x))^2 + 50*sin(x)*cos(x)} node[right]{$\sigma_{x^{\prime}}$};
+        \addplot+[mark=none]{-(-30 - 20)*sin(x)*cos(x) + 25*((cos(x))^2 - (sin(x))^2)} node[right]{$\tau_{x^{\prime}y^{\prime}}$};
       \end{axis}
     \end{tikzpicture}
   \end{figure}
@@ -7986,7 +7987,7 @@ This shows that the amount of external load distributed in the bolt and clamped 
     \draw [->] (C) -- (F);
   \end{tikzpicture}
   \caption{Forces in bolt and clamped parts with and without external applied force $P$.}
-  \label{fig: bolt-joint interaction}
+  \label{fig: bolt-joint interaction with external load}
 \end{figure}
 
 \begin{align} \label{eqn: bolt-joint interaction}
@@ -8097,7 +8098,7 @@ where $y$ is the bolt distance from the centroid, $I$ is the moment of inertia, 
     \draw [<-] (bottom.west) --++ (180:0.5);
   \end{tikzpicture}
   \caption{Bolt resultant stresses from exerted moment.}
-  \label{fig: bolted joint under bending}
+  \label{fig: stress in bolted joint under bending}
 \end{figure}
 
 The moment of inertia $I$ of a group of bolts about a centroid can be calculated by summing all the individual moments of inertia about that centroid $I_i$. Using parallel axis theorem, we can express the moment of inertia of the individual bolt as the sume of its centroidal moment of inertia $I_{ci}$ and product of bolt cross-sectional area $A_i$ and distance from the centroid squared $r_i^2$.
@@ -9579,7 +9580,7 @@ We should also check the back surface for any location with outstanding stress.
   \includegraphics[scale=0.4]{pictures/Intro-CAD/Crank-result-back}
 \end{figure}
 
-The critical point is at the rounded surface on the fixed end. The maximum Von Mises ($\sigma_e$) is 83 MPa. The yield strength is written on the bottom of the legend at 275 MPa. We can also convert the stress plot to safety factor (or as SolidWorks call it `factor of safety'). The aluminum alloy used within this case is a ductile material, so we use the MDET to determine safety factors.
+The critical point is at the rounded surface on the fixed end. The maximum Von Mises stress ($\sigma_e$) is 83 MPa. The yield strength is written on the bottom of the legend at 275 MPa. We can also convert the stress plot to safety factor (or as SolidWorks call it \emph{factor of safety}). The aluminum alloy used within this case is a ductile material, so we use the MDET to determine safety factors.
 
 \begin{figure}[H]
   \centering
@@ -10116,8 +10117,8 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   Using moment equilibrium, we have that
 
   \begin{align*}
-    F_f = \frac{5000*0.2}{1.2} = 833 \text{ N} \\
-    F_r = \frac{5000*1}{1.2} = 4167 \text{ N}
+    F_f = \frac{5000 \times 0.2}{1.2} = 833 \text{ N} \\
+    F_r = \frac{5000 \times 1}{1.2} = 4167 \text{ N}
   \end{align*}
 
   Since the axis of the bolt and direction of the load are perpendicular, we know that these are friction joints. For each joint, there are two forks squeezing on a wheel hub using the bolt, thereby effectively creating two friction surfaces. Choosing grade 8.8, the sizing equation becomes
