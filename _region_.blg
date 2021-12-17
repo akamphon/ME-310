@@ -1,0 +1,5 @@
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is '_region_.blg'
+[80] biber:322> INFO - === Tue May 26, 2020, 21:35:19
+[109] Utils.pm:320> ERROR - _region_.bcf is malformed, last biblatex run probably failed. Deleted _region_.bbl
+[109] Biber.pm:132> INFO - ERRORS: 1

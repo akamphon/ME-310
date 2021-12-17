@@ -9689,7 +9689,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 \section{Materials Selection}
 
 \begin{evensolution}
-\item Steel-reinforced concrete is very strong because steel and concrete are strong in opposite directions. Steel wire is strong under tension, and relatively weak under compression (due to buckling). Concrete is brittle and is strong under compression, but weak under tension. When combined, steel-reinforced concrete is strong both under tension and compression.
+\item Steel-reinforced concrete is very strong because steel and concrete are strong in opposite directions. Steel wire is strong under tension, while relatively weak under compression (due to buckling). Concrete is brittle and is strong under compression, but weak under tension. When combined, steel-reinforced concrete is strong both under tension and compression.
 
 \item The main purpose of an engine shaft is to transfer torque. To minimize the weight of a torque-loaded shaft, we use the minimum weight index formula
 
@@ -9699,7 +9699,29 @@ However, powerful though an FEA program may be, it is still far from all-knowing
 
   By checking the strength-density diagram, we see that the materials that should give us the lightest torque-loaded shaft are engineering ceramics, titanium alloys, nickel alloys, and some steel alloys.
 
-  Let us choose the following materials to represent each qualified categories:
+  Let us choose the following materials to represent each qualified category:
+
+  \begin{center}
+    \begin{tabular}[ht]{lccc}
+      \toprule
+      Category & Material & $S_{ut}$ [MPa] & $\rho$ [kg/m$^{3}$] \\
+      \midrule
+      ceramics & silicon carbide (SiC) & 200 & 3200 \\
+      titanium alloys & Ti-6Al-4V (Ti) & 900 & 4500 \\
+      nickel alloys & Alloy 625 Inconel (Ni) & 690 & 8440 \\
+      steel alloys & SAE 945 (St) & 430 & 7800 \\
+      \bottomrule
+    \end{tabular}
+  \end{center}
+
+  We can then determine the minimum weight index for the materials, obtaining
+  \begin{align*}
+    &M_{\text{SiC}} = \pynum{200e6**0.5/3200} \\
+    &M_{\text{Ti}} = \pynum{900e6**0.5/4500} \\
+    &M_{\text{Ni}} = \pynum{690e6**0.5/8440} \\
+    &M_{\text{St}} = \pynum{430e6**0.5/7800}
+  \end{align*}
+  The material with the highest index is Ti64, which should give us the lightest shaft.
 \end{evensolution}
 
 \section{Review of Mechanics of Materials}
@@ -10106,7 +10128,7 @@ However, powerful though an FEA program may be, it is still far from all-knowing
   \end{align*}
 
 
-  This shows that the beam would break before then weld, hence the maximum allowable load is 6250 N.
+  This shows that the beam would break before the weld, hence the maximum allowable load is 6250 N.
 \end{evensolution}
 
 \section{Design of Bolted Joints}

@@ -1,0 +1,4 @@
+\begin{align*}
+I&=\int\limits_{- \frac{h}{2}}^{\frac{h}{2}} \frac{2 b y^{2}}{h}\, dy\\
+&=\frac{b h^{2}}{6}
+\end{align*}

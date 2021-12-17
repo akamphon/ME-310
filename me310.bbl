@@ -1,0 +1,809 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{ai2bike}{online}{}
+      \name{author}{1}{}{%
+        {{hash=dc33e03be4879f8373e5760b55be7df9}{%
+           family={AI2},
+           familyi={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc33e03be4879f8373e5760b55be7df9}
+      \strng{fullhash}{dc33e03be4879f8373e5760b55be7df9}
+      \strng{bibnamehash}{dc33e03be4879f8373e5760b55be7df9}
+      \strng{authorbibnamehash}{dc33e03be4879f8373e5760b55be7df9}
+      \strng{authornamehash}{dc33e03be4879f8373e5760b55be7df9}
+      \strng{authorfullhash}{dc33e03be4879f8373e5760b55be7df9}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Schematic diagram of a bike}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Bicycle_diagram-en.svg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Bicycle_diagram-en.svg
+      \endverb
+      \warn{\item Entry 'ai2bike' (me310.bib): Invalid format '6/28/2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{akamphon2012reduction}{article}{}
+      \name{author}{3}{}{%
+        {{hash=114735f212d78c3101fe9ff4f5b13477}{%
+           family={Akamphon},
+           familyi={A\bibinitperiod},
+           given={Sappinandana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3a86569fa1f65b1e7454165aa112a9dc}{%
+           family={Sukkasi},
+           familyi={S\bibinitperiod},
+           given={Sittha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=fd57af0428c70baa1bfca9d47c03d122}{%
+           family={Boonyongmaneerat},
+           familyi={B\bibinitperiod},
+           given={Yuttanant},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \strng{fullhash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \strng{bibnamehash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \strng{authorbibnamehash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \strng{authornamehash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \strng{authorfullhash}{f07cc4d4403fe665ffaac23ce59420fa}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Resources, Conservation and Recycling}
+      \field{title}{Reduction of zinc consumption with enhanced corrosion protection in hot-dip galvanized coatings: A process-based cost analysis}
+      \field{volume}{58}
+      \field{year}{2012}
+      \true{nocite}
+      \field{pages}{1\bibrangedash 7}
+      \range{pages}{7}
+    \endentry
+    \entry{akamphon2018integrated}{article}{}
+      \name{author}{3}{}{%
+        {{hash=114735f212d78c3101fe9ff4f5b13477}{%
+           family={Akamphon},
+           familyi={A\bibinitperiod},
+           given={Sappinandana},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3a86569fa1f65b1e7454165aa112a9dc}{%
+           family={Sukkasi},
+           familyi={S\bibinitperiod},
+           given={Sittha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0be253e03f3a0803122775623a1abb68}{%
+           family={Sedchaicharn},
+           familyi={S\bibinitperiod},
+           given={Korkiat},
+           giveni={K\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley Online Library}%
+      }
+      \strng{namehash}{c8571cdd0d09aa386a7a5b781f652189}
+      \strng{fullhash}{c8571cdd0d09aa386a7a5b781f652189}
+      \strng{bibnamehash}{c8571cdd0d09aa386a7a5b781f652189}
+      \strng{authorbibnamehash}{c8571cdd0d09aa386a7a5b781f652189}
+      \strng{authornamehash}{c8571cdd0d09aa386a7a5b781f652189}
+      \strng{authorfullhash}{c8571cdd0d09aa386a7a5b781f652189}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of food processing and preservation}
+      \field{number}{7}
+      \field{title}{An integrated heat-transfer-fluid-dynamics-mass-transfer model for evaluating solar-dryer designs}
+      \field{volume}{42}
+      \field{year}{2018}
+      \field{pages}{e13649}
+      \range{pages}{-1}
+    \endentry
+    \entry{ashby2010materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4de59c3184c0ba1bad5f8cfefb68f6f5}{%
+           family={Ashby},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima F},
+           giveni={M\bibinitperiod\bibinitdelim F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{fullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{bibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorbibnamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authornamehash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \strng{authorfullhash}{4de59c3184c0ba1bad5f8cfefb68f6f5}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials Selection in Mechanical Design}
+      \field{year}{2010}
+    \endentry
+    \entry{avedesian1999asm}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2d422aac2e943b0c15d3f2d54385b81c}{%
+           family={Avedesian},
+           familyi={A\bibinitperiod},
+           given={Michael\bibnamedelima M},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=7037c148b24455e1b0d9dafde953cbd9}{%
+           family={Baker},
+           familyi={B\bibinitperiod},
+           given={Hugh},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \strng{fullhash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \strng{bibnamehash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \strng{authorbibnamehash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \strng{authornamehash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \strng{authorfullhash}{69a7aa9fc94c4864e843c81f2bb16b14}
+      \field{sortinit}{A}
+      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ASM international}
+      \field{title}{ASM speciality handbook: magnesium and magnesium alloys}
+      \field{volume}{274}
+      \field{year}{1999}
+    \endentry
+    \entry{boresi1985advanced}{book}{}
+      \name{author}{3}{}{%
+        {{hash=e33b7e914b537fedcbba2f4852630695}{%
+           family={Boresi},
+           familyi={B\bibinitperiod},
+           given={Arthur\bibnamedelima Peter},
+           giveni={A\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=86b5d457474a330ae6a4aa5b8c5e5ef9}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Richard\bibnamedelima Joseph},
+           giveni={R\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=b485f0ed7f3c76bfc0dfbe7eb11f064c}{%
+           family={Sidebottom},
+           familyi={S\bibinitperiod},
+           given={Omar\bibnamedelima M},
+           giveni={O\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley New York et al.}%
+      }
+      \strng{namehash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \strng{fullhash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \strng{bibnamehash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \strng{authorbibnamehash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \strng{authornamehash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \strng{authorfullhash}{1e108a3b1e2f0fcc81108b697ae7056d}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Advanced mechanics of materials}
+      \field{volume}{6}
+      \field{year}{1985}
+      \true{nocite}
+    \endentry
+    \entry{bringas2004handbook}{book}{}
+      \name{author}{1}{}{%
+        {{hash=66988a6a8f7f79f1414cd9189c3f9efd}{%
+           family={Bringas},
+           familyi={B\bibinitperiod},
+           given={John\bibnamedelima E},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASTM International,}%
+      }
+      \strng{namehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{fullhash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{bibnamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authorbibnamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authornamehash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \strng{authorfullhash}{66988a6a8f7f79f1414cd9189c3f9efd}
+      \field{sortinit}{B}
+      \field{sortinithash}{d7095fff47cda75ca2589920aae98399}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Handbook of comparative world steel standards}
+      \field{year}{2004}
+    \endentry
+    \entry{datsko1977materials}{book}{}
+      \name{author}{1}{}{%
+        {{hash=25415021c7a2da5e2edfd65723a9a7cb}{%
+           family={Datsko},
+           familyi={D\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Malloy: Ann Arbor, MI}%
+      }
+      \strng{namehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{fullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{bibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorbibnamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authornamehash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \strng{authorfullhash}{25415021c7a2da5e2edfd65723a9a7cb}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Materials in design and manufacturing}
+      \field{year}{1977}
+    \endentry
+    \entry{davis2000alloy}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7e97a50baad36db36a43a20a534bc16a}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Joseph\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASM international}%
+      }
+      \strng{namehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{fullhash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{bibnamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authorbibnamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authornamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authorfullhash}{7e97a50baad36db36a43a20a534bc16a}
+      \field{extraname}{1}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Alloy digest sourcebook: stainless steels}
+      \field{year}{2000}
+    \endentry
+    \entry{davis2001alloying}{book}{}
+      \name{author}{1}{}{%
+        {{hash=7e97a50baad36db36a43a20a534bc16a}{%
+           family={Davis},
+           familyi={D\bibinitperiod},
+           given={Joseph\bibnamedelima R},
+           giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ASM international}%
+      }
+      \strng{namehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{fullhash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{bibnamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authorbibnamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authornamehash}{7e97a50baad36db36a43a20a534bc16a}
+      \strng{authorfullhash}{7e97a50baad36db36a43a20a534bc16a}
+      \field{extraname}{2}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Alloying: understanding the basics}
+      \field{year}{2001}
+    \endentry
+    \entry{dresselseatpost}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fd25353d1b091a1105c238ba44bebca9}{%
+           family={Dressel},
+           familyi={D\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd25353d1b091a1105c238ba44bebca9}
+      \strng{fullhash}{fd25353d1b091a1105c238ba44bebca9}
+      \strng{bibnamehash}{fd25353d1b091a1105c238ba44bebca9}
+      \strng{authorbibnamehash}{fd25353d1b091a1105c238ba44bebca9}
+      \strng{authornamehash}{fd25353d1b091a1105c238ba44bebca9}
+      \strng{authorfullhash}{fd25353d1b091a1105c238ba44bebca9}
+      \field{sortinit}{D}
+      \field{sortinithash}{6f385f66841fb5e82009dc833c761848}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mountain Bike Seatpost}
+      \field{year}{2007}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/File:Mountain_Bike_Seatpost.jpg
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/File:Mountain_Bike_Seatpost.jpg
+      \endverb
+      \warn{\item Entry 'dresselseatpost' (me310.bib): Invalid format '6/28/2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{fooldriversuspension}{online}{}
+      \name{author}{1}{}{%
+        {{hash=a22805b76f93c5550c965f437ac007c8}{%
+           family={fooldriver24},
+           familyi={f\bibinitperiod}}}%
+      }
+      \strng{namehash}{a22805b76f93c5550c965f437ac007c8}
+      \strng{fullhash}{a22805b76f93c5550c965f437ac007c8}
+      \strng{bibnamehash}{a22805b76f93c5550c965f437ac007c8}
+      \strng{authorbibnamehash}{a22805b76f93c5550c965f437ac007c8}
+      \strng{authornamehash}{a22805b76f93c5550c965f437ac007c8}
+      \strng{authorfullhash}{a22805b76f93c5550c965f437ac007c8}
+      \field{sortinit}{f}
+      \field{sortinithash}{2638baaa20439f1b5a8f80c6c08a13b4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Alfa Romeo Alfetta front suspension}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Alfetta_front_suspension.jpg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Alfetta_front_suspension.jpg
+      \endverb
+      \warn{\item Entry 'fooldriversuspension' (me310.bib): Invalid format '6/28/2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{gay2014composite}{book}{}
+      \name{author}{1}{}{%
+        {{hash=42dbec8679559b4266aafda06b1df0a1}{%
+           family={Gay},
+           familyi={G\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC Press}%
+      }
+      \strng{namehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{fullhash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{bibnamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authorbibnamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authornamehash}{42dbec8679559b4266aafda06b1df0a1}
+      \strng{authorfullhash}{42dbec8679559b4266aafda06b1df0a1}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Composite Materials: Design and Applications}
+      \field{year}{2014}
+    \endentry
+    \entry{grushko2016aluminum}{book}{}
+      \name{author}{3}{}{%
+        {{hash=b21b499d1976fb6c4989f651c79503da}{%
+           family={Grushko},
+           familyi={G\bibinitperiod},
+           given={Olga},
+           giveni={O\bibinitperiod}}}%
+        {{hash=8269d60bbef56a9d2ae97a5bc633cf8c}{%
+           family={Ovsyannikov},
+           familyi={O\bibinitperiod},
+           given={Boris},
+           giveni={B\bibinitperiod}}}%
+        {{hash=6dbd18cd921228c3b3c1be580aba0f45}{%
+           family={Ovchinnokov},
+           familyi={O\bibinitperiod},
+           given={Viktor},
+           giveni={V\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {CRC press}%
+      }
+      \strng{namehash}{c185df5744baadb25246fb79b4101714}
+      \strng{fullhash}{c185df5744baadb25246fb79b4101714}
+      \strng{bibnamehash}{c185df5744baadb25246fb79b4101714}
+      \strng{authorbibnamehash}{c185df5744baadb25246fb79b4101714}
+      \strng{authornamehash}{c185df5744baadb25246fb79b4101714}
+      \strng{authorfullhash}{c185df5744baadb25246fb79b4101714}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Aluminum-lithium Alloys: Process Metallurgy, Physical Metallurgy, and Welding}
+      \field{year}{2016}
+    \endentry
+    \entry{hibbelermechanics}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8436125e94d9877a58200cf47abf76f0}{%
+           family={Hibbeler},
+           familyi={H\bibinitperiod},
+           given={RC},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Upper Saddle River, NJ: Prentice Hall}%
+      }
+      \strng{namehash}{8436125e94d9877a58200cf47abf76f0}
+      \strng{fullhash}{8436125e94d9877a58200cf47abf76f0}
+      \strng{bibnamehash}{8436125e94d9877a58200cf47abf76f0}
+      \strng{authorbibnamehash}{8436125e94d9877a58200cf47abf76f0}
+      \strng{authornamehash}{8436125e94d9877a58200cf47abf76f0}
+      \strng{authorfullhash}{8436125e94d9877a58200cf47abf76f0}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Mechanics of Materials, 2011}
+      \true{nocite}
+    \endentry
+    \entry{jeffus2011welding}{book}{}
+      \name{author}{1}{}{%
+        {{hash=aa7a0864af5c8099776c5888915fd051}{%
+           family={Jeffus},
+           familyi={J\bibinitperiod},
+           given={Larry},
+           giveni={L\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Nelson Education}%
+      }
+      \strng{namehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{fullhash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{bibnamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authorbibnamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authornamehash}{aa7a0864af5c8099776c5888915fd051}
+      \strng{authorfullhash}{aa7a0864af5c8099776c5888915fd051}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Welding: principles and applications}
+      \field{year}{2011}
+    \endentry
+    \entry{juvinall2006fundamentals}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f7999c00181cdb40571abdacdd931e0e}{%
+           family={Juvinall},
+           familyi={J\bibinitperiod},
+           given={Robert\bibnamedelima C},
+           giveni={R\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=de3aa1d9794faa73eda5de7e673dcbf1}{%
+           family={Marshek},
+           familyi={M\bibinitperiod},
+           given={Kurt\bibnamedelima M},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley New York}%
+      }
+      \strng{namehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{fullhash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{bibnamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authorbibnamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authornamehash}{203e28f0975f7582ea1d1a96baedc47b}
+      \strng{authorfullhash}{203e28f0975f7582ea1d1a96baedc47b}
+      \field{sortinit}{J}
+      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fundamentals of machine component design}
+      \field{volume}{1}
+      \field{year}{2018}
+    \endentry
+    \entry{monokloncrane}{online}{}
+      \name{author}{1}{}{%
+        {{hash=957435c63de4a4b2274e77007d5c58f4}{%
+           family={Monoklon},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{957435c63de4a4b2274e77007d5c58f4}
+      \strng{fullhash}{957435c63de4a4b2274e77007d5c58f4}
+      \strng{bibnamehash}{957435c63de4a4b2274e77007d5c58f4}
+      \strng{authorbibnamehash}{957435c63de4a4b2274e77007d5c58f4}
+      \strng{authornamehash}{957435c63de4a4b2274e77007d5c58f4}
+      \strng{authorfullhash}{957435c63de4a4b2274e77007d5c58f4}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Luffing crane}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%B0%D0%BD_%D1%81_%D0%BC%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BE%D0%B9.jpg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:%D0%9A%D1%80%D0%B0%D0%BD_%D1%81_%D0%BC%D0%B0%D1%85%D0%BE%D0%B2%D0%BE%D0%B9_%D1%81%D1%82%D1%80%D0%B5%D0%BB%D0%BE%D0%B9.jpg
+      \endverb
+      \warn{\item Entry 'monokloncrane' (me310.bib): Invalid format '6/28/2019' of date field 'urldate' - ignoring}
+    \endentry
+    \entry{oberg2016machinery}{book}{}
+      \name{author}{4}{}{%
+        {{hash=55b20b68d2db2fbd4873bd490046c069}{%
+           family={Oberg},
+           familyi={O\bibinitperiod},
+           given={Erik},
+           giveni={E\bibinitperiod}}}%
+        {{hash=c33e0964b3724dd929c2c1467a242efb}{%
+           family={Horton},
+           familyi={H\bibinitperiod},
+           given={Holbrook\bibnamedelima L},
+           giveni={H\bibinitperiod\bibinitdelim L\bibinitperiod}}}%
+        {{hash=05ba235a5a5d5e12aab020a2873a5283}{%
+           family={Ryffel},
+           familyi={R\bibinitperiod},
+           given={Henry\bibnamedelima H},
+           giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+        {{hash=25dc62494ee7a2732c24e68f6efd168b}{%
+           family={McCauley},
+           familyi={M\bibinitperiod},
+           given={Christopher\bibnamedelima J},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Industrial Press, Incorporated}%
+      }
+      \strng{namehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{fullhash}{e5eaf6f18bf0ba884bbfe12256ad07b0}
+      \strng{bibnamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authorbibnamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authornamehash}{383b35dd3815fb7c6d63ec9c38d483b8}
+      \strng{authorfullhash}{e5eaf6f18bf0ba884bbfe12256ad07b0}
+      \field{sortinit}{O}
+      \field{sortinithash}{2cd7140a07aea5341f9e2771efe90aae}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Machinery's Handbook Guide}
+      \field{year}{2016}
+    \endentry
+    \entry{plisga2017standard}{book}{}
+      \name{author}{3}{}{%
+        {{hash=dc98c081f65808aab1c19944a8d5761b}{%
+           family={Plisga},
+           familyi={P\bibinitperiod},
+           given={Gary\bibnamedelima J},
+           giveni={G\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=0a1070e161991ddeae55fd028e7194d8}{%
+           family={Lyons},
+           familyi={L\bibinitperiod},
+           given={William},
+           giveni={W\bibinitperiod}}}%
+        {{hash=5ff57a10231fe037479ab6022a573fc0}{%
+           family={Lorenz},
+           familyi={L\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier}%
+      }
+      \strng{namehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{fullhash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{bibnamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authorbibnamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authornamehash}{1c859062e0cf5c1be7eb78cd44276540}
+      \strng{authorfullhash}{1c859062e0cf5c1be7eb78cd44276540}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Standard Handbook of Petroleum and Natural Gas Engineering}
+      \field{year}{2017}
+    \endentry
+    \entry{shigley2011shigley}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8e5b3743b856af1e9a5f5927000b9ff9}{%
+           family={Shigley},
+           familyi={S\bibinitperiod},
+           given={Joseph\bibnamedelima Edward},
+           giveni={J\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Tata McGraw-Hill Education}%
+      }
+      \strng{namehash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \strng{fullhash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \strng{bibnamehash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \strng{authorbibnamehash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \strng{authornamehash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \strng{authorfullhash}{8e5b3743b856af1e9a5f5927000b9ff9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shigley's mechanical engineering design}
+      \field{year}{2015}
+    \endentry
+    \entry{sukkasi2014heat}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3a86569fa1f65b1e7454165aa112a9dc}{%
+           family={Sukkasi},
+           familyi={S\bibinitperiod},
+           given={Sittha},
+           giveni={S\bibinitperiod}}}%
+        {{hash=114735f212d78c3101fe9ff4f5b13477}{%
+           family={Akamphon},
+           familyi={A\bibinitperiod},
+           given={Sappinandana},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{6310ad3f695fce51d1664a96a84328c4}
+      \strng{fullhash}{6310ad3f695fce51d1664a96a84328c4}
+      \strng{bibnamehash}{6310ad3f695fce51d1664a96a84328c4}
+      \strng{authorbibnamehash}{6310ad3f695fce51d1664a96a84328c4}
+      \strng{authornamehash}{6310ad3f695fce51d1664a96a84328c4}
+      \strng{authorfullhash}{6310ad3f695fce51d1664a96a84328c4}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Clean Technologies and Environmental Policy}
+      \field{number}{8}
+      \field{title}{Heat-transfer modeling as a design tool for improving solar water disinfection (SODIS) containers}
+      \field{volume}{16}
+      \field{year}{2014}
+      \field{pages}{1773\bibrangedash 1780}
+      \range{pages}{8}
+    \endentry
+    \entry{swift1987damage}{inproceedings}{}
+      \name{author}{1}{}{%
+        {{hash=81edb6e904488b14c2d718473f545b1f}{%
+           family={Swift},
+           familyi={S\bibinitperiod},
+           given={T},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{81edb6e904488b14c2d718473f545b1f}
+      \strng{fullhash}{81edb6e904488b14c2d718473f545b1f}
+      \strng{bibnamehash}{81edb6e904488b14c2d718473f545b1f}
+      \strng{authorbibnamehash}{81edb6e904488b14c2d718473f545b1f}
+      \strng{authornamehash}{81edb6e904488b14c2d718473f545b1f}
+      \strng{authorfullhash}{81edb6e904488b14c2d718473f545b1f}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{ICAF Symposium}
+      \field{title}{Damage Tolerance in Pressurized Fuselages-11th Plantema Memorial Lecture}
+      \field{year}{1987}
+    \endentry
+    \entry{timoshenko412theory}{article}{}
+      \name{author}{2}{}{%
+        {{hash=2c0d10498a8f10bf3d7aa1ca95af50bc}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod}}}%
+        {{hash=3e0c10a74c45b2746ce9af0ba1739d26}{%
+           family={Goodier},
+           familyi={G\bibinitperiod},
+           given={JN},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{19753b4c273f15ac83916d28849648e1}
+      \strng{fullhash}{19753b4c273f15ac83916d28849648e1}
+      \strng{bibnamehash}{19753b4c273f15ac83916d28849648e1}
+      \strng{authorbibnamehash}{19753b4c273f15ac83916d28849648e1}
+      \strng{authornamehash}{19753b4c273f15ac83916d28849648e1}
+      \strng{authorfullhash}{19753b4c273f15ac83916d28849648e1}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{New York}
+      \field{title}{Theory of elasticity. 1951}
+      \field{volume}{412}
+      \true{nocite}
+      \field{pages}{108}
+      \range{pages}{1}
+    \endentry
+    \entry{timoshenko1959theory}{book}{}
+      \name{author}{2}{}{%
+        {{hash=c60b47aede681929218f40327dffaf0a}{%
+           family={Timoshenko},
+           familyi={T\bibinitperiod},
+           given={Stephen\bibnamedelima P},
+           giveni={S\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=1e7af66671efdc6b8fb3b3408ad5d099}{%
+           family={Woinowsky-Krieger},
+           familyi={W\bibinithyphendelim K\bibinitperiod},
+           given={Sergius},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-hill}%
+      }
+      \strng{namehash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \strng{fullhash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \strng{bibnamehash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \strng{authorbibnamehash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \strng{authornamehash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \strng{authorfullhash}{9c5ce1fad6a93a38ce07e9c45d6c395c}
+      \field{sortinit}{T}
+      \field{sortinithash}{9af77f0292593c26bde9a56e688eaee9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Theory of plates and shells}
+      \field{year}{1959}
+      \true{nocite}
+    \endentry
+    \entry{wanhill2015milestone}{article}{}
+      \name{author}{4}{}{%
+        {{hash=fad76dc8c472a92911da5134de231680}{%
+           family={Wanhill},
+           familyi={W\bibinitperiod},
+           given={RJH},
+           giveni={R\bibinitperiod}}}%
+        {{hash=80c4c3b53266cc67dcc00ce3de345e43}{%
+           family={Molent},
+           familyi={M\bibinitperiod},
+           given={L},
+           giveni={L\bibinitperiod}}}%
+        {{hash=21b4d0a31ebcf668d9e1b0e8ef0b90a3}{%
+           family={Barter},
+           familyi={B\bibinitperiod},
+           given={SA},
+           giveni={S\bibinitperiod}}}%
+        {{hash=1067c71cfe81ce453fce6488f5cec1e8}{%
+           family={Amsterdam},
+           familyi={A\bibinitperiod},
+           given={E},
+           giveni={E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {National Aerospace Laboratory NLR}%
+      }
+      \strng{namehash}{fdd11213fdaf17228561813312fff30b}
+      \strng{fullhash}{2f291c9139c6899ddf929375f2375d6a}
+      \strng{bibnamehash}{fdd11213fdaf17228561813312fff30b}
+      \strng{authorbibnamehash}{fdd11213fdaf17228561813312fff30b}
+      \strng{authornamehash}{fdd11213fdaf17228561813312fff30b}
+      \strng{authorfullhash}{2f291c9139c6899ddf929375f2375d6a}
+      \field{sortinit}{W}
+      \field{sortinithash}{4315d78024d0cea9b57a0c6f0e35ed0d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Milestone case histories in aircraft structural integrity}
+      \field{year}{2015}
+    \endentry
+    \entry{zackbikefork}{online}{}
+      \name{author}{1}{}{%
+        {{hash=747f3217bf466daa4437350aa8cc649d}{%
+           family={Zacke82},
+           familyi={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{747f3217bf466daa4437350aa8cc649d}
+      \strng{fullhash}{747f3217bf466daa4437350aa8cc649d}
+      \strng{bibnamehash}{747f3217bf466daa4437350aa8cc649d}
+      \strng{authorbibnamehash}{747f3217bf466daa4437350aa8cc649d}
+      \strng{authornamehash}{747f3217bf466daa4437350aa8cc649d}
+      \strng{authorfullhash}{747f3217bf466daa4437350aa8cc649d}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Fox 32 RL Fork}
+      \field{year}{2009}
+      \verb{urlraw}
+      \verb https://en.wikipedia.org/wiki/Bicycle_fork#/media/File:Fox_32_RL_Fork.jpg
+      \endverb
+      \verb{url}
+      \verb https://en.wikipedia.org/wiki/Bicycle_fork#/media/File:Fox_32_RL_Fork.jpg
+      \endverb
+      \warn{\item Entry 'zackbikefork' (me310.bib): Invalid format '6/28/2019' of date field 'urldate' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

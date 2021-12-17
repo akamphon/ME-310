@@ -1,0 +1,5 @@
+\begin{align*}
+J&=\int\limits_{0}^{2 \pi}\int\limits_{R_{i}}^{R} r^{3}\, dr\, d\theta\\
+&=\int\limits_{0}^{2 \pi} \left(\frac{R^{4}}{4} - \frac{R_{i}^{4}}{4}\right)\, d\theta\\
+&=2 \pi \left(\frac{R^{4}}{4} - \frac{R_{i}^{4}}{4}\right)
+\end{align*}

@@ -1,0 +1,13 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lccccc}
+\toprule
+Designation & $r_g$ (mm) & $A$ (mm$^2$) & $\lambda$ & $\sigma_{allow}$ (MPa) & $P_{allow}$ (kN) \\
+\midrule
+W360 $\times$ 39 & 27.5 & 4960 & 218 & 22.7 & 113 \\
+W360 $\times$ 45 & 37.8 & 5710 & 159 & 42.9 & 245 \\
+W200 $\times$ 36 & 40.9 & 4570 & 147 & 50.2 & 230 \\
+W150 $\times$ 22 & 36.8 & 2860 & 163 & 40.7 & 116 \\
+\bottomrule
+\end{tabular}
+\end{table}

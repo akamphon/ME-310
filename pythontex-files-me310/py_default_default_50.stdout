@@ -1,0 +1,15 @@
+\begin{table}[H]
+\centering
+\begin{tabular}{lccc}
+\toprule
+Designation & Axial Stress (MPa) & Bending Stress (MPa) & $\dfrac{\sigma _a + \sigma_b}{\sigma_{allow}}$ \\
+\midrule
+S610 x 149 & 2.65 & 15.34 & 0.18 \\
+S510 x 143 & 2.75 & 18.52 & 0.21 \\
+S460 x 104 & 3.79 & 29.59 & 0.33 \\
+S380 x 74 & 5.27 & 47.17 & 0.52 \\
+S310 x 74 & 5.31 & 60.31 & 0.66 \\
+S250 x 52 & 7.52 & 103.73 & 1.11 \\
+\bottomrule
+\end{tabular}
+\end{table}

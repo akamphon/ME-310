@@ -1,0 +1,5 @@
+\begin{align*}
+J&=\int\limits_{0}^{2 \pi}\int\limits_{0}^{R} r^{3}\, dr\, d\theta\\
+&=\int\limits_{0}^{2 \pi} \frac{R^{4}}{4}\, d\theta\\
+&=\frac{\pi R^{4}}{2}
+\end{align*}
